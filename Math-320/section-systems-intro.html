@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-05-08T16:38:35-04:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Introduction to Systems of Linear Equations</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script>$(function () {
+    // Make *any* div with class 'sagecell-sage' an executable Sage cell
+    // Their results will be linked, only within language type
+    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
+                           linked: true,
+                           languages: ['sage'],
+                           evalButtonText: 'Evaluate (Sage)'});
+});
+</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="Math-320-Worksheets.html"><span class="title">Math 320 Worksheets</span></a></h1>
+<p class="byline">Dr. Daniel Franz</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chapter-systems.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-systems.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter-systems.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-systems.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="chapter-systems.html" data-scroll="chapter-systems"><span class="codenumber">1</span> <span class="title">Systems of Linear Equations</span></a><ul><li><a href="section-systems-intro.html" data-scroll="section-systems-intro" class="active">Introduction to Systems of Linear Equations</a></li></ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-systems-intro"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.1</span> <span class="title">Introduction to Systems of Linear Equations</span>
+</h2>
+<a href="section-systems-intro.html" class="permalink">¶</a><section class="introduction" id="introduction-2">In this section we convert systems of linear equations into augmented matrices and use row operations to help solve the systems of linear equations.</section><section class="subsection" id="subsection-systems-basics"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.1</span> <span class="title">Solving Systems of Linear Equations</span>
+</h3>
+<a href="section-systems-intro.html#subsection-systems-basics" class="permalink">¶</a><p id="p-2">A system of linear equations has</p>
+<ul class="disc">
+<li id="li-1">no solution, or</li>
+<li id="li-2">exactly one solution, or</li>
+<li id="li-3">infinitely many solutions.</li>
+</ul>
+<p id="p-3">We solve linear systems of equations by putting them into augmented matrix form and then simplifying them using one or more of the following <dfn class="terminology">elementary row operations</dfn>:</p>
+<dl class="description-list">
+<dt id="li-4">Replacement:</dt>
+<dd> Replace one row by the sum of itself and a multiple of another row.</dd>
+<dt id="li-5">Interchange:</dt>
+<dd> Interchange two rows.</dd>
+<dt id="li-6">Scaling:</dt>
+<dd> Multiply all entries of a row by a nonzero constant.</dd>
+</dl></section><section class="exercises" id="exercises-1"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">1.1.2</span> <span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-1"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>Write the augmented matrix of the linear system of equations below.<div class="displaymath">
+\begin{align*}
+x_1 + 5x_2 \amp = 7 \\
+-2x_1 - 7x_2 \amp = -5
+\end{align*}
+</div>
+<div class="solutions">
+<a data-knowl="" class="id-ref original" data-refid="hk-answer-1" id="answer-1"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1"><div class="answer solution-like">\(\begin{bmatrix} 1 \amp 5 \amp 7 \\ -2 \amp -7 \amp -5 \end{bmatrix}\)</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-2"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>Write the linear system of equations corresponding to the augmented matrix below.<div class="displaymath">
+\begin{equation*}
+\begin{bmatrix} 2 \amp -3 \amp -5 \\ -4 \amp 6 \amp 10 \end{bmatrix}
+\end{equation*}
+</div></article><article class="exercise exercise-like" id="exercise-3"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>Write the augmented matrix of the linear system of equations below.<div class="displaymath">
+\begin{align*}
+x_2 + 4x_3 \amp = -5\\
+x_1 + 3x_2 + 5x_3 \amp = -2\\
+3x_1 + 7x_2 + 7x_3 \amp = 0
+\end{align*}
+</div></article><article class="exercise exercise-like" id="exercise-4"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>Write the linear system of equations corresponding to the augmented matrix below.<div class="displaymath">
+\begin{equation*}
+\begin{bmatrix} 1 \amp -3 \amp 7 \amp -3 \\ 0 \amp 1 \amp -2 \amp 2 \\ 0 \amp 3 \amp -6 \amp 6 \end{bmatrix}
+\end{equation*}
+</div></article></section><section class="subsection" id="subsection-2"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.3</span> <span class="title">Using Row Operations in Sage</span>
+</h3>
+<p id="p-4">Let's investigate how to use Sage to "simplify" augmented matrices using the three row operations.</p>
+<div class="sagecell-sage" id="sage-1"><script type="text/x-sage">A=matrix(QQ, [[5,3,1], [1,4,-2]]); A
+</script></div>
+<p id="p-5">To use the Interchange row operation, we use the <code class="code-inline tex2jax_ignore">swap_rows</code> method. Note that Sage starts counting at 0, so the first row is row 0.</p>
+<div class="sagecell-sage" id="sage-2"><script type="text/x-sage">A.swap_rows(0,1); A
+</script></div>
+<p id="p-6">We now use a Replacement row operation; since this operation adds a multiple of one row to another row, the method name is <code class="code-inline tex2jax_ignore">add_multiple_of_row</code>.</p>
+<div class="sagecell-sage" id="sage-3"><script type="text/x-sage">A.add_multiple_of_row(1,0,-5); A
+</script></div>
+<p id="p-7">To understand the syntax of the method <code class="code-inline tex2jax_ignore">add_multiple_of_row</code>, read it right to left. In the above example, we added \(-5\cdot\) Row 0 to Row 1 (where Row 0 is the first row).</p>
+<p id="p-8">A Scaling operation will make that second row look nicer. We use the <code class="code-inline tex2jax_ignore">rescale_row</code> method.</p>
+<div class="sagecell-sage" id="sage-4"><script type="text/x-sage">A.rescale_row(1, -1/17); A
+</script></div>
+<p id="p-9">You should see a 4 as the top middle entry. Use a Replacement operation in the Sage cell below to change the top middle entry to a 0.</p>
+<div class="sagecell-sage" id="sage-5"><script type="text/x-sage">
+</script></div></section></section></div></main>
+</div>
+</body>
+</html>

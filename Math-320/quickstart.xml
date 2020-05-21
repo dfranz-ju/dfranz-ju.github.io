@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- To process this file do                                                                      -->
+<!--                                                                                              -->
+<!-- (1) LaTeX/PDF:                                                                               -->
+<!--     xsltproc -o minimal.tex mathbook/xsl/mathbook-latex.xsl minimal.xml                      -->
+<!--     pdflatex minimal.tex                                                                     -->
+<!--     xelatex minimal.tex                                                                      -->
+<!--                                                                                              -->
+<!-- (2) HTML:
+         cd dropbox/academics/ju/pretext/first                                                    -->
+<!--     xsltproc ~/mathbook/xsl/mathbook-html.xsl quickstart.xml                                 -->
+<!--                                                                                              -->
+<!--                                                                                              -->
+<!-- (3) CoCalc worksheet (parameter causes a single file for output)                             -->
+<!--     REMOVE the "X" in the double dash (which is not legal in an XML comment)                 -->
+<!--     xsltproc -X-stringparam chunk.level 0 mathbook/xsl/mathbook-smc.xsl minimal.xml          -->
+<!--     <CoCalc> minimal.sagews                                                                  -->
+<!--                                                                                              -->
+<!-- (4) Sage doctesting                                                                          -->
+<!--     REMOVE the "X" in the double dash (which is not legal in an XML comment)                 -->
+<!--     xsltproc -X-stringparam chunk.level 0 mathbook/xsl/mathbook-sage-doctest.xsl minimal.xml -->
+<!--     <read further instructions in> minimal.py                                                -->
+
+
+
+<pretext>
+ <article xml:id="quickly">
+ <title>My First Small Example</title>
+ <introduction>
+  <p>
+   Let's get started.
+  </p> 
+  </introduction>
+  
+  <section xml:id="section-short">
+   <title>Beginnings</title>
+   <p>
+    This is a short sentence.
+   </p>
+  </section>
+  
+  <section xml:id="section-multiple-paragraph">
+   <title>Endings</title>
+  <p>
+   This is a longer sentence that is followed by another sentence.
+   Two sentences, and a second paragraph to follow.
+   </p>
+   
+   <p>
+   One more short paragraph. If the two sides of a right triangle have lengths <m>a</m> and <m>b</m> and the hypotenuse has length <m>c</m>, then the equation <me>a^2+b^2=c^2</me> will always hold.
+   </p>
+
+   <exercises>
+	   <exercise>
+		   <statement>
+			   This is an exercise that you have to do. But don't worry, here is some Desmos to help!
+			   
+			   <p><interactive desmos="ine49wxzg0" width="100%" aspect="3:2"/></p>
+		   </statement>
+	   </exercise>
+   
+	   <exercise>
+		   <statement>
+			   <sage>
+				   <input>
+					   %display latex
+					   integral(x^9*cos(x), x)
+				   </input>
+			   </sage>
+		   </statement>
+		   
+	   </exercise>
+   
+   </exercises>
+
+  </section>
+  
+ </article>
+</pretext>
+
