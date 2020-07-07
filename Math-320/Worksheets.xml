@@ -10,12 +10,12 @@
 <!--     pdflatex worksheets.tex                                                                     -->
 <!--     xelatex worksheets.tex                                                                      -->
 <!--                                                                                              -->
-<!-- (2) HTML:
-         cd dropbox/academics/ju/"math 320"/pretext                                                    -->
-<!--     xsltproc ~/mathbook/xsl/mathbook-html.xsl worksheets.xml                                 -->
+<!-- (2) HTML:                                                                                -->
+<!--         cd dfranz-ju.github.io/math-320                                          -->
+<!--     xsltproc ~/mathbook/xsl/pretext-html.xsl worksheets.xml                                 -->
 <!--                                                                                              -->
-<!--    to update git repository, do 
-<!--       git add --all                                     -->
+<!--    to update git repository, do                        -->
+<!--       git add -x-all                                     -->
 <!--       git commit -m "<short descriptive comment>"       -->
 <!--       git push -u origin master                         -->                                             
                                              
@@ -31,8 +31,8 @@
 	</docinfo>
 	
 	
- <book xml:id="Math-320-Worksheets">
- <title>Math 320 Worksheets</title>
+ <book xml:id="Math-320-Guided-Practice">
+ <title>Math 320 Guided Practice</title>
  
  <frontmatter>
 	 <titlepage>
@@ -44,14 +44,14 @@
 	 </titlepage>
 	 
 	 <abstract>
-		 This is a collection of worksheets for use in Math 320.
+		 This is a collection of Guided Practice assignments for use in Math 320.
 	 </abstract>
  
  </frontmatter>
  
  <introduction>
 	 <p>
-	 	This is a collection of worksheets for use in Math 320.
+	 	This is a collection of Guided Practice assignments for use in Math 320.
 	 </p>
  </introduction>
  
@@ -64,6 +64,33 @@
 		 <title>Introduction to Systems of Linear Equations</title>
 		 
 		 <introduction>
+			 Systems of linear equations have a long history dating back thousands of years, as described in this note by Viktor Katz from the textbook Linear Algebra, 3rd ed., by Fraleigh and Beauregard:
+			 
+			 <p>
+			 Systems of linear equations are found in ancient Babylonian and Chinese texts dating back well over 2000 years. The problems are generally stated in real-life terms, but it is clear they are artificial and designed simply to train students in mathematical procedures. 
+		 </p>
+		<p>	 
+			 As an example of a Babylonian problem, consider the following, which has been slightly modified from the original found on a clay tablet from about 300 BCE: There are two fields whose total area is 1800 square yards. One produces grain at a rate of <m>\frac{2}{3}</m> bushel per square yard, the other at a rate of <m>\frac{1}{2}</m> bushel per square yard. The total yield of the two fields is 1100 bushels. What is the size of each field? 
+		 </p>
+		 <p>
+			 This problem leads to the system
+			 <md>
+				 <mrow> x + y \amp = 1800 </mrow>
+				 <mrow> \frac{2}{3} x + \frac{1}{2} y \amp = 1100 </mrow>
+			 </md>
+		 </p>
+		 <p>
+			 A typical Chinese problem, taken from the Han dynasty text <em>Nine Chapters of the Mathematical Art</em> (about 200 BCE), reads as follows: There are three classes of corn, of which three bundles of the first class, two of the second, and one of the third make 39 measures. Two of the first, three of the second, and one of the third make 34 measures. And one of the first, two of the second, and three of the third make 26  measures. How many measures of grain are contained in one bundle of each class? 
+		 </p>
+		 <p>
+			 The system of equations here is 
+			 <md>
+				 <mrow> 3x+2y+z \amp =39 </mrow>
+				 <mrow> 2x + 3y + z \amp = 34</mrow>
+				 <mrow> x + 2y + 3z \amp = 26</mrow>
+			 </md>
+		 </p>
+		 
 		 	In this section we convert systems of linear equations into augmented matrices and use row operations to help solve the systems of linear equations.
 		 </introduction>
 		 
