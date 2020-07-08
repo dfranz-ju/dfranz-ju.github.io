@@ -15,9 +15,11 @@
 <!--     xsltproc ~/mathbook/xsl/pretext-html.xsl worksheets.xml                                 -->
 <!--                                                                                              -->
 <!--    to update git repository, do                        -->
-<!--       git add -x-all                                     -->
+<!--       git add -x-all  (double hyphen,no x)                                   -->
 <!--       git commit -m "<short descriptive comment>"       -->
-<!--       git push -u origin master                         -->                                             
+<!--       git push -u origin master                         -->       
+<!-- 														-->
+<!--   website is https://dfranz-ju.github.io/Math-320/frontmatter-1.html. -->                                      
                                              
 
 
@@ -60,12 +62,19 @@
 	 
 
 	 
-	 <section xml:id="section-systems-intro">
-		 <title>Introduction to Systems of Linear Equations</title>
+	 <section xml:id="section-1-1">
+		 <title>Guided Practice: Systems of Linear Equations</title>
 		 
 		 <introduction>
-			 Systems of linear equations have a long history dating back thousands of years, as described in this note by Viktor Katz from the textbook Linear Algebra, 3rd ed., by Fraleigh and Beauregard:
+			 <title>Overview</title>
+			 <p>
+			 In this section, we begin our study of linear systems of equations, one of the main topics of Linear Algebra. The section starts by collecting some basic terminology and presenting a geometric context for linear systems to help understand their possible solutions. We then introduce matrix notation for linear systems and show its usefulness in solving linear systems with an example which motivates the definition of the <term>elementary row operations</term>. The section concludes with a discussion of <em>consistency</em> and <em>solution uniqueness</em> for linear systems. 
+		 </p>
 			 
+		 <p>
+			 <alert>Historical Note:</alert> Systems of linear equations have a long history dating back thousands of years, as described in this note by Viktor Katz from the textbook Linear Algebra, 3rd ed., by Fraleigh and Beauregard:
+			 
+			 <blockquote>
 			 <p>
 			 Systems of linear equations are found in ancient Babylonian and Chinese texts dating back well over 2000 years. The problems are generally stated in real-life terms, but it is clear they are artificial and designed simply to train students in mathematical procedures. 
 		 </p>
@@ -80,7 +89,7 @@
 			 </md>
 		 </p>
 		 <p>
-			 A typical Chinese problem, taken from the Han dynasty text <em>Nine Chapters of the Mathematical Art</em> (about 200 BCE), reads as follows: There are three classes of corn, of which three bundles of the first class, two of the second, and one of the third make 39 measures. Two of the first, three of the second, and one of the third make 34 measures. And one of the first, two of the second, and three of the third make 26  measures. How many measures of grain are contained in one bundle of each class? 
+			 A typical Chinese problem, taken from the Han dynasty text <pubtitle>Nine Chapters of the Mathematical Art</pubtitle> (about 200 BCE), reads as follows: There are three classes of corn, of which three bundles of the first class, two of the second, and one of the third make 39 measures. Two of the first, three of the second, and one of the third make 34 measures. And one of the first, two of the second, and three of the third make 26  measures. How many measures of grain are contained in one bundle of each class? 
 		 </p>
 		 <p>
 			 The system of equations here is 
@@ -91,77 +100,159 @@
 			 </md>
 		 </p>
 		 
-		 	In this section we convert systems of linear equations into augmented matrices and use row operations to help solve the systems of linear equations.
+	 </blockquote>
+ </p>
 		 </introduction>
 		 
-		 <subsection xml:id="subsection-systems-basics">
-			 <title>Solving Systems of Linear Equations</title>
-			 <p>
-			 	A system of linear equations has 
-				<ul>
-					<li>
-						no solution, or
-					</li>
-					<li>
-						exactly one solution, or
-					</li>
-					<li>
-						infinitely many solutions.
-					</li>
-				</ul>
-			 </p>
 		 
+		 <subsection xml:id="subsection-1-1-BLO">
+			 <title>Basic Learning Objectives </title>
+		<p>
+			 You should be able to perform these tasks with reasonable fluency <em>when you arrive to class</em>.
+			 
+			 <ul>
+				 <li>
+				 	Describe the possible solution sets of a linear system of equations.
+				 </li>
+				 <li>
+				 	Translate a linear system into its corresponding coefficient and augmented matrices.
+				 </li>
+				 <li>
+				 	Translate an augmented matrix into a linear system.
+				 </li>
+				 <li>
+				 	Apply elementary row operations to matrices.
+				 </li>
+			 </ul>
 			
-			<p>
-				We solve linear systems of equations by putting them into augmented matrix form and then simplifying them using one or more of the following <term>elementary row operations</term>:
-				<dl>
-					<li>
-						<title>Replacement:</title>
-						Replace one row by the sum of itself and a multiple of another row.
-					</li>
-				
-					<li>
-						<title>Interchange:</title>
-						Interchange two rows.
-					</li>
-				
-					<li>
-						<title>Scaling:</title>
-						Multiply all entries of a row by a nonzero constant.
-					</li>
-				</dl>
-			</p>
+		 </p>
+		 </subsection>
+		 
+		 <subsection xml:id="subsection-1-1-ALO">
+			 <title>Advanced Learning Objectives </title>
+		<p>
+			In addition to mastering the basic objectives, here are the tasks you should be able to perform <em>after class, with practice</em>:
+			 
+			 <ul>
+				 <li>
+				 	Use elementary row operations to determine if a linear system is consistent.
+				 </li>
+				 <li>
+				 	Solve linear systems that have unique solutions using elementary row operations.
+				 </li>
+			 </ul>
+			
+		 </p>
+		 </subsection>
+		 
+		 <subsection xml:id="subsection-1-1-Resources">
+			 <title>Resources</title>
+			 <p>
+				 <em>Reading</em>: Read Section 1.1 of the textbook, keeping the learning objectives in mind. It's helpful to write down new vocabulary words and notation along with short definitions/examples and to actively work along with the examples on your own paper.
+			 </p>
+			 
+			 <p>
+				 <em>Video</em>: TBD
+			 </p>
 			
 			
 		 </subsection>
 		 
+		 <subsection xml:id="subsection-1-1-Sage">
+			 <title>Sage Commands</title>
+
+ 			<p>
+ 				The elementary row operations can be easily applied using Sage. First, we create a matrix that we can apply row operations to using the <c>matrix</c> command. The <c>QQ</c> is telling Sage to treat the entries of the matrix as rational numbers, so that we may divide later. (Evaluate the cell below)
+ 			</p>
+			
+ 			<sage>
+ 				<input>
+ 					A=matrix(QQ, [[5,3,1], [1,4,-2]]); #creates a matrix and names it A
+					A #prints the matrix named A
+ 				</input>
+ 			</sage>
+			
+ 			<p>
+ 				To use the <term>Interchange</term> row operation, we use the <c>swap_rows</c> method. Note that Sage always starts counting at 0, so the first row is row 0.
+ 			</p>	
+			
+ 			<sage>
+ 				<input>
+					A=matrix(QQ, [[5,3,1], [1,4,-2]]);
+					A.swap_rows(0,1); #swaps row 0 and row 1
+					A
+ 				</input>
+ 				<output>
+ 					[1 4 -2]
+ 					[5 3 1 ]
+ 				</output>
+ 			</sage>
+			
+			<p>
+				Sage keeps track of previous cell evaluations, so we did not need to define A again in the cell above. However, we are changing A with each row operation and if we want to change our mind or try a different row operation, it can be difficult to keep track of the edits. By putting everything in the same cell, we don't have to remember invisible information (which cells were executed in which order). In your own work on CoCalc, you can just keep adding commands to the same cell as opposed to creating new cells with repeated commands.
+			</p>
+			
+ 			<p>
+ 				We now use a <term>Replacement</term> row operation; since this operation adds a multiple of one row to another row, the method name is <c>add_multiple_of_row</c>.
+ 			</p>
+			
+ 			<sage>
+ 				<input>
+					A=matrix(QQ, [[5,3,1], [1,4,-2]]);
+					A.swap_rows(0,1);
+					A.add_multiple_of_row(1,0,-5); #adds -5*row 0 to row 1
+					A
+ 				</input>
+ 			</sage>
+			
+ 			<p>
+ 				To understand the syntax of the method <c>add_multiple_of_row</c>, read it right to left. In the above example, we added <m>-5\cdot</m> Row 0 to Row 1 (where Row 0 is the first row).
+ 			</p>
+			
+ 			<p>
+ 				A <term>Scaling</term> operation will make that second row look nicer. We use the <c>rescale_row</c> method.
+ 			</p>
+			
+ 			<sage>
+ 				<input>
+					A=matrix(QQ, [[5,3,1], [1,4,-2]]);
+					A.swap_rows(0,1);
+					A.add_multiple_of_row(1,0,-5);
+					A.rescale_row(1, -1/17); #multiplies row 1 by -1/17
+					A
+ 				</input>
+ 			</sage>
+			
+ 			<p>
+ 				You should see a 4 as the top middle entry. Try using a Replacement operation in the Sage cell below to change the top middle entry to a 0. (Feel free to use copy and paste!)
+ 			</p>
+			
+ 			<sage>
+ 				<input>
+					
+ 				</input>
+ 			</sage>
+			
+			
+			
+ 		</subsection>
 		 
 		
 		<exercises>
+			<p>
+				Complete the following exercises in the GP 1-1 file in CoCalc by 8:00 AM on 8/20/2020.
+			</p>
+			
 			<exercise>
 				<statement>
-					Write the augmented matrix of the linear system of equations below.
-					<md>
-						<mrow> x_1 + 5x_2 \amp = 7 </mrow>
-						<mrow> -2x_1 - 7x_2 \amp = -5</mrow>
-					</md>
+					A given linear system of equations in three variables has <m>x=4, y=2, z=1</m> and <m>x=-1, y=4, z=2</m> as solutions. How many total solutions does this system have? (Answer in a Markdown cell)
 				</statement>
 				
-				<answer>
-					<m>\begin{bmatrix} 1 \amp 5 \amp 7 \\ -2 \amp -7 \amp -5 \end{bmatrix}</m>
-				</answer>
 			</exercise>
 			
 			<exercise>
 				<statement>
-					Write the linear system of equations corresponding to the augmented matrix below.
-					<me> \begin{bmatrix} 2 \amp -3 \amp -5 \\ -4 \amp 6 \amp 10 \end{bmatrix}</me>
-				</statement>
-			</exercise>
-			
-			<exercise>
-				<statement>
-					Write the augmented matrix of the linear system of equations below.
+					Create the augmented matrix of the linear system of equations below using the Sage <c>matrix</c> command. Write the command in the code cell below (and execute it).
 					<md>
 						<mrow> x_2 + 4x_3 \amp = -5</mrow>
 						<mrow> x_1 + 3x_2 + 5x_3 \amp = -2</mrow>
@@ -172,77 +263,42 @@
 			
 			<exercise>
 				<statement>
-					Write the linear system of equations corresponding to the augmented matrix below.
-					<me> \begin{bmatrix} 1 \amp -3 \amp 7 \amp -3 \\ 0 \amp 1 \amp -2 \amp 2 \\ 0 \amp 3 \amp -6 \amp 6 \end{bmatrix}</me>
+					Write the linear system of equations corresponding to the augmented matrix below. (Answer in a Markdown cell)
+					<me> \begin{bmatrix} 2 \amp -3 \amp -5 \\ -4 \amp 6 \amp 10 \end{bmatrix}</me>
+				</statement>
+			</exercise>
+			
+
+			
+			<exercise>
+				<statement>
+					In each part, use a Sage command to apply the given elementary row operation to the matrix <m>B = \begin{bmatrix} 1 \amp 2 \amp 3 \\ 4 \amp 5 \amp 6 \\ 7 \amp 8 \amp 9 \end{bmatrix}</m>. Each answer should be written in a code cell that executes correctly. Note: each row operation should be applied to the initial matrix <m>B</m>; they should not be applied sequentially.
+					<ol>
+						<li>
+							Swap the second and third row of B.
+						</li>
+						
+						<li>
+							Multiply the first row of B by 4.
+						</li>
+						
+						<li>
+							Add the first row to the third row.
+						</li>
+					</ol>
+					
+				</statement>
+			</exercise>
+			
+			<exercise>
+				<statement>
+					What comments or questions do you have about the content of this assignment? (Answer in a Markdown cell)
 				</statement>
 			</exercise>
 			
 		</exercises>	
 	
-		<subsection>
-			<title>Using Row Operations in Sage</title>
-			
-			<p>
-				Let's investigate how to use Sage to "simplify" augmented matrices using the three row operations.
-			</p>
-			
-			<sage>
-				<input>
-					A=matrix(QQ, [[5,3,1], [1,4,-2]]); A
-				</input>
-			</sage>
-			
-			<p>
-				To use the Interchange row operation, we use the <c>swap_rows</c> method. Note that Sage starts counting at 0, so the first row is row 0.
-			</p>	
-			
-			<sage>
-				<input>
-					A.swap_rows(0,1); A
-				</input>
-				<output>
-					[1 4 -2]
-					[5 3 1 ]
-				</output>
-			</sage>
-			
-			<p>
-				We now use a Replacement row operation; since this operation adds a multiple of one row to another row, the method name is <c>add_multiple_of_row</c>.
-			</p>
-			
-			<sage>
-				<input>
-					A.add_multiple_of_row(1,0,-5); A
-				</input>
-			</sage>
-			
-			<p>
-				To understand the syntax of the method <c>add_multiple_of_row</c>, read it right to left. In the above example, we added <m>-5\cdot</m> Row 0 to Row 1 (where Row 0 is the first row).
-			</p>
-			
-			<p>
-				A Scaling operation will make that second row look nicer. We use the <c>rescale_row</c> method.
-			</p>
-			
-			<sage>
-				<input>
-					A.rescale_row(1, -1/17); A
-				</input>
-			</sage>
-			
-			<p>
-				You should see a 4 as the top middle entry. Use a Replacement operation in the Sage cell below to change the top middle entry to a 0.
-			</p>
-			
-			<sage>
-				<input>
-					
-				</input>
-			</sage>
-			
-			
-			
-		</subsection>
+		
 		 
 	 </section>
  </chapter>

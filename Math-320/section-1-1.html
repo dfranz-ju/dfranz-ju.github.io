@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-07-07T14:50:23-04:00    *-->
+<!--*    on 2020-07-08T15:16:18-04:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -9,7 +9,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Guided Practice 1.1: Systems of Linear Equations</title>
+<title>Guided Practice: Systems of Linear Equations</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
@@ -85,12 +85,12 @@ MathJax.Hub.Config({
 <nav id="toc"><ul>
 <li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
 <li class="link">
-<a href="chapter-systems.html" data-scroll="chapter-systems"><span class="codenumber">1</span> <span class="title">Systems of Linear Equations</span></a><ul><li><a href="section-systems-intro.html" data-scroll="section-systems-intro" class="active">Guided Practice 1.1: Systems of Linear Equations</a></li></ul>
+<a href="chapter-systems.html" data-scroll="chapter-systems"><span class="codenumber">1</span> <span class="title">Systems of Linear Equations</span></a><ul><li><a href="section-1-1.html" data-scroll="section-1-1" class="active">Guided Practice: Systems of Linear Equations</a></li></ul>
 </li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-systems-intro"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">1.1</span> <span class="title">Guided Practice 1.1: Systems of Linear Equations</span>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-1-1"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.1</span> <span class="title">Guided Practice: Systems of Linear Equations</span>
 </h2>
 <section class="introduction" id="introduction-2"><h6 class="heading">Overview.<span></span>
 </h6>
@@ -114,67 +114,74 @@ x + y \amp = 1800 \\
 x + 2y + 3z \amp = 26
 \end{align*}
 </div>
-</blockquote></p></section><section class="subsection" id="subsection-systems-basics"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">1.1.1</span> <span class="title">Solving Systems of Linear Equations</span>
+</blockquote></p></section><section class="subsection" id="subsection-1-1-BLO"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.1</span> <span class="title">Basic Learning Objectives</span>
 </h3>
-<p id="p-9">A system of linear equations has</p>
+<p id="p-9">You should be able to perform these tasks with reasonable fluency <em class="emphasis">when you arrive to class</em>.</p>
 <ul class="disc">
-<li id="li-1">no solution, or</li>
-<li id="li-2">exactly one solution, or</li>
-<li id="li-3">infinitely many solutions.</li>
-</ul>
-<p id="p-10">We solve linear systems of equations by putting them into augmented matrix form and then simplifying them using one or more of the following <dfn class="terminology">elementary row operations</dfn>:</p>
-<dl class="description-list">
-<dt id="li-4">Replacement:</dt>
-<dd> Replace one row by the sum of itself and a multiple of another row.</dd>
-<dt id="li-5">Interchange:</dt>
-<dd> Interchange two rows.</dd>
-<dt id="li-6">Scaling:</dt>
-<dd> Multiply all entries of a row by a nonzero constant.</dd>
-</dl></section><section class="exercises" id="exercises-1"><h3 class="heading hide-type">
-<span class="type">Exercises</span> <span class="codenumber">1.1.2</span> <span class="title">Exercises</span>
+<li id="li-1">Describe the possible solution sets of a linear system of equations.</li>
+<li id="li-2">Translate a linear system into its corresponding coefficient and augmented matrices.</li>
+<li id="li-3">Translate an augmented matrix into a linear system.</li>
+<li id="li-4">Apply elementary row operations to matrices.</li>
+</ul></section><section class="subsection" id="subsection-1-1-ALO"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.2</span> <span class="title">Advanced Learning Objectives</span>
 </h3>
-<article class="exercise exercise-like" id="exercise-1"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>Write the augmented matrix of the linear system of equations below.<div class="displaymath">
-\begin{align*}
-x_1 + 5x_2 \amp = 7 \\
--2x_1 - 7x_2 \amp = -5
-\end{align*}
-</div>
-<div class="solutions">
-<a data-knowl="" class="id-ref original" data-refid="hk-answer-1" id="answer-1"><span class="type">Answer</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1"><div class="answer solution-like">\(\begin{bmatrix} 1 \amp 5 \amp 7 \\ -2 \amp -7 \amp -5 \end{bmatrix}\)</div></div>
-</div></article><article class="exercise exercise-like" id="exercise-2"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>Write the linear system of equations corresponding to the augmented matrix below.<div class="displaymath">
-\begin{equation*}
-\begin{bmatrix} 2 \amp -3 \amp -5 \\ -4 \amp 6 \amp 10 \end{bmatrix}
-\end{equation*}
-</div></article><article class="exercise exercise-like" id="exercise-3"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>Write the augmented matrix of the linear system of equations below.<div class="displaymath">
+<p id="p-10">In addition to mastering the basic objectives, here are the tasks you should be able to perform <em class="emphasis">after class, with practice</em>:</p>
+<ul class="disc">
+<li id="li-5">Use elementary row operations to determine if a linear system is consistent.</li>
+<li id="li-6">Solve linear systems that have unique solutions using elementary row operations.</li>
+</ul></section><section class="subsection" id="subsection-1-1-Resources"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.3</span> <span class="title">Resources</span>
+</h3>
+<p id="p-11"><em class="emphasis">Reading</em>: Read Section 1.1 of the textbook, keeping the learning objectives in mind. It's helpful to write down new vocabulary words and notation along with short definitions/examples and to actively work along with the examples on your own paper.</p>
+<p id="p-12"><em class="emphasis">Video</em>: TBD</p></section><section class="subsection" id="subsection-1-1-Sage"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.4</span> <span class="title">Sage Commands</span>
+</h3>
+<p id="p-13">The elementary row operations can be easily applied using Sage. First, we create a matrix that we can apply row operations to using the <code class="code-inline tex2jax_ignore">matrix</code> command. The <code class="code-inline tex2jax_ignore">QQ</code> is telling Sage to treat the entries of the matrix as rational numbers, so that we may divide later. (Evaluate the cell below)</p>
+<div class="sagecell-sage" id="sage-1"><script type="text/x-sage">	A=matrix(QQ, [[5,3,1], [1,4,-2]]); #creates a matrix and names it A
+A #prints the matrix named A
+</script></div>
+<p id="p-14">To use the <dfn class="terminology">Interchange</dfn> row operation, we use the <code class="code-inline tex2jax_ignore">swap_rows</code> method. Note that Sage always starts counting at 0, so the first row is row 0.</p>
+<div class="sagecell-sage" id="sage-2"><script type="text/x-sage">A=matrix(QQ, [[5,3,1], [1,4,-2]]);
+A.swap_rows(0,1); #swaps row 0 and row 1
+A
+</script></div>
+<p id="p-15">Sage keeps track of previous cell evaluations, so we did not need to define A again in the cell above. However, we are changing A with each row operation and if we want to change our mind or try a different row operation, it can be difficult to keep track of the edits. By putting everything in the same cell, we don't have to remember invisible information (which cells were executed in which order). In your own work on CoCalc, you can just keep adding commands to the same cell as opposed to creating new cells with repeated commands.</p>
+<p id="p-16">We now use a <dfn class="terminology">Replacement</dfn> row operation; since this operation adds a multiple of one row to another row, the method name is <code class="code-inline tex2jax_ignore">add_multiple_of_row</code>.</p>
+<div class="sagecell-sage" id="sage-3"><script type="text/x-sage">A=matrix(QQ, [[5,3,1], [1,4,-2]]);
+A.swap_rows(0,1);
+A.add_multiple_of_row(1,0,-5); #adds -5*row 0 to row 1
+A
+</script></div>
+<p id="p-17">To understand the syntax of the method <code class="code-inline tex2jax_ignore">add_multiple_of_row</code>, read it right to left. In the above example, we added \(-5\cdot\) Row 0 to Row 1 (where Row 0 is the first row).</p>
+<p id="p-18">A <dfn class="terminology">Scaling</dfn> operation will make that second row look nicer. We use the <code class="code-inline tex2jax_ignore">rescale_row</code> method.</p>
+<div class="sagecell-sage" id="sage-4"><script type="text/x-sage">A=matrix(QQ, [[5,3,1], [1,4,-2]]);
+A.swap_rows(0,1);
+A.add_multiple_of_row(1,0,-5);
+A.rescale_row(1, -1/17); #multiplies row 1 by -1/17
+A
+</script></div>
+<p id="p-19">You should see a 4 as the top middle entry. Try using a Replacement operation in the Sage cell below to change the top middle entry to a 0. (Feel free to use copy and paste!)</p>
+<div class="sagecell-sage" id="sage-5"><script type="text/x-sage">
+</script></div></section><section class="exercises" id="exercises-1"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">1.1.5</span> <span class="title">Exercises</span>
+</h3>
+<p id="p-20">Complete the following exercises in the GP 1-1 file in CoCalc by 8:00 AM on 8/20/2020.</p>
+<article class="exercise exercise-like" id="exercise-1"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>A given linear system of equations in three variables has \(x=4, y=2, z=1\) and \(x=-1, y=4, z=2\) as solutions. How many total solutions does this system have? (Answer in a Markdown cell)</article><article class="exercise exercise-like" id="exercise-2"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>Create the augmented matrix of the linear system of equations below using the Sage <code class="code-inline tex2jax_ignore">matrix</code> command. Write the command in the code cell below (and execute it).<div class="displaymath">
 \begin{align*}
 x_2 + 4x_3 \amp = -5\\
 x_1 + 3x_2 + 5x_3 \amp = -2\\
 3x_1 + 7x_2 + 7x_3 \amp = 0
 \end{align*}
-</div></article><article class="exercise exercise-like" id="exercise-4"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>Write the linear system of equations corresponding to the augmented matrix below.<div class="displaymath">
+</div></article><article class="exercise exercise-like" id="exercise-3"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>Write the linear system of equations corresponding to the augmented matrix below. (Answer in a Markdown cell)<div class="displaymath">
 \begin{equation*}
-\begin{bmatrix} 1 \amp -3 \amp 7 \amp -3 \\ 0 \amp 1 \amp -2 \amp 2 \\ 0 \amp 3 \amp -6 \amp 6 \end{bmatrix}
+\begin{bmatrix} 2 \amp -3 \amp -5 \\ -4 \amp 6 \amp 10 \end{bmatrix}
 \end{equation*}
-</div></article></section><section class="subsection" id="subsection-2"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">1.1.3</span> <span class="title">Using Row Operations in Sage</span>
-</h3>
-<p id="p-11">Let's investigate how to use Sage to "simplify" augmented matrices using the three row operations.</p>
-<div class="sagecell-sage" id="sage-1"><script type="text/x-sage">A=matrix(QQ, [[5,3,1], [1,4,-2]]); A
-</script></div>
-<p id="p-12">To use the Interchange row operation, we use the <code class="code-inline tex2jax_ignore">swap_rows</code> method. Note that Sage starts counting at 0, so the first row is row 0.</p>
-<div class="sagecell-sage" id="sage-2"><script type="text/x-sage">A.swap_rows(0,1); A
-</script></div>
-<p id="p-13">We now use a Replacement row operation; since this operation adds a multiple of one row to another row, the method name is <code class="code-inline tex2jax_ignore">add_multiple_of_row</code>.</p>
-<div class="sagecell-sage" id="sage-3"><script type="text/x-sage">A.add_multiple_of_row(1,0,-5); A
-</script></div>
-<p id="p-14">To understand the syntax of the method <code class="code-inline tex2jax_ignore">add_multiple_of_row</code>, read it right to left. In the above example, we added \(-5\cdot\) Row 0 to Row 1 (where Row 0 is the first row).</p>
-<p id="p-15">A Scaling operation will make that second row look nicer. We use the <code class="code-inline tex2jax_ignore">rescale_row</code> method.</p>
-<div class="sagecell-sage" id="sage-4"><script type="text/x-sage">A.rescale_row(1, -1/17); A
-</script></div>
-<p id="p-16">You should see a 4 as the top middle entry. Use a Replacement operation in the Sage cell below to change the top middle entry to a 0.</p>
-<div class="sagecell-sage" id="sage-5"><script type="text/x-sage">
-</script></div></section></section></div></main>
+</div></article><article class="exercise exercise-like" id="exercise-4"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>In each part, use a Sage command to apply the given elementary row operation to the matrix \(B = \begin{bmatrix} 1 \amp 2 \amp 3 \\ 4 \amp 5 \amp 6 \\ 7 \amp 8 \amp 9 \end{bmatrix}\text{.}\) Each answer should be written in a code cell that executes correctly. Note: each row operation should be applied to the initial matrix \(B\text{;}\) they should not be applied sequentially. <ol class="lower-alpha">
+<li id="li-7">Swap the second and third row of B.</li>
+<li id="li-8">Multiply the first row of B by 4.</li>
+<li id="li-9">Add the first row to the third row.</li>
+</ol></article><article class="exercise exercise-like" id="exercise-5"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>What comments or questions do you have about the content of this assignment? (Answer in a Markdown cell)</article></section></section></div></main>
 </div>
 </body>
 </html>
