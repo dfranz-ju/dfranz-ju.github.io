@@ -152,7 +152,7 @@
 			 </p>
 			 
 			 <p>
-				 <em>Video</em>: TBD
+				 <em>Video</em>: TBD; do example of translations; show doing row operations in Sage
 			 </p>
 			
 			
@@ -293,6 +293,241 @@
 			<exercise>
 				<statement>
 					What comments or questions do you have about the content of this assignment? (Answer in a Markdown cell)
+				</statement>
+			</exercise>
+			
+		</exercises>	
+	
+	 </section>
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 <section xml:id="section-1-2">
+		 <title>Guided Practice: Row Reduction and Echelon Forms</title>
+		 
+		 <introduction>
+			 <title>Overview</title>
+			 <p>
+			 This section continues the study of systems of linear equations and their solutions. We refine the methods from Section 1.1 of solving linear systems by introducting the notions of <em>echelon form</em> and <em>reduced echelon form</em> of a matrix. When an augmented matrix is in echelon form, questions about consistency and uniqueness of solutions can be easily answered. When an augmented matrix is in reduced echelon form, we can easliy solve the system (if it is consistent).
+		 </p>
+			 
+		 <p>
+			 Examples 2 and 3 illustrate the <em>Row Reduction Algorithm</em>, which we use to reduce a matrix to echelon or reduced echelon form. The section continues by showing how to use reduced echelon form to solve linear systems. Many of the problems and concepts the rest of the semester will involve reducing matrices to echelon or reduced echelon form and analyzing the result; while we will eventually use a single Sage command to accomplish the computational side, we will be interpreting reduced echelon form matrices in different contexts the remainder of the semester. 
+		 </p>
+		 
+		 </introduction>
+		 
+		 
+		 <subsection xml:id="subsection-1-2-BLO">
+			 <title>Basic Learning Objectives </title>
+		<p>
+			 You should be able to perform these tasks with reasonable fluency <em>when you arrive to class</em>.
+			 
+			 <ul>
+				 <li>
+				 	Determine if a matrix is in echelon or reduced echelon form (or neither).
+				 </li>
+				 <li>
+				 	Identify pivot positions of a matrix in echelon or reduced echelon form.
+				 </li>
+				 <li>
+				 	Determine the basic and free variables of a linear system.
+				 </li>
+			 </ul>
+			
+		 </p>
+		 </subsection>
+		 
+		 <subsection xml:id="subsection-1-2-ALO">
+			 <title>Advanced Learning Objectives </title>
+		<p>
+			In addition to mastering the basic objectives, here are the tasks you should be able to perform <em>after class, with practice</em>:
+			 
+			 <ul>
+				 <li>
+				 	Determine the solution set type (none, one, or infinite) of a linear system given its augmented matrix in echelon form.
+				 </li>
+				 <li>
+				 	Implement the row reduction algorithm to convert a matrix to echelon or reduced echelon form.
+				 </li>
+				 <li>
+					 Find the general solution of a linear system and express it in parametric form.
+				 </li>
+			 </ul>
+			
+		 </p>
+		 </subsection>
+		 
+		 <subsection xml:id="subsection-1-2-Resources">
+			 <title>Resources</title>
+			 <p>
+				 <em>Reading</em>: Read Section 1.2 of the textbook, keeping the learning objectives in mind. It's helpful to write down new vocabulary words and notation along with short definitions/examples and to actively work along with the examples on your own paper. Example 3 is the main example of applying the row reduction algorithm. The section ends with a general strategy for solving linear systems.
+			 </p>
+			 
+			 <p>
+				 <em>Video</em>: TBD; focus on reduced echelon form, Theorem 1, pivots. In possible seperate video, illustrate doing row reduction algorithm in CoCalc.
+			 </p>
+			
+			
+		 </subsection>
+		 
+		 <subsection xml:id="subsection-1-2-Sage">
+			 <title>Sage Commands</title>
+
+ 			<p>
+ 				The <c>rref</c> method outputs the reduced echelon form of the matrix it is applied to. Note that by Theorem 1 of this section, each matrix has a <em>unique</em> reduced echelon form. This makes this an excellent tool for checking your work, as you can immeditely tell by inspection if you have reduced a matrix correctly. 
+			</p>
+				
+			<p>
+				For now, I expect you to continue using elementary row operations when row reducing, using <c>rref</c> only to check your work. Later in the semester, you will be allowed to use <c>rref</c> whenever a problem requires you to row reduce a matrix.
+				
+			</p>	
+				
+			<p>
+				A couple of examples below show the <c>rref</c> method in action.
+			</p>
+ 			
+			
+			
+			
+ 			<sage>
+ 				<input>
+ 					A=matrix(QQ, [[5,3,1], [1,4,-2]]); #creates a matrix and names it A
+					print(A) #prints the matrix named A
+					A.rref() #computes the reduced echelon form of A
+ 				</input>
+ 			</sage>
+			
+			Displaying multiple matrices can look messy with the default output. The <c>show</c> command formats the output in a more pleasing fashion:
+ 			<sage>
+ 				<input>
+ 					A=matrix(QQ, [[5,3,1], [1,4,-2]]);
+					show(A) #displays the matrix named A, formatted
+					show(A.rref())
+ 				</input>
+ 			</sage>
+			
+			
+			
+ 			<p>
+ 				Note that while applying row operations in Sage changes the matrix being acted on, so that <m>A</m> would eventually be a matrix in reduced echelon form, the <c>rref</c> method creates a <em>new</em> matrix, which is in reduced echelon form and row equivalent to the original matrix, as illustrated below, where we see that the original matrix $B$ is unchanged when its reduced echelon form is computed using <c>rref</c>.
+ 			</p>	
+			
+ 			<sage>
+ 				<input>
+					B=matrix(3,4, [[5,3,1,4], [1,4,-2,3], [0,3,2,6]]);
+					C=B.rref();
+					show(B);
+					show(C)
+ 				</input>
+			</sage>
+			
+ 		</subsection>
+		 
+		
+		<exercises>
+			<p>
+				Complete the following exercises in the GP 1-2 file in CoCalc by 8:00 AM on 8/25/2020.
+			</p>
+			
+			<exercise>
+				<statement>
+					Determine if each matrix is in reduced echelon form, echelon form, or neither. In the cases of echelon form or neither, state which property or properties are violated (see the definition on page 13 of the textbook).
+					
+					<ol>
+						<li>
+							<m>
+								\begin{bmatrix}
+								2 \amp -3 \amp 5 \\
+								0 \amp 6 \amp 10
+								\end{bmatrix}
+							</m>
+						</li>
+						
+						<li>
+							<m>
+								\begin{bmatrix}
+								0 \amp 0 \amp 0 \\
+								0 \amp 1 \amp 5
+								\end{bmatrix}
+							</m>
+						</li>
+						
+						<li>
+							<m>
+								\begin{bmatrix}
+								1 \amp 0 \amp -2 \amp 0 \amp 2 \\
+								0 \amp 1 \amp 5 \amp 0 \amp 1 \\
+								0 \amp 0 \amp 0 \amp 1 \amp 3 \\
+								0 \amp 0 \amp 0 \amp 0 \amp 0
+								\end{bmatrix}
+							</m>
+							
+						</li>
+						
+						<li>
+							<m>
+								\begin{bmatrix}
+								1 \amp -3 \amp 4 \amp -4 \\
+								0 \amp 1 \amp 7 \amp -8 \\
+								0 \amp 0 \amp 1 \amp 4
+								\end{bmatrix}
+							</m>
+							
+						</li>
+						
+						<li>
+							<m>
+								\begin{bmatrix}
+								1 \amp 0 \amp 0 \amp 0 \\
+								0 \amp 1 \amp 0 \amp 1 \\
+								0 \amp 0 \amp 1 \amp 0
+								\end{bmatrix}
+							</m>
+							
+						</li>
+						
+					</ol>
+					
+				</statement>
+				
+			</exercise>
+			
+			<exercise>
+				<statement>
+					The parts below are about the matrix <m>A=\begin{bmatrix}
+					2 \amp -3 \amp 4 \amp -4 \amp 2 \\
+				    0 \amp 0 \amp 7 \amp -8 \amp 1 \\
+					0 \amp 0 \amp -1 \amp 4 \amp 3 
+					\end{bmatrix}
+					</m>.
+					
+					<ol>
+						<li>
+							Which columns of <m>A</m> are pivot columns? What are the entries of <m>A</m> in the pivot position in each pivot column?
+						</li>
+						
+						<li>
+							Assume <m>A</m> is the augmented matrix of a linear system with variables <m>x_1, x_2, x_3, x_4</m>. Which of these variables are basic variables? Which are free variables?
+						</li>
+					</ol>
+					
+					
+				</statement>
+			</exercise>
+			
+			
+			<exercise>
+				<statement>
+					What comments or questions do you have about the content of this assignment? 
 				</statement>
 			</exercise>
 			
