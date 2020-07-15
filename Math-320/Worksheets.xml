@@ -536,6 +536,235 @@
 		
 		 
 	 </section>
+	 
+	 
+	 
+	 
+	 
+	 <section xml:id="section-1-3">
+		 <title>Guided Practice: Vector Equations</title>
+		 
+		 <introduction>
+			 <title>Overview</title>
+			 <p>
+				 In Section 1.1, we introduced a new mathematical object, matrices, to help study linear systems of equations. In this section, we introduce <em>vectors</em>, another possibly more familiar mathematical object that will aid us. 
+		 </p>
+			
+		 <p>
+			 After describing vectors and their basic properties both algebraically and geometrically, the section begins relating them back to linear systems by introducing the very important concepts of <em>linear combinations</em> and <em>spans</em>. These two highly related concepts will be used repeatedly throughout the rest of the semester. Example 5 and the following discussion illustrate the strong connection between questions about linear combinations and questions about linear systems. The geometric descriptions should be used to help build intuition about these new concepts.
+		 </p>
+			
+
+		 
+		 </introduction>
+		 
+		 
+		 <subsection xml:id="subsection-1-3-BLO">
+			 <title>Basic Learning Objectives </title>
+		<p>
+			 You should be able to perform these tasks with reasonable fluency <em>when you arrive to class</em>.
+			 
+			 <ul>
+				 <li>
+				 	Compute sums and scalar multiples of column vectors in <m>\mathbb{R}^n</m>.
+				 </li>
+				 <li>
+				 	List examples of linear combinations of a given set of vectors, specifying weights.
+				 </li>
+				 <li>
+					 Translate among vector equations, linear systems, and augmented matrices.
+				 </li>
+				 <li>
+				 	Define the span of a set of vectors and produce elements of the span of a given set of vectors.
+				 </li>
+			 </ul>
+			
+		 </p>
+		 </subsection>
+		 
+		 <subsection xml:id="subsection-1-3-ALO">
+			 <title>Advanced Learning Objectives </title>
+		<p>
+			In addition to mastering the basic objectives, here are the tasks you should be able to perform <em>after class, with practice</em>:
+			 
+			 <ul>
+				 <li>
+				 	Geometrically describe spans of sets of vectors in <m>\mathbb{R}^2</m> or <m>\mathbb{R}^3</m>.
+				 </li>
+				 <li>
+				 	Determine if a given vector is in the span of a set of vectors.
+				 </li>
+				 <li>
+					 Write a given vector as a linear combination of a set of other vectors, if possible.
+				 </li>
+			 </ul>
+			
+		 </p>
+		 </subsection>
+		 
+		 <subsection xml:id="subsection-1-3-Resources">
+			 <title>Resources</title>
+			 <p>
+				 <em>Reading</em>: Read Section 1.3 of the textbook, keeping the learning objectives in mind. It's helpful to write down new vocabulary words and notation along with short definitions/examples and to actively work along with the examples on your own paper. 
+				 </p>
+				  
+				 <p>
+				 	Even if you are somewhat familiar with vectors already, the beginning of the section should be a good refresher. Example 5 is the main example relating linear combinations to linear systems of equations. 
+				 </p>
+				 
+			
+			 
+			 <p>
+				 <em>Video</em>: The video below, from the 3Blue1Brown YouTube channel, focuses on the geometric and column vector perspectives of vectors and illustrates properties of vector arithmetic with some nice visuals. We will be using all three perspectives mentioned in the video during the semester.
+
+				 	 <video youtube="fNk_zzaMoSs"/>
+				</p> 
+				
+				
+				<p> <em>Desmos</em>: Below is an interactive visual demonstration of linear combinations using Desmos. The starting vectors are <m>\textbf{u}=(1,3)</m> and <m>\textbf{v}=(2,1)</m>. The vectors <m>c\textbf{u}</m> and <m>d\textbf{v}</m> are shown in blue, while the linear combination <m>c\textbf{u} + d\textbf{v}</m> is shown in purple. You can use the sliders for <m>c</m> and <m>d</m> to adjust their values and see how the linear combination changes. You can hit the play symbol on each slider or manually drag the slider to change the value.
+				
+					 <interactive desmos="9yocjg9etg" aspect="16:9"/>
+					 	
+				 
+			 </p>
+			
+			
+		 </subsection>
+		 
+		 <subsection xml:id="subsection-1-3-Sage">
+			 <title>Sage Commands</title>
+
+ 			<p>
+ 				When written as column vectors, vectors behave like <m>n \times 1</m> matrices, and they can be coded as such in Sage. As a shortcut, you can specify the number of rows (number of entries in the vector) and then include a single list of the entries.
+			</p>
+ 			<sage>
+ 				<input>
+ 					u=matrix(3, [2,4,6]);
+					v=matrix(5, [1,3,5,7,9]);
+					show(u);
+					show(v)
+ 				</input>
+ 			</sage>
+			
+			
+				
+			<p>
+				However, we often want to treat vectors as vectors specifically. In Sage, we use the <c>vector</c> command, which is similar to the <c>command</c>. We do not need to state the number of entries with this command; we simply list them out. Note also that Sage displays the result in row form (an alternative display form discussed in the textbook), but they are treated the same as column vectors.
+				</p>
+	 			<sage>
+	 				<input>
+	 					u=vector([2,4,6]);
+						v=vector([1,3,5,7,9]);
+						show(u);
+						show(v);
+						v
+	 				</input>
+	 			</sage>
+				
+				
+			<p>
+				The cell below demonstrates how to create linear combinations of vectors. Note that writing "5v1" will cause an error; a multiplication symbol is needed between the scalar and the vector.
+			</p>
+ 			
+ 			<sage>
+ 				<input>
+ 					v1=vector([1,-3,4]);
+					v2=vector([2,5,1]);
+					print(v1+v2);
+					print(v1-v2);
+					print(5*v1);
+					print(3*v1+7*v2);
+					print(-3*v1-4*v2)
+ 				</input>
+ 			</sage>
+			
+			One nice consequence of Sage vectors is that we can easily create matrices out of them. We will usually want to create matrices whose columns are some given vectors. This is done using the <c>column_matrix</c> command and demonstrated below.
+ 			<sage>
+ 				<input>
+ 					u1=vector([1,2,3]);
+					u2=vector([4,5,6]);
+					u3=vector([7,8,9]);
+					A=column_matrix([u1,u2,u3]);
+					show(A)
+ 				</input>
+ 			</sage>
+			
+			
+		
+ 		</subsection>
+		 
+		
+		<exercises>
+			<p>
+				Complete the following exercises in the GP 1-3 file in CoCalc by 8:00 AM on 8/27/2020.
+			</p>
+			
+			<exercise>
+				<statement>
+					<p>
+						Let <m>\textbf{v}_1, \textbf{v}_2, \textbf{v}_3</m> be the vectors defined below. In a code cell, create and display three distinct linear combinations of the these three vectors, with at most one weight allowed to be 0 in each.
+					</p>
+					
+					<p>
+						<m>\textbf{v}_1=\begin{bmatrix} 1 \\ 4 \\ 7 \end{bmatrix}, \textbf{v}_2=\begin{bmatrix} 2 \\ 5 \\ 8 \end{bmatrix}, \textbf{v}_3= \begin{bmatrix} 3 \\ 6 \\ 9 \end{bmatrix}</m>
+					</p>
+					
+				</statement>
+				
+			</exercise>
+			
+			<exercise>
+				<statement>
+					<p>
+						Write an augmented matrix for the linear system that is equivalent to the vector equation below (define the matrix using Sage code or write it in a markdown cell).
+					</p>
+					
+					<p>
+						<m>x_1 \begin{bmatrix} 6 \\ -1 \\ 5 \end{bmatrix} + x_2 \begin{bmatrix} -3 \\4 \\ 0 \end{bmatrix} = \begin{bmatrix} 1 \\ -7 \\ -5 \end{bmatrix}</m>
+					</p>
+					
+					
+				</statement>
+			</exercise>
+			
+			<exercise>
+				<statement>
+					<p>
+						Write a vector equation that is equivalent to the system of equations below.
+					</p>
+					
+					<p>
+						<md>
+							<mrow> x_2 + 5x_3 \amp = 0</mrow>
+							<mrow> 4x_1 + 6x_2 - x_3 \amp = 0</mrow>
+							<mrow> -x_1 + 3x_2 - 8x_3 \amp = 0</mrow>
+						</md>
+					</p>
+				</statement>
+			</exercise>
+			
+			
+			<exercise>
+				<statement>
+					What comments or questions do you have about the content of this assignment? 
+				</statement>
+			</exercise>
+			
+		</exercises>	
+	
+		
+		 
+	 </section>	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
  </chapter>
  
  
