@@ -370,8 +370,10 @@
 			 </p>
 			 
 			 <p>
-				 <em>Video</em>: TBD; focus on reduced echelon form, Theorem 1, pivots. In possible seperate video, illustrate doing row reduction algorithm in CoCalc.
-			 </p>
+				 <em>Video</em>: The video below, recorded by me, demonstrates the process of row reducing a matrix into reduced echelon form using Sage commands in CoCalc. I recommend watching it after reading Example 3 in the textbook, then read Example 3 again. 
+
+				 	 <video youtube="GiZxxzEwN-M"/>
+				</p> 
 			
 			
 		 </subsection>
