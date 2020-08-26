@@ -760,7 +760,201 @@
 	 
 	 
 	 
+	 <section xml:id="section-1-4">
+		 <title>Guided Practice 1.4: The Matrix Equation <m>A\mathbf{x}=\mathbf{b}</m></title>
+		 
+		 <introduction>
+			 <title>Overview</title>
+			 <p>
+				 In Section 1.3, we saw that we could reframe a system of linear equations as a single vector equation, in which one side was a linear combination of vectors. In this section, we continue to reframe systems of equations, this time by replacing a linear combination of vectors by a product of a matrix and a vector (see the definition on page 35). This creates a <em>matrix equation</em> which is equivalent to the vector equation and system of linear equations.
+		 </p>
+			
+		 <p>
+			 A major benefit of using matrix equations is that it helps us more easily analyze properties of linear systems. The discussion of this in the textbook culminates in Theorem 4, which relates consistency, linear combinations, spans, and pivot positions of a relevant matrix. This theorem is one of our main tools in answering problems and translating between different interpretations and perspectives. 
+		 </p>
+			
+		<p>
+			The remainder of the section focuses on properties of matrix-vector multiplication. Even though we will be doing most of our multiplication with technology, it is important to be able to do small matrix-vector computations by hand, so certainly read pages 38-39 and practice the "row-vector" rule. The top of page 39 also introduces the <em>identity matrix</em>, an important kind of matrix we will be seeing again.
+		</p>	
+
+		 
+		 </introduction>
+		 
+		 
+		 <subsection xml:id="subsection-1-4-BLO">
+			 <title>Basic Learning Objectives </title>
+		<p>
+			 You should be able to perform these tasks with reasonable fluency <em>when you arrive to class</em>.
+			 
+			 <ul>
+				 <li>
+				 	State what it means for a set of vectors to span <m>\mathbb{R}^n</m>
+				 </li>
+				 <li>
+				 	Compute the product of a matrix <m>A</m> and a vector as a linear combination of the columns of <m>A</m>.
+				 </li>
+				 <li>
+					 Translate between vector equations and matrix equations.
+				 </li>
+				 <li>
+				 	Compute the product of a matrix and a vector using the row-column rule.
+				 </li>
+			 </ul>
+			
+		 </p>
+		 </subsection>
+		 
+		 <subsection xml:id="subsection-1-4-ALO">
+			 <title>Advanced Learning Objectives </title>
+		<p>
+			In addition to mastering the basic objectives, here are the tasks you should be able to perform <em>after class, with practice</em>:
+			 
+			 <ul>
+				 <li>
+				 	Determine if a given matrix equation <m>A\mathbf{x}=\mathbf{b}</m> has a solution for every <m>\mathbf{b}</m>.
+				 </li>
+				 <li>
+					 Determine if a set of vectors spans <m>\mathbf{R}^m</m>.
+				 </li>
+				 <li>
+					 Explain why the statements in Theorem 4 are equivalent.
+				 </li>
+			 </ul>
+			
+		 </p>
+		 </subsection>
+		 
+		 <subsection xml:id="subsection-1-4-Resources">
+			 <title>Resources</title>
+			 <p>
+				 <em>Reading</em>: Read Section 1.4 of the textbook, keeping the learning objectives in mind. It's helpful to write down new vocabulary words and notation along with short definitions/examples and to actively work along with the examples on your own paper. 
+				 </p>
+				  
+				 <p>
+				 	Example 3, the discussion that follows, and Theorem 4 (all on page 37) form the conceptual core of this section. Example 5 explains the row-column rule for matrix-vector multiplication.
+				 </p>
+				 
+			
+			 
+			 <p>
+				 <em>Video</em>: In the video below, I demonstrate matrix-vector multiplication using both the definition and the row-column method. 
+
+				 	 <video youtube="IFHq2rGHijQ"/>
+				</p> 
+				
+				
+			
+		 </subsection>
+		 
+		 <subsection xml:id="subsection-1-4-Sage">
+			 <title>Sage Commands</title>
+
+ 			<p>
+ 				Sage naturally understands multiplication of a vector by a matrix using the usual multiplication symbol (shift+8 on most keyboards). (Remember that Sage displays vectors in row form with parentheses, but correctly treats them as column vectors)
+			</p>
+ 			<sage>
+ 				<input>
+ 					A=matrix([[1,2,3], [4,5,6], [7,8,9]]);
+					B=matrix([[1,3,5], [7,8,9]]);
+					v=vector([-1,3,-5]);
+					show("A=",A," B=",B," v=",v)
+					show("Av=",A*v)
+					show("Bv=",B*v)
+ 				</input>
+ 			</sage>
+			
+			<p>
+				Note that the dimensions have to match up (the number of columns of the matrix should match the number of entries in the vector); if they do not, then Sage will output an error (which you can see by executing the code below).
+			</p>
+			
+ 			<sage>
+ 				<input>
+ 					C=matrix([[1,2],[3,4], [5,6]])
+					show("C=",C)
+					v=vector([-1,3,-5]);
+					show("v=",v)
+					C*v
+ 				</input>
+ 			</sage>
+			
+				
+			
+			As a reminder, if vectors are already defined, you can create a matrix using them. To make a matrix with the vectors as columns, use the <c>column_matrix</c> command, shown below. To make a matrix with the vectors as rows, just use the <c>matrix</c> command with the vectors given inside brackets.
+ 			<sage>
+ 				<input>
+ 					u1=vector([1,2,3]);
+					u2=vector([4,5,6]);
+					u3=vector([7,8,9]);
+					A=column_matrix([u1,u2,u3]);
+					show("vectors as columns:",A)
+					B=matrix([u1,u2,u3]);
+					show("vectors as rows:",B)
+ 				</input>
+ 			</sage>
+			
+			
+		
+ 		</subsection>
+		 
+		
+		<exercises>
+			<p>
+				Complete the following exercises in the GP 1-4 file in CoCalc by 8:00 AM on Tuesday, 9/1/2020.
+			</p>
+			
+			<exercise>
+				<statement>
+					<p>
+						Finish the sentence: "Saying the vectors <m>\mathbf{u}, \mathbf{v}</m> span <m>\mathbb{R}^2</m> means that ..."
+					</p>
+					
+					
+				</statement>
+				
+			</exercise>
+			
+			<exercise>
+				<statement>
+					<p>
+						Compute the product below by hand on paper using both the definition of matrix-vector multiplication and the row column rule (you do not need to show me your computations). Then confirm your answer by using Sage to compute the product.
+					</p>
+					
+					<p>
+						<m>\begin{bmatrix} 6 \amp 5 \\ -4 \amp -3 \\ 7 \amp 6 \end{bmatrix} \begin{bmatrix} 2 \\ -3 \end{bmatrix}</m>
+					</p>
+					
+					
+				</statement>
+			</exercise>
+			
+			<exercise>
+				<statement>
+					<p>
+						Write down a matrix <m>A</m> and vector <m>\mathbf{b}</m> so that <m>A\mathbf{x}=\mathbf{b}</m> is the matrix equation that is equivalent to the vector equation below. (Write the matrix and vector using Sage code, with the names A and b)
+					</p>
+					
+					<p>
+						<m>x_1 \begin{bmatrix} 4 \\ -1 \\5 \\ -4 \end{bmatrix} + x_2 \begin{bmatrix} -5 \\ 3 \\ -5 \\ 1 \end{bmatrix} + x_3 \begin{bmatrix} 7 \\ -3 \\ 0 \\ 2 \end{bmatrix} = \begin{bmatrix} 6 \\ -8 \\ 0 \\ -7 \end{bmatrix}</m>
+					</p>
+				</statement>
+			</exercise>
+			
+			
+			<exercise>
+				<statement>
+					What comments or questions do you have about the content of this assignment? 
+				</statement>
+			</exercise>
+			
+		</exercises>	
+	
+		
+		 
+	 </section>	 
 	 
+	 
+	 
+	 	 
 	 
 	 
 	 
