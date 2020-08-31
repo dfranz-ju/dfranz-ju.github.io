@@ -955,6 +955,179 @@
 	 
 	 
 	 	 
+		 
+	 
+	 <section xml:id="section-1-5">
+		 <title>Guided Practice 1.5: Solution Sets of Linear Systems</title>
+		 
+		 <introduction>
+			 <title>Overview</title>
+			 <p>
+				 In the previous sections, we have studied systems of linear equations in many forms, using augmented matrices, vector equations, and matrix equations. In this section we delve deeper into how we describe the solution sets of linear systems, specifically in the case of infinitely many solutions (it is pretty easy to describe no solutions or 1 solution). This is accomplished using vector notation, which also opens up geometric descriptions of solution sets.
+		 </p>
+			
+		 <p>
+			 The section begins by examining <em>homogeneous</em> linear systems, lineasr systems whose matrix equations are of the form $A\mathbf{x}=\mathbf{0}$. These are easier to study and, surpisingly, an understanding of the solution sets of homogeneous systems is all we need to understand solution sets of <em>all</em> linear systems, as is made clear in Theorem 6.
+		 </p>
+
+		 
+		 </introduction>
+		 
+		 
+		 <subsection xml:id="subsection-1-5-BLO">
+			 <title>Basic Learning Objectives </title>
+		<p>
+			 You should be able to perform these tasks with reasonable fluency <em>when you arrive to class</em>.
+			 
+			 <ul>
+				 <li>
+				 	Recognize when a linear system is homogeneous.
+				 </li>
+				 <li>
+					 Determine when a homogeneous system has a nontrivial solution.
+				 </li>
+			 </ul>
+			
+		 </p>
+		 </subsection>
+		 
+		 <subsection xml:id="subsection-1-5-ALO">
+			 <title>Advanced Learning Objectives </title>
+		<p>
+			In addition to mastering the basic objectives, here are the tasks you should be able to perform <em>after class, with practice</em>:
+			 
+			 <ul>
+				 <li>
+				 	Describe the solution set of a homogeneous system as the span of a set of vectors.
+				 </li>
+				 <li>
+					 Describe solutions to linear systems in parametric vector form.
+				 </li>
+				 <li>
+					 Use Theorem 6 to geometrically compare and contrast the solution sets of $A\mathbf{x}=\mathbf{b}$ and $A\mathbf{x}=\mathbf{0}$.
+				 </li>
+			 </ul>
+			
+		 </p>
+		 </subsection>
+		 
+		 <subsection xml:id="subsection-1-5-Resources">
+			 <title>Resources</title>
+			 <p>
+				 <em>Reading</em>: Read Section 1.5 of the textbook, keeping the learning objectives in mind. It's helpful to write down new vocabulary words and notation along with short definitions/examples and to actively work along with the examples on your own paper. 
+				 </p>
+				  
+				 <p>
+					 The discussion on pages 46 and 47 explains the geometric interpretation of solution sets of related homogeneous and non-homogeneous linear systems.
+				 </p>
+				 
+			
+				
+			
+		 </subsection>
+		 
+		 <subsection xml:id="subsection-1-5-Sage">
+			 <title>Sage Commands</title>
+
+ 			<p>
+ 				No new Sage commands this time. We will continue to use Sage (in CoCalc) to help us row reduce matrices, but right now the focus is on interpreting and explaining. While Sage can row reduce a matrix, <em>we</em> then have to interpret it to describe the solution set.
+			</p>
+ 			
+		</subsection>
+			
+		<exercises>
+			<p>
+				Complete the following exercises in the GP 1-5 file in CoCalc by 8:00 AM on Thursday, 9/3/2020.
+			</p>
+			
+			<exercise>
+				<statement>
+					<p>
+						For each linear system below, say if it is homogeneous or not homogeneous.
+					</p>
+					
+					<p>
+					<ol>
+						<li>
+							<md>
+								<mrow> x_2 + 4x_3 \amp = -5</mrow>
+								<mrow> x_1 + 3x_2 + 5x_3 \amp = -2</mrow>
+								<mrow> 3x_1 + 7x_2 + 7x_3 \amp = 0</mrow>
+							</md>
+						</li>
+						
+						<li>
+							<md>
+								<mrow> x_2 + 4x_3 \amp = 0</mrow>
+								<mrow> x_1 + 3x_2 + 5x_3 \amp = 0</mrow>
+								<mrow> 3x_1 + 7x_2 + 7x_3 \amp = 0</mrow>
+							</md>
+						</li>
+						
+						<li>
+							<md>
+								<mrow> 5x_1 + 4x_4 \amp = 0</mrow>
+								<mrow> 3x_2 - 8x_3 + 5x_4 \amp = 0</mrow>
+								<mrow> 9x_1 + 2x_2 - 7x_3 \amp = 1</mrow>
+							</md>
+						</li>
+						
+						<li>
+							<md>
+								<mrow> 5x_1 + 4x_4 \amp = 0</mrow>
+								<mrow> 3x_2 - 8x_3 + 5x_4 \amp = 0</mrow>
+								<mrow> 9x_1 + 2x_2 - 7x_3 \amp = 0</mrow>
+							</md>
+						</li>
+					</ol>
+				</p>
+					
+				</statement>
+				
+			</exercise>
+			
+			<exercise>
+				<statement>
+					<p>
+						Each matrix below is the <em>coefficient matrix</em> (not augmented matrix) of a homogeneous system in echelon form. Without doing any computations, determine if the system has nontrivial solutions.
+					</p>
+					
+					
+					
+					<p>
+						<ol>
+							<li>
+								<m>\begin{bmatrix} 2 \amp 3 \amp 5 \\ 0 \amp 1 \amp 4 \end{bmatrix}</m>
+							</li>
+							
+							<li>
+								<m>\begin{bmatrix} 3 \amp 1 \\ 0 \amp 4 \\ 0 \amp 0 \end{bmatrix}</m>
+							</li>
+
+						</ol>
+						
+					</p>
+					
+					
+				</statement>
+			</exercise>
+			
+			
+			
+			<exercise>
+				<statement>
+					What comments or questions do you have about the content of this assignment? 
+				</statement>
+			</exercise>
+			
+		</exercises>	
+	
+		
+		 
+	 </section>	 
+	 		 
+		 
+		 
 	 
 	 
 	 
