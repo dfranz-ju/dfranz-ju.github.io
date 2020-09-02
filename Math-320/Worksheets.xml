@@ -1128,7 +1128,151 @@
 	 		 
 		 
 		 
+		 
+		 
+		 
 	 
+	 <section xml:id="section-1-7">
+		 <title>Guided Practice 1.7: Solution Sets of Linear Systems</title>
+		 
+		 <introduction>
+			 <title>Overview</title>
+			 <p>
+				 So far we have discussed systems of linear equations, including writing them as vector equations and matrix equations, linear combinations and spans, and homogeneous systems. Conceptually, <em>linear independence,</em> the focus of this section, relates to all these topics. 
+		 </p>
+			
+		 <p>
+			 One way to think about linear independence is to compare and contrast with the idea of spans. With spans, we are focused on which vectors we can create from the building blocks we start with (i.e. what vectors can we write as linear combinations of the starting vectors). Think of the starting vectors as types of LEGO pieces, and the Span of those vectors as containing all LEGO creations you could build with those types of pieces. The notion of linear independence addresses the question "did we need <em>all</em> those starting types of LEGO pieces, or could we have started with fewer and still build everything?" 
+		 </p>
+		 
+		 <p>
+		 	In other words, linear independence is concerned with whether or not there is extra, redundant, information present. If a set of vectors is linearly <em>independent</em>, there is no redundant information; everyone one of those vectors is needed to build the Span. If the vectors are linearly <em>dependent</em>, then there is redundant information; we could build the same Span while getting rid of some of the starting vectors. 
+		 </p>
+		 
+		 <p>
+			 While that is a big picture introduction, the text explores linear independence from the perspective of matrix and vector equations (including the actual definition of linear independence and dependence) and relates it to geometry. It will be helpful to read this section multiple times while keeping the conceptual description above in mind; linear independence can be a tricky idea to master, but it will play a central role in many topics going forward.
+		 </p>
+		 
+		 </introduction>
+		 
+		 
+		 <subsection xml:id="subsection-1-7-BLO">
+			 <title>Basic Learning Objectives </title>
+		<p>
+			 You should be able to perform these tasks with reasonable fluency <em>when you arrive to class</em>.
+			 
+			 <ul>
+				 <li>
+					 State what it means for a given set of vectors to be linearly independent.
+					 
+				 </li>
+				 <li>
+					 State what it means for a given set of vectors to be linearly dependent (without referencing linear independence).
+				 </li>
+				 
+				 <li>
+					 Quickly determine if a set of 2 vectors is linearly independent with minimal computation.
+				 	
+				 </li>
+			 </ul>
+			
+		 </p>
+		 </subsection>
+		 
+		 <subsection xml:id="subsection-1-7-ALO">
+			 <title>Advanced Learning Objectives </title>
+		<p>
+			In addition to mastering the basic objectives, here are the tasks you should be able to perform <em>after class, with practice</em>:
+			 
+			 <ul>
+				 <li>
+					 Determine if a given set of vectors is linearly independent.
+				 	
+				 </li>
+				 <li>
+					 Find linear dependence relations among linearly dependent vectors.
+					 
+				 </li>
+				 <li>
+					 Apply Theorems 8 and 9 to appropriate sets of vectors to determine linear dependence.
+				 </li>
+			 </ul>
+			
+		 </p>
+		 </subsection>
+		 
+		 <subsection xml:id="subsection-1-7-Resources">
+			 <title>Resources</title>
+			 <p>
+				 <em>Reading</em>: Read Section 1.7 of the textbook, keeping the learning objectives in mind. It's helpful to write down new vocabulary words and notation along with short definitions/examples and to actively work along with the examples on your own paper. 
+				 </p>
+				  
+				 <p>
+					 For this section, do not worry too much about Theorem 7. Examples 2 and 3 are the most important ones to try to understand before coming to class.
+				 </p>
+				 
+				 <p>
+					 <em>Video</em>: This 10 minute video from the 3Blue1Brown YouTube channel (who we also used in Section 1.3) discusses linear combination, spans, and linear independence; the material on linear combinations and spans will be good review. It also discusses basis vectors, which we will formally examine later in the course, so while I do not recommend ignoring those parts, know that you do not need to understand or use them yet.
+					 
+					 <video youtube="k7RM-ot2NWY"></video>
+				 </p>
+				
+			
+		 </subsection>
+		 
+		 <subsection xml:id="subsection-1-7-Sage">
+			 <title>Sage Commands</title>
+
+ 			<p>
+ 				Continuing a trend, there are no new commands to learn. Our primary computations are still row reducing an appropriate matrix to answer our questions. Computationally deciding if a set of given vectors is linearly independent involves creating a matrix with the vectors as columns and then row reducing it, which we already know how to do using the <c>column_matrix</c> command and <c>.rref()</c> method. The interpretation is then up to us. 
+			</p>
+ 			
+		</subsection>
+			
+		<exercises>
+			<p>
+				Complete the following exercises in the GP 1-7 file in CoCalc by 8:00 AM on Tuesday, 9/8/2020.
+			</p>
+			
+			<exercise>
+				<statement>
+					<p>
+						Explain what it means for the set of vectors <m>\{\mathbf{u}, \mathbf{v}, \mathbf{w}\}</m> to be linearly dependent.
+					</p>
+					
+				
+					
+				</statement>
+				
+			</exercise>
+			
+			<exercise>
+				<statement>
+					<p>
+						Explain how to quickly determine if a set of two vectors is linearly independent. 
+					</p>
+					
+					
+				
+					
+				</statement>
+			</exercise>
+			
+			
+			
+			<exercise>
+				<statement>
+					What comments or questions do you have about the content of this assignment? 
+				</statement>
+			</exercise>
+			
+		</exercises>	
+	
+		
+		 
+	 </section>	 
+	 		 
+		 
 	 
 	 
  </chapter>
