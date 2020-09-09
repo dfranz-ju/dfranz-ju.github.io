@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-09-09T16:08:05-04:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Guided Practice 1.8: Introduction to Linear Transformations</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script>$(function () {
+    // Make *any* div with class 'sagecell-sage' an executable Sage cell
+    // Their results will be linked, only within language type
+    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
+                           linked: true,
+                           languages: ['sage'],
+                           evalButtonText: 'Evaluate (Sage)'});
+});
+</script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="Math-320-Guided-Practice.html"><span class="title">Math 320 Guided Practice</span></a></h1>
+<p class="byline">Dr. Daniel Franz</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-1-7.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-systems.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-1-7.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-systems.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="chapter-systems.html" data-scroll="chapter-systems"><span class="codenumber">1</span> <span class="title">Systems of Linear Equations</span></a><ul>
+<li><a href="section-1-1.html" data-scroll="section-1-1">Guided Practice 1.1: Systems of Linear Equations</a></li>
+<li><a href="section-1-2.html" data-scroll="section-1-2">Guided Practice 1.2: Row Reduction and Echelon Forms</a></li>
+<li><a href="section-1-3.html" data-scroll="section-1-3">Guided Practice 1.3: Vector Equations</a></li>
+<li><a href="section-1-4.html" data-scroll="section-1-4">Guided Practice 1.4: The Matrix Equation \(A\mathbf{x}=\mathbf{b}\)</a></li>
+<li><a href="section-1-5.html" data-scroll="section-1-5">Guided Practice 1.5: Solution Sets of Linear Systems</a></li>
+<li><a href="section-6.html" data-scroll="section-6"></a></li>
+<li><a href="section-1-7.html" data-scroll="section-1-7">Guided Practice 1.7: Linear Independence</a></li>
+<li><a href="section-1-8.html" data-scroll="section-1-8" class="active">Guided Practice 1.8: Introduction to Linear Transformations</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section-1-8"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.8</span> <span class="title">Guided Practice 1.8: Introduction to Linear Transformations</span>
+</h2>
+<section class="introduction" id="introduction-8"><h6 class="heading">Overview.<span></span>
+</h6>
+<p id="p-90">The matrix equation \(A\mathbf{x}=\mathbf{b}\) was introduced in Section 1.4 as another way to notationally represent a vector equation, or system of linear equations, with \(A\) representing the coefficient matrix of the system. But the quantity \(A\mathbf{x}\) arises naturally in other contexts, such as computer graphics or dynamical systems. In these contexts we think of the matrix \(A\) as an object that "acts" on a vector \(x\) to produce a <em class="emphasis">new</em> vector \(A\mathbf{x}\text{.}\)</p>
+<p id="p-91">Mathematically, we describe such actions as <em class="emphasis">functions</em>, and we call the functions that arise from changing one vector into another vector <em class="emphasis">transformations</em>. Fortunately, while this is a completely differenent perspective on \(A\mathbf{x}\text{,}\) and as a result the kinds of questions we ask are now different, we can still use the tools of row reduction and pivots to answer these questions by rephrasing them in terms of systems of equations or matrix equations. Example 1 of this section is a great illustration of how these ideas all combine together.</p>
+<p id="p-92">While there are many possible kinds of transformations, in this class we will study <em class="emphasis">linear transformations</em> (as the name of the course itself might imply), which are formally defined roughly halfway through the section. Linear transformations arise naturally in many applications, and all transformations defined by multiplication by a matrix are linear transformations (we will explore the other direction of this in the next section). The properties of linear transformations make them particularly nice to analyze, and we will take full advantage of that fact.</p></section><section class="subsection" id="subsection-1-8-BLO"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.8.1</span> <span class="title">Basic Learning Objectives</span>
+</h3>
+<p id="p-93">You should be able to perform these tasks with reasonable fluency <em class="emphasis">when you arrive to class</em>.</p>
+<ul class="disc">
+<li id="li-54">Describe what transformations and matrix transformations are.</li>
+<li id="li-55">Identify the domain and codomain of a given matrix transformation.</li>
+<li id="li-56">Given a transformation \(T\text{,}\) compute the image of a specific vector under the action of \(T\text{.}\)</li>
+<li id="li-57">Define what it means for a transformation to be a linear transformation.</li>
+</ul></section><section class="subsection" id="subsection-1-8-ALO"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.8.2</span> <span class="title">Advanced Learning Objectives</span>
+</h3>
+<p id="p-94">In addition to mastering the basic objectives, here are the tasks you should be able to perform <em class="emphasis">after class, with practice</em>:</p>
+<ul class="disc">
+<li id="li-58">Given a transformation \(T\text{,}\) determine if a given vector is in the range of \(T\text{.}\)</li>
+<li id="li-59">Determine if a given transformation is a linear transformation.</li>
+<li id="li-60">Geometrically describe the actions of projection, shear, and scaling matrix transformations.</li>
+</ul></section><section class="subsection" id="subsection-1-8-Resources"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.8.3</span> <span class="title">Resources</span>
+</h3>
+<p id="p-95"><em class="emphasis">Video</em>: Begin by watching this 3:31 video clip of a 3Blue1Brown video (the rest of the video will be watched for Section 1.9). This video provides great visualizations and intuition for what a linear transformation is. <div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-5" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/kYB8IZa5AuE?&amp;modestbranding=1&amp;rel=0&amp;end=211"></iframe></div></p>
+<p id="p-96"><em class="emphasis">Desmos</em>: Below is an interactive visual demonstration of linear transformations using Desmos that lets you create similar images as those in the video. The base \(xy\)-grid is shown in dashed black and blue lines, and this grid transformed by the matrix \(\begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix}\) is shown in purple and green. You can hit the play symbol on each slider or manually drag the slider to change the value of each entry of the matrix and create your own tranformation visuals. To <em class="emphasis">animate</em> the transformation, click play next to the "s" slider.</p>
+<p id="p-97">This activity is best experienced in a separate window where everything is larger and easier to see. To view the Desmos activity below in its own (much larger) window, <a class="external" href="https://www.desmos.com/calculator/vi5obzi2hd" target="_blank">click here</a>) <iframe src="https://www.desmos.com/calculator/mxb2phnn4w" id="interactive-2" width="600" height="337"></iframe></p>
+<p id="p-98"><em class="emphasis">Reading</em>: After watching the video and playing around with the Desmos activity, read Section 1.8 of the textbook, keeping the learning objectives in mind. I recommend taking notes by writing down new vocabulary words and notation along with short definitions/examples, as well as actively working along with the examples on your own paper.</p></section><section class="subsection" id="subsection-1-8-Sage"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.8.4</span> <span class="title">Sage Commands</span>
+</h3>
+<p id="p-99">Applying a matrix transformation to a vector involves multiplying a vector by a matrix. The cell below reviews these commands. Answering questions about these matrix transformations will often require row reduction, which we continue to do using the <code class="code-inline tex2jax_ignore">.rref()</code> method. <div class="sagecell-sage" id="sage-16"><script type="text/x-sage">	v=vector([1,2,3,4]);
+A=column_matrix([[1,3], [2,4], [5,1], [-1,-6]]);
+show("A=",A);
+show("v=",v);
+show("The image of v under the action by A is Av=",A*v)
+</script></div></p>
+<p id="p-100">Note that in the example above, \(A\) is a \(2\times 4\) matrix that maps an input vector from \(\mathbb{R}^4\) (matching the number of columns of \(A\)) to an output vector in \(\mathbb{R}^2\) (matching the number of rows of \(A\)).</p></section><section class="exercises" id="exercises-7"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">1.8.5</span> <span class="title">Exercises</span>
+</h3>
+<p id="p-101">Complete the following exercises in the GP 1-8 file in CoCalc by 8:00 AM on Tuesday, 9/15/2020.</p>
+<article class="exercise exercise-like" id="exercise-23"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-102">Consider the transformation \(T\) defined by \(T(\mathbf{x})=A \mathbf{x}\text{,}\) where \(A=\begin{bmatrix} 4 \amp 1 \amp 0 \\
+-1 \amp 5 \amp 2 \\
+3 \amp 2 \amp 1 \\
+1 \amp 5 \amp 0
+\end{bmatrix}\text{.}\) What are the domain and codomain of \(T\text{?}\) (Write your answer as a complete sentence using \(\mathbb{R}^n\) (written as <code class="code-inline tex2jax_ignore">$\mathbb{R}^n$</code>) with the correct numbers in place of \(n\)).</p></article><article class="exercise exercise-like" id="exercise-24"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-103">Define a transformation\(T:\mathbb{R}^3 \to \mathbb{R}^3\) by \(T(\mathbf{x})=\begin{bmatrix} 1 \amp 0 \amp -2 \\ 2 \amp 3 \amp 1 \\ -5 \amp 2 \amp 4\end{bmatrix} \mathbf{x}\text{.}\) Compute \(T(\mathbf{v})\text{,}\) where \(\mathbf{v}=\begin{bmatrix} 5 \\ 3 \\ -2 \end{bmatrix}.\)</p></article><article class="exercise exercise-like" id="exercise-25"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>Explain in words (without using mathematical notation) what the <em class="emphasis">linear</em> in "linear transformation" means. That is, what does it mean for a transformation to be a <em class="emphasis">linear</em> transformation?</article><article class="exercise exercise-like" id="exercise-26"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>What comments or questions do you have about the content of this assignment?</article></section></section></div></main>
+</div>
+</body>
+</html>
