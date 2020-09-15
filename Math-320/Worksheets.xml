@@ -1436,7 +1436,7 @@
 			<exercise>
 				<statement>
 					<p>
-						Define a transformation<m>T:\mathbb{R}^3 \to \mathbb{R}^3</m> by <m>T(\mathbf{x})=\begin{bmatrix} 1 \amp 0 \amp -2 \\ 2 \amp 3 \amp 1 \\ -5 \amp 2 \amp 4\end{bmatrix} \mathbf{x}</m>. Compute <m>T(\mathbf{v})</m>, where <m>\mathbf{v}=\begin{bmatrix} 5 \\ 3 \\ -2 \end{bmatrix}.</m> 
+						Define a transformation <m>T:\mathbb{R}^3 \to \mathbb{R}^3</m> by <m>T(\mathbf{x})=\begin{bmatrix} 1 \amp 0 \amp -2 \\ 2 \amp 3 \amp 1 \\ -5 \amp 2 \amp 4\end{bmatrix} \mathbf{x}</m>. Compute <m>T(\mathbf{v})</m>, where <m>\mathbf{v}=\begin{bmatrix} 5 \\ 3 \\ -2 \end{bmatrix}.</m> 
 					</p>
 					
 					
@@ -1466,6 +1466,203 @@
 			 
 			 
 			 
+
+
+
+
+
+	 <section xml:id="section-1-9">
+		 <title>Guided Practice 1.9: The Matrix of a Linear Transformation</title>
+		 
+		 <introduction>
+			 <title>Overview</title>
+			 <p>
+				 Because we have already done so much work with matrices, it would be nice to put that knowledge to work when it comes to linear transformations. That is, we would like to be able to describe all linear transformations as matrix transformations. As Example 1 in the section demonstrates, this is actually something we can always do! (At least as long as the linear transformation is mapping from <m>\mathbb{R}^m</m> to <m>\mathbb{R}^n</m>)
+		 </p>
+			
+		 <p>
+			 After Example 1, the book discusses the general strategy for finding the <em>standard matrix</em> of a linear transformation; in other words, the matrix formula for the transformation. We then see the standard matrices for many geometric transformations of the plane, including rotations, reflections, scaling, shears, and projections. Some of these will be explored in more detail in an upcoming project on computer graphics.  
+		 </p>
+		 
+		 <p>
+		 	The section concludes by discussing the properties of a function being <em>one-to-one</em> or <em>onto</em>. Once we have a matrix formula, these properties directly correspond to statements about the columns of the matrix being linear independent or spanning <m>\mathbb{R}^m</m>; see Theorem 12. Linear transformations will continue to be an important topic, and this section gives us some of the main tools to help analyze them.
+		 </p>
+		
+		 
+		 </introduction>
+		 
+		 
+		 <subsection xml:id="subsection-1-9-BLO">
+			 <title>Basic Learning Objectives </title>
+		<p>
+			 You should be able to perform these tasks with reasonable fluency <em>when you arrive to class</em>.
+			 
+			 <ul>
+				 <li>
+					 Explain how to find the standard matrix of a linear transformation <m>T: \mathbb{R}^n \to \mathbb{R}^m</m>.
+					 
+				 </li>
+				 <li>
+					 Given a linear transformation <m>T: \mathbb{R}^n \to \mathbb{R}^m</m>, find its standard matrix.
+				 </li>
+				 
+				 <li>
+				 	Find the standard matrix of the linear transformation that rotates each point of <m>\mathbb{R}^2</m> counterclockwise by <m>\theta</m> radians.
+				 </li>
+				 
+			 </ul>
+			
+		 </p>
+		 </subsection>
+		 
+		 <subsection xml:id="subsection-1-9-ALO">
+			 <title>Advanced Learning Objectives </title>
+		<p>
+			In addition to mastering the basic objectives, here are the tasks you should be able to perform <em>after class, with practice</em>:
+			 
+			 <ul>
+				 <li>
+					 Give geometric descriptions of the matrix transformations in Tables 1-4.
+				 	
+				 </li>
+				 <li>
+					 Explain what it means for a linear transformation to be one-to-one or onto, without referencing a matrix.
+					 
+					 
+				 </li>
+				 <li>
+					 Use the standard matrix of a linear transformation <m>T</m> to determine if <m>T</m> is one-to-one or onto.
+				 </li>
+			 </ul>
+			
+		 </p>
+		 </subsection>
+		 
+		 <subsection xml:id="subsection-1-9-Resources">
+			 <title>Resources</title>
+			 
+			 <p>
+				 <em>Video</em>: Begin by watching the rest of the 3Blue1Brown video that you watched for Section 1.8. his video provides great visualizations and intuition for describing the standard matrix of a linear transformation. In the video, they use "i hat" and "j hat" for what the textbook calls <m>\mathbf{e}_1=\begin{bmatrix} 1 \\ 0 \end{bmatrix}</m> and <m>\mathbf{e}_2=\begin{bmatrix} 0 \\ 1 \end{bmatrix}</m>.
+				 
+				 <video youtube="kYB8IZa5AuE" start="197"></video>
+			 </p>
+			 
+			<p> <em>Desmos</em>: Below is another interactive visual demonstration of linear transformations using Desmos that lets you experiment with standard matrices and view the action of a matrix transformation on a square or an asymmetric shape. The file shows the images of <m>\mathbf{e}_1</m> and <m>\mathbf{e}_2</m> to further connect to the standard matrix idea. You can find the standard matrix of a particular transformation by dragging these images around and looking at the slider values of <m>a,b,c,</m> and <m>d</m>.
+		</p>
+			
+		<p> This activity is best experienced in a separate window where everything is larger and easier to see. To view the Desmos activity below in its own (much larger) window, <url href="https://www.desmos.com/calculator/zzsuxd0acx"> click here</url>)
+			
+				 <interactive desmos="zzsuxd0acx" aspect="16:9"/>
+				 	
+		 </p>
+			 
+			 <p>
+				 <em>Reading</em>: After watching the video and playing around with the Desmos activity, read Section 1.9 of the textbook, keeping the learning objectives in mind. I recommend taking notes by writing down new vocabulary words and notation along with short definitions/examples, as well as actively working along with the examples on your own paper. 
+				 </p>
+				  
+
+				
+				
+			
+		 </subsection>
+		 
+		 <subsection xml:id="subsection-1-9-Sage">
+			 <title>Sage Commands</title>
+
+ 			<p>
+ 				There is no Sage command for "find the standard matrix"; we have to do that part ourselves. Once we have the standard matrix, we can row reduce it using .rref() and analyze it as we have been doing. However, we can use Sage to explore the geometric actions of linear transformations (this will be the main focus of Project 3). The code below creates the letter N, plots it, and then plots a linear transformation applied to the letter N. Try changing the entries of A in the third cell to see what effect it has.
+			
+				
+	 			<sage>
+	 				<input>
+	 					d=matrix(QQ, 2, 9, [[0, 0.5, 0.5, 6, 6, 5.5, 5.5, 0, 0], [0, 0, 6.42, 0, 8, 8, 1.58, 8, 0]]); 
+						show(d); #each column represents a point in the plane
+						
+	 				</input>
+	 			</sage>
+				
+				
+				<sage>
+					<input>
+						N_0=list_plot(d.columns(), plotjoined=true, aspect_ratio=1, color='purple'); 
+						N_0 # the above command "connects the dots" to create a picture
+					</input>
+				</sage>
+				
+				<sage>
+					<input>
+						A=matrix(QQ, [[1,0.25,],[0,1]]); show(A) #the standard matrix of a linear transformation
+						d_1=A*d; #apply the transformation to the original points
+						N_1=list_plot(d_1.columns(), plotjoined=true, aspect_ratio=1, color='blue'); 
+						# the above command "connects the dots" on the transformed image
+						N_0+N_1 #display the original image and the transformed image
+					</input>
+				</sage>
+				
+			</p>
+ 			
+
+			
+			
+			
+			
+			
+			
+		</subsection>
+			
+		<exercises>
+			<p>
+				Complete the following exercises in the GP 1-9 file in CoCalc by 8:00 AM on Thursday, 9/17/2020.
+			</p>
+			
+			<exercise>
+				<statement>
+					<p>
+						Consider a linear transformation <m>T: \mathbb{R}^3 \to \mathbb{R}^2</m>. Explain how you would find the standard matrix of <m>T</m>. What would the dimensions of this matrix be? (rows by columns)
+					</p>
+					
+				
+					
+				</statement>
+				
+			</exercise>
+			
+			<exercise>
+				<statement>
+					<p>
+						Suppose <m>T: \mathbb{R}^2\to \mathbb{R}^3</m> is a linear transformation such that <m>T\left( \begin{bmatrix} 1 \\ 0 \end{bmatrix} \right) = \begin{bmatrix} 2 \\ 8 \\ 1 \end{bmatrix}</m> and <m>T\left( \begin{bmatrix} 0 \\ 1 \end{bmatrix} \right) = \begin{bmatrix} 4 \\ 3 \\ 7 \end{bmatrix}</m>. Determine the standard matrix of <m>T</m>.
+					</p>
+					
+					
+				
+					
+				</statement>
+			</exercise>
+			
+			<exercise>
+				<statement>
+					What is the standard matrix of the rotation by <m>\pi</m> radians in the counterclockwise direction?
+				</statement>
+			</exercise>
+			
+			<exercise>
+				<statement>
+					What comments or questions do you have about the content of this assignment? 
+				</statement>
+			</exercise>
+			
+		</exercises>	
+	
+	
+		
+		 
+	 </section>	 			 
+			 
+
+
+
+
+
 			 
 		 
 	 
