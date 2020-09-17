@@ -1670,6 +1670,322 @@
  </chapter>
  
  
+ 
+ 
+ 
+ 
+ <chapter xml:id="chapter-Matrices">
+	 <title>Matrix Algebra</title>
+			 
+		 
+		 
+		 
+
+
+
+ <section xml:id="section-2-1">
+	 <title>Guided Practice 2.1: Matrix Operations</title>
+	 
+	 <introduction>
+		 <title>Overview</title>
+		 <p>
+			 In the last two sections, we saw how matrices could be used to represent and describe linear transformations. In this section, we investigate matrices and their algebraic properties in more detail, while still relating back to linear transformations.
+	 </p>
+		
+	 <p>
+		 The majority of the section is devoted to setting notation and carefully describing and defining algebraic operations involving matrices, so that we may use these properties in the future to continue to solve problems about systems of equations and linear transformations.
+	 </p>
+	
+	 
+	 </introduction>
+	 
+	 
+	 <subsection xml:id="subsection-2-1-BLO">
+		 <title>Basic Learning Objectives </title>
+	<p>
+		 You should be able to perform these tasks with reasonable fluency <em>when you arrive to class</em>.
+		 
+		 <ul>
+			 <li>
+				 Use correct notation for matrix entries and identify and create diagonal matrices and zero matrices.
+				 
+			 </li>
+			 <li>
+				 Compute matrix sums and scalar multiples of matrices.
+			 </li>
+			 
+			 <li>
+			 	Determine if two matrices can be added together or multiplied together by examining their dimensions.
+			 </li>
+			 
+			 <li>
+			 	Perform matrix multiplication using both the definition and the row-column method.
+			 </li>
+		 </ul>
+		
+	 </p>
+	 </subsection>
+	 
+	 <subsection xml:id="subsection-2-1-ALO">
+		 <title>Advanced Learning Objectives </title>
+	<p>
+		In addition to mastering the basic objectives, here are the tasks you should be able to perform <em>after class, with practice</em>:
+		 
+		 <ul>
+			 <li>
+				 Interpret matrix multiplication as the composition of linear transformations.
+			 	
+			 </li>
+			 <li>
+				 Compute powers and the transpose of a matrix.
+				 
+				 
+			 </li>
+			 <li>
+				 Use the properties in Theorems 1,2,3 while performing computations with matrices.
+			 </li>
+		 </ul>
+		
+	 </p>
+	 </subsection>
+	 
+	 <subsection xml:id="subsection-2-1-Resources">
+		 <title>Resources</title>
+		 
+		 <p>
+			 <em>Video</em>: Begin by watching the 3Blue1Brown video below about matrix multiplication and its connection to composition of functions. This video has a great explanation and visualization of how we want to <em>conceptualize</em> matrix multiplication. This perspective is very useful when and will make thinking about matrix multiplication much easier.
+			 
+			 <video youtube="XkY2DOUCWMU" start="121"></video>
+		 </p>
+		 
+
+		 
+		 <p>
+			 <em>Reading</em>: After watching the video, read Section 2.1 of the textbook, keeping the learning objectives in mind. There is a lot of notation introduced and a lot of algebraic properties given. The main thing to keep in mind is that matrix multiplication usually works algebraically just like usual "number multiplication", except that in general, <m>AB \neq BA</m>. I recommend taking notes by writing down new vocabulary words and notation along with short definitions/examples, as well as actively working along with the examples on your own paper. 
+			 </p>
+			  
+
+			
+			
+		
+	 </subsection>
+	 
+	 <subsection xml:id="subsection-2-1-Sage">
+		 <title>Sage Commands</title>
+
+		<p>
+			This section introduces several new operations on matrices: addition, multiplication, scalar multiplication, powers, and transpose. The Sage cells below demonstrate how to implement these commands.
+		</p>
+		
+		<p>
+			Matrix addition:
+			
+			<sage>
+				<input>
+					A=matrix([[1,3,5], [2,4,6]]);
+					B=matrix([[1,-1], [4,2]]);
+					C=matrix([[5,6], [1,3]]);
+					show("B=", B)
+					show("C=", C)
+					show("B+C=", B+C); #add matrices using +
+				</input>
+			</sage>
+		</p>
+			
+			
+		<p>
+			Scalar multiplication:
+			
+			<sage>
+				<input>
+					show("A=", A)
+					show("5A=", 5*A); #multiply by a number using *
+				</input>
+			</sage>
+			
+		</p>
+			
+		<p>
+			Matrix multiplication:
+			
+			<sage>
+				<input>
+					show("B=", B, "C=", C)
+					show("BC=", B*C)
+					show("B=", B, "A=", A)
+					show("BA=", B*A)
+				</input>
+			</sage>
+		
+			<sage>
+				<input>
+					#A*B will raise an error because the dimensions do not match
+					A*B
+				</input>
+			</sage>
+			
+		</p>
+			
+			
+		<p>
+			Matrix powers:
+			
+			<sage>
+				<input>
+					#only square matrices can multiply themselves
+					show("C=", C)
+					show("C^5=", C^5) #use the symobl ^ for powers
+				</input>
+			</sage>
+			
+			
+		</p>
+		
+		<p>
+			Transpose:
+			
+			<sage>
+				<input>
+					show("A=", A)
+					show("Transpose of A is", A.transpose()) #use the .transpose() method
+					show("B=", B)
+					show("Transpose of B is", B.transpose())
+				</input>
+			</sage>
+			
+		</p>
+			
+			
+		<p>
+			The cell below contains code that draws the letter N (named N_0) and defines three linear transformations; a shearing S, a rotation R, and a dilation D. The matrix A is then defined as a product of these transformations.
+			
+		</p>
+		
+		<p> I encourage you to change the definition of A to see the effect of doing the transformations repeatedly or in a different order. To see the definition of A, scroll down in the Sage cell below.
+			
+ 			<sage>
+ 				<input>
+ 					d=matrix(QQ, 2, 9, [[0, 0.5, 0.5, 6, 6, 5.5, 5.5, 0, 0], [0, 0, 6.42, 0, 8, 8, 1.58, 8, 0]]); 
+					N_0=list_plot(d.columns(), plotjoined=true, aspect_ratio=1, color='purple'); 
+					
+					# a horizontal shear matrix:
+					S=matrix(RDF, [[1,0.25,],[0,1]]); 
+					
+					# a rotation matrix:
+					R=matrix(RDF, [[cos(pi/4), -sin(pi/4)], [sin(pi/4), cos(pi/4)]]); 
+					
+					# a dilation matrix
+					D=matrix(RDF, [[2, 0], [0,2]]); 
+					
+					# shear, followed by rotation, followed by dilation
+					A=D*R*S; 
+					d_1=A*d; #transformation applied
+					
+					N_1=list_plot(d_1.columns(), plotjoined=true, aspect_ratio=1, color='blue'); 
+					N_0+N_1
+					
+ 				</input>
+ 			</sage>
+			
+		</p>
+		
+
+		
+		
+		
+		
+		
+		
+	</subsection>
+		
+	<exercises>
+		<p>
+			Complete the following exercises in the GP 2-1 file in CoCalc by 8:00 AM on Tuesday, 9/22/2020.
+		</p>
+		
+		<exercise>
+			<statement>
+				<p>
+					Let <m>A=\begin{bmatrix} -1 \amp 7 \\ 5 \amp 4 \\ 2 \amp -3 \end{bmatrix}</m>. 
+					
+					<ol>
+						<li>
+							What are the diagonal entries of <m>A</m>?
+						</li>
+						
+						<li>
+							What is value of the entry <m>a_{12}</m>?
+						</li>
+					</ol>
+	
+				</p>
+				
+			
+				
+			</statement>
+			
+		</exercise>
+		
+		<exercise>
+			<statement>
+				<p>
+					Let <m>A, B</m> be <m>3\times 4</m> matrices, and let <m>C</m> be a <m>4\times 4 </m> matrix.
+					
+					<ol>
+						<li>
+							Which of these matrices can be added together?
+						</li>
+						
+						<li>
+							<p>
+								Which of the following matrix products can actually be done?
+							</p>
+							
+							<p>
+								<m>AB, AC, BA, CA, BC, CB, A^2, B^2, C^2</m>
+							</p>
+						</li>
+					</ol>
+					
+				</p>
+				
+			
+				
+			</statement>
+		</exercise>
+		
+		<exercise>
+			<statement>
+				Pick one of the matrix products above that could actually be carried out, and perform the multiplication by hand on paper using both methods discussed in the section. Then perform the multiplication in a Sage code cell.
+			</statement>
+		</exercise>
+		
+		<exercise>
+			<statement>
+				What comments or questions do you have about the content of this assignment? 
+			</statement>
+		</exercise>
+		
+	</exercises>	
+
+
+	
+	 
+ </section>	 			 
+		 
+	
+	
+	
+	
+ </chapter>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
  </book>
 </pretext>
