@@ -1956,7 +1956,9 @@
 		
 		<exercise>
 			<statement>
-				Pick one of the matrix products above that could actually be carried out, and perform the multiplication by hand on paper using both methods discussed in the section. Then perform the multiplication in a Sage code cell.
+				Pick one of the matrix products above that could actually be carried out. Then write down actual matrices with the correct dimensions (with at most 2 entries of 0) and carry out the multiplication by hand on paper using both methods discussed in this section. Then perform the multiplication in a Sage code cell.
+
+				(So if you decide to do a matrix product that involves <m>A</m>, create and write down a <m>3\times 4</m> matrix with actual number entries of your choice (with at most 2 of them being 0) and call in <m>A</m>)
 			</statement>
 		</exercise>
 		
