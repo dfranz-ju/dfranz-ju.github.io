@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-09-28T11:46:27-04:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Guided Practice 2.2: The Inverse of a Matrix</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script>$(function () {
+    // Make *any* div with class 'sagecell-sage' an executable Sage cell
+    // Their results will be linked, only within language type
+    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
+                           linked: true,
+                           languages: ['sage'],
+                           evalButtonText: 'Evaluate (Sage)'});
+});
+</script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="Math-320-Guided-Practice.html"><span class="title">Math 320 Guided Practice</span></a></h1>
+<p class="byline">Dr. Daniel Franz</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-2-1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-Matrices.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-2-1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-Matrices.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="chapter-systems.html" data-scroll="chapter-systems"><span class="codenumber">1</span> <span class="title">Systems of Linear Equations</span></a><ul>
+<li><a href="section-1-1.html" data-scroll="section-1-1">Guided Practice 1.1: Systems of Linear Equations</a></li>
+<li><a href="section-1-2.html" data-scroll="section-1-2">Guided Practice 1.2: Row Reduction and Echelon Forms</a></li>
+<li><a href="section-1-3.html" data-scroll="section-1-3">Guided Practice 1.3: Vector Equations</a></li>
+<li><a href="section-1-4.html" data-scroll="section-1-4">Guided Practice 1.4: The Matrix Equation \(A\mathbf{x}=\mathbf{b}\)</a></li>
+<li><a href="section-1-5.html" data-scroll="section-1-5">Guided Practice 1.5: Solution Sets of Linear Systems</a></li>
+<li><a href="section-6.html" data-scroll="section-6"></a></li>
+<li><a href="section-1-7.html" data-scroll="section-1-7">Guided Practice 1.7: Linear Independence</a></li>
+<li><a href="section-1-8.html" data-scroll="section-1-8">Guided Practice 1.8: Introduction to Linear Transformations</a></li>
+<li><a href="section-1-9.html" data-scroll="section-1-9">Guided Practice 1.9: The Matrix of a Linear Transformation</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="chapter-Matrices.html" data-scroll="chapter-Matrices"><span class="codenumber">2</span> <span class="title">Matrix Algebra</span></a><ul>
+<li><a href="section-2-1.html" data-scroll="section-2-1">Guided Practice 2.1: Matrix Operations</a></li>
+<li><a href="section-2-2.html" data-scroll="section-2-2" class="active">Guided Practice 2.2: The Inverse of a Matrix</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section-2-2"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.2</span> <span class="title">Guided Practice 2.2: The Inverse of a Matrix</span>
+</h2>
+<section class="introduction" id="introduction-11"><h6 class="heading">Overview.<span></span>
+</h6>
+<p id="p-136">Now that we understand how to add and multiply matrices, we can think a little deeper about these operations. In particular, since we are interested in solving matrix equations of the form \(A\mathbf{x}=\mathbf{b}\text{,}\) we want to explore matrix multiplication a little more.</p>
+<p id="p-137">Remembering that matrix equations are generalizations of simple linear equations, we look to a simple linear equation as a motivating example. Consider the equation \(5x=3\text{.}\) To solve it, we multiply both sides by \(1/5\text{,}\) the multiplicative inverse of \(5\text{,}\) because \(\dfrac{1}{5}\cdot 5=1\text{.}\) This yields \(x=\dfrac{1}{5}\cdot 3.\)</p>
+<p id="p-138">To accomplish something similar for the matrix equation \(A\mathbf{x}=\mathbf{b}\text{,}\) we need a matrix \(C\) such that \(CA=I\text{,}\) where \(I\) is an appropriately sized identity matrix. We call such a matrix an \(inverse\) matrix. This section explores the properties of inverse matrices, how to determine if they exist, and how to find them if they do.</p></section><section class="subsection" id="subsection-2-2-BLO"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.2.1</span> <span class="title">Basic Learning Objectives</span>
+</h3>
+<p id="p-139">You should be able to perform these tasks with reasonable fluency <em class="emphasis">when you arrive to class</em>.</p>
+<ul class="disc">
+<li id="li-78">State what it means for a square matrix to be invertible.</li>
+<li id="li-79">Compute the determinant of a \(2\times 2\) matrix and use it to determine if the matrix is invertible.</li>
+<li id="li-80">Find the entries of the inverse of an invertible \(2\times 2\) matrix.</li>
+</ul></section><section class="subsection" id="subsection-2-2-ALO"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.2.2</span> <span class="title">Advanced Learning Objectives</span>
+</h3>
+<p id="p-140">In addition to mastering the basic objectives, here are the tasks you should be able to perform <em class="emphasis">after class, with practice</em>:</p>
+<ul class="disc">
+<li id="li-81">Correctly use the properties of inverse matrices in Theorems 5 and 6.</li>
+<li id="li-82">Use row reduction to determine if a square matrix is invertible.</li>
+<li id="li-83">Use row reduction to find the inverse of a an invertible matrix.</li>
+</ul></section><section class="subsection" id="subsection-2-2-Resources"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.2.3</span> <span class="title">Resources</span>
+</h3>
+<p id="p-141"><em class="emphasis">Reading</em>: Read Section 2.2 of the textbook, keeping the learning objectives in mind. You can ignore the part about Elementary matrices. Theorems 5 and 7 are the main results of the section. After doing the reading, watch the video below to gain some geometric insight into inverse matrices.</p>
+<p id="p-142"><em class="emphasis">Video</em>: Watch the selected segment of the 3Blue1Brown video below about the geometric interpretation of matrix inverses, using the linear transformation perspective of matrix multiplication. The determinant is mentioned in this video, and is defined for \(2 \times 2\) matrices in the reading. We will explore the determinant in much more detail in Chapter 3. <div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-8" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/uQhTuRlWMxw?&amp;modestbranding=1&amp;rel=0&amp;start=130&amp;end=403"></iframe></div></p></section><section class="subsection" id="subsection-2-2-Sage"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.2.4</span> <span class="title">Sage Commands</span>
+</h3>
+<p id="p-143">This section introduces matrix inverses. There are two main ways to directly compute the inverse of matrix using Sage: using an exponent of \(-1\) and using the <code class="code-inline tex2jax_ignore">.inverse()</code> method. These are both illustrated below. If a matrix is singular or not square, Sage will throw an error.</p>
+<p id="p-144"><div class="sagecell-sage" id="sage-27"><script type="text/x-sage">A=matrix([[1,-1], [4,2]]);
+show(A^-1)
+show(A.inverse())
+show(A^-1*A)
+show(A*A.inverse())
+</script></div> <div class="sagecell-sage" id="sage-28"><script type="text/x-sage"># nonsquare matrix
+B=matrix([[1,3,5], [2,4,6]]);
+B^-1
+</script></div> <div class="sagecell-sage" id="sage-29"><script type="text/x-sage"># singular matrix
+C=matrix([[5,6], [10,12]]);
+C.inverse()
+</script></div></p></section><section class="exercises" id="exercises-10"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">2.2.5</span> <span class="title">Exercises</span>
+</h3>
+<p id="p-145">No exercises for this section.</p></section></section></div></main>
+</div>
+</body>
+</html>
