@@ -2135,6 +2135,197 @@
  </chapter>
  
  
+ <chapter>
+ 	
+	
+	 <section xml:id="section-3-1">
+		 <title>Guided Practice 3.1, 3.2: The Determinant and its Properties</title>
+	 
+		 <introduction>
+			 <title>Overview</title>
+			 <p>
+				 We saw that for a <m>2\times 2</m> matrix <m>A=\begin{bmatrix} a \amp b \\ c \amp d</m>, the value of quantity <m>\det(A)=ad-bc</m> determines whether or not the matrix <m>A</m> is invertible. This quantity <m>\det(A)</m> is called the <em>determinant</em> of <m>A</m>, and the main goal of this chapter is to identify the determinant of larger square matrices and describe its properties.
+		 </p>
+		
+		 <p>
+			 The main ways of computing the determinant of matrices larger than <m>2\times 2</m> are cofactor expansion (see Example 1 on page 167) and by using row reduction and properties of the determinant (see Example 2 on page 172). Useful shortcuts include the results of Theorem 2 and Theorem 6 in Chapter 3. While we will often use technology to compute determinants of specific matrices, an understanding of how the determinant is computed will help us relate it to other topics as we proceed.
+		 </p>
+	
+		 <p>
+			 While the question "is the determinant 0 or not 0" usually has the most relevance, when the determinant is nonzero, its value has additional geometric meaning. This is explored in the video resource for this section, as well as in Section 3.3 of the textbook. The geometric perspective presents the best conceptual way of viewing the determinant.
+		 </p>
+	
+	 
+		 </introduction>
+	 
+	 
+		 <subsection xml:id="subsection-3-1-BLO">
+			 <title>Basic Learning Objectives </title>
+		<p>
+			 You should be able to perform these tasks with reasonable fluency <em>when you arrive to class</em>.
+		 
+			 <ul>
+				 <li>
+					 Given a square matrix $A$, write down a given submatrix <m>A_{ij}</m>.
+				 
+				 </li>
+				 <li>
+					 Use Theorem 2 of Section 3.1 to quickly compute the determinant of a triangular matrix.
+				 </li>
+			 
+				 <li>
+					 Describe how elementary row operations affect the determinant of a square matrix.
+				 	
+				 </li>
+			 
+			 </ul>
+		
+		 </p>
+		 </subsection>
+	 
+		 <subsection xml:id="subsection-3-1-ALO">
+			 <title>Advanced Learning Objectives </title>
+		<p>
+			In addition to mastering the basic objectives, here are the tasks you should be able to perform <em>after class, with practice</em>:
+		 
+			 <ul>
+				 <li>
+					 State and use the multiplicative property of the determinant.
+			 	
+				 </li>
+				 <li>
+					 Use cofactor expansion to manually compute the determinant of a <m>3 \times 3</m> matrix.
+				 
+				 
+				 </li>
+				 <li>
+					 Use row reduction to compute determinants of square matrices.
+				 </li>
+			 </ul>
+		
+		 </p>
+		 </subsection>
+	 
+		 <subsection xml:id="subsection-3-1-Resources">
+			 <title>Resources</title>
+			 
+			 
+			 <p>
+				 <em>Video</em>: First watch the 3Blue1Brown video below about the geometric meaning and interpretation of the determinant, using the linear transformation perspective of matrix multiplication. 
+			 
+				 <video youtube="lp3X9LOh2dk"></video>
+			 </p>
+		 
+			 <p>
+				 <em>Reading</em>: Read Sections 3.1 and 3.2 of the textbook. In Section 3.1, try to follow along with the examples, where they demonstrate using cofactor expansion. Theorem 2 is an important result that relates to the big result of Section 3.2. In section 3.2, Theorems 3, 4, and 6 are the big ones to focus on, with Examples 1 and 2 being the most important examples.
+				 </p>
+		 
+		 
+
+		 
+
+		 
+
+			  
+
+			
+			
+		
+		 </subsection>
+	 
+		 <subsection xml:id="subsection-3-1-Sage">
+			 <title>Sage Commands</title>
+
+			<p>
+				To compute the determinant of a square matrix using Sage, use det(A) or A.det(), as shown below.
+			</p>
+		
+			<p>
+			
+				<sage>
+					<input>
+						A=matrix([[1,-1], [4,2]]);
+						det(A)
+					</input>
+				</sage>
+			
+				<sage>
+					<input>
+						B=matrix([[1,2,3], [4,5,6], [7,8,9]])
+						B.det()
+					</input>
+				</sage>
+			
+				<sage>
+					<input>
+						# singular matrix
+						C=matrix([[5,6], [10,12]]);
+						C.det()
+					</input>
+				</sage>
+			</p>
+			
+			
+		</subsection>
+		
+		<exercises>
+			<p>
+				Complete the following exercises in the GP 3-1 file in CoCalc by 8:00 AM on Tuesday, 10/6/2020.
+			</p>
+		
+			<exercise>
+				<statement>
+					<p>
+						Let <m>A=\begin{bmatrix} 2 \amp -4 \amp 1\\ 0 \amp 3 \amp 5\\ 7 \amp -1 \amp 4 \end{bmatrix}</m>. Write down the submatrices <m>A_{1,2}</m> and <m>A_{3,1}</m>.
+					
+						
+	
+					</p>
+				
+			
+				
+				</statement>
+			
+			</exercise>
+		
+			<exercise>
+				<statement>
+					<p>
+						Let <m>B=\begin{bmatrix} 3 \amp 9 \amp 101 \amp 24 \\ 0 \amp -2 \amp 99 \amp 11 \\ 0 \amp 0 \amp 5 \amp 78 \\ 0 \amp 0 \amp 0 \amp 2 \end{bmatrix}</m>. Without using technology, compute the determinant of <m>B</m>. Explain how you computed your answer.
+					
+						
+					
+					</p>
+				
+			
+				
+				</statement>
+			</exercise>
+		
+			<exercise>
+				<statement>
+					<p>
+					Suppose <m>A</m> is a <m>3 \times 3</m> matrix and <m>\det(A)=5.</m> If <m>B</m> is the matrix that <m>A</m> becomes after adding <m>-5</m> times the first row of <m>A</m> to the third row of <m>A</m>, what is <m>\det(B)</m>?
+				</p>
+				</statement>
+			</exercise>
+		
+			<exercise>
+				<statement>
+					What comments or questions do you have about the material? 
+				</statement>
+			</exercise>
+		
+		</exercises>	
+
+
+	
+	 
+	 </section>	 			
+	
+	
+	
+ </chapter>
  
  
  
