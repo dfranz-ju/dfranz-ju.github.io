@@ -2144,7 +2144,7 @@
 		 <introduction>
 			 <title>Overview</title>
 			 <p>
-				 We saw that for a <m>2\times 2</m> matrix <m>A=\begin{bmatrix} a \amp b \\ c \amp d</m>, the value of quantity <m>\det(A)=ad-bc</m> determines whether or not the matrix <m>A</m> is invertible. This quantity <m>\det(A)</m> is called the <em>determinant</em> of <m>A</m>, and the main goal of this chapter is to identify the determinant of larger square matrices and describe its properties.
+				 We saw that for a <m>2\times 2</m> matrix <m>A=\begin{bmatrix} a \amp b \\ c \amp d \end{bmatrix}</m>, the value of quantity <m>\det(A)=ad-bc</m> determines whether or not the matrix <m>A</m> is invertible. This quantity <m>\det(A)</m> is called the <em>determinant</em> of <m>A</m>, and the main goal of this chapter is to identify the determinant of larger square matrices and describe its properties.
 		 </p>
 		
 		 <p>
@@ -2166,7 +2166,7 @@
 		 
 			 <ul>
 				 <li>
-					 Given a square matrix $A$, write down a given submatrix <m>A_{ij}</m>.
+					 Given a square matrix <m>A</m>, write down a given submatrix <m>A_{ij}</m>.
 				 
 				 </li>
 				 <li>
@@ -2213,7 +2213,7 @@
 			 <p>
 				 <em>Video</em>: First watch the 3Blue1Brown video below about the geometric meaning and interpretation of the determinant, using the linear transformation perspective of matrix multiplication. 
 			 
-				 <video youtube="lp3X9LOh2dk"></video>
+				 <video youtube="Ip3X9LOh2dk"></video>
 			 </p>
 		 
 			 <p>
@@ -2245,14 +2245,16 @@
 				<sage>
 					<input>
 						A=matrix([[1,-1], [4,2]]);
-						det(A)
+						show(A)
+						show(det(A))
 					</input>
 				</sage>
 			
 				<sage>
 					<input>
-						B=matrix([[1,2,3], [4,5,6], [7,8,9]])
-						B.det()
+						B=matrix([[1,2,3], [4,5,6], [7,3,1]])
+						show(B)
+						show(B.det())
 					</input>
 				</sage>
 			
@@ -2260,7 +2262,8 @@
 					<input>
 						# singular matrix
 						C=matrix([[5,6], [10,12]]);
-						C.det()
+						show(C)
+						show(C.det())
 					</input>
 				</sage>
 			</p>
