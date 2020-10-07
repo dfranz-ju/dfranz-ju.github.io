@@ -2331,6 +2331,162 @@
  </chapter>
  
  
+
+
+
+<chapter xml:id="chapter-4">
+	 <title>Vector Spaces</title>
+
+ <section xml:id="section-4-1">
+	 <title>Guided Practice 4.1: Vector Spaces and Subspaces</title>
+ 
+	 <introduction>
+		 <title>Overview</title>
+		 <p>
+			 Up to this point in the class, when we have said "vector," we have meant a list of numbers, or possibly an arrow in the plane or space. But if you closely examine the definitions of linear combinations, spans, linear independence, and linear transformations, the only properties of vectors that were needed were the ability to add vectors and multiply vectors by scalars (in the "normal" way with associative and distributive laws). 
+	 </p>
+	
+	 <p>
+		 This chapter takes that observation and runs with it. The first section starts by defining a vector not as a specific type of object, but as a kind of object that satisfies the usual properties of addition and scalar multiplication. We then see several examples of spaces with objects that satisfy these properties and call them "vector spaces." Throughout the chapter we will see that most of the work we have done so far with <m>\mathbb{R}^n</m> vectors can also be applied to other vector spaces.
+	 </p>
+
+	 <p>
+		 The other main topic of the section is that of <em>subspaces</em> of a vector space. Algebraically, these are related to spans of sets of vectors, and you can think of them as the equivalent of lines or planes through the origin in <m>\mathbb{R}^2</m> or <m>\mathbb{R}^3</m>. In future sections we will investigate several special kinds of subspaces that arise from systems of equations and linear transformations.
+	 </p>
+
+ 
+	 </introduction>
+ 
+ 
+	 <subsection xml:id="subsection-4-1-BLO">
+		 <title>Basic Learning Objectives </title>
+	<p>
+		 You should be able to perform these tasks with reasonable fluency <em>when you arrive to class</em>.
+	 
+		 <ul>
+			 <li>
+				 Give examples of vector spaces other than <m>\mathbb{R}^n</m>.
+			 
+			 </li>
+			 <li>
+				 Perform vector addition and scalar multiplication in vector spaces other than <m>\mathbb{R}^n</m>.
+			 </li>
+		 
+			 <li>
+				 Describe what it means for a subset of a vector space <m>V</m> to be a <em>subspace</em> of <m>V</m>.
+			 	
+			 </li>
+		 
+		 </ul>
+	
+	 </p>
+	 </subsection>
+ 
+	 <subsection xml:id="subsection-4-1-ALO">
+		 <title>Advanced Learning Objectives </title>
+	<p>
+		In addition to mastering the basic objectives, here are the tasks you should be able to perform <em>after class, with practice</em>:
+	 
+		 <ul>
+			 <li>
+				 Create subspaces of a given vector space.
+		 	
+			 </li>
+			 <li>
+				 Use the definition of subspace to determine if a given subset of a vector space is a subspace.
+			 
+			 
+			 </li>
+			 <li>
+				 Use Theorem 1 to determine if a given subset of a vector space is a subspace.
+				 
+			 </li>
+		 </ul>
+	
+	 </p>
+	 </subsection>
+ 
+	 <subsection xml:id="subsection-4-1-Resources">
+		 <title>Resources</title>
+		 
+		 
+		 <p>
+			 <em>Video</em>: First watch the 15 minute 3Blue1Brown video below about the idea of abstract vector spaces. During this video, you will see terms like "eigenvector" and "null space." These are topics we will be learning about later in the course. One significant part of the video uses "basis functions." We will look at basis vectors in Section 4.3 in more detail, but for now, know that a basis is just a set of linearly independent vectors that you can use to create every vector in your space (recall the standard basis vectors <m>\mathbf{e}_i</m> we used). 
+		 
+			 <video youtube="TgKwz5Ikpc8" end="931"></video>
+		 </p>
+	 
+		 <p>
+			 <em>Reading</em>: Read Section 4.1 of the textbook. You do not need to memorize the axioms in the definition on page 192, but you should read through them and think about them in the context of how we have been using <m>\mathbb{R}^n</m> vectors. Examples 4 and 5 are the most relevant in terms of "new" vector spaces. The subspace definition and Theorem 1 are the most significant results of the section.
+			 </p>
+	 
+	 
+
+	
+	
+	 </subsection>
+ 
+	
+	<exercises>
+		<p>
+			Complete the following exercises in the GP 4-1 file in CoCalc by 8:00 AM on Thursday, 10/8/2020.
+		</p>
+	
+		<exercise>
+			<statement>
+				<p>
+					Give an example of a vector space that is not <m>\mathbb{R}^n</m> for some <m>n</m> or a set of arrows.
+				
+					
+
+				</p>
+			
+		
+			
+			</statement>
+		
+		</exercise>
+	
+		<exercise>
+			<statement>
+				<p>
+					Let <m>V</m> be a vector space. Describe what it means for a subset <m>H</m> of <m>V</m> to be a subspace of <m>V</m>.
+				
+					
+				
+				</p>
+			
+		
+			
+			</statement>
+		</exercise>
+	
+		<exercise>
+			<statement>
+				<p>
+				Let <m>V</m> be the first quadrant in the <m>xy</m>-plane. That is, <m>V=\left\{\begin{bmatrix} x \\ y \end{bmatrix} : x \geq 0, y\geq 0\right\}</m>.
+				
+				Find a specific vector <m>\mathbf{u}</m> in <m>V</m> and a specific scalar <m>c</m> such that <m>c \mathbf{u}</m> is <em>not</em> in <m>V</m>.
+			</p>
+			</statement>
+		</exercise>
+	
+		<exercise>
+			<statement>
+				What comments or questions do you have about the material? 
+			</statement>
+		</exercise>
+	
+	</exercises>	
+
+
+
+ 
+ </section>	 			
+
+
+
+</chapter>
  
  
  
