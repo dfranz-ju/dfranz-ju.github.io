@@ -2486,6 +2486,141 @@
 
 
 
+
+
+
+
+
+
+
+ <section xml:id="section-4-2">
+	 <title>Guided Practice 4.2: Null Spaces, Column Spaces, and Linear Transformations</title>
+ 
+	 <introduction>
+		 <title>Overview</title>
+		 <p>
+			 The last section defined abstract vector spaces and introduced the idea of <em>subspaces</em>. This section discusses two common ways subspaces arise in applications: 1) as the set of solutions to a homogeneous system of linear equations, and 2) as the span of a collection of vectors. 
+	 </p>
+	
+	 <p>
+		 The unifying connection between these two ways is that they can both be related to a matrix, specifically as the <em>null space</em> and <em>column space</em> of a matrix, respectively. After defining these and giving some examples of describing these subspaces for specific matrices, the book compares and contrasts these subspaces, illustrating the important differences between them.
+	 </p>
+
+	 <p>
+		 The final part of the section defined linear transformations on arbitrary vector spaces (instead of just ones of the form <m>\mathbb{R}^n</m>) and relates the <em>kernel</em> and <em>range</em> of a linear transformation to the null space and column space of a matrix. You can think of kernel and range as more general concepts of the null space and column space. This general perspective is particularly useful when working with linear transformations on spaces other than <m>\mathbb{R}^n</m>.
+	 </p>
+
+ 
+	 </introduction>
+ 
+ 
+	 <subsection xml:id="subsection-4-2-BLO">
+		 <title>Basic Learning Objectives </title>
+	<p>
+		 You should be able to perform these tasks with reasonable fluency <em>when you arrive to class</em>.
+	 
+		 <ul>
+			 <li>
+				 Define the null space and column space of a matrix.
+			 
+			 </li>
+			 <li>
+				 Determine if a given vector is in the null space of a given matrix.
+			 </li>
+		 
+			 <li>
+				 Find an explicit description of the column space of a matrix.
+			 	
+			 </li>
+		 
+		 </ul>
+	
+	 </p>
+	 </subsection>
+ 
+	 <subsection xml:id="subsection-4-2-ALO">
+		 <title>Advanced Learning Objectives </title>
+	<p>
+		In addition to mastering the basic objectives, here are the tasks you should be able to perform <em>after class, with practice</em>:
+	 
+		 <ul>
+			 <li>
+				 Find an explicit description of the null space of a matrix.
+		 	
+			 </li>
+			 <li>
+				 Determine if a given vector is in the column space of a matrix.
+			 
+			 </li>
+			 <li>
+				 Describe the kernel and range of a given linear transformation.
+			 </li>
+		 </ul>
+	
+	 </p>
+	 </subsection>
+ 
+	 <subsection xml:id="subsection-4-2-Resources">
+		 <title>Resources</title>
+		 
+	 
+		 <p>
+			 <em>Reading</em>: Read Section 4.2 of the textbook. As you read, try to relate the content to material we have seen and learned before. As has been the case several times, the main "new" material in this section is just viewing stuff we have already done from a new perspective. The table at the top of page 206 is a great summary of the properties and procedures relating to the null space and column space. 
+			 </p>
+	 
+	 
+
+	
+	
+	 </subsection>
+ 
+	
+	<exercises>
+		<p>
+			Complete the following exercises in the GP 4-2 file in CoCalc by 8:00 AM on Tuesday, 10/13/2020.
+		</p>
+	
+		<exercise>
+			<statement>
+				<p>
+					Determine if <m>\mathbf{w}=\begin{bmatrix} 5 \\ -3 \\ 2\end{bmatrix}</m> is in Nul <m>A</m>, where <m>A = \begin{bmatrix} 5 \amp 21 \amp 19 \\ 13 \amp 23 \amp 2 \\ 8 \amp 14 \amp 1 \end{bmatrix}.</m>
+				
+					
+
+				</p>
+			
+		
+			
+			</statement>
+		
+		</exercise>
+	
+	
+		<exercise>
+			<statement>
+				<p>
+					Let <m>B = \begin{bmatrix} 2 \amp -6 \\ -1 \amp 3 \\ -4 \amp 12 \\ 3 \amp -9 \end{bmatrix}.</m> Explicitly describe the column space of <m>B</m>. For which value of <m>k</m> is Col <m>B</m> a subspace of <m>\mathbb{R}^k</m>?
+			</p>
+			</statement>
+		</exercise>
+	
+		<exercise>
+			<statement>
+				What comments or questions do you have about the material? 
+			</statement>
+		</exercise>
+	
+	</exercises>	
+
+
+
+ 
+ </section>	 			
+
+
+
+
+
 </chapter>
  
  
