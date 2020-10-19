@@ -2765,6 +2765,124 @@
  </section>	 			
 
 
+ <section xml:id="section-4-4">
+	 <title>Guided Practice 4.4: Coordinate Systems</title>
+ 
+	 <introduction>
+		 <title>Overview</title>
+		 <p>
+			 One of the main reasons to find or create a basis for a vector space is so that we can impose a <em>coordinate system</em> on that vector space. We already have an understanding of coordinate systems from years of experience with the <m>xy</m> plane, where we represent points with their <m>x</m> and <m>y</m> coordinates. This is also how we have been writing column vectors in <m>\mathbb{R}^n</m>. This entire time, we have been using coordinates with respect to the standard basis of <m>\mathbb{R}^n</m>.
+	 </p>
+	
+	 <p>
+		 What this section explores is writing coordinates using <em>other</em> bases, in the case of <m>\mathbb{R}^n</m>, or just writing coordinates at all in the case of other vector spaces. Changing between coordinate systems can be implemented using a <em>change-of-coordinates</em> matrix; this kind of operation is very common in physics. But also, by imposing coordinates on vector spaces other than <m>\mathbb{R}^n</m>, we can treat them in the same way as we do <m>\mathbb{R}^n.</m>
+	 </p>
+
+	 <p>
+		 This last point, the <em>coordinate mapping</em>, is the focus of the end of the section. It allows us to use our <m>\mathbb{R}^n</m> knowledge and computational abilities on other vector spaces such as <m>\mathbb{P}_n</m>. In other words, it lets us translate problems in any (finite dimensional) vector space to problems in a specific <m>\mathbb{R}^n</m>. This is accomplished formally through the concept of isomorphisms.
+	 </p>
+
+ 
+	 </introduction>
+ 
+ 
+	 <subsection xml:id="subsection-4-4-BLO">
+		 <title>Basic Learning Objectives </title>
+	<p>
+		 You should be able to perform these tasks with reasonable fluency <em>when you arrive to class</em>.
+	 
+		 <ul>
+			 <li>
+				 Given a basis <m>\mathcal{B}</m> and the <m>\mathcal{B}</m>-coordinate vector of <m>\mathbf{x}</m>, express <m>\mathbf{x}</m> with respect to the standard basis.
+			 
+			 </li>
+			 <li>
+				 Given a basis <m>\mathcal{B}</m> and a vector <m>\mathbf{x}</m>, find the <m>\mathcal{B}</m>-coordinate vector of <m>\mathbf{x}</m>.
+				 
+
+			 </li>
+		 
+			 <li>
+				 Find the change-of-coordinates matrix of a given basis <m>\mathcal{B}</m> from <m>\mathcal{B}</m> to the standard basis.
+			 	
+			 </li>
+	
+		 
+		 
+		 </ul>
+	
+	 </p>
+	 </subsection>
+ 
+	 <subsection xml:id="subsection-4-4-ALO">
+		 <title>Advanced Learning Objectives </title>
+	<p>
+		In addition to mastering the basic objectives, here are the tasks you should be able to perform <em>after class, with practice</em>:
+	 
+		 <ul>
+			 <li>
+				 Interpret the coordinate mapping as a one-to-one and onto linear transformation.
+				 
+		 	
+			 </li>
+			 <li>
+				 Describe what an isomorphism of two vector spaces is.
+			 
+			 </li>
+			 
+			 <li>
+				 Give examples of isomorphic vector spaces.
+			 
+			 </li>
+			 
+			 <li>
+				 Use coordinate mappings to computationally answer questions about vector spaces other than <m>\mathbb{R}^n.</m>
+			 
+			 </li>
+			
+		 </ul>
+	
+	 </p>
+	 </subsection>
+ 
+	 <subsection xml:id="subsection-4-4-Resources">
+		 <title>Resources</title>
+		 
+	 
+		 <p>
+			 <em>Reading</em>: Read Section 4.4 of the textbook. Theorem 7 is what allows us to use bases to create coordinate systems. Example 4 is the main example illustrating changing coordinates inside <m>\mathbb{R}^n.</m> The section concludes with the discussion of coordinate mappings and isomorphisms of vector spaces.
+			 </p>
+	 
+	 
+			 <p>
+				 <em>Desmos</em>: Below is an interactive visual demonstration of coordinate systems. A point is labeled with both its coordinates according to the standard basis and its coordinates with respect to the basis <m>\mathcal{B}=\{\mathbf{v}_1=(2,1), \mathbf{v}_2=(0.5, 1.5)\}</m>. In addition, the path to the point along the "<m>\mathcal{B}</m>-graph paper" is shown in green (see the subsection "A Graphical Interpretation of Coordinates" in the textbook).
+		</p>
+			
+		<p> This activity is best experienced in a separate window where everything is larger and easier to see. To view the Desmos activity below in its own (much larger) window, <url href="https://www.desmos.com/calculator/tv199gyk7h"> click here</url>)
+			
+				 <interactive desmos="tv199gyk7h" aspect="16:9"/>
+				 	
+		 </p>
+		
+	
+	
+	 </subsection>
+ 
+	
+	<exercises>
+		<p>
+			There are no exercises for this reading.
+		</p>
+	
+		
+	
+	</exercises>	
+
+
+
+ 
+ </section>	 		
+
 
 </chapter>
  
