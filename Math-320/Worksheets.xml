@@ -2711,7 +2711,7 @@
 	
 	<exercises>
 		<p>
-			Complete the following exercises in the GP 4-3 file in CoCalc by 8:00 AM on Thursay, 10/15/2020.
+			Complete the following exercises in the GP 4-3 file in CoCalc by 8:00 AM on Thursday, 10/15/2020.
 		</p>
 	
 		<exercise>
@@ -2882,6 +2882,158 @@
 
  
  </section>	 		
+
+ 			
+
+
+<section xml:id="section-4-5">
+ <title>Guided Practice 4.5, 4.6: Dimension and Rank</title>
+
+ <introduction>
+	 <title>Overview</title>
+	 <p>
+		 In Section 4.4, we saw that once given a basis of a vector space with <n>vectors</n>, we can use the coordinate mapping for that basis to treat that vector space as a copy of <m>\mathbb{R}^n</m>. Since a vector space cannot simultaneously be a copy of <m>\mathbb{R}^n</m> and <m>\mathbb{R}^m</m> for <m>n\neq m</m>, it follows that every basis of a given vector space should be the same size. The beginning of Section 4.5 formally proves this, leading to the definition of the <em>dimension</em> of a vector space. The rest of the section discusses the dimension of general and specific subspaces of vector spaces.
+ </p>
+
+ <p>
+	 Previously we have investigated the <em>column space</em> and <em>null space</em> of a matrix, and Section 4.6 introduces a third matrix-related subspace: the <em>row space</em> of a matrix. This is defined similarly to the column space, and its basis is also found by using row reduction. To help relate the dimensions of these three subspaces, the <em>rank</em> of a matrix is defined and the Rank Theorem is given. Finally, additional statements are added to the Invertible Matrix Theorem.
+ </p>
+
+
+
+
+ </introduction>
+
+
+ <subsection xml:id="subsection-4-5-BLO">
+	 <title>Basic Learning Objectives </title>
+<p>
+	 You should be able to perform these tasks with reasonable fluency <em>when you arrive to class</em>.
+ 
+	 <ul>
+		 <li>
+			 Define the dimension of a vector space.
+		 
+		 </li>
+		 <li>
+			 Compute the dimension of a vector space.
+			 
+
+		 </li>
+	 
+		 <li>
+			  Determine the dimensions of Nul <m>A</m> and Col <m>A</m> for a given matrix <m>A</m>.
+		 	
+		 </li>
+
+		 <li>
+		 	Compute the rank of a given matrix.
+		 </li>
+	 
+	 
+	 </ul>
+
+ </p>
+ </subsection>
+
+ <subsection xml:id="subsection-4-5-ALO">
+	 <title>Advanced Learning Objectives </title>
+<p>
+	In addition to mastering the basic objectives, here are the tasks you should be able to perform <em>after class, with practice</em>:
+ 
+	 <ul>
+		 <li>
+			Find a basis for the row space of a given matrix.
+			 
+	 	
+		 </li>
+		 <li>
+			 Use the Rank Theorem to relate the rank and nullity of a matrix.
+		 
+		 </li>
+		 
+		 <li>
+			 Describe properties of a matrix related to rank, the column space, and the null space that are equivalent to the matrix being invertible.
+		 
+		 </li>
+		 
+		
+	 </ul>
+
+ </p>
+ </subsection>
+
+ <subsection xml:id="subsection-4-5-Resources">
+	 <title>Resources</title>
+	 
+ 
+	 <p>
+		 <em>Reading</em>: Read Sections 4.5 and 4.6 of the textbook. Theorem 10 sets up the definition of dimension, and Theorem 12 is useful for determining if a given set of vectors is a basis. Theorem 13 in Section 4.6 shows how to find a basis of the row space of a matrix, and Theorem 14 is the Rank Theorem, which relates the rank, dimension of null space, and number of columns of a matrix.
+		 </p>
+ 
+ 
+		 
+
+ </subsection>
+
+
+<exercises>
+	<p>
+		Complete the following exercises in the GP 4-5 file in CoCalc by 10:00 AM on Tuesday, 10/27/2020.
+	</p>
+
+
+	<exercise>
+		<statement>
+			You are told that <m>V</m> is a vector space and that the dimension of <m>V</m> is 8. If <m>S</m> is a set of 9 vectors in <m>V</m>, is it possible for <m>S</m> to be a basis of <m>V</m>? Why or why not?
+		</statement>
+	</exercise>
+
+
+	<exercise>
+		<statement>
+			<p>
+				What is the dimension of the polynomial vector space <m>\mathbb{P}_4</m>? Why?
+
+			</p>
+		
+	
+		
+		</statement>
+	
+	</exercise>
+	
+	<exercise>
+		<statement>
+			<p>
+				Let <m>A=\begin{bmatrix} 1 \amp -4 \amp 9 \amp -7 \\ -1 \amp 2 \amp -4 \amp 1 \\ 5 \amp -6 \amp 10 \amp 7 \end{bmatrix}.</m> What are the dimensions of Col <m>A</m> and Nul <m>A</m>? What is the rank of <m>A</m>? (Note: some computation is required)
+			
+				
+
+			</p>
+		
+	
+		
+		</statement>
+	
+	</exercise>
+	
+	
+	
+	<exercise>
+		<statement>
+			What comments or questions do you have about the material? 
+		</statement>
+	</exercise>
+	
+	
+
+</exercises>	
+
+
+
+
+</section>	 		
 
 
 </chapter>
