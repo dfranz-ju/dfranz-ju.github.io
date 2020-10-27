@@ -3039,7 +3039,152 @@
 </chapter>
  
  
+
+<chapter xml:id="chapter-5">
+	 <title>Eigenvalues and Eigenvectors</title>
+
+ <section xml:id="section-5-1">
+	 <title>Guided Practice 5.1: Eigenvalues and Eigenvectors</title>
  
+	 <introduction>
+		 <title>Overview</title>
+		 <p>
+			 In some sense, this chapter is the culmination of our studies in Linear Algebra so far. The study of eigenvalues and eigenvectors relies on knowledge of linear transformations, the determinant, solving for a null space, and bases. "Eigenstuff", as material related to eigenvalues and eigenvectors is often called, is one of the most widely applicable areas of Linear Algebra. They are used in economics, genetics ("eigengenes"), physics (eigenfunctions), dynamical systems, data science, statistics, and many more areas. We will merely touch the surface by building the mathematical foundation upon which all these applications rest.
+	 </p>
+	
+	 <p>
+		 The main goal of this section is to develop a basic understanding of what eigenvalues and eigenvectors are, both algebraically and geometrically. Particular emphasis is put on finding eigenvectors once we know what a particular eigenvalue is. The next section will discuss finding the eigenvalues in the first place, and the section after that will address a major use of eigenstuff: Diagonalization.
+	 </p>
+
+
+ 
+	 </introduction>
+ 
+ 
+	 <subsection xml:id="subsection-5-1-BLO">
+		 <title>Basic Learning Objectives </title>
+	<p>
+		 You should be able to perform these tasks with reasonable fluency <em>when you arrive to class</em>.
+	 
+		 <ul>
+			 <li>
+				 Describe what an <em>eigenvalue</em> of a matrix is without using the word eigenvector.
+			 
+			 </li>
+			 <li>
+				 Describe what an <em>eigenvector</em> of a matrix is without using the word eigenvalue.
+			 </li>
+		 
+			 <li>
+				 Determine if a given vector is an eigenvector of a matrix.
+			 </li>
+		 
+		 </ul>
+	
+	 </p>
+	 </subsection>
+ 
+	 <subsection xml:id="subsection-5-1-ALO">
+		 <title>Advanced Learning Objectives </title>
+	<p>
+		In addition to mastering the basic objectives, here are the tasks you should be able to perform <em>after class, with practice</em>:
+	 
+		 <ul>
+			 <li>
+				Describe the geometric significance of eigenvalue and eigenvectors. 
+		 	
+			 </li>
+			 <li>
+				 Determine if a given scalar is an eigenvalue of a matrix.
+			 
+			 
+			 </li>
+			 <li>
+				 Given an eigenvalue of a matrix, find the corresponding eigenspace.
+				 
+			 </li>
+		 </ul>
+	
+	 </p>
+	 </subsection>
+ 
+	 <subsection xml:id="subsection-5-1-Resources">
+		 <title>Resources</title>
+		 
+		 
+		 <p>
+			 <em>Video</em>: First watch this 7 minute clip of a 3Blue1Brown video below about eigenvalues and eigenvectors. This will give you a good geometric and conceptual introduction to this topic before reading the textbook. The rest of this video will be featured in the Guided Practice resources for the next two sections.
+		 
+			 <video youtube="PFDu9oVAE-g" end="434"></video>
+		 </p>
+	 
+		 <p>
+			 <em>Reading</em>: Read Section 5.1 of the textbook. Closely read through the worked out examples and try to fully understand each step. Theorem 1 presents a useful shortcut for finding eigenvalues, while Theorem 2 will be very important in Section 5.3.
+			 </p>
+	 
+	 
+
+	
+	
+	 </subsection>
+ 
+	
+	<exercises>
+		<p>
+			Complete the following exercises in the GP 5-1 file in CoCalc before class on Thursday, 10/29/2020.
+		</p>
+	
+		<exercise>
+			<statement>
+				<p>
+					Describe what it would mean for <m>5</m> to be an eigenvalue of a <m>3\times 3</m> matrix <m>A</m>, without using the word "eigenvector."
+				
+					
+
+				</p>
+			
+		
+			
+			</statement>
+		
+		</exercise>
+	
+		<exercise>
+			<statement>
+				<p>
+					Determine if <m>\mathbf{x}=\begin{bmatrix} 1 \\ 4 \end{bmatrix}</m> is an eigenvector of <m>A=\begin{bmatrix} -3 \amp 1 \\ -3 \amp 8 \end{bmatrix}.</m> If it is, report the corresponding eigenvalue.
+				
+					
+				
+				</p>
+			
+		
+			
+			</statement>
+		</exercise>
+	
+		<exercise>
+			<statement>
+				<p>
+					Determine if <m>\mathbf{x}=\begin{bmatrix} 4 \\ -3 \\ 1 \end{bmatrix}</m> is an eigenvector of <m>A=\begin{bmatrix} 3 \amp 7 \amp 9 \\ -4 \amp -5 \amp 1 \\ 2 \amp 4 \amp 4 \end{bmatrix}.</m> If it is, report the corresponding eigenvalue.
+			</p>
+			</statement>
+		</exercise>
+	
+		<exercise>
+			<statement>
+				What comments or questions do you have about the material? 
+			</statement>
+		</exercise>
+	
+	</exercises>	
+
+
+
+ 
+ </section>	 			
+
+</chapter>
  
 
  </book>
