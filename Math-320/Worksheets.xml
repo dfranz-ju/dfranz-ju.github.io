@@ -3184,6 +3184,142 @@
  
  </section>	 			
 
+
+  <section xml:id="section-5-2">
+ 	 <title>Guided Practice 5.2: The Characteristic Polynomial</title>
+ 
+ 	 <introduction>
+ 		 <title>Overview</title>
+ 		 <p>
+ 			 In Section 5.1, we learned about eigenvalues and eigenvectors. The computational focus was on finding eigenvectors once we had an eigenvalue in hand. But how do we find eigenvalues in the first place? We return to the original definition and bring in the determinant to help out. The section begins by motivating the use of the determinant to find eigenvalues and then recalls the relevant properties of the determinant (a good refresher).
+ 	 </p>
+	
+ 	 <p>
+ 		 The text then defines the <em>characteristic polynomial,</em> which is central to the study of eigenvalues and eigenvectors. This polynomial is used to define the multiplicity of an eigenvalue and to prove an important result about <em>similar</em> matrices. The section closes with an application to dynamical systems; in class we will do a similar analysis applied to the Fibonacci sequence.
+ 	 </p>
+
+
+ 
+ 	 </introduction>
+ 
+ 
+ 	 <subsection xml:id="subsection-5-2-BLO">
+ 		 <title>Basic Learning Objectives </title>
+ 	<p>
+ 		 You should be able to perform these tasks with reasonable fluency <em>when you arrive to class</em>.
+	 
+ 		 <ul>
+ 			 <li>
+ 				 Use the determinant to find the characteristic polynomial of a square matrix.
+			 
+ 			 </li>
+ 			 <li>
+ 				 Use the characteristic equation to find the eigenvalues of square matrix.
+ 			 </li>
+		 
+ 			 <li>
+ 				 Find the (algebraic) multiplicities of the eigenvalues of a square matrix.
+ 			 </li>
+		 
+ 		 </ul>
+	
+ 	 </p>
+ 	 </subsection>
+ 
+ 	 <subsection xml:id="subsection-5-2-ALO">
+ 		 <title>Advanced Learning Objectives </title>
+ 	<p>
+ 		In addition to mastering the basic objectives, here are the tasks you should be able to perform <em>after class, with practice</em>:
+	 
+ 		 <ul>
+ 			 <li>
+ 				Describe what it means for two matrices to be <em>similar.</em>
+		 	
+ 			 </li>
+ 			 <li>
+ 				 Explain why similar matrices have the same eigenvalues.
+			 
+ 			 </li>
+ 		 </ul>
+	
+ 	 </p>
+ 	 </subsection>
+ 
+ 	 <subsection xml:id="subsection-5-2-Resources">
+ 		 <title>Resources</title>
+		 
+		 
+ 		 <p>
+ 			 <em>Video</em>: First watch this 6 minute clip of a 3Blue1Brown video below about finding eigenvalues with the characteristic equation. This video starts shortly before the clip from the Section 5.1 Resources ended.
+		 
+ 			 <video youtube="PFDu9oVAE-g" start="413" end="783"></video>
+ 		 </p>
+	 
+ 		 <p>
+ 			 <em>Reading</em>: Read Section 5.2 of the textbook. The material near the beginning about the determinant is review (you should read it to refresh your memory, but none of the content is new). Example 1 and Example 3 are the main computational examples of finding eigenvalues. Similar matrices are discussed before and after Theorem 4. Reading through the application to dynamical systems at the end of the section will help you better understand the Fibonacci sequence example in class.
+ 			 </p>
+	 
+	 
+
+	
+	
+ 	 </subsection>
+ 
+	
+ 	<exercises>
+ 		<p>
+ 			Complete the following exercises in the GP 5-2 file in CoCalc before class on Tuesday, 11/3/2020.
+ 		</p>
+	
+ 		<exercise>
+ 			<statement>
+ 				<p>
+ 					Let <m>A=\begin{bmatrix} 5 \amp 3 \\ 3 \amp 5\end{bmatrix}</m>. Find the characteristic polynomial of <m>A</m> and use it to find the eigenvalues of <m>A</m>.
+				
+					
+
+ 				</p>
+			
+		
+			
+ 			</statement>
+		
+ 		</exercise>
+	
+ 		<exercise>
+ 			<statement>
+ 				<p>
+ 					Suppose that a matrix <m>B</m> has characteristic polynomial <m>p(\lambda)=(\lambda-3)^2(2\lambda-1)(\lambda+5)^3</m>. List the eigenvalues of <m>B</m>, with multiplicity. What are the dimensions of <m>B</m>?
+				
+					
+				
+ 				</p>
+			
+		
+			</statement>
+		</exercise>
+ 			
+	
+ 		<exercise>
+ 			<statement>
+ 				What comments or questions do you have about the material? 
+ 			</statement>
+ 		</exercise>
+	
+ 	</exercises>	
+
+
+
+ 
+  </section>	 			
+
+
+
+
+
+
+
+
 </chapter>
  
 
