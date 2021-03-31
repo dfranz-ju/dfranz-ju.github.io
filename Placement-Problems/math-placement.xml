@@ -1,0 +1,1170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!-- to update pretext repository, cd mathbook followed by git pull -->
+
+<!-- To process this file do                                                                      -->
+<!--                                                                                              -->
+<!-- (1) LaTeX/PDF:                                                                               -->
+<!--     xsltproc -o math-placement.tex ~/mathbook/xsl/mathbook-latex.xsl math-placement.xml                      -->
+<!--     pdflatex math-placement.tex                                                                     -->
+<!--     xelatex math-placement.tex                                                                      -->
+<!--                                                                                              -->
+<!-- (2) HTML:                                                                                -->
+<!--         cd dfranz-ju.github.io/Placement-Problems                                          -->
+<!--     xsltproc ~/mathbook/xsl/pretext-html.xsl math-placement.xml                                 -->
+<!--                                                                                              -->
+<!--    to update git repository, do                        -->
+<!--       git add -x-all  (double hyphen,no x)                                   -->
+<!--       git commit -m "<short descriptive comment>"       -->
+<!--       git push -u origin master                         -->       
+<!-- 														-->
+<!--   website is https://dfranz-ju.github.io/Placement-Problems/frontmatter-1.html. -->  
+
+
+<!-- To process this file do                                                                      -->
+<!--                                                                                              -->
+<!-- (1) LaTeX/PDF:                                                                               -->
+<!--     xsltproc -o minimal.tex mathbook/xsl/mathbook-latex.xsl minimal.xml                      -->
+<!--     pdflatex minimal.tex                                                                     -->
+<!--     xelatex minimal.tex                                                                      -->
+<!--                                                                                              -->
+<!-- (2) HTML:
+         cd dropbox/academics/ju/pretext/first                                                    -->
+<!--     xsltproc ~/mathbook/xsl/mathbook-html.xsl quickstart.xml                                 -->
+<!--                                                                                              -->
+<!--                                                                                              -->
+<!-- (3) CoCalc worksheet (parameter causes a single file for output)                             -->
+<!--     REMOVE the "X" in the double dash (which is not legal in an XML comment)                 -->
+<!--     xsltproc -X-stringparam chunk.level 0 mathbook/xsl/mathbook-smc.xsl minimal.xml          -->
+<!--     <CoCalc> minimal.sagews                                                                  -->
+<!--                                                                                              -->
+<!-- (4) Sage doctesting                                                                          -->
+<!--     REMOVE the "X" in the double dash (which is not legal in an XML comment)                 -->
+<!--     xsltproc -X-stringparam chunk.level 0 mathbook/xsl/mathbook-sage-doctest.xsl minimal.xml -->
+<!--     <read further instructions in> minimal.py                                                -->
+
+
+
+<pretext>
+	
+	<docinfo>
+		<macros>
+			<!-- simple latex macros (\newcommand) go here-->
+			
+		</macros>
+	</docinfo>	
+	
+	
+ <article xml:id="placement-problems">
+ <title>Math Placement Problems</title>
+ <introduction>
+  <p>
+   Let's get started.
+  </p> 
+  </introduction>
+  
+  
+  
+  <!-- Math 104 placement problems -->
+  
+  
+  <section xml:id="math-104">
+	  <title>Math 104 Prerequisite Problems</title>
+	  <p>
+		  This is a short sentence
+	  </p>
+	  
+	  <exercises>
+	  	
+      	   <exercise>
+      		   <statement>
+      			   <p>
+   				  Use the polynomial <m>5x+2x^2y-4y</m> to answer to complete the following parts.
+				  
+				  <ol>
+					  <li>
+						  Identity the constant and variables for the term with the largest degree in the polynomial.
+					  </li>
+					  
+					  <li>
+						  Given that <m>x=4</m> and <m>y=-\dfrac{1}{4}</m>, evaluate the polynomial expression.
+					  </li>
+				  </ol>
+				  
+      			   </p>
+
+      		   </statement>
+		   
+      		   <solution>
+      			   <p>
+					   sol
+      			   </p>
+			   
+   			  
+      		   </solution>
+      	   </exercise>
+		   
+      	   <exercise>
+      		   <statement>
+      			   <p>
+					   Consider the linear equation <m>4x-3y+12=0</m>.
+					   
+					   <ol>
+						   <li>
+							   Solve the equation for <m>y</m>.
+						   </li>
+						   
+						   <li>
+							   Use the equation to complete the following table:
+							   
+							  
+							     <tabular top="minor" left="minor">
+							       <row bottom="minor">
+							         <cell left="minor" right="minor">
+							           <m>x</m>
+							         </cell>
+							         <cell right="minor">
+							           <m>y</m>
+							         </cell>
+							       </row>
+							       <row bottom="minor">
+							         <cell left="minor" right="minor">
+							           <m>-6</m>
+							         </cell>
+							         <cell right="minor">
+							         </cell>
+							       </row>
+							       <row bottom="minor">
+							         <cell left="minor" right="minor">
+							         </cell>
+							         <cell right="minor">
+							           <m>4</m>
+							         </cell>
+							       </row>
+							       <row bottom="minor">
+							         <cell left="minor" right="minor">
+							           <m>3</m>
+							         </cell>
+							         <cell right="minor">
+							         </cell>
+							       </row>
+							     </tabular>
+							   
+						   </li>
+					   </ol>
+					   
+					   <li>
+						   Give the coordinates of the points found in part b., and then plot the points and graph the linear equation.
+					   </li>
+				  
+      			   </p>
+
+      		   </statement>
+		   
+      		   <solution>
+      			   <p>
+      				  sol
+      			   </p>
+			   
+   			  
+      		   </solution>
+      	   </exercise>
+		   
+		   
+		   
+      	   <exercise>
+      		   <statement>
+      			   <p>
+   				  In a classroom of <m>25</m> students, <m>3</m> are left-handed and <m>22</m> are right-handed.
+				  <ol>
+					  <li>
+						  What proportion of the class is left-handed?
+					  </li>
+					  
+					  <li>
+						  Write the proportion found in part a as a percentage.
+					  </li>
+					  
+					  <li>
+						  What is the ratio of left-handed students to right-handed students?
+					  </li>
+				  </ol>
+				  
+      			   </p>
+
+      		   </statement>
+		   
+      		   <solution>
+      			   <p>
+      				  sol
+      			   </p>
+			   
+   			  
+      		   </solution>
+      	   </exercise>
+		   
+		
+		
+	  </exercises>
+	
+	
+	
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- Math 110 etc placement problems -->
+  
+  <section xml:id="math-110">
+	  <title>Math 110/112/114/205 Prerequisite Problems</title>
+	
+	  <p>
+		  This is a short sentence
+	  </p>
+	
+	  <exercises>
+	  	
+   	   <exercise>
+   		   <statement>
+   			   <p>
+   				  Fully simplify the following expressions (the):
+				  
+				  <ol>
+					  <li>
+						  <m>((2t)^5)^3</m>
+					  </li>
+					  
+					  <li>
+						  <m>((-g)^4)^4</m>
+					  </li>
+					  
+					  <li>
+						  <m>(6m^2n^{-1})^3</m>
+					  </li>
+					  
+					  <li>
+						  <m>\dfrac{(3w^2)^5}{(6w^{-2})^2}</m>
+					  </li>
+					  
+					  <li>
+						  <m>\dfrac{2x^2}{10x^7}</m>
+					  </li>
+				  </ol>
+   			   </p>
+
+   		   </statement>
+		   
+   		   <solution>
+   			   <p>
+ 				  <ol>
+ 					  <li>
+ 						  <m>((2t)^5)^3 = 2^{5\cdot 3} \cdot t^{5\cdot 3} = 2^{15} t^{15}= {\color{blue} 32768 t^{15}}</m>
+ 					  </li>
+					  
+ 					  <li>
+ 						  <m>((-g)^4)^4 = (-g)^{4\cdot 4} = g^{16}</m>
+ 					  </li>
+					  
+ 					  <li>
+ 						  <m>(6m^2n^{-1})^3 = 6^3 m^{(2\cdot3)}n^{(-1\cdot 3)}= \dfrac{6^3m^6}{n^3}= \dfrac{216m^6}{n^3}</m>
+ 					  </li>
+					  
+ 					  <li>
+ 						  <m>\dfrac{(3w^2)^5}{(6w^{-2})^2}= \dfrac{3^5w^{2\cdot 5}}{6^2w^{(-2\cdot 2)}} = \dfrac{3^5w^{10}}{6^2w^{-4}} = \dfrac{3^5w^{10}w^{4}}{6^2} = \dfrac{27w^{14}}{4}</m>
+ 					  </li>
+					  
+ 					  <li>
+ 						  <m>\dfrac{2x^2}{10x^7} = \dfrac{1}{5x^5}</m>
+ 					  </li>
+ 				  </ol>
+   			   </p>
+			   
+   			  
+   		   </solution>
+   	   </exercise>
+		
+		
+   	   <exercise>
+   		   <statement>
+   			   <p>
+				   <ol>
+					   <li>
+						   Simplify the expression <m>2(3x^2-8)-5x^2</m>.
+					   </li>
+					   
+					   <li>
+						   Solve <m>2(3x^2-8)-5x^2=0</m> for <m>x</m>.
+					   </li>
+				   </ol>
+				  
+				  
+   			   </p>
+
+   		   </statement>
+		   
+   		   <solution>
+   			   <p>
+				   <ol>
+					   <li>
+						  <m>2(3x^2-8)-5x^2 = 6x^2-16-5x^2=x^2-16</m>.
+					   </li>
+					   
+					   <li>
+						   <md>
+							   <mrow>x^2-16 = 0</mrow>
+							   <mrow>(x-4)(x+4)=0</mrow>
+							   <mrow>x=4 \text{ or } x=-4</mrow>
+						   </md>
+					   </li>
+				   </ol>
+   			   </p>
+			   
+   			  
+   		   </solution>
+   	   </exercise>
+	   
+	   
+   	   <exercise>
+   		   <statement>
+   			   <p>
+   				  The sophomore class of two different schools were surveyed. The following results show the declared majors.
+				  <image source="images/table-majors.png" width="50%"></image>
+				  
+   			   </p>
+			   
+			   <p>
+				   <ol>
+					   <li>
+						   What percentage of sophomore students in School A major in Business?
+					   </li>
+					   
+					   <li>
+						   Which school has a higher percentage of sophomore students who major in Nursing?
+					   </li>
+				   </ol>
+			   </p>
+
+   		   </statement>
+		   
+   		   <solution>
+   			   <p>
+				   <ol>
+					   <li>
+						   The total number of sophomore students in School A is <m>315</m>. So the fraction majoring in business is <m>\dfrac{155}{315}=0.492</m> and the percentage is <m>49.2\%</m>.
+					   </li>
+					   
+					   <li>
+						   <p>
+						   	School A has <m>315</m> students and School B has <m>1225</m> students.
+						   </p>
+						   
+						   <p>
+							   School A Nursing percentage: <m>\dfrac{73}{315} \cdot 100 \% = 23.2 \%</m>
+						   </p>
+						   
+						   <p>
+							   School B Nursing percentage: <m>\dfrac{245}{1225}\cdot 100 \% = 20 \%</m>
+						   </p>
+						   
+						   <p>
+							   So School A has a higher percentage of sophomore students who major in Nursing.
+						   </p>
+					   </li>
+				   </ol>
+   			   </p>
+			   
+   			  
+   		   </solution>
+   	   </exercise>
+	   
+	   
+   	   <exercise>
+   		   <statement>
+   			   <p>
+   				  Let <m>f(t)=24000-2000t</m> represent the value (in dollars) of a new car <m>t</m> years since it was purchased.
+				  
+				  <ol>
+					  <li>
+					  	Identify the slope of the function and interpret its meaning in practical terms.
+					  </li>
+					  
+					  <li>
+					  	Identify the <m>y</m>-intercept of the function and interpret its meaning in practical terms.
+					  </li>
+					  
+					  <li>
+						  Evaluate <m>f(3)</m>.
+					  </li>
+					  
+					  <li>
+						  When will the value of the car equal <m>$14,000</m>?
+					  </li>
+					  
+					  <li>
+						  Graph the function below.
+						  
+						  <image source="images/graph-empty.png" width="75%"></image>
+					  </li>
+				  </ol>
+				  
+				  
+   			   </p>
+
+   		   </statement>
+		   
+   		   <solution>
+   			   <p>
+ 				  <ol>
+ 					  <li>
+						  Slope<m>=-2000</m>, which means that the value of the car decreases (or depreciates) by <m>$2000</m> each year.
+ 					  </li>
+					  
+ 					  <li>
+						  The <m>y</m>-intercept is <m>24000</m>, which means the value of the new car at the time of purchase was <m>$24,000</m>.
+ 					  </li>
+					  
+ 					  <li>
+ 						  <m>f(3)=24000-2000(3)=$18,000</m>
+ 					  </li>
+					  
+ 					  <li>
+						  <p>
+	 						  <md>
+								  <mrow>24000-2000t = 14000</mrow>
+								  <mrow>t=5</mrow>
+	 						  </md>
+						
+						  	 After <m>5</m> years, the value of the car will be <m>$14,000</m>.
+						  </p>
+						 
+ 					  </li>
+					  
+ 					  <li>
+ 						  The function is graphed below.
+ 						  <image source="images/graph-line.png" width="75%"></image>
+ 					  </li>
+ 				  </ol>
+   			   </p>
+			   
+   			  
+   		   </solution>
+   	   </exercise>
+	   
+		
+		
+		
+	  </exercises>
+  </section>
+  
+  
+  
+  
+  
+  <!-- Math 140 Placement Problems -->
+  
+  
+  <section xml:id="math-140">
+   <title>Math 140 Prerequisite Problems</title>
+   <p>
+    This is a short sentence.
+   </p>
+
+  
+ 
+   <exercises>
+	   
+	   
+	   
+	   <!-- Daniel F Lines problems -->
+	   
+	   <exercise>
+		   <statement>
+			   <p>
+				  Find an equation for the line passing through the points <m>(-2,5)</m> and <m>(4,-3)</m>.
+			   </p>
+
+		   </statement>
+		   
+		   <solution>
+			   <p>
+				   We first find the slope of the line, which is
+				   <me>m=\frac{-3-5}{4-(-2)}= \frac{-8}{6}=-\frac{4}{3}</me>.
+				   Using point-slope form with the point <m>(-2,5)</m> and the slope <m>m=-\dfrac{4}{3}</m>, the line has equation
+				   <me>y-5=-\frac{4}{3}(x+2)</me>.
+			   </p>
+			   
+			   <p>
+				   Additional correct answers include <m>y+3=-\frac{4}{3}(x-4)</m> and <m>y=-\frac{4}{3}x+\frac{7}{3}</m>.
+				
+			   </p>
+		   </solution>
+	   </exercise>
+	   
+	   <exercise>
+		   <statement>
+			   <p>
+				  Find the area of the triangle formed by the lines <m>y=0</m>, <m>y=2x</m>, and <m>y=6-x</m>.
+			   </p>
+
+		   </statement>
+		   
+		   <solution>
+			   <p>
+				   By graphing the indicated lines, we find the triangle shown below.
+
+				   <image source="images/graph-triangle.png" width="50%"></image>
+			   </p>
+			   
+			   <p>
+				   The intersection point can also be found algebraically by solving <m>2x=6-x</m> to find that <m>x=2</m>. Plugging this in to either line gives <m>y=4</m>.
+			   </p>
+			   
+			   <p>This triangle has width <m>6</m> and height <m>4</m>, so its area is 
+			   <me>A=\frac{1}{2}(4)(6)=12</me>.
+		   </p>
+		   </solution>
+	   </exercise>
+	   
+	   <exercise>
+		   <statement>
+			   <p>
+				  Compute the slopes of the lines <m>L_1</m> and <m>L_2</m> that are shown below.
+			   </p>
+			   
+			   <figure>
+			   	<image source="images/graph-lines.png" width="50%"></image>
+			   </figure>
+			   
+
+		   </statement>
+		   
+		   <solution>
+			   <p>
+				   The line <m>L_1</m> goes up <m>3</m> units as it moves to the right <m>1</m> unit (for example from <m>(0,1)</m> to <m>(1,4)</m>), so the slope of <m>L_1</m> is <m>3</m>.
+			   </p>
+			   
+			   <p>
+				   The line <m>L_2</m> goes down <m>1</m> unit as it moves to the right <m>2</m> units (for example from <m>(0,5)</m> to <m>(2,4)</m>), so the slope of <m>L_2</m> is <m>-\frac{1}{2}</m>.
+		   	   </p>
+		   </solution>
+	   </exercise>
+	   
+	   
+	   <!-- Mike N function and graph problems -->
+	   
+	   <exercise>
+		   <statement>
+			   <p>
+				  If <m>f(x)=16x-x^2</m>, what is the area of the rectangle <m>A</m>? 
+				  
+				  <image source="images/graph-rectangles.png" width="50%"></image>
+			   </p>
+			   
+			  
+			   
+
+		   </statement>
+		   
+		   <solution>
+			   <p>
+				   The area is length times height, so
+				   <me>f(4)\cdot 4 = (16(4)-4^2)\cdot 4 = (64-16)\cdot 4 = 192</me>
+			   </p>
+			   
+			
+		   </solution>
+	   </exercise>
+	   
+	   
+	   <exercise>
+		   <statement>
+			   <p>
+				  At what <m>x</m>-coordinates do the the graphs of the functions below intersect?
+				  
+				  <md>
+					  <mrow>f(x) \amp = x^2-4x+3</mrow>
+					  <mrow> g(x) \amp = -x^2+2x+3</mrow>
+				  </md> 
+			   </p>
+			   
+			  
+			   
+
+		   </statement>
+		   
+		   <solution>
+			   <p>
+				   Set the formulas equal to each other and solve for <m>x</m>:
+				   <md>
+					   <mrow>
+						   x^2-4x+3 = x^2+2x+3
+					   </mrow>
+					   <mrow>
+						   2x^2-6x=0
+					   </mrow>
+					   <mrow>
+						   2x(x-3)=0
+					   </mrow>
+					   <mrow>
+						   2x=0 \text{ or } x-3=0
+					   </mrow>
+					   <mrow>
+						   x=0 \text{ or } x=3
+					   </mrow>
+				   </md>
+				   
+			   </p>
+			   
+			
+		   </solution>
+	   </exercise>
+	   
+	   
+	   <exercise>
+		   <statement>
+			   <p>
+				  Suppose <m>r(t)</m> is a quadratic function. Describe how the graph of <m>y=-r(t+4)</m> is different from the graph of <m>y=r(t)</m>. 
+			   </p>
+			   
+			  
+			   
+
+		   </statement>
+		   
+		   <solution>
+			   <p>
+				   For the function <m>r(t)</m>, the transformation <m>-r(t+4)</m> results in the graph being shifted <m>4</m> units to the left and reflected across the <m>x</m>-axis.
+			   </p>
+			   
+			
+		   </solution>
+	   </exercise>
+	   
+	   
+	   
+	   
+	   
+	   <!-- Dan M composition/inverse problems -->
+	   
+	   <exercise>
+		   <statement>
+			   <p>
+				  Let <m>h(x)=e^{3x+7}</m>. Find functions <m>f</m> and <m>g</m> so that <m>h(x)=f(g(x))</m>.
+			   </p>
+			   
+			  
+			   
+
+		   </statement>
+		   
+		   <solution>
+			   <p>
+				   Set <m>f(x)=e^x</m> and <m>g(x)=3x+7</m>.
+			   </p>
+			   
+			
+		   </solution>
+	   </exercise>
+	   
+	   
+	   <exercise>
+		   <statement>
+			   <p>
+				  Let <m>C=f(A)</m> be the cost in dollars of purchasing a plot of land of area <m>A</m> square feet. What do the quantities <m>f(5000)</m> and <m>f^{-1}(250,000)</m> represent?
+			   </p>
+			   
+			  
+			   
+
+		   </statement>
+		   
+		   <solution>
+			   <p>
+				   The quantity <m>f(5000)</m> is the cost (in dollars) of purchasing a plot of land of area <m>5000</m> square feet.
+			   </p>
+			   
+			   <p>
+				   The quantity <m>f^{-1}(250,000)</m> is the area (in square feet) of a plot of land that you can purchase for <m>250,000</m> dollars.
+			   </p>
+			   
+			
+		   </solution>
+	   </exercise>
+	   
+	   <exercise>
+		   <statement>
+			   <p>
+				  Below is a graph of <m>y=f(x)</m>. Use it to answer the questions that follow.
+				  
+				  <image source="images/graph-comp.png" width="75%"></image>
+			   </p>
+			   
+			   <p>
+				   <ol>
+					   <li>
+						   If <m>g(x)=x^2+3</m>, compute <m>g(f(1))</m>.
+					   </li>
+					   
+					   <li>
+						   Compute <m>f(f(-4))</m>.
+					   </li>
+				   </ol>
+			   </p>
+			   
+
+		   </statement>
+		   
+		   <solution>
+			   <p>
+				   <ol>
+					   <li>
+						   <m>g(f(1))=g(0)=0^2+3=3</m>.
+					   </li>
+					   
+					   <li>
+						   <m>f(f(-4))=f(0)=-0.5</m>
+					   </li>
+				   </ol>
+			   </p>
+			   
+			
+		   </solution>
+	   </exercise>
+	   
+	   
+	   
+	   <!-- Dan M Rational Function problem -->
+	   
+	   
+	   <exercise>
+		   <statement>
+			   <p>
+				  Let <m>f(x)=\dfrac{x^3-9x}{2x^3-6x^2}</m>.
+				  
+				  <ol>
+					  <li>
+						  Identify the locations of the discontinuities of <m>f(x)</m> and classify them as holes or the location of a vertical asymptote.
+					  </li>
+					  
+					  <li>
+						  Analyze the end behavior of <m>f</m>. That is, what happens as <m>x</m> goes towards <m>\infty</m> or <m>-\infty</m>?
+					  </li>
+				  </ol>
+			   </p>
+			   
+			  
+			   
+
+		   </statement>
+		   
+		   <solution>
+			   <p>
+				   <ol>
+					   <li>
+						   <p>
+							   First factor the denominator of <m>f(x)</m>:
+							   <me>2x^3-6x^2=2x^2(x-3)</me>.
+							   The denominator equals <m>0</m> when <m>x=0</m> or <m>x=3</m>, so those are the locations of the discontinuities.
+						   </p>
+						   
+						   <p>
+							   To classify them, we factor the numerator as well and cancel where possible:
+							   <me>x^3-9x=x(x^2-9)=x(x-3)(x+3)</me>.
+							   So
+							   <me>\frac{x(x-3)(x+3)}{2x^2(x-3)}=\frac{x+3}{2x}</me>.
+							   Since <m>x-3</m> is no longer in the denominator after canceling, <m>x=3</m> is a hole in the graph. Since <m>x</m> is still in the denominator, <m>x=0</m> is a vertical asymptote of the graph.
+						   </p>
+						   
+					   </li>
+					   
+					   <li>
+						   In the long run, <m>f</m> behaves like <m>y=\dfrac{x^3}{2x^3}=\dfrac{1}{2}</m>. That is, the graph has a horizontal asymptote of <m>y=\frac{1}{2}</m> to both the left and right.
+					   </li>
+				   </ol>
+			   </p>
+			   
+			
+		   </solution>
+	   </exercise>
+	   
+	   
+	   <!-- Dan M Understanding Graphs problems -->
+	   
+	   <exercise>
+		   <statement>
+			   <p>
+				  The enrollment at JU is given by the following graph of a linear function, where <m>S</m> represents the number of students and <m>t</m> represents the number of years since the year <m>2000</m>.
+				  
+				  <image source="images/graph-JU.png" width="75%"></image>
+			   </p>
+			   
+			   <p>
+				   <ol>
+					   <li>
+						   Using the two given points on the graph, determine the rate of change (slope) of the linear function.
+					   </li>
+					   
+					   <li>
+						   How many students were there in the year <m>2000</m>?
+					   </li>
+					   
+					   <li>
+						   Determine a formula for <m>S</m> as a function of <m>t</m>.
+					   </li>
+				   </ol>
+			   </p>
+			   
+
+		   </statement>
+		   
+		   <solution>
+			   <p>
+				   <ol>
+					   <li>
+						   The slope is found by computing rise over run using the given points:
+						   <me>
+							   \text{slope} = \frac{2744-2636}{4-1} = \frac{108}{3} = 36
+						   </me>.
+					   </li>
+					   
+					   <li>
+						   The year <m>2000</m> corresponds to <m>t=0</m>, so we want the <m>S</m>-intercept of the line, which is <m>2600</m> students.
+					   </li>
+					   
+					   <li>
+						   We know the slope and intercept of the line, so we use slope-intercept form:
+						   <m>S(t) = 36t + 2600</m>.
+					   </li>
+				   </ol>
+			   </p>
+			   
+			
+		   </solution>
+	   </exercise>
+	   
+	   
+	   <exercise>
+		   <statement>
+			   <p>
+				  The graph of <m>y=f(x)</m> is drawn below. 
+				  
+				  <image source="images/graph-pw.png" width="75%"></image>
+			   </p>
+			   
+			   <p>
+				   <ol>
+					   <li>
+						   Compute <m>f(0)</m>.
+					   </li>
+					   
+					   <li>
+						   What is the domain of <m>f(x)</m>?
+					   </li>
+					   
+					   <li>
+						   What is the range of <m>f(x)</m>?
+					   </li>
+				   </ol>
+			   </p>
+			   
+
+		   </statement>
+		   
+		   <solution>
+			   <p>
+				   <ol>
+					   <li>
+						   <m>f(0)=1</m>
+					   </li>
+					   
+					   <li>
+						   The domain is all valid <m>x</m>-values on the graph, so the domain of <m>f(x)</m> is the set of values <m>-4 \leq x \leq 2</m>, which can be written as <m>[-4,2]</m> using interval notation.
+					   </li>
+					   
+					   <li>
+						   The range is all valid <m>y</m>-values on the graph (or all possible outputs of the function), so the range of <m>f(x)</m> is the set of values <m>-1.5 \leq y \leq 2</m>, which can be written as <m>[-1.5, 2]</m> using interval notation.
+					   </li>
+				   </ol>
+			   </p>
+			   
+			
+		   </solution>
+	   </exercise>
+	   
+	   
+	   
+	   
+	   
+	   <!-- Mike N exponential problems-->
+	   
+	   <exercise>
+		   <statement>
+			   <p>
+				  Sketch a reasonable graph for the temperature <m>T</m> of a freshly poured hot cup of coffee as a function of time <m>t</m> (in minutes) since the coffee was poured from a coffee pot into a room temperature cup. Assume the temperature of the coffee in the pot is <m>170</m> degrees Fahrenheit and room temperature is <m>72</m> degrees Fahrenheit. 
+			   </p>
+			   
+			  
+			   
+
+		   </statement>
+		   
+		   <solution>
+			   <p>
+				   <image source="images/graph-temp.png"></image>
+			   </p>
+			   
+			
+		   </solution>
+	   </exercise>
+	   
+	   
+	   <exercise>
+		   <statement>
+			   <p>
+				  Without using a calculator, match each formula to a graph.
+				  
+				  <sidebyside widths="20% 60%" margins="auto">
+					  <ol>
+						  <li>
+							  <m>P=20(1.02)^t</m>
+						  </li>
+						  <li>
+							  <m>P=20(0.98)^t</m>
+						  </li>
+						  <li>
+							  <m>P=20(0.96)^t</m>
+						  </li>
+						  <li>
+							  <m>P=20(1.04)^t</m>
+						  </li>
+						  
+					  </ol>
+					  
+					  <image source="images/graph-exp.png"></image>
+				  </sidebyside>
+			   </p>
+			   
+			  
+			   
+
+		   </statement>
+		   
+		   <solution>
+			   <p>
+				   From top to bottom, the graphs are (d), (a), (b), (c).
+			   </p>
+			   
+			
+		   </solution>
+	   </exercise>
+	   
+	   
+	   <exercise>
+		   <statement>
+			   <p>
+				  For which values of <m>b</m> is <m>y(x)=5e^{bx}</m> an increasing function? For which values of <m>b</m> is it a decreasing function?
+			   </p>
+			   
+			  
+			   
+
+		   </statement>
+		   
+		   <solution>
+			   <p>
+				   The function is increasing when <m>b\gt 0</m> and is decreasing when <m>b \lt 0</m>.
+			   </p>
+			   
+			
+		   </solution>
+	   </exercise>
+	   
+	   
+	   
+	   
+	   
+	   <!-- Mike N function modeling with units -->
+	   
+	   <exercise>
+		   <statement>
+			   <p>
+				  Suppose the population of a certain small country is given by <m>P(t)=19.5e^{0.01t}</m>, where <m>P</m> is the population in millions, <m>t</m> years after the year <m>2000</m>. Calculate and describe the meaning of <m>P(8)</m>. Include units in your answer. 
+			   </p>
+			   
+			  
+			   
+
+		   </statement>
+		   
+		   <solution>
+			   <p>
+				   <me>P(8)=19.5e^{0.01(8)}\approx 43.398 \text{ million people}</me>
+				   
+				   This means that in the year 2008, the population of the small country was approximately <m>43.398</m> million people (<m>43,398,000</m> people).
+			   </p>
+			   
+			
+		   </solution>
+	   </exercise>
+	   
+	   
+	   <exercise>
+		   <statement>
+			   <p>
+				  For a <m>180</m> pound man, blood alcohol content (BAC) decreases linearly by  0.015 every hour if he does not consume any more alcohol. If at the start of the hour, he has a BAC of <m>0.13</m>, how many minutes must he wait before his BAC falls below the legal driving limit of <m>0.08</m>?
+			   </p>
+			   
+			  
+			   
+
+		   </statement>
+		   
+		   <solution>
+			   <p>
+				   If <m>B</m> is the the blood alcohol content (BAC) of the man, and <m>t</m> is the number of hours after the man has stopped consuming alcohol, then <m>B</m> can be modeled by <m>B(t)=-0.015t + 0.13</m>. To answer the question, we solve <m>B(t)=0.08</m> for <m>t</m>:
+				   <md>
+					   <mrow>-0.015t + 0.13 = 0.08</mrow>
+					   <mrow>-0.015t = 0.08-0.13</mrow>
+					   <mrow>-0.015t = -0.05</mrow>
+					   <mrow>t = \frac{-0.05}{-0.015}=\frac{10}{3} \text{ hours}</mrow>
+				   </md>.
+				   So he must wait <m>3</m> hours and <m>20</m> minutes for his BAC to reach 0.08.
+			   </p>
+			   
+			
+		   </solution>
+	   </exercise>
+	   
+	   
+	   <exercise>
+		   <statement>
+			   <p>
+				  The rabbit population in a national park rises and falls each year. The population is at its minimum number of rabbits at the beginning of January and increases in size to its maximum at the beginning of July. The population <m>P</m> of rabbits (in thousands) <m>t</m> months after January 1 is given by
+				  <me>P(t)=-5\cos\left(\frac{\pi}{6}t\right) + 10</me>.
+				  
+				  What is the maximum population of rabbits each year? What is the minimum population of rabbits each year? 
+			   </p>
+			   
+			  
+			   
+
+		   </statement>
+		   
+		   <solution>
+			   <p>
+				   The maximum population is at the beginning of July, which is <m>t=6</m>:
+				   
+				   <me>
+					   P(6) = -5\cos\left(\frac{\pi}{6} \cdot 6 \right) + 10 = -5(-1) +10 = 15 \text{ thousand rabbits}
+				   </me>.
+				   
+				   The minimum population is at the beginning of January, which is <m>t=0</m>:
+				   <me>
+					   P(0) = -5\cos\left(\frac{\pi}{6} \cdot 0 \right) + 10 = -5(1) +10 = 5 \text{ thousand rabbits}
+				   </me>
+			   </p>
+			   
+			
+		   </solution>
+	   </exercise>
+	   
+	   
+	   
+	   
+	   <!-- Daniel F Trig problems -->
+	   
+	   <exercise>
+		   <statement>
+			   <p>
+			   	Of the following graphs, which is the graph of <m>y=\sin(x)</m> and which is the graph of <m>y=\cos(x)</m>? Answer without using a graphing calulator.
+			   </p>
+
+			 
+				   <sidebyside width="20%" margins="auto">
+					   <image source="images/graph-neg-sin.png"></image>
+					   
+					   <image source="images/graph-cos.png"></image>
+					   
+					   <image source="images/graph-neg-cos.png"></image>
+					   
+					   <image source="images/graph-sin.png"></image>
+					   
+					   
+				   </sidebyside>
+				   
+			  
+
+		   </statement>
+		   
+		   <solution>
+			   <p>
+				   The fourth graph is the graph of <m>y=\sin(x)</m>, and the second graph is the graph of <m>y=\cos(x)</m>.
+			   </p>
+		   </solution>
+	   </exercise>
+   
+	   <exercise>
+		   <statement>
+			   <p>
+				   If <m>0 \leq \theta \leq \pi/2</m> and <m>\sin(\theta)=\dfrac{4}{7}</m>, what are the exact values of <m>\cos(\theta)</m> and <m>\tan(\theta)</m>?
+			   </p>
+
+		   </statement>
+		   
+		   <solution>
+			   <p>
+				   Using <m>\sin(\theta)=\dfrac{\text{opposite}}{\text{hypotenuse}}</m>, we create a right triangle with one leg length <m>4</m> and the hypotenuse length <m>7</m>. Then the leg adjacent to angle <m>\theta</m> has length <m>\sqrt{7^2-4^2}=\sqrt{49-16}=\sqrt{33}</m>.
+			   </p>
+			   
+			   <p>
+				   Using <m>\cos(\theta)=\dfrac{\text{adjacent}}{\text{hypotenuse}}</m> and <m>\tan(\theta)=\dfrac{\text{opposite}}{\text{adjacent}}</m>, we obtain <m>\cos(\theta)=\dfrac{\sqrt{33}}{7}</m> and <m>\tan(\theta)=\dfrac{4}{\sqrt{33}}</m>.
+			   </p>
+		   </solution>
+	   </exercise>
+
+
+	   <exercise>
+		   <statement>
+			   <p>
+				  Fully simplify the expression <m>\dfrac{\sin^2(x)}{\tan^2(x)} + \tan^2(x)\cos^2(x)</m>.
+			   </p>
+
+		   </statement>
+		   
+		   <solution>
+			   <p>
+				   Since <m>\tan(x)=\dfrac{\sin(x)}{\cos(x)}</m>, we have
+				   <md>
+					   <mrow>\frac{\sin^2(x)}{\tan^2(x)} \amp = \sin^2(x) \cdot \frac{1}{\tan^2(x)}</mrow>
+					   <mrow> \amp = \sin^2(x) \cdot \frac{\cos^2(x)}{\sin^2(x)}</mrow>
+					   <mrow> \amp = \cos^2(x)</mrow>
+				   </md>
+				   and 
+				   <md>
+					   <mrow>\tan^2(x) \cos^2(x) \amp = \frac{\sin^2(x)}{\cos^2(x)}\cos^2(x)</mrow>
+					   <mrow> \amp = \sin^2(x)</mrow>
+				   </md>.
+				   So 
+				   <me>\frac{\sin^2(x)}{\tan^2(x)} + \tan^2(x)\cos^2(x) = \cos^2(x) +\sin^2(x) =1</me>.
+			   </p>
+		   </solution>
+	   </exercise>
+   
+   
+	  
+   
+   
+   </exercises>
+
+  </section>
+  
+ </article>
+</pretext>
+
