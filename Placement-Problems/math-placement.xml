@@ -996,7 +996,24 @@
 		   
       		   <solution>
       			   <p>
-					   sol
+	 				  <ol>
+	 					  <li>
+							  <p>
+								  Constants: <m>5, 2, -4</m>
+							  </p>
+							  <p>
+								  Variables: <m>x, y</m>
+							  </p>
+	 					  </li>
+					  
+	 					  <li>
+	 						  <md>
+								  <mrow>5(4) + 2(4)^2\left(-\frac{1}{4}\right) - 4\left(-\frac{1}{4}\right) \amp = 20+2(16)\left(-\frac{1}{4}\right) + 1 </mrow>
+								  <mrow>\amp = 20-8+1</mrow>
+								  <mrow>\amp = 13</mrow>
+	 						  </md>
+	 					  </li>
+	 				  </ol>
       			   </p>
 			   
    			  
@@ -1062,7 +1079,57 @@
 		   
       		   <solution>
       			   <p>
-      				  sol
+					   <ol>
+						   <li>
+							   <md>
+								   <mrow>-3y = -4x-12</mrow>
+								   <mrow> y =\frac{4}{3}x + 4</mrow>
+							   </md>
+						   </li>
+						   
+						   <li>
+						     <tabular top="minor" left="minor">
+						       <row bottom="minor">
+						         <cell left="minor" right="minor">
+						           <m>x</m>
+						         </cell>
+						         <cell right="minor">
+						           <m>y</m>
+						         </cell>
+						       </row>
+						       <row bottom="minor">
+						         <cell left="minor" right="minor">
+						           <m>-6</m>
+						         </cell>
+						         <cell right="minor">
+									 <m>-4</m>
+						         </cell>
+						       </row>
+						       <row bottom="minor">
+						         <cell left="minor" right="minor">
+									 <m>0</m>
+						         </cell>
+						         <cell right="minor">
+						           <m>4</m>
+						         </cell>
+						       </row>
+						       <row bottom="minor">
+						         <cell left="minor" right="minor">
+						           <m>3</m>
+						         </cell>
+						         <cell right="minor">
+									 <m>8</m>
+						         </cell>
+						       </row>
+						     </tabular>
+						   </li>
+						   
+						   <li>
+							   The points are <m>(-6,-4), (0,4)</m>, and <m>(3,8)</m>. The points and linear equation are graphed below.
+							   
+							   <image source="images/graph-104line.png" width="60%"></image>
+						   </li>
+					   </ol>
       			   </p>
 			   
    			  
@@ -1095,7 +1162,19 @@
 		   
       		   <solution>
       			   <p>
-      				  sol
+	 				  <ol>
+	 					  <li>
+	 						  <m>\dfrac{3}{25}</m>
+	 					  </li>
+					  
+	 					  <li>
+	 						  <m>6\%</m>
+	 					  </li>
+					  
+	 					  <li>
+	 						  <m>3: 22</m>
+	 					  </li>
+	 				  </ol>
       			   </p>
 			   
    			  
