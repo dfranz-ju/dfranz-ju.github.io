@@ -58,18 +58,186 @@
 	
 	
  <article xml:id="placement-problems">
- <title>Math Placement Problems</title>
+ <title>Mathematics Placement at JU</title>
  <introduction>
   <p>
-
+	  This information will help you decide which Math class you’re prepared to take at JU.  (Different majors require different courses, so you’ll want to consult with your advisor and/or the catalog to see what you’ll eventually need to take.  This page helps you figure out where you’re ready to enter the math curriculum at JU.)  There are 4 different levels you could start at; use the information below to decide which is right for you.
   </p> 
-  </introduction>
+
+
+  
+  <p>
+	  <alert> MATH 140: Caclulus 1</alert>
+  </p>
+  <p>
+  	Students who did very well in a Pre-Calculus course in high school (or took a Calculus class but didn’t earn AP credit) may be prepared to take MATH 140: Calculus I at JU.  To be successful, those students will want to be comfortable with the following skills:
+	
+	<ul>
+		<li>
+			Understand function notation and the relationship between a function’s formula and graph;
+		</li>
+		
+		<li>
+			Understand the relationship between composition and inverse;
+		</li>
+		
+		<li>
+			Know the rules for manipulating exponents;
+		</li>
+		
+		<li>
+			Factor quadratic expressions;
+		</li>
+		
+		<li>
+			Have skill at solving equations for a variable;
+		</li>
+		
+		<li>
+			Understand the relationship between a function’s formula and graph;
+		</li>
+		
+		<li>
+			Recognize the graphs of polynomial, exponential, logarithmic, and trigonometric functions;
+		</li>
+		
+		<li>
+			Be able to recognize asymptotes and removable discontinuities in rational functions;
+		</li>
+		
+		<li>
+			Be comfortable working with sin(x), cos(x), and tan(x);
+		</li>
+		
+		<li>
+			Have expertise working with linear functions both graphically and algebraically;
+		</li>
+		
+		<li>
+			Understand exponential growth and decay;
+		</li>
+		
+		<li>
+			Pick out the main ideas in word problems and understand real-world applications including the correct use of units.
+		</li>
+	</ul>
+
+	As a guide to helping understand whether they have these skills, students entering MATH 140 should be able to successfully complete the problems listed here: <xref ref="math-140" text="custom">Math 140 Problems</xref>. 
+  </p>
   
   
+  <p>
+	  <alert>Core-Level Math Classes </alert>
+  </p>
   
- 
+  <p>
+  	Not everyone needs to take Calculus!  Students are typically prepared to take Core-Level Math Classes (MATH 110, MATH 112, MATH 114, MATH 205) at JU if they did well in their high school math classes, particularly if those classes included a Pre-Calculus class.  To be successful, those students want to be comfortable with the following skills:
+
+  
+  <ul>
+	  <li>
+	  	Use operations including addition, subtraction, multiplication, and division in the appropriate order;
+	  </li>
+	  
+	  <li>
+	  	Be able to add fractions;
+	  </li>
+	  
+	  <li>
+	  	Be able to factor quadratic expressions;
+	  </li>
+	  
+	  <li>
+	  	Solving linear equations and inequalities;
+	  </li>
+	  
+	  <li>
+	  	Manipulating exponents and radicals (or roots);
+	  </li>
+	  
+	  <li>
+	  	Use basic strategies for solving equations for a variable;
+	  </li>
+	  
+	  <li>
+	  	Have a general understanding of function and function notation;
+	  </li>
+	  
+	  <li>
+	  	Be able to add, subtract, and multiply polynomials;
+	  </li>
+	  
+	  <li>
+	  	Understand ratios, percentages (how to calculate a percent), proportions and how they are related;
+	  </li>
+	  
+	  <li>
+	  	Pick out the main ideas in word problems.
+	  </li>
+  </ul>
+  </p>
+  
+  <p>
+  	  As a guide to helping understand whether they have these skills, students entering Core-Level Math Classes should be able to successfully complete the problems listed here: <xref text="custom" ref="math-110">Core-Level Problems</xref>.
+  </p>
+
+
+
+  
+  <p>
+	  <alert>MATH 104: College Algebra</alert>
+  </p>
+  
+  <p>
+  	Some students need some extra preparation before they’re ready for Core-Level Math Classes.  Most of those students will want to take MATH 104: College Algebra.  Students are ready for MATH 104 if they are comfortable with the following skills:
+	
+	<ul>
+		<li>
+			Perform basic mathematical operations in the correct order;
+		</li>
+		
+		<li>
+			Be able to work with integers and rational numbers;
+		</li>
+		
+		<li>
+			Understand the idea of constants, variables, and exponents;
+		</li>
+		
+		<li>
+			Have a general understanding of how to manipulate equations;
+		</li>
+		
+		<li>
+			Solve basic linear equations and inequalities;
+		</li>
+		
+		<li>
+			Understand graphs (including linear graphs) and the Cartesian coordinate system;
+		</li>
+		
+		<li>
+			Understand ratios, percentages, and proportions and how they are related.
+		</li>
+		
+	</ul>
+	
+	As a guide to helping understand whether they have these skills, students entering MATH 104 should be able to successfully complete the problems listed here:  <xref text="custom" ref="math-104">Math 104 Problems</xref>.
+  </p>
   
   
+  <p>
+	  <alert>MATH 100: Basic College Mathematics </alert>
+  </p>
+  
+  <p>
+	  Students who don’t feel they’d be successful in MATH 104 should start in MATH 100: Basic College Mathematics instead.  
+  </p>
+  <p>
+	  If you’re still not sure which math class is right for you, consult with your advisor or reach out to the mathematics department.  
+  	
+  </p>
+    </introduction>
   
   
   
@@ -93,69 +261,12 @@
    <exercises>
 	   
 	   
-	   
-	   <!-- Daniel F Lines problems -->
-	   
-	  
-	   
-	   <exercise>
-		   <statement>
-			   Placeholder
-		   </statement>
-	   </exercise>
-	   
-	   <exercise>
-		   <statement>
-			   <p>
-				  Find the area of the triangle formed by the lines <m>y=0</m>, <m>y=2x</m>, and <m>y=6-x</m>.
-			   </p>
 
-		   </statement>
-		   
-		   <solution>
-			   <p>
-				   By graphing the indicated lines, we find the triangle shown below.
-
-				   <image source="images/graph-triangle.png" width="50%"></image>
-			   </p>
-			   
-			   <p>
-				   The intersection point can also be found algebraically by solving <m>2x=6-x</m> to find that <m>x=2</m>. Plugging this in to either line gives <m>y=4</m>.
-			   </p>
-			   
-			   <p>This triangle has width <m>6</m> and height <m>4</m>, so its area is 
-			   <me>A=\frac{1}{2}(4)(6)=12</me>.
-		   </p>
-		   </solution>
-	   </exercise>
-	   
-	   <exercise>
-		   <statement>
-			   <p>
-				  Compute the slopes of the lines <m>L_1</m> and <m>L_2</m> that are shown below.
-			   </p>
-			   
-			   <figure>
-			   	<image source="images/graph-lines.png" width="50%"></image>
-			   </figure>
-			   
-
-		   </statement>
-		   
-		   <solution>
-			   <p>
-				   The line <m>L_1</m> goes up <m>3</m> units as it moves to the right <m>1</m> unit (for example from <m>(0,1)</m> to <m>(1,4)</m>), so the slope of <m>L_1</m> is <m>3</m>.
-			   </p>
-			   
-			   <p>
-				   The line <m>L_2</m> goes down <m>1</m> unit as it moves to the right <m>2</m> units (for example from <m>(0,5)</m> to <m>(2,4)</m>), so the slope of <m>L_2</m> is <m>-\frac{1}{2}</m>.
-		   	   </p>
-		   </solution>
-	   </exercise>
 	   
 	   
 	   <!-- Mike N function and graph problems -->
 	   
+	   <!-- Problem 4 -->
 	   <exercise>
 		   <statement>
 			   <p>
@@ -180,69 +291,7 @@
 	   </exercise>
 	   
 	   
-	   <exercise>
-		   <statement>
-			   <p>
-				  At what <m>x</m>-coordinates do the the graphs of the functions below intersect?
-				  
-				  <md>
-					  <mrow>f(x) \amp = x^2-4x+3</mrow>
-					  <mrow> g(x) \amp = -x^2+2x+3</mrow>
-				  </md> 
-			   </p>
-			   
-			  
-			   
 
-		   </statement>
-		   
-		   <solution>
-			   <p>
-				   Set the formulas equal to each other and solve for <m>x</m>:
-				   <md>
-					   <mrow>
-						   x^2-4x+3 = x^2+2x+3
-					   </mrow>
-					   <mrow>
-						   2x^2-6x=0
-					   </mrow>
-					   <mrow>
-						   2x(x-3)=0
-					   </mrow>
-					   <mrow>
-						   2x=0 \text{ or } x-3=0
-					   </mrow>
-					   <mrow>
-						   x=0 \text{ or } x=3
-					   </mrow>
-				   </md>
-				   
-			   </p>
-			   
-			
-		   </solution>
-	   </exercise>
-	   
-	   
-	   <exercise>
-		   <statement>
-			   <p>
-				  Suppose <m>r(t)</m> is a quadratic function. Describe how the graph of <m>y=-r(t+4)</m> is different from the graph of <m>y=r(t)</m>. 
-			   </p>
-			   
-			  
-			   
-
-		   </statement>
-		   
-		   <solution>
-			   <p>
-				   For the function <m>r(t)</m>, the transformation <m>-r(t+4)</m> results in the graph being shifted <m>4</m> units to the left and reflected across the <m>x</m>-axis.
-			   </p>
-			   
-			
-		   </solution>
-	   </exercise>
 	   
 	   
 	   
@@ -250,6 +299,7 @@
 	   
 	   <!-- Dan M composition/inverse problems -->
 	   
+	   <!-- Problem 7 -->
 	   <exercise>
 		   <statement>
 			   <p>
@@ -271,6 +321,7 @@
 	   </exercise>
 	   
 	   
+	   <!-- Problem 8 -->
 	   <exercise>
 		   <statement>
 			   <p>
@@ -295,50 +346,11 @@
 		   </solution>
 	   </exercise>
 	   
-	   <exercise>
-		   <statement>
-			   <p>
-				  Below is a graph of <m>y=f(x)</m>. Use it to answer the questions that follow.
-				  
-				  <image source="images/graph-comp.png" width="75%"></image>
-			   </p>
-			   
-			   <p>
-				   <ol>
-					   <li>
-						   If <m>g(x)=x^2+3</m>, compute <m>g(f(1))</m>.
-					   </li>
-					   
-					   <li>
-						   Compute <m>f(f(-4))</m>.
-					   </li>
-				   </ol>
-			   </p>
-			   
 
-		   </statement>
-		   
-		   <solution>
-			   <p>
-				   <ol>
-					   <li>
-						   <m>g(f(1))=g(0)=0^2+3=3</m>.
-					   </li>
-					   
-					   <li>
-						   <m>f(f(-4))=f(0)=-0.5</m>
-					   </li>
-				   </ol>
-			   </p>
-			   
-			
-		   </solution>
-	   </exercise>
-	   
 	   
 	   
 	   <!-- Dan M Rational Function problem -->
-	   
+	   <!-- Problem 10 -->
 	   
 	   <exercise>
 		   <statement>
@@ -393,7 +405,7 @@
 	   
 	   
 	   <!-- Dan M Understanding Graphs problems -->
-	   
+	   <!-- Problem 11 -->
 	   <exercise>
 		   <statement>
 			   <p>
@@ -447,81 +459,9 @@
 	   </exercise>
 	   
 	   
-	   <exercise>
-		   <statement>
-			   <p>
-				  The graph of <m>y=f(x)</m> is drawn below. 
-				  
-				  <image source="images/graph-pw.png" width="75%"></image>
-			   </p>
-			   
-			   <p>
-				   <ol>
-					   <li>
-						   Compute <m>f(0)</m>.
-					   </li>
-					   
-					   <li>
-						   What is the domain of <m>f(x)</m>?
-					   </li>
-					   
-					   <li>
-						   What is the range of <m>f(x)</m>?
-					   </li>
-				   </ol>
-			   </p>
-			   
 
-		   </statement>
-		   
-		   <solution>
-			   <p>
-				   <ol>
-					   <li>
-						   <m>f(0)=1</m>
-					   </li>
-					   
-					   <li>
-						   The domain is all valid <m>x</m>-values on the graph, so the domain of <m>f(x)</m> is the set of values <m>-4 \leq x \leq 2</m>, which can be written as <m>[-4,2]</m> using interval notation.
-					   </li>
-					   
-					   <li>
-						   The range is all valid <m>y</m>-values on the graph (or all possible outputs of the function), so the range of <m>f(x)</m> is the set of values <m>-1.5 \leq y \leq 2</m>, which can be written as <m>[-1.5, 2]</m> using interval notation.
-					   </li>
-				   </ol>
-			   </p>
-			   
-			
-		   </solution>
-	   </exercise>
-	   
-	   
-	   
-	   
-	   
-	   <!-- Mike N exponential problems-->
-	   
-	   <exercise>
-		   <statement>
-			   <p>
-				  Sketch a reasonable graph for the temperature <m>T</m> of a freshly poured hot cup of coffee as a function of time <m>t</m> (in minutes) since the coffee was poured from a coffee pot into a room temperature cup. Assume the temperature of the coffee in the pot is <m>170</m> degrees Fahrenheit and room temperature is <m>72</m> degrees Fahrenheit. 
-			   </p>
-			   
-			  
-			   
-
-		   </statement>
-		   
-		   <solution>
-			   <p>
-				   <image source="images/graph-temp.png"></image>
-			   </p>
-			   
-			
-		   </solution>
-	   </exercise>
-	   
-	   
+	   <!-- Exponential understanding -->
+	   <!-- Problem 14 -->
 	   <exercise>
 		   <statement>
 			   <p>
@@ -563,31 +503,13 @@
 	   </exercise>
 	   
 	   
-	   <exercise>
-		   <statement>
-			   <p>
-				  For which values of <m>b</m> is <m>y(x)=5e^{bx}</m> an increasing function? For which values of <m>b</m> is it a decreasing function?
-			   </p>
-			   
-			  
-			   
-
-		   </statement>
-		   
-		   <solution>
-			   <p>
-				   The function is increasing when <m>b\gt 0</m> and is decreasing when <m>b \lt 0</m>.
-			   </p>
-			   
-			
-		   </solution>
-	   </exercise>
-	   
+	
 	   
 	   
 	   
 	   
 	   <!-- Mike N function modeling with units -->
+	   <!-- Problem 16 -->
 	   
 	   <exercise>
 		   <statement>
@@ -611,35 +533,9 @@
 		   </solution>
 	   </exercise>
 	   
-	   
-	   <exercise>
-		   <statement>
-			   <p>
-				  For a <m>180</m> pound man, blood alcohol content (BAC) decreases linearly by  0.015 every hour if he does not consume any more alcohol. If at the start of the hour, he has a BAC of <m>0.13</m>, how many minutes must he wait before his BAC falls below the legal driving limit of <m>0.08</m>?
-			   </p>
-			   
-			  
-			   
 
-		   </statement>
-		   
-		   <solution>
-			   <p>
-				   If <m>B</m> is the the blood alcohol content (BAC) of the man, and <m>t</m> is the number of hours after the man has stopped consuming alcohol, then <m>B</m> can be modeled by <m>B(t)=-0.015t + 0.13</m>. To answer the question, we solve <m>B(t)=0.08</m> for <m>t</m>:
-				   <md>
-					   <mrow>-0.015t + 0.13 = 0.08</mrow>
-					   <mrow>-0.015t = 0.08-0.13</mrow>
-					   <mrow>-0.015t = -0.05</mrow>
-					   <mrow>t = \frac{-0.05}{-0.015}=\frac{10}{3} \text{ hours}</mrow>
-				   </md>.
-				   So he must wait <m>3</m> hours and <m>20</m> minutes for his BAC to reach 0.08.
-			   </p>
-			   
-			
-		   </solution>
-	   </exercise>
 	   
-	   
+	   <!-- Problem 18 -->
 	   <exercise>
 		   <statement>
 			   <p>
@@ -675,58 +571,11 @@
 	   
 	   
 	   
-	   <!-- Daniel F Trig problems -->
-	   
-	   <exercise>
-		   <statement>
-			   <p>
-			   	Of the following graphs, which is the graph of <m>y=\sin(x)</m> and which is the graph of <m>y=\cos(x)</m>? Answer without using a graphing calulator.
-			   </p>
-
-			 
-				   <sidebyside width="20%" margins="auto">
-					   <image source="images/graph-neg-sin.png"></image>
-					   
-					   <image source="images/graph-cos.png"></image>
-					   
-					   <image source="images/graph-neg-cos.png"></image>
-					   
-					   <image source="images/graph-sin.png"></image>
-					   
-					   
-				   </sidebyside>
-				   
-			  
-
-		   </statement>
-		   
-		   <solution>
-			   <p>
-				   The fourth graph is the graph of <m>y=\sin(x)</m>, and the second graph is the graph of <m>y=\cos(x)</m>.
-			   </p>
-		   </solution>
-	   </exercise>
-   
-	   <exercise>
-		   <statement>
-			   <p>
-				   If <m>0 \leq \theta \leq \pi/2</m> and <m>\sin(\theta)=\dfrac{4}{7}</m>, what are the exact values of <m>\cos(\theta)</m> and <m>\tan(\theta)</m>?
-			   </p>
-
-		   </statement>
-		   
-		   <solution>
-			   <p>
-				   Using <m>\sin(\theta)=\dfrac{\text{opposite}}{\text{hypotenuse}}</m>, we create a right triangle with one leg length <m>4</m> and the hypotenuse length <m>7</m>. Then the leg adjacent to angle <m>\theta</m> has length <m>\sqrt{7^2-4^2}=\sqrt{49-16}=\sqrt{33}</m>.
-			   </p>
-			   
-			   <p>
-				   Using <m>\cos(\theta)=\dfrac{\text{adjacent}}{\text{hypotenuse}}</m> and <m>\tan(\theta)=\dfrac{\text{opposite}}{\text{adjacent}}</m>, we obtain <m>\cos(\theta)=\dfrac{\sqrt{33}}{7}</m> and <m>\tan(\theta)=\dfrac{4}{\sqrt{33}}</m>.
-			   </p>
-		   </solution>
-	   </exercise>
 
 
+
+	   <!-- Trigonometry -->
+	   <!-- Problem 21 -->
 	   <exercise>
 		   <statement>
 			   <p>
