@@ -50,6 +50,9 @@
 <pretext>
 	
 	<docinfo>
+		
+		<brandlogo source="JU-logo.jpeg"/>
+		
 		<macros>
 			<!-- simple latex macros (\newcommand) go here-->
 			
