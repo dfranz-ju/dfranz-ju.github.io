@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-30T18:14:32-04:00       *-->
+<!--*       on 2021-08-09T20:35:28-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,36 +14,42 @@
 <title>Guided Practice 1.9: The Matrix of a Linear Transformation</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [['\\(','\\)']]
+<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
     },
-    asciimath2jax: {
-        ignoreClass: ".*",
-        processClass: "has_am"
-    },
-    jax: ["input/AsciiMath"],
-    extensions: ["asciimath2jax.js"],
-    TeX: {
-        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
-        // scrolling to fragment identifiers is controlled by other Javascript
-        positionToHash: false,
-        equationNumbers: { autoNumber: "none", useLabelIds: true, },
-        TagSide: "right",
-        TagIndent: ".8em",
-    },
-    // HTML-CSS output Jax to be dropped for MathJax 3.0
-    "HTML-CSS": {
-        scale: 88,
-        mtextFontInherit: true,
-    },
-    CommonHTML: {
-        scale: 88,
-        mtextFontInherit: true,
-    },
-});
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script>$(function () {
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>$(function () {
     // Make *any* div with class 'sagecell-sage' an executable Sage cell
     // Their results will be linked, only within language type
     sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
@@ -65,13 +71,13 @@ MathJax.Hub.Config({
 <!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
 \)</div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
-<a id="logo-link" href=""></a><div class="title-container">
+<a id="logo-link" href="" target="_blank"><img src="JU-logo.jpeg" alt="Logo image"></a><div class="title-container">
 <h1 class="heading"><a href="Math-320-Guided-Practice.html"><span class="title">Math 320 Guided Practice</span></a></h1>
 <p class="byline">Dr. Daniel Franz</p>
 </div>
@@ -138,17 +144,17 @@ MathJax.Hub.Config({
 </h3>
 <p id="p-107">You should be able to perform these tasks with reasonable fluency <em class="emphasis">when you arrive to class</em>.</p>
 <ul class="disc">
-<li id="li-61">Explain how to find the standard matrix of a linear transformation \(T: \mathbb{R}^n \to \mathbb{R}^m\text{.}\)</li>
-<li id="li-62">Given a linear transformation \(T: \mathbb{R}^n \to \mathbb{R}^m\text{,}\) find its standard matrix.</li>
-<li id="li-63">Find the standard matrix of the linear transformation that rotates each point of \(\mathbb{R}^2\) counterclockwise by \(\theta\) radians.</li>
+<li id="li-61"><p id="p-derived-li-61">Explain how to find the standard matrix of a linear transformation \(T: \mathbb{R}^n \to \mathbb{R}^m\text{.}\)</p></li>
+<li id="li-62"><p id="p-derived-li-62">Given a linear transformation \(T: \mathbb{R}^n \to \mathbb{R}^m\text{,}\) find its standard matrix.</p></li>
+<li id="li-63"><p id="p-derived-li-63">Find the standard matrix of the linear transformation that rotates each point of \(\mathbb{R}^2\) counterclockwise by \(\theta\) radians.</p></li>
 </ul></section><section class="subsection" id="subsection-1-9-ALO"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.9.2</span> <span class="title">Advanced Learning Objectives</span>
 </h3>
 <p id="p-108">In addition to mastering the basic objectives, here are the tasks you should be able to perform <em class="emphasis">after class, with practice</em>:</p>
 <ul class="disc">
-<li id="li-64">Give geometric descriptions of the matrix transformations in Tables 1-4.</li>
-<li id="li-65">Explain what it means for a linear transformation to be one-to-one or onto, without referencing a matrix.</li>
-<li id="li-66">Use the standard matrix of a linear transformation \(T\) to determine if \(T\) is one-to-one or onto.</li>
+<li id="li-64"><p id="p-derived-li-64">Give geometric descriptions of the matrix transformations in Tables 1-4.</p></li>
+<li id="li-65"><p id="p-derived-li-65">Explain what it means for a linear transformation to be one-to-one or onto, without referencing a matrix.</p></li>
+<li id="li-66"><p id="p-derived-li-66">Use the standard matrix of a linear transformation \(T\) to determine if \(T\) is one-to-one or onto.</p></li>
 </ul></section><section class="subsection" id="subsection-1-9-Resources"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.9.3</span> <span class="title">Resources</span>
 </h3>
