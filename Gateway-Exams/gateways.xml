@@ -23,35 +23,13 @@
 <!--   website is https://dfranz-ju.github.io/Gateway-Exams/ -->  
 
 
-<!-- To process this file do                                                                      -->
-<!--                                                                                              -->
-<!-- (1) LaTeX/PDF:                                                                               -->
-<!--     xsltproc -o minimal.tex mathbook/xsl/mathbook-latex.xsl minimal.xml                      -->
-<!--     pdflatex minimal.tex                                                                     -->
-<!--     xelatex minimal.tex                                                                      -->
-<!--                                                                                              -->
-<!-- (2) HTML:
-         cd dropbox/academics/ju/pretext/first                                                    -->
-<!--     xsltproc ~/mathbook/xsl/mathbook-html.xsl quickstart.xml                                 -->
-<!--                                                                                              -->
-<!--                                                                                              -->
-<!-- (3) CoCalc worksheet (parameter causes a single file for output)                             -->
-<!--     REMOVE the "X" in the double dash (which is not legal in an XML comment)                 -->
-<!--     xsltproc -X-stringparam chunk.level 0 mathbook/xsl/mathbook-smc.xsl minimal.xml          -->
-<!--     <CoCalc> minimal.sagews                                                                  -->
-<!--                                                                                              -->
-<!-- (4) Sage doctesting                                                                          -->
-<!--     REMOVE the "X" in the double dash (which is not legal in an XML comment)                 -->
-<!--     xsltproc -X-stringparam chunk.level 0 mathbook/xsl/mathbook-sage-doctest.xsl minimal.xml -->
-<!--     <read further instructions in> minimal.py                                                -->
-
 
 
 <pretext>
 	
 	<docinfo>
 		
-		<brandlogo  source="JU-logo.jpeg"/>
+		<brandlogo url="https://dfranz-ju.github.io/Gateway-Exams/" source="JU-logo.jpeg"/>
 		
 		<macros>
 			<!-- simple latex macros (\newcommand) go here-->
