@@ -29,7 +29,7 @@
 	
 	<docinfo>
 		
-		<brandlogo url="https://dfranz-ju.github.io/Gateway-Exams/" source="JU-logo.jpeg"/>
+		<brandlogo url="https://dfranz-ju.github.io/Gateway-Exams/gateway-exams.html" source="JU-logo.jpeg"/>
 		
 		<macros>
 			<!-- simple latex macros (\newcommand) go here-->
