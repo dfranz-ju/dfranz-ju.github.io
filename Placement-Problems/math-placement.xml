@@ -834,7 +834,7 @@
 				  
 				  <ol>
 					  <li>
-						  Identity the constant and variables for the term with the largest degree in the polynomial.
+						  Identify the constant and variables for the term with the largest degree in the polynomial.
 					  </li>
 					  
 					  <li>
@@ -851,10 +851,7 @@
 	 				  <ol>
 	 					  <li>
 							  <p>
-								  Constants: <m>5, 2, -4</m>
-							  </p>
-							  <p>
-								  Variables: <m>x, y</m>
+								  The term with the largest degree is <m>2x^2y</m>, so the constant is <m>2</m> and the variables are <m>x</m> and <m>y</m>.
 							  </p>
 	 					  </li>
 					  
