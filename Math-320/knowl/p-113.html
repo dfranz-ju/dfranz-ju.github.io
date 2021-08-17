@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-16T19:39:19-04:00       *-->
+<!--*       on 2021-08-17T09:39:26-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -24,7 +24,7 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>There is no Sage command for "find the standard matrix"; we have to do that part ourselves. Once we have the standard matrix, we can row reduce it using .rref() and analyze it as we have been doing. However, we can use Sage to explore the geometric actions of linear transformations (this will be the main focus of Project 3). The code below creates the letter N, plots it, and then plots a linear transformation applied to the letter N. Try changing the entries of A in the third cell to see what effect it has. <div class="sagecell-sage" id="sage-17"><script type="text/x-sage">	d=matrix(QQ, 2, 9, [[0, 0.5, 0.5, 6, 6, 5.5, 5.5, 0, 0], [0, 0, 6.42, 0, 8, 8, 1.58, 8, 0]]); 
+<p>There is no Sage command for "find the standard matrix"; we have to do that part ourselves. Once we have the standard matrix, we can row reduce it using .rref() and analyze it as we have been doing. However, we can use Sage to explore the geometric actions of linear transformations. The code below creates the letter N, plots it, and then plots a linear transformation applied to the letter N. Try changing the entries of A in the third cell to see what effect it has. <div class="sagecell-sage" id="sage-17"><script type="text/x-sage">	d=matrix(QQ, 2, 9, [[0, 0.5, 0.5, 6, 6, 5.5, 5.5, 0, 0], [0, 0, 6.42, 0, 8, 8, 1.58, 8, 0]]); 
 show(d); #each column represents a point in the plane
 </script></div> <div class="sagecell-sage" id="sage-18"><script type="text/x-sage">N_0=list_plot(d.columns(), plotjoined=true, aspect_ratio=1, color='purple'); 
 N_0 # the above command "connects the dots" to create a picture
