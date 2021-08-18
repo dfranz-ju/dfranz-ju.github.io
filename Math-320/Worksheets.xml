@@ -240,19 +240,19 @@
 		
 		<exercises>
 			<p>
-				Complete the following exercises in the GP 1-1 file in CoCalc by 8:00 AM on 8/20/2020. (The questions are already included in the CoCalc file)
+				Complete the following exercises on paper and bring your solutions to class on the specified day.
 			</p>
 			
 			<exercise>
 				<statement>
-					A given linear system of equations in three variables has <m>x=4, y=2, z=1</m> and <m>x=-1, y=4, z=2</m> as solutions. How many total solutions does this system have? (Answer in a Markdown cell)
+					A given linear system of equations in three variables has <m>x=4, y=2, z=1</m> and <m>x=-1, y=4, z=2</m> as solutions. How many total solutions does this system have? 
 				</statement>
 				
 			</exercise>
 			
 			<exercise>
 				<statement>
-					Create the augmented matrix of the linear system of equations below using the Sage <c>matrix</c> command. Write the command in the code cell below (and execute it).
+					Create the augmented matrix of the linear system of equations below. 
 					<md>
 						<mrow> x_2 + 4x_3 \amp = -5</mrow>
 						<mrow> x_1 + 3x_2 + 5x_3 \amp = -2</mrow>
@@ -263,7 +263,7 @@
 			
 			<exercise>
 				<statement>
-					Write the linear system of equations corresponding to the augmented matrix below. (Answer in a Markdown cell)
+					Write the linear system of equations corresponding to the augmented matrix below. 
 					<me> \begin{bmatrix} 2 \amp -3 \amp -5 \\ -4 \amp 6 \amp 10 \end{bmatrix}</me>
 				</statement>
 			</exercise>
@@ -272,7 +272,7 @@
 			
 			<exercise>
 				<statement>
-					In each part, use a Sage command to apply the given elementary row operation to the matrix <m>B = \begin{bmatrix} 1 \amp 2 \amp 3 \\ 4 \amp 5 \amp 6 \\ 7 \amp 8 \amp 9 \end{bmatrix}</m>. Each answer should be written in a code cell that executes correctly. Note: each row operation should be applied to the initial matrix <m>B</m>; they should not be applied sequentially.
+					In each part, apply the given elementary row operation to the matrix <m>B = \begin{bmatrix} 1 \amp 2 \amp 3 \\ 4 \amp 5 \amp 6 \\ 7 \amp 8 \amp 9 \end{bmatrix}</m>. Note: each row operation should be applied to the initial matrix <m>B</m>; they should not be applied sequentially.
 					<ol>
 						<li>
 							Swap the second and third row of B.
