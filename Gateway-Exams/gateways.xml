@@ -160,7 +160,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>f(t) = \arcsin(3t^2+1)</m>
+						  <m>y = \arcsin(3t^2+1)</m>
 					  </p>
 			  	
 				  </statement>
@@ -170,7 +170,7 @@
 					  <p>
 						  <md>
 							  <mrow>
-								  f'(t) \amp = \frac{1}{\sqrt{1-(3t+1)^2}}\cdot \frac{d}{dt}[3t^2+1]
+								  \frac{dy}{dt} \amp = \frac{1}{\sqrt{1-(3t+1)^2}}\cdot \frac{d}{dt}[3t^2+1]
 							  </mrow>
 							  <mrow>
 								  \amp = \frac{6t}{\sqrt{1-(3t+1)^2}}
@@ -329,7 +329,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>f(x) = x^{16} + 2x + \dfrac{1}{x^4}</m>
+						  <m>f(x) = x^{16} + 2x + \dfrac{1}{x^4}-8e^2</m>
 					  </p>
 			  	
 				  </statement>
@@ -347,7 +347,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>g(x) = (3x+\sin(x))e^{2x}</m>
+						  <m>y = (3x+\sin(x))e^{2x}</m>
 					  </p>
 			  	
 				  </statement>
@@ -365,7 +365,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>r(x) = \ln(\cos(x))</m>
+						  <m>r(x) = \ln(\cos(x)) + \ln(e^x)</m>
 					  </p>
 			  	
 				  </statement>
@@ -455,7 +455,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>h(x) = 5^x \tan(x)</m>
+						  <m>h(x) = 3^x \tan(x)</m>
 					  </p>
 			  	
 				  </statement>
@@ -495,7 +495,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>f(x) = x^3+2\sqrt{x}</m>
+						  <m>f(x) = x^3+2\sqrt{x}+8\pi</m>
 					  </p>
 			  	
 				  </statement>
@@ -531,7 +531,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>r(x) = \ln(\sin(4x))</m>
+						  <m>r(x) = \ln(\cos(4x))</m>
 					  </p>
 			  	
 				  </statement>
@@ -584,7 +584,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>g(x) = \sin^3(4x)</m>
+						  <m>g(\theta) = \tan^3(4\theta)</m>
 					  </p>
 			  	
 				  </statement>
@@ -621,7 +621,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>h(x) = 5^x \sin(2x)</m>
+						  <m>y = 4^x \sin(2x)</m>
 					  </p>
 			  	
 				  </statement>
@@ -661,7 +661,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>f(x) = x^{6} + \dfrac{1}{\sqrt{x}}</m>
+						  <m>f(x) = x^{6} + \dfrac{1}{\sqrt{x}}-100^{\pi}</m>
 					  </p>
 			  	
 				  </statement>
@@ -697,7 +697,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>r(x) = \sin(\ln(x))</m>
+						  <m>r(x) = 3\sin(\ln(x))</m>
 					  </p>
 			  	
 				  </statement>
@@ -715,7 +715,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>f(x) = \dfrac{x^3+x}{x^2}</m>
+						  <m>y = \dfrac{x^3+x}{x^2}</m>
 					  </p>
 			  	
 				  </statement>
@@ -733,7 +733,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>f(x) = e^{\sin(x^2+1)}</m>
+						  <m>f(x) = 2.1e^{\sin(x^2+1)}</m>
 					  </p>
 			  	
 				  </statement>
@@ -750,7 +750,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>g(x) = \tan(x)\sin(x)</m>
+						  <m>g(\theta) = \tan(\theta)\sin(\theta)</m>
 					  </p>
 			  	
 				  </statement>
@@ -787,7 +787,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>h(x) = \sin(4x+1)</m>
+						  <m>h(x) = 5\sin(4x+1)</m>
 					  </p>
 			  	
 				  </statement>
@@ -825,7 +825,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>f(x) = 7x^{6} + 2x^{3.1}-4x+5</m>
+						  <m>y = 7x^{6} + 2x^{3.1}-4x+5 + \dfrac{5}{x^6}</m>
 					  </p>
 			  	
 				  </statement>
@@ -861,7 +861,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>r(x) = 8(\sin(4x))^{-10}</m>
+						  <m>r(\theta) = 8(\sin(4\theta))^{-10}</m>
 					  </p>
 			  	
 				  </statement>
@@ -879,7 +879,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>f(x) = \ln(6) 5^{100x} - \tan^{100}(6x^5)</m>
+						  <m>f(x) = \ln(6) 7^{100x}</m>
 					  </p>
 			  	
 				  </statement>
@@ -897,7 +897,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>f(w) = \dfrac{w^6+7w^4-w+9}{\arcsin(w)}</m>
+						  <m>f(w) = \dfrac{w^6}{\arcsin(w)}</m>
 					  </p>
 			  	
 				  </statement>
@@ -951,7 +951,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>h(x) = 6e^{5x} + \sqrt{x^5-6x} + \dfrac{5}{x^6}</m>
+						  <m>h(x) = 6e^{5x} + \sqrt{x^5-6x} </m>
 					  </p>
 			  	
 				  </statement>
@@ -989,7 +989,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>f(x) = 3x^{4} - x^{3.6} + 12</m>
+						  <m>f(x) = 3x^{4} - x^{3.6} + \sqrt{12}</m>
 					  </p>
 			  	
 				  </statement>
@@ -1025,7 +1025,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>h(x) = 2e^x x^3</m>
+						  <m>h(z) = 2e^z z^3</m>
 					  </p>
 			  	
 				  </statement>
@@ -1043,7 +1043,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>r(x) = \sqrt{x^3+e^2}</m>
+						  <m>y = \sqrt{x^3+e^2}</m>
 					  </p>
 			  	
 				  </statement>
@@ -1078,7 +1078,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>m(x) = \dfrac{x-2}{e^x}</m>
+						  <m>m(t) = \dfrac{t-2}{e^t}</m>
 					  </p>
 			  	
 				  </statement>
@@ -1115,7 +1115,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>y(x) = 2(5^x)</m>
+						  <m>y(x) = 2(6^x) - e^{\ln(x)}</m>
 					  </p>
 			  	
 				  </statement>
@@ -1170,7 +1170,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>g(t) = 6(t^7 + 8t + 2)^4 + \ln(t^8 + 5t)</m>
+						  <m>g(t) =  6\ln(t^8 + 5t)</m>
 					  </p>
 			  	
 				  </statement>
@@ -1188,7 +1188,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>r(x) = \cos(2x^5+x) + 8 \tan^6(4x)</m>
+						  <m>r(\theta) = \cos(2\theta^5+\theta)</m>
 					  </p>
 			  	
 				  </statement>
@@ -1224,7 +1224,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>f(w) = \dfrac{4w^3-6w+5}{\sin(w)}</m>
+						  <m>f(w) = \dfrac{4w^3-6w}{\sin(w)}</m>
 					  </p>
 			  	
 				  </statement>
@@ -1241,7 +1241,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>g(x) = \arcsin(2x) + x^6 e^{3x}</m>
+						  <m>g(x) = x^6 e^{3x}</m>
 					  </p>
 			  	
 				  </statement>
@@ -1260,7 +1260,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>h(x) = \ln(9) 4^{2x+5}</m>
+						  <m>y = \ln(9) 4^{2x+5}</m>
 					  </p>
 			  	
 				  </statement>
@@ -1316,7 +1316,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>f(x) = 3x^4 - 2x^3 + 8</m>
+						  <m>f(x) = 3x^4 - 2x^3 + 8e^5</m>
 					  </p>
 
 				  </statement>
@@ -1335,7 +1335,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>g(x) = \sin(2x) + 3 \cos(x)</m>
+						  <m>g(\theta) = \sin(2\theta) + 3 \cos(\theta)</m>
 					  </p>
 			  	
 				  </statement>
@@ -1406,7 +1406,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>m(x) = \dfrac{x^3+2x^2}{x^2+1}</m>
+						  <m>y = \dfrac{x^3+2x^2}{x^2+1}</m>
 					  </p>
 				  </statement>
 
@@ -1424,7 +1424,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>r(x) = e^{3x+2}</m>
+						  <m>r(x) = e^{3x+2} + 4\tan(5x)</m>
 					  </p>
 
 				  </statement>
@@ -1506,7 +1506,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>\displaystyle \int_0^1 \frac{4x}{2x^2+3} \, dx</m>
+						  <m>\displaystyle \int \frac{4x}{2x^2+3} \, dx</m>
 					  </p>
 			  	
 				  </statement>
@@ -1524,7 +1524,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						 <m>\displaystyle \int 3e^{5x} \, dx</m>
+						 <m>\displaystyle \int 3e^{5z} \, dz</m>
 					  </p>
 
 				  </statement>
@@ -1577,7 +1577,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						 <m>\displaystyle \int 8x \cos(x) \, dx</m>
+						 <m>\displaystyle \int 8t \cos(t) \, dt</m>
 					  </p>
 				  </statement>
 
@@ -1671,7 +1671,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>\displaystyle \int_0^5 \frac{2x}{3x^2+4} \, dx </m>
+						  <m>\displaystyle \int \frac{2x}{3x^2+4} \, dx </m>
 					  </p>
 			  	
 				  </statement>
@@ -1742,7 +1742,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						 <m>\displaystyle \int x\sin(x) \, dx </m>
+						 <m>\displaystyle \int t\sin(t) \, dt </m>
 					  </p>
 				  </statement>
 
@@ -1778,7 +1778,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>\displaystyle \int \frac{1}{\sqrt{x+8}} \, dx </m>
+						  <m>\displaystyle \int \frac{1}{\sqrt{z+8}} \, dz </m>
 					  </p>
 			  	
 				  </statement>
@@ -1836,7 +1836,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>\displaystyle \int \frac{5x}{x^2+5} \, dx </m>
+						  <m>\displaystyle \int \frac{5t}{t^2+5} \, dt </m>
 					  </p>
 			  	
 				  </statement>
@@ -1943,7 +1943,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>\displaystyle \int \frac{1}{9+x^2} \, dx </m>
+						  <m>\displaystyle \int x^2(5x^3-8)^4 \, dx </m>
 					  </p>
 			  	
 				  </statement>
@@ -2164,7 +2164,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>\displaystyle \int x^2e^x \, dx </m>
+						  <m>\displaystyle \int t^2e^t \, dt </m>
 					  </p>
 			  	
 				  </statement>
@@ -2218,7 +2218,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						 <m>\displaystyle \int \sin^3(x)\cos(x) \, dx </m>
+						 <m>\displaystyle \int \sin^3(\theta)\cos(\theta) \, d\theta </m>
 					  </p>
 
 				  </statement>
@@ -2253,7 +2253,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>\displaystyle \int \frac{1}{16+x^2} \, dx </m>
+						  <m>\displaystyle \int x\sqrt{16+x^2} \, dx </m>
 					  </p>
 
 				  </statement>
@@ -2271,7 +2271,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>\displaystyle \int \frac{e^x}{e^x-7} \, dx </m>
+						  <m>\displaystyle \int \frac{e^z}{e^z-7} \, dz </m>
 					  </p>
 			  	
 				  </statement>
@@ -2329,7 +2329,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>\displaystyle \int x^2e^x \, dx </m>
+						  <m>\displaystyle \int xe^{2x} \, dx </m>
 					  </p>
 			  	
 				  </statement>
@@ -2365,7 +2365,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						 <m>\displaystyle \int_0^1 z\cos(\pi z^2) \, dz </m>
+						 <m>\displaystyle \int z\cos(\pi z^2) \, dz </m>
 					  </p>
 
 				  </statement>
@@ -2383,7 +2383,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						 <m>\displaystyle \int \frac{1}{1+9x^2} \, dx </m>
+						 <m>\displaystyle \int \sin(5\theta)\cos(5\theta) \, d\theta </m>
 					  </p>
 
 				  </statement>
@@ -2494,7 +2494,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>\displaystyle \int x^2e^x \, dx </m>
+						  <m>\displaystyle \int 2x\cos(3x) \, dx </m>
 					  </p>
 			  	
 				  </statement>
@@ -2512,7 +2512,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						 <m>\displaystyle \int \frac{x^2+x}{x^2} \, dx </m>
+						 <m>\displaystyle \int \frac{2x^5+7x}{x^3} \, dx </m>
 					  </p>
 
 				  </statement>
@@ -2548,7 +2548,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						 <m>\displaystyle \int \sin(x)\cos^4(x) \, dx </m>
+						 <m>\displaystyle \int \sin(t)\cos^4(t) \, dt </m>
 					  </p>
 
 				  </statement>
@@ -2583,7 +2583,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>\displaystyle \int \frac{1}{121+x^2} \, dx </m>
+						  <m>\displaystyle \int \frac{x}{(121+x^2)^2} \, dx </m>
 					  </p>
 
 				  </statement>
@@ -2601,7 +2601,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>\displaystyle \int x\sin(x^2+1) \, dx </m>
+						  <m>\displaystyle \int w\sin(w^2+1) \, dw </m>
 					  </p>
 			  	
 				  </statement>
@@ -2641,7 +2641,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>\displaystyle \int \left( x^3 + \frac{1}{\sqrt{x}} + e^{3x}\right) \, dx </m>
+						  <m>\displaystyle \int \left( 3x^4 + \frac{1}{\sqrt{x}} + 2^{3x}\right) \, dx </m>
 					  </p>
 
 				  </statement>
@@ -2660,7 +2660,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>\displaystyle \int x^2e^{2x} \, dx </m>
+						  <m>\displaystyle \int t^2e^{2t} \, dx </m>
 					  </p>
 			  	
 				  </statement>
@@ -2714,7 +2714,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						 <m>\displaystyle \int \frac{\sin(x)}{\cos(x)} \, dx </m>
+						 <m>\displaystyle \int \frac{\sin(\theta)}{\cos(\theta)} \, d\theta </m>
 					  </p>
 
 				  </statement>
@@ -2749,7 +2749,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>\displaystyle \int \frac{1}{36+x^2} \, dx </m>
+						  <m>\displaystyle \int \frac{3x+2}{6x^2+8x+5} \, dx </m>
 					  </p>
 
 				  </statement>
