@@ -337,7 +337,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  f'(x) \amp = \frac{d}{dx}\left[ x^16 +2x +x^{-4} -8e^2\right]
+							  </mrow>
+							  <mrow>
+								  \amp = 16x^{15} + 2 -4x^{-5}
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -355,7 +362,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  \frac{dy}{dx} \amp = (3x+\sin(x))\frac{d}{dx}[e^{2x}] + e^{2x} \frac{d}{dx}[3x+\sin(x)]
+							  </mrow>
+							  <mrow>
+								  \amp = (3x+\sin(x))\cdot e^{2x} \cdot 2 + e^{2x}(3+\cos(x))
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -373,7 +387,17 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  r'(x) \amp = \frac{d}{dx}[\ln(\cos(x)) + x]
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{\cos(x)}\cdot \frac{d}{dx}[\cos(x)]+1
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{\cos(x)} \cdot(-\sin(x))+1
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -391,7 +415,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  f'(t) \amp = \frac{1}{1+(t^2)^2} \cdot \frac{d}{dt}[t^2]
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{2t}{1+t^4}
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -408,7 +439,20 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  f'(t) \amp = \frac{d}{dt} \left[\frac{t^2}{\sqrt{t}} + \frac{2}{\sqrt{t}} \right]
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{d}{dt} \left[ t^{3/2} + 2t^{-1/2}\right]
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{3}{2}t^{1/2} + 2 \cdot \frac{-1}{2}t^{-3/2}
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{3}{2}t^{1/2} -t^{-3/2}
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -426,7 +470,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  g'(x) \amp = 12(e^x + 12x)^{11}\cdot \frac{d}{dx} [e^x + 12x]
+							  </mrow>
+							  <mrow>
+								  \amp = 12(e^x + 12x)^{11} \cdot(e^x+12)
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -445,7 +496,17 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  h'(t) \amp = \frac{d}{dt}[ (\cos(3t+5))^2]
+							  </mrow>
+							  <mrow>
+								  \amp = 2\cos(3t+5) \cdot \frac{d}{dt}[ \cos(3t+5)]
+							  </mrow>
+							  <mrow>
+								  \amp = 2\cos(3t+5) \cdot (-\sin(3t+5))\cdot 3
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -463,7 +524,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  h'(x) \amp = 3^x \cdot \frac{d}{dx}[\tan(x)] + \tan(x) \cdot \frac{d}{dx}[3^x]
+							  </mrow>
+							  <mrow>
+								  \amp = 3^x \cdot \sec^2(x) + \tan(x) \cdot \ln(3) \cdot 3^x
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -503,7 +571,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+							  	
+							  </mrow>
+							  <mrow>
+							  	
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
