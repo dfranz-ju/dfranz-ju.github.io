@@ -339,7 +339,7 @@
 					  <p>
 						  <md>
 							  <mrow>
-								  f'(x) \amp = \frac{d}{dx}\left[ x^16 +2x +x^{-4} -8e^2\right]
+								  f'(x) \amp = \frac{d}{dx}\left[ x^{16} +2x +x^{-4} -8e^2\right]
 							  </mrow>
 							  <mrow>
 								  \amp = 16x^{15} + 2 -4x^{-5}
@@ -573,10 +573,13 @@
 					  <p>
 						  <md>
 							  <mrow>
-							  	
+								  f'(x) \amp = \frac{d}{dx} \left[ x^3 + 2x^{1/2} + 8 \pi \right]
 							  </mrow>
 							  <mrow>
-							  	
+								  \amp = 3x^2 + 2\cdot \frac{1}{2} x^{-1/2}
+							  </mrow>
+							  <mrow>
+								  \amp = 3x^2 + x^{-1/2}
 							  </mrow>
 						  </md>
 					  </p>
@@ -596,7 +599,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  g'(x) \amp = e^{2x^2-x} \cdot \frac{d}{dx}[2x^2-x]
+							  </mrow>
+							  <mrow>
+								  \amp = e^{2x^2-x} \cdot (4x-1)
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -614,7 +624,17 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  r'(x) \amp = \frac{1}{\cos(4x)} \cdot \frac{d}{dx}[\cos(4x)]
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{\cos(4x)} \cdot -\sin(4x) \cdot \frac{d}{dx}[4x]
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{-\sin(4x)}{\cos(4x)}\cdot 4
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -632,7 +652,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  f'(t) \amp = \frac{1}{\sqrt{1-(t+1)^2}} \cdot \frac{d}{dt}[t+1]
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{\sqrt{1-(t+1)^2}}
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -649,7 +676,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  f'(x) \amp = \frac{d}{dx}\left[ x + 2x^{-1}\right]
+							  </mrow>
+							  <mrow>
+								  \amp = 1-2x^{-2}
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -667,7 +701,20 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								g'(\theta)  \amp = \frac{d}{d\theta}\left[(\tan(4\theta))^3\right]
+							  </mrow>
+							  <mrow>
+								  \amp = 3\tan^2(4\theta)\cdot \frac{d}{d\theta}[\tan(4\theta)]
+							  </mrow>
+							  <mrow>
+								  \amp = 3\tan^2(4\theta) \cdot \sec^2(4\theta) \cdot \frac{d}{d\theta}[4\theta]
+							  </mrow>
+							  <mrow>
+							  	\amp = 3\tan^2(4\theta) \cdot \sec^2(4\theta) \cdot 4
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -686,7 +733,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								 h'(t) \amp = \frac{(t^2+2)\cdot \frac{d}{dt}[3t+5] - (3t+5)\cdot \frac{d}{dt}[t^2+2]}{(t^2+2)^2}
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{(t^2+2)\cdot 3 - (3t+5) \cdot 2t}{(t^2+2)^2}
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -704,7 +758,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  \frac{dy}{dx} \amp = 4^x \cdot \frac{d}{dx}[\sin(2x)] + \sin(2x) \cdot \frac{d}{dx}[4^x]
+							  </mrow>
+							  <mrow>
+								  \amp = 4^x\cdot \cos(2x)\cdot 2 + \sin(2x) \cdot \ln(4)\cdot 4^x 
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -744,7 +805,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  f'(x) \amp = \frac{d}{dx}[x^6 + x^{-1/2} - 100^{\pi}]
+							  </mrow>
+							  <mrow>
+								  \amp = 6x^5 - \frac{1}{2}x^{-3/2}
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -762,7 +830,20 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  g'(x) \amp = \frac{d}{dx}[(\cos(x^2+x))^4]
+							  </mrow>
+							  <mrow>
+								  \amp = 4\cos^3(x^2+x) \cdot \frac{d}{dx}[\cos(x^2+x)]
+							  </mrow>
+							  <mrow>
+								  \amp = 4\cos^3(x^2+x) \cdot -\sin(x^2+x) \cdot \frac{d}{dx}[x^2+x]
+							  </mrow>
+							  <mrow>
+							  	\amp = 4\cos^3(x^2+x) \cdot -\sin(x^2+x) \cdot (2x+1)
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -780,7 +861,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  r'(x) \amp = 3\cos(\ln(x))\cdot \frac{d}{dx}[\ln(x)]
+							  </mrow>
+							  <mrow>
+								  \amp = 3\cos(\ln(x))\cdot \frac{1}{x}
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -798,7 +886,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  \frac{dy}{dx} \amp = \frac{d}{dx}[x+x^{-1}]
+							  </mrow>
+							  <mrow>
+								  \amp = 1-x^{-2}
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -815,7 +910,17 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  f'(x) \amp = 2.1e^{\sin(x^2+1)}\cdot \frac{d}{dx}[\sin(x^2+1)]
+							  </mrow>
+							  <mrow>
+								  \amp = 2.1e^{\sin(x^2+1)}\cdot \cos(x^2+1) \cdot \frac{d}{dx}[x^2+1]
+							  </mrow>
+							  <mrow>
+							  	\amp = 2.1e^{\sin(x^2+1)}\cdot \cos(x^2+1) \cdot 2x
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -833,7 +938,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  g'(\theta) \amp = \tan(\theta)\cdot \frac{d}{d\theta}[\sin(\theta)] + \sin(\theta) \cdot \frac{d}{d\theta}[\tan(\theta)]
+							  </mrow>
+							  <mrow>
+							  \amp = \tan(\theta)\cdot \cos(\theta) +\sin(\theta) \cdot \sec^2(\theta)	
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -852,7 +964,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  h'(t) \amp = \frac{\cos(3t) \cdot \frac{d}{dt}[t^3] - t^3 \frac{d}{dt}[\cos(3t)]}{(\cos(3x))^2}
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{\cos(3t) \cdot 3t^2 - t^3 \cdot (-\sin(3t)) \cdot 3}{\cos^2(3t)}
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -870,7 +989,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  h'(x) \amp = 5\cos(4x+1)\cdot \frac{d}{dx}[4x+1]
+							  </mrow>
+							  <mrow>
+								  \amp = 5\cos(4x+1) \cdot 4
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -900,7 +1026,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>y = 7x^{6} + 2x^{3.1}-4x+5 + \dfrac{5}{x^6}</m>
+						  <m>y = 7x^{6} + 2x^{3.1}-4x+ \dfrac{5}{x^6}</m>
 					  </p>
 			  	
 				  </statement>
@@ -908,7 +1034,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  \frac{dy}{dx} \amp = \frac{d}{dx}[7x^6 + 2x^{3.1} - 4x + 5x^{-6}]
+							  </mrow>
+							  <mrow>
+								  \amp = 42x^5 + 6.2x^{2.1} - 4  - 30x^{-7}
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -926,7 +1059,17 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  g'(x) \amp = x^4 \cdot \frac{d}{dx}[\ln(6x^5)] + \ln(6x^5) \cdot \frac{d}{dx}[x^4]
+							  </mrow>
+							  <mrow>
+								  \amp = x^4 \cdot \frac{1}{6x^5} \cdot \frac{d}{dx}[6x^5] + \ln(6x^5)\cdot 4x^3
+							  </mrow>
+							  <mrow>
+								  \amp = x^4 \cdot \frac{1}{6x^5} \cdot 30x^4 + \ln(6x^5)\cdot 4x^3
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -944,7 +1087,17 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+					  	<md>
+							  <mrow>
+								  r'(\theta) \amp = -80 (\sin(4\theta))^{-11}\cdot \frac{d}{d\theta}[\sin(4\theta)]
+							  </mrow>
+							  <mrow>
+								  \amp = -80 (\sin(4\theta))^{-11}\cdot \cos(4\theta) \cdot \frac{d}{d\theta}[4\theta]
+							  </mrow>
+							  <mrow>
+							  	\amp = -80 (\sin(4\theta))^{-11}\cdot \cos(4\theta) \cdot 4
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -962,7 +1115,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  f'(x) \amp = \ln(6) \cdot \ln(7)\cdot 7^{100x}\cdot \frac{d}{dx}[100x]
+							  </mrow>
+							  <mrow>
+								  \amp = \ln(6)\cdot \ln(7)\cdot 7^{100x}\cdot 100
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -979,7 +1139,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  f'(w) \amp = \frac{\arcsin(w)\cdot \frac{d}{dw}[w^6] - w^6 \cdot \frac{d}{dw}[\arcsin(w)]}{(\arcsin(w))^2}
+							  </mrow>
+							  <mrow>
+								  \amp = \cfrac{\arcsin(w)\cdot (6w^5) - w^6 \cdot \frac{1}{\sqrt{1-w^2}}}{(\arcsin(w))^2}
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -997,7 +1164,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  g'(t) \amp = \frac{1}{1+(7t^4)^2} \cdot \frac{d}{dt}[7t^4]
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{1+(7t^4)^2} \cdot 28t^3
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1016,7 +1190,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  h'(z) \amp = -\sin(60z^2 + 100z) \cdot \frac{d}{dz}[60z^2+100z] 
+							  </mrow>
+							  <mrow>
+								  \amp = -\sin(60z^2 + 100z) \cdot (120z+100)
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1034,7 +1215,17 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  h'(x) \amp = \frac{d}{dx}\left[6e^{5x} + (x^5-6x)^{1/2}\right]
+							  </mrow>
+							  <mrow>
+								   \amp = 6e^{5x} \cdot \frac{d}{dx}[5x] + \frac{1}{2}(x^5-6x)^{-1/2} \cdot \frac{d}{dx}[x^5-6x]
+							  </mrow>
+							  <mrow>
+								  \amp = 6e^{5x} \cdot 5 + \frac{1}{2}(x^5-6x)^{-1/2}\cdot (5x^4-6)
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1072,7 +1263,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  f'(x) \amp = 12x^3 - 3.6x^{2.6}
+							  </mrow>
+							  <mrow>
+							  	
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1090,7 +1288,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  g'(x) \amp = -\sin(2x) \cdot \frac{d}{dx}[2x] + 2\cos(x)
+							  </mrow>
+							  <mrow>
+								  \amp = -\sin(2x) \cdot 2 + 2\cos(x)
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1108,7 +1313,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  h'(z) \amp = 2e^z \cdot \frac{d}{dz}[z^3] + z^3 \cdot \frac{d}{dz}[2e^z]
+							  </mrow>
+							  <mrow>
+								  \amp = 2e^z \cdot 3z^2 + z^3\cdot 2e^z
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1126,7 +1338,17 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  \frac{dy}{dx} \amp = \frac{d}{dx}[(x^3+e^2)^{1/2}]
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{2} (x^3+e^2)^{-1/2}\cdot \frac{d}{dx}[x^3+e^2]
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{2} (x^3+e^2)^{-1/2} \cdot 3x^2
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1143,7 +1365,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  s'(t) \amp = \frac{1}{t^2+2.8}\cdot \frac{d}{dt}[t^2+2.8]
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{t^2+2.8} \cdot 2t
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1161,7 +1390,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  m'(t) \amp = \frac{e^t \cdot \frac{d}{dt}[t-2] - (t-2)\cdot \frac{d}{dt}[e^t]}{(e^t)^2}
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{e^t - (t-2)\cdot e^t}{e^{2t}}
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1180,7 +1416,17 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  r'(x) \amp = \frac{d}{dx}[e^{2.7x} + x^{-1}]
+							  </mrow>
+							  <mrow>
+								  \amp = e^{2.7x}\cdot \frac{d}{dx}[2.7x]-x^{-2}
+							  </mrow>
+							  <mrow>
+								  \amp = e^{2.7x}\cdot 2.7 -x^{-2}
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1198,7 +1444,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  y'(x) \amp = \frac{d}{dx}[2(6^x) - x]
+							  </mrow>
+							  <mrow>
+								  \amp = 2\cdot \ln(6) \cdot 6^x - 1
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1235,7 +1488,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  
+							  </mrow>
+							  <mrow>
+							  	
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1538,7 +1798,7 @@
 	  
   </chapter>
   
- 
+  
   
   <!-- Math 141 Gateway Exams -->
   

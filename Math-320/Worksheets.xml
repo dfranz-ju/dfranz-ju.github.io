@@ -817,7 +817,7 @@
 				 	Determine if a given matrix equation <m>A\mathbf{x}=\mathbf{b}</m> has a solution for every <m>\mathbf{b}</m>.
 				 </li>
 				 <li>
-					 Determine if a set of vectors spans <m>\mathbf{R}^m</m>.
+					 Determine if a set of vectors spans <m>\mathbb{R}^m</m>.
 				 </li>
 				 <li>
 					 Explain why the statements in Theorem 4 are equivalent.
@@ -919,7 +919,7 @@
 			<exercise>
 				<statement>
 					<p>
-						Compute the product below by hand on paper using both the definition of matrix-vector multiplication and the row column rule (you do not need to show me your computations). You may confirm your answer using technology.
+						Compute the product below by hand on paper using both the definition of matrix-vector multiplication and the row column rule. 
 					</p>
 					
 					<p>
