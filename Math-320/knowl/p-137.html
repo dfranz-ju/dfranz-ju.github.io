@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-24T10:07:21-04:00       *-->
+<!--*       on 2021-08-30T16:05:51-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -12,10 +12,23 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
+<script>$(function () {
+    // Make *any* div with class 'sagecell-sage' an executable Sage cell
+    // Their results will be linked, only within language type
+    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
+                           linked: true,
+                           languages: ['sage'],
+                           evalButtonText: 'Evaluate (Sage)'});
+});
+</script>
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Remembering that matrix equations are generalizations of simple linear equations, we look to a simple linear equation as a motivating example. Consider the equation \(5x=3\text{.}\) To solve it, we multiply both sides by \(1/5\text{,}\) the multiplicative inverse of \(5\text{,}\) because \(\dfrac{1}{5}\cdot 5=1\text{.}\) This yields \(x=\dfrac{1}{5}\cdot 3.\)</p>
-<span class="incontext"><a href="section-2-2.html#p-137">in-context</a></span>
+<p>Transpose: <div class="sagecell-sage" id="sage-39"><script type="text/x-sage">show("A=", A)
+show("Transpose of A is", A.transpose()) #use the .transpose() method
+show("B=", B)
+show("Transpose of B is", B.transpose())
+</script></div></p>
+<span class="incontext"><a href="section-2-1.html#p-137">in-context</a></span>
 </body>
 </html>

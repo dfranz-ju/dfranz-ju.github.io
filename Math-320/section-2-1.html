@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-24T10:07:20-04:00       *-->
+<!--*       on 2021-08-30T16:05:51-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -104,6 +104,8 @@
 <li><a href="section-1-7.html" data-scroll="section-1-7">Guided Practice 1.7: Linear Independence</a></li>
 <li><a href="section-1-8.html" data-scroll="section-1-8">Guided Practice 1.8: Introduction to Linear Transformations</a></li>
 <li><a href="section-1-9.html" data-scroll="section-1-9">Guided Practice 1.9: The Matrix of a Linear Transformation</a></li>
+<li><a href="section-sage-commands.html" data-scroll="section-sage-commands">Sage commands</a></li>
+<li><a href="section-sage-workzone.html" data-scroll="section-sage-workzone">Sage workzone</a></li>
 </ul>
 </li>
 <li class="link">
@@ -135,13 +137,13 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section-2-1"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2.1</span> <span class="title">Guided Practice 2.1: Matrix Operations</span>
 </h2>
-<section class="introduction" id="introduction-10"><h6 class="heading">Overview.<span></span>
+<section class="introduction" id="introduction-12"><h6 class="heading">Overview.<span></span>
 </h6>
-<p id="p-117">In the last two sections, we saw how matrices could be used to represent and describe linear transformations. In this section, we investigate matrices and their algebraic properties in more detail, while still relating back to linear transformations.</p>
-<p id="p-118">The majority of the section is devoted to setting notation and carefully describing and defining algebraic operations involving matrices, so that we may use these properties in the future to continue to solve problems about systems of equations and linear transformations.</p></section><section class="subsection" id="subsection-2-1-BLO"><h3 class="heading hide-type">
+<p id="p-126">In the last two sections, we saw how matrices could be used to represent and describe linear transformations. In this section, we investigate matrices and their algebraic properties in more detail, while still relating back to linear transformations.</p>
+<p id="p-127">The majority of the section is devoted to setting notation and carefully describing and defining algebraic operations involving matrices, so that we may use these properties in the future to continue to solve problems about systems of equations and linear transformations.</p></section><section class="subsection" id="subsection-2-1-BLO"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.1.1</span> <span class="title">Basic Learning Objectives</span>
 </h3>
-<p id="p-119">You should be able to perform these tasks with reasonable fluency <em class="emphasis">when you arrive to class</em>.</p>
+<p id="p-128">You should be able to perform these tasks with reasonable fluency <em class="emphasis">when you arrive to class</em>.</p>
 <ul class="disc">
 <li id="li-67"><p id="p-derived-li-67">Use correct notation for matrix entries and identify and create diagonal matrices and zero matrices.</p></li>
 <li id="li-68"><p id="p-derived-li-68">Compute matrix sums and scalar multiples of matrices.</p></li>
@@ -150,7 +152,7 @@
 </ul></section><section class="subsection" id="subsection-2-1-ALO"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.1.2</span> <span class="title">Advanced Learning Objectives</span>
 </h3>
-<p id="p-120">In addition to mastering the basic objectives, here are the tasks you should be able to perform <em class="emphasis">after class, with practice</em>:</p>
+<p id="p-129">In addition to mastering the basic objectives, here are the tasks you should be able to perform <em class="emphasis">after class, with practice</em>:</p>
 <ul class="disc">
 <li id="li-71"><p id="p-derived-li-71">Interpret matrix multiplication as the composition of linear transformations.</p></li>
 <li id="li-72"><p id="p-derived-li-72">Compute powers and the transpose of a matrix.</p></li>
@@ -158,39 +160,39 @@
 </ul></section><section class="subsection" id="subsection-2-1-Resources"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.1.3</span> <span class="title">Resources</span>
 </h3>
-<p id="p-121"><em class="emphasis">Video</em>: Begin by watching the 3Blue1Brown video below about matrix multiplication and its connection to composition of functions. This video has a great explanation and visualization of how we want to <em class="emphasis">conceptualize</em> matrix multiplication. This perspective is very useful when and will make thinking about matrix multiplication much easier. <div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-7" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/XkY2DOUCWMU?&amp;modestbranding=1&amp;rel=0&amp;start=121"></iframe></div></p>
-<p id="p-122"><em class="emphasis">Reading</em>: After watching the video, read Section 2.1 of the textbook, keeping the learning objectives in mind. There is a lot of notation introduced and a lot of algebraic properties given. The main thing to keep in mind is that matrix multiplication usually works algebraically just like usual "number multiplication", except that in general, \(AB \neq BA\text{.}\) I recommend taking notes by writing down new vocabulary words and notation along with short definitions/examples, as well as actively working along with the examples on your own paper.</p></section><section class="subsection" id="subsection-2-1-Sage"><h3 class="heading hide-type">
+<p id="p-130"><em class="emphasis">Video</em>: Begin by watching the 3Blue1Brown video below about matrix multiplication and its connection to composition of functions. This video has a great explanation and visualization of how we want to <em class="emphasis">conceptualize</em> matrix multiplication. This perspective is very useful when and will make thinking about matrix multiplication much easier. <div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-7" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/XkY2DOUCWMU?&amp;modestbranding=1&amp;rel=0&amp;start=121"></iframe></div></p>
+<p id="p-131"><em class="emphasis">Reading</em>: After watching the video, read Section 2.1 of the textbook, keeping the learning objectives in mind. There is a lot of notation introduced and a lot of algebraic properties given. The main thing to keep in mind is that matrix multiplication usually works algebraically just like usual "number multiplication", except that in general, \(AB \neq BA\text{.}\) I recommend taking notes by writing down new vocabulary words and notation along with short definitions/examples, as well as actively working along with the examples on your own paper.</p></section><section class="subsection" id="subsection-2-1-Sage"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.1.4</span> <span class="title">Sage Commands</span>
 </h3>
-<p id="p-123">This section introduces several new operations on matrices: addition, multiplication, scalar multiplication, powers, and transpose. The Sage cells below demonstrate how to implement these commands.</p>
-<p id="p-124">Matrix addition: <div class="sagecell-sage" id="sage-20"><script type="text/x-sage">A=matrix([[1,3,5], [2,4,6]]);
+<p id="p-132">This section introduces several new operations on matrices: addition, multiplication, scalar multiplication, powers, and transpose. The Sage cells below demonstrate how to implement these commands.</p>
+<p id="p-133">Matrix addition: <div class="sagecell-sage" id="sage-34"><script type="text/x-sage">A=matrix([[1,3,5], [2,4,6]]);
 B=matrix([[1,-1], [4,2]]);
 C=matrix([[5,6], [1,3]]);
 show("B=", B)
 show("C=", C)
 show("B+C=", B+C); #add matrices using +
 </script></div></p>
-<p id="p-125">Scalar multiplication: <div class="sagecell-sage" id="sage-21"><script type="text/x-sage">show("A=", A)
+<p id="p-134">Scalar multiplication: <div class="sagecell-sage" id="sage-35"><script type="text/x-sage">show("A=", A)
 show("5A=", 5*A); #multiply by a number using *
 </script></div></p>
-<p id="p-126">Matrix multiplication: <div class="sagecell-sage" id="sage-22"><script type="text/x-sage">show("B=", B, "C=", C)
+<p id="p-135">Matrix multiplication: <div class="sagecell-sage" id="sage-36"><script type="text/x-sage">show("B=", B, "C=", C)
 show("BC=", B*C)
 show("B=", B, "A=", A)
 show("BA=", B*A)
-</script></div> <div class="sagecell-sage" id="sage-23"><script type="text/x-sage">#A*B will raise an error because the dimensions do not match
+</script></div> <div class="sagecell-sage" id="sage-37"><script type="text/x-sage">#A*B will raise an error because the dimensions do not match
 A*B
 </script></div></p>
-<p id="p-127">Matrix powers: <div class="sagecell-sage" id="sage-24"><script type="text/x-sage">#only square matrices can multiply themselves
+<p id="p-136">Matrix powers: <div class="sagecell-sage" id="sage-38"><script type="text/x-sage">#only square matrices can multiply themselves
 show("C=", C)
 show("C^5=", C^5) #use the symobl ^ for powers
 </script></div></p>
-<p id="p-128">Transpose: <div class="sagecell-sage" id="sage-25"><script type="text/x-sage">show("A=", A)
+<p id="p-137">Transpose: <div class="sagecell-sage" id="sage-39"><script type="text/x-sage">show("A=", A)
 show("Transpose of A is", A.transpose()) #use the .transpose() method
 show("B=", B)
 show("Transpose of B is", B.transpose())
 </script></div></p>
-<p id="p-129">The cell below contains code that draws the letter N (named N_0) and defines three linear transformations; a shearing S, a rotation R, and a dilation D. The matrix A is then defined as a product of these transformations.</p>
-<p id="p-130">I encourage you to change the definition of A to see the effect of doing the transformations repeatedly or in a different order. To see the definition of A, scroll down in the Sage cell below. <div class="sagecell-sage" id="sage-26"><script type="text/x-sage">	d=matrix(QQ, 2, 9, [[0, 0.5, 0.5, 6, 6, 5.5, 5.5, 0, 0], [0, 0, 6.42, 0, 8, 8, 1.58, 8, 0]]); 
+<p id="p-138">The cell below contains code that draws the letter N (named N_0) and defines three linear transformations; a shearing S, a rotation R, and a dilation D. The matrix A is then defined as a product of these transformations.</p>
+<p id="p-139">I encourage you to change the definition of A to see the effect of doing the transformations repeatedly or in a different order. To see the definition of A, scroll down in the Sage cell below. <div class="sagecell-sage" id="sage-40"><script type="text/x-sage">	d=matrix(QQ, 2, 9, [[0, 0.5, 0.5, 6, 6, 5.5, 5.5, 0, 0], [0, 0, 6.42, 0, 8, 8, 1.58, 8, 0]]); 
 N_0=list_plot(d.columns(), plotjoined=true, aspect_ratio=1, color='purple'); 
 
 # a horizontal shear matrix:
@@ -211,19 +213,19 @@ N_0+N_1
 </script></div></p></section><section class="exercises" id="exercises-9"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber">2.1.5</span> <span class="title">Exercises</span>
 </h3>
-<p id="p-131">Complete the following exercises on paper and bring your solutions to class on the specified day.</p>
+<p id="p-140">Complete the following exercises on paper and bring your solutions to class on the specified day.</p>
 <article class="exercise exercise-like" id="exercise-31"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-132">Let \(A=\begin{bmatrix} -1 \amp 7 \\ 5 \amp 4 \\ 2 \amp -3 \end{bmatrix}\text{.}\)</p>
+<p id="p-141">Let \(A=\begin{bmatrix} -1 \amp 7 \\ 5 \amp 4 \\ 2 \amp -3 \end{bmatrix}\text{.}\)</p>
 <ol class="lower-alpha">
 <li id="li-74"><p id="p-derived-li-74">What are the diagonal entries of \(A\text{?}\)</p></li>
 <li id="li-75"><p id="p-derived-li-75">What is value of the entry \(a_{12}\text{?}\)</p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-32"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-133">Let \(A, B\) be \(3\times 4\) matrices, and let \(C\) be a \(4\times 4 \) matrix.</p>
+<p id="p-142">Let \(A, B\) be \(3\times 4\) matrices, and let \(C\) be a \(4\times 4 \) matrix.</p>
 <ol class="lower-alpha">
 <li id="li-76"><p id="p-derived-li-76">Which of these matrices can be added together?</p></li>
 <li id="li-77">
-<p id="p-134">Which of the following matrix products can actually be done?</p>
-<p id="p-135">\(AB, AC, BA, CA, BC, CB, A^2, B^2, C^2\)</p>
+<p id="p-143">Which of the following matrix products can actually be done?</p>
+<p id="p-144">\(AB, AC, BA, CA, BC, CB, A^2, B^2, C^2\)</p>
 </li>
 </ol></article><article class="exercise exercise-like" id="exercise-33"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>Pick one of the matrix products above that could actually be carried out. Then write down actual matrices with the correct dimensions (with at most 2 entries of 0) and carry out the multiplication by hand on paper using both methods discussed in this section. (So if you decide to do a matrix product that involves \(A\text{,}\) create and write down a \(3\times 4\) matrix with actual number entries of your choice, with at most 2 of them being 0)</article><article class="exercise exercise-like" id="exercise-34"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>What comments or questions do you have about the content of this assignment?</article></section></section></div></main>
 </div>

@@ -1490,10 +1490,7 @@
 					  <p>
 						  <md>
 							  <mrow>
-								  
-							  </mrow>
-							  <mrow>
-							  	
+								  f'(x) \amp = 6x^5 - 2\cdot 7.1x^{6.1} + 5
 							  </mrow>
 						  </md>
 					  </p>
@@ -1513,7 +1510,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  g'(t) \amp = 6\cdot \frac{1}{t^8 + 5t}\cdot \frac{d}{dt}[t^8+5t]
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{6}{t^8+5t} \cdot (8t^7 + 5)
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1531,7 +1535,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  r'(\theta) \amp = -\sin(2\theta^5 +\theta) \cdot \frac{d}{d\theta}[2\theta^5 + \theta]
+							  </mrow>
+							  <mrow>
+								  \amp = -\sin(2\theta^5 + \theta) \cdot (10\theta^4 + 1)
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1549,7 +1560,17 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  f'(z) \amp = z \cdot \frac{d}{dz}[\arctan(7z)] + \arctan(7z)\cdot \frac{d}{dz}[z]
+							  </mrow>
+							  <mrow>
+								  \amp = z\cdot \frac{1}{1+(7z)^2}\cdot \frac{d}{dz}[7z] + \arctan(7z)\cdot 1
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{z}{1+49z^2}\cdot 7 + \arctan(7z)
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1566,7 +1587,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  f'(w) \amp = \frac{\sin(w) \cdot \frac{d}{dw}[4w^3-6w] - (4w^3-6w)\cdot \frac{d}{dw}[\sin(w)]}{(\sin(w))^2}
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{\sin(w)\cdot(12w^2-6) - (4w^3-6w)\cdot \cos(w)}{\sin^2(w)}
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1584,7 +1612,17 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  g'(x) \amp = x^6 \cdot \frac{d}{dx}[e^{3x}] + e^{3x}\cdot\frac{d}{dx}[x^6]
+							  </mrow>
+							  <mrow>
+								  \amp = x^6\cdot e^{3x}\cdot \frac{d}{dx}[3x] + e^{3x}\cdot 6x^5
+							  </mrow>
+							  <mrow>
+								  \amp = x^6 \cdot e^{3x}\cdot 3 + e^{3x}\cdot 6x^5
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1603,7 +1641,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  \frac{dy}{dx} \amp = \ln(9) \cdot \ln(4)\cdot 4^{2x+5}\cdot \frac{d}{dx}[2x+5]
+							  </mrow>
+							  <mrow>
+								  \amp = \ln(9)\cdot \ln(4) \cdot 4^{2x+5}\cdot 2
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1621,7 +1666,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  h'(x) \amp = \frac{d}{dx}\left[x^{-3} + x^{1/3} +3x - \frac{1}{3}\pi \right]
+							  </mrow>
+							  <mrow>
+								  \amp = -3x^{-4} + \frac{1}{3}x^{-2/3} + 3
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1659,7 +1711,11 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  f'(x) \amp = 12x^3 - 6x^2
+							  </mrow>
+						  </md>
 					  </p>
 				  
 
@@ -1678,7 +1734,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  g'(\theta) \amp = \cos(2\theta) \cdot \frac{d}{d\theta}[2\theta] -3\sin(\theta)
+							  </mrow>
+							  <mrow>
+								  \amp = \cos(2\theta) \cdot 2 - 3\sin(\theta)
+							  </mrow>
+						  </md>
 					  </p>
 
 				  </solution>
@@ -1696,7 +1759,17 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  h'(x) \amp = (x^2+1)\cdot \frac{d}{dx}[\ln(5x)] + \ln(5x) \cdot \frac{d}{dx}[x^2+1]
+							  </mrow>
+							  <mrow>
+								  \amp = (x^2+1)\cdot \frac{1}{5x}\cdot \frac{d}{dx}[5x] + \ln(5x)\cdot (2x)
+							  </mrow>
+							  <mrow>
+								  \amp = (x^2+1) \cdot \frac{1}{5x} \cdot 5 + \ln(5x)\cdot 2x
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1714,7 +1787,17 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  f'(x) = \frac{d}{dx}[(1+x^2)^{-1/2}]
+							  </mrow>
+							  <mrow>
+								  \amp = -\frac{1}{2}(1+x^2)^{-3/2} \cdot \frac{d}{dx}[1+x^2]
+							  </mrow>
+							  <mrow>
+								  \amp = -\frac{1}{2}(1+x^2)^{-3/2} \cdot 2x
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1724,14 +1807,21 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>s(t) = \ln(t^3+1)</m>
+						  <m>s(t) = \ln(t^3+t)</m>
 					  </p>
 
 				  </statement>
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  s'(t) \amp = \frac{1}{t^3+t} \cdot \frac{d}{dt}[t^3+t]
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{t^3+t} \cdot (3t^2+1)
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1748,7 +1838,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  \frac{dy}{dx} \amp = \frac{(x^2+1)\cdot \frac{d}{dx}[x^3+2x^2] - (x^3+2x)\cdot \frac{d}{dx}[x^2+1]}{(x^2+1)^2}
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{(x^2+1)\cdot(3x^2+4x) - (x^3+2x^2)\cdot 2x}{(x^2+1)^2}
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1767,7 +1864,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  r'(x) \amp = e^{3x+2} \cdot \frac{d}{dx}[3x+2] + 4\sec^2(5x)\cdot \frac{d}{dx}[5x]
+							  </mrow>
+							  <mrow>
+								  \amp = e^{3x+2} \cdot 3 + 4\sec^2(5x) \cdot 5
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1785,7 +1889,11 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  y'(x) \amp = 12\ln(5.3)\cdot 5.3^x
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1830,7 +1938,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  \int (2x^3+x+12) \, dx \amp = 2\cdot \frac{x^4}{4} + \frac{x^2}{2} + 12x + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{2}x^4 + \frac{1}{2} x^2 + 12x + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 
@@ -1849,7 +1964,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m> u=2x^2+3</m> and <m>du = 4x \, dx</m>.
+						  <md>
+							  <mrow>
+								  \int \frac{4x}{2x^2+3} \, dx \amp = \int \frac{1}{u} \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \ln|u| + C
+							  </mrow>
+							  <mrow>
+								  \amp = \ln|2x^2+3|+C
+							  </mrow>
+						  </md>
 					  </p>
 
 				  </solution>
@@ -1867,7 +1993,21 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u=5z</m> and <m>du = 5\, dz</m>, so <m>dz = \dfrac{1}{5}\, du</m>.
+						  <md>
+							  <mrow>
+								  \int 3e^{5z} \, dz \amp = \int 3e^u\cdot \frac{1}{5} \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{3}{5} \int e^u \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{3}{5}e^u + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{3}{5}e^{5z} + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1885,7 +2025,26 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  First decompose the integrand into partial fractions:
+						  <me>
+							  \frac{4}{x(x-2)} = \frac{A}{x} + \frac{B}{x-2}
+						  </me>
+						  This yields
+						  <me>
+							  4 = A(x-2) + Bx
+						  </me>
+						  Plug in <m>x=2</m> to solve for <m>B</m> and <m>x=0</m> to solve for <m>A</m>:
+						  <me>4 = 0 + 2B \implies B=2</me>
+						  <me>4=A(-2) + 0 \implies A=-2</me>
+						  Now perform the integration
+						  <md>
+							  <mrow>
+								  \int \frac{4}{x(x-2)}\, dx \amp = \int\left(\frac{-2}{x} + \frac{2}{x-2}\right) \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = -2\ln|x| + 2\ln|x-2| + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1902,7 +2061,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  \int \left(3x^{-2} + \frac{1}{x}\right) \, dx \amp = 3\frac{x^{-1}}{-1} + \ln|x| +C
+							  </mrow>
+							  <mrow>
+								  \amp = -3 x^{-1} + \ln|x| + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1919,7 +2085,24 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use integration by parts with 
+						  <md>
+							  <mrow>
+								  u \amp = 8t \amp dv \amp = \cos(t) \, dt
+							  </mrow>
+							  <mrow>
+								  du \amp = 8 \, dt \amp v \amp = \sin(t)
+							  </mrow>
+						  </md>
+						  Then
+						  <md>
+							  <mrow>
+							\int 8t \cos(t) \amp = 8t\sin(t) - \int 8\sin(t) \, dt	  
+							  </mrow>
+							  <mrow>
+								  \amp = 8t\sin(t) + 8\cos(t)+C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1938,7 +2121,19 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u=x^4+5</m> and <m>du = 4x^3 \, dx</m>, so <m>x^3 \, dx=\dfrac{1}{4} 
+						  \, du</m>.
+						  <md>
+							  <mrow>
+								  \int 2x^3(x^4+5)^6 \, dx \amp = 2\int u^6 \cdot \frac{1}{4} \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{2} \frac{u^7}{7} + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{(x^4+5)^7}{14} + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1956,7 +2151,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u=4x+7</m> and <m>du = 4\, dx</m>, so <m>dx = \dfrac{1}{4} \, du</m>.
+						  <md>
+							  <mrow>
+								  \int \sqrt{4x+7} \, dx \amp = \int u^{1/2} \cdot \frac{1}{4} \, du
+							  </mrow>
+							  <mrow>
+								  \amp \frac{1}{4} \cdot \frac{u^{3/2}}{3/2} + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{4}\cdot \frac{2}{3} (4x+7)^{3/2} +C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -1995,7 +2201,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  
+							  </mrow>
+							  <mrow>
+							  	
+							  </mrow>
+						  </md>
 					  </p>
 				  
 

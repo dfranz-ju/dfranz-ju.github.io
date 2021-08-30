@@ -1664,11 +1664,183 @@
 
 
 
-
+	 <section xml:id="section-sage-commands">
+		 <title>Sage commands</title>
+		
+		 <introduction>
+			 <p>
+				 SageMath is a Computer Algebra System (CAS) that is both free and usable in a browser. We will be using it to perform computations and produce relevant images. The subsections below explain the commands and gives examples of how to use them.
+			 </p>
+		 </introduction>
+		
+		 <subsection xml:id="Sage-rref">
+			 <title>Matrices and row reduction</title>
+			 
+			 <p>
+				 We create a matrix in Sage using the <c>matrix</c> command, demonstrated below. The entries of the matrix are entered row by row, using brackets.
+			 </p>
+	  			<sage>
+	  				<input>
+	  					A=matrix([[5,3,1], [1,4,-2]]); #creates a matrix and names it A
+	 					A #prints the matrix named A
+	  				</input>
+	  			</sage>
+			
+			 
+			 <p>
+				 Sometimes we prefer to enter the entries of a matrix column by column. In that case, use the <c>column_matrix</c> command. The <c>show</c> command is also demonstrated below; this used LaTeX to produce a nicer looking output.
+			 </p>
+				 
+				 <sage>
+					 <input>
+						 B=column_matrix([[5,1],[3,4],[1,-2]]);
+						 show(B)
+					 </input>
+				 </sage>
+		
+			 
+  			<p>
+  				Sage performs row reduction using the <c>rref</c> method. Beginning after Section 1.4, you may use this method to row reduce matrices, unless specifically asked to row reduce by hand. A couple of examples below show the <c>rref</c> method in action.
+ 			</p>
+				
+			
+			
+  			<sage>
+  				<input>
+  					A=matrix([[5,3,1], [1,4,-2]]); 
+ 					print(A) 
+ 					A.rref() #computes the reduced echelon form of A
+  				</input>
+  			</sage>
+			
+ 			Displaying multiple matrices can look messy with the default output. This is a great time to use the <c>show</c> command:
+  			<sage>
+  				<input>
+  					A=matrix([[5,3,1], [1,4,-2]]);
+ 					show(A) #displays the matrix named A, formatted
+ 					show(A.rref())
+  				</input>
+  			</sage>
+			
+			
+			
+  			<p>
+  				Note that the <c>rref</c> method creates a <em>new</em> matrix, which is in reduced echelon form and row equivalent to the original matrix, as illustrated below, where we see that the original matrix <m>B</m> is unchanged when its reduced echelon form is computed using <c>rref</c>.
+  			</p>	
+			
+  			<sage>
+  				<input>
+ 					B=matrix([[5,3,1,4], [1,4,-2,3], [0,3,2,6]]);
+ 					C=B.rref();
+ 					show(B);
+ 					show(C)
+  				</input>
+ 			</sage>
+			 
+			 
+		 </subsection>
+		
+		
+		 <subsection xml:id="Sage-plots">
+			 <title>Creating line-plot images</title>
+			
+			 <p>
+				 For the computer graphics project, you will be transforming an initial image. This subsection explains how to create an image in Sage by "connecting the dots." We tell Sage the "dots" via a <m>2\times n</m> data matrix, where each column corresponds to a point: the top entry is the <m>x</m>-coordinate and the bottom entry is the <m>y</m>-coordinate.
+			 </p>
+			
+			 <sage>
+				 <input>
+					 StarM=matrix([[1,6,11,1,11,1,11], [1,11,1,8,8,1,1]]);
+					 show(StarM)
+				 </input>
+			 </sage>
+			
+			 <p>
+				 While the matrix is convenient for use, Sage prefers a list of points. For this, we use the <c>columns</c> method on the matrix to create a list of points. Then we use the <c>list_plot</c> command to plot the points and connect them with line segments (reading left to right in the matrix).
+			 </p>
+			 
+			 <sage>
+				 <input>
+					 Star=list_plot(StarM.columns(), plotjoined=true, aspect_ratio=1, color="purple");
+					 Star
+				 </input>
+			 </sage>
+			 
+			 <p>
+				 The option <c>plotjoined=true</c> is what actually connects the dots, and the option <c>aspect_ratio=1</c> forces each axis to use the same scale. You can hide the axes using the option <c>axes=False</c>.
+			 </p>
+			
+		 </subsection>
+		
+		
+		 <subsection xml:id="Sage-transform">
+			 <title>Transforming images</title>
+			 
+			 <p>
+				 We can transform an image created as in the previous subsection by multiplying the data matrix with our transformation matrix. This has the effect of moving each point to a (possibly) new location. The lines follow a long, creating a new image.
+			 </p>
+			 
+			 <sage>
+				 <input>
+					 A=matrix([[1,-1],[-2,1]]); #matrix to multiply with
+					 show("A=",A);
+					 Star2M=A*StarM; #produce new data matrix, transformed by A
+					 show(Star2M);
+				 </input>
+			 </sage>
+			 
+			 <sage>
+				 <input>
+					 Star2=list_plot(Star2M.columns(), plotjoined=true, aspect_ratio=1, color="blue");
+					 Star+Star2 #plot both stars on same axes
+				 </input>
+			 </sage>
+			 
+		 </subsection>
+	 </section>
 
 			 
 		 
-	 
+	 <section xml:id="section-sage-workzone">
+		 <title>Sage workzone</title>
+		 
+		 <introduction>
+			 You may use this site to perform computations using SageMath. The first cell contains code to create a matrix and row reduce it as an example.
+		 </introduction>
+		 
+		 <sage>
+			 <input>
+				 A=matrix([[1,2,3,1],[3,4,5,2],[5,3,1,5]]);
+				 show(A)
+				 show(A.rref())
+			 </input>
+		 </sage>
+		 
+		 
+		 <sage>
+			 <input>
+			 	
+			 </input>
+		 </sage>
+		 
+		 <sage>
+			 <input>
+			 	
+			 </input>
+		 </sage>
+		 
+		 <sage>
+			 <input>
+			 	
+			 </input>
+		 </sage>
+		 
+		 <sage>
+			 <input>
+			 	
+			 </input>
+		 </sage>
+	 </section>
 	 
  </chapter>
  

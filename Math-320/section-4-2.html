@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-24T10:07:21-04:00       *-->
+<!--*       on 2021-08-30T16:05:51-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -96,6 +96,8 @@
 <li><a href="section-1-7.html" data-scroll="section-1-7">Guided Practice 1.7: Linear Independence</a></li>
 <li><a href="section-1-8.html" data-scroll="section-1-8">Guided Practice 1.8: Introduction to Linear Transformations</a></li>
 <li><a href="section-1-9.html" data-scroll="section-1-9">Guided Practice 1.9: The Matrix of a Linear Transformation</a></li>
+<li><a href="section-sage-commands.html" data-scroll="section-sage-commands">Sage commands</a></li>
+<li><a href="section-sage-workzone.html" data-scroll="section-sage-workzone">Sage workzone</a></li>
 </ul>
 </li>
 <li class="link">
@@ -127,14 +129,14 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section-4-2"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">4.2</span> <span class="title">Guided Practice 4.2: Null Spaces, Column Spaces, and Linear Transformations</span>
 </h2>
-<section class="introduction" id="introduction-14"><h6 class="heading">Overview.<span></span>
+<section class="introduction" id="introduction-16"><h6 class="heading">Overview.<span></span>
 </h6>
-<p id="p-170">The last section defined abstract vector spaces and introduced the idea of <em class="emphasis">subspaces</em>. This section discusses two common ways subspaces arise in applications: 1) as the set of solutions to a homogeneous system of linear equations, and 2) as the span of a collection of vectors.</p>
-<p id="p-171">The unifying connection between these two ways is that they can both be related to a matrix, specifically as the <em class="emphasis">null space</em> and <em class="emphasis">column space</em> of a matrix, respectively. After defining these and giving some examples of describing these subspaces for specific matrices, the book compares and contrasts these subspaces, illustrating the important differences between them.</p>
-<p id="p-172">The final part of the section defined linear transformations on arbitrary vector spaces (instead of just ones of the form \(\mathbb{R}^n\)) and relates the <em class="emphasis">kernel</em> and <em class="emphasis">range</em> of a linear transformation to the null space and column space of a matrix. You can think of kernel and range as more general concepts of the null space and column space. This general perspective is particularly useful when working with linear transformations on spaces other than \(\mathbb{R}^n\text{.}\)</p></section><section class="subsection" id="subsection-4-2-BLO"><h3 class="heading hide-type">
+<p id="p-179">The last section defined abstract vector spaces and introduced the idea of <em class="emphasis">subspaces</em>. This section discusses two common ways subspaces arise in applications: 1) as the set of solutions to a homogeneous system of linear equations, and 2) as the span of a collection of vectors.</p>
+<p id="p-180">The unifying connection between these two ways is that they can both be related to a matrix, specifically as the <em class="emphasis">null space</em> and <em class="emphasis">column space</em> of a matrix, respectively. After defining these and giving some examples of describing these subspaces for specific matrices, the book compares and contrasts these subspaces, illustrating the important differences between them.</p>
+<p id="p-181">The final part of the section defined linear transformations on arbitrary vector spaces (instead of just ones of the form \(\mathbb{R}^n\)) and relates the <em class="emphasis">kernel</em> and <em class="emphasis">range</em> of a linear transformation to the null space and column space of a matrix. You can think of kernel and range as more general concepts of the null space and column space. This general perspective is particularly useful when working with linear transformations on spaces other than \(\mathbb{R}^n\text{.}\)</p></section><section class="subsection" id="subsection-4-2-BLO"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.2.1</span> <span class="title">Basic Learning Objectives</span>
 </h3>
-<p id="p-173">You should be able to perform these tasks with reasonable fluency <em class="emphasis">when you arrive to class</em>.</p>
+<p id="p-182">You should be able to perform these tasks with reasonable fluency <em class="emphasis">when you arrive to class</em>.</p>
 <ul class="disc">
 <li id="li-96"><p id="p-derived-li-96">Define the null space and column space of a matrix.</p></li>
 <li id="li-97"><p id="p-derived-li-97">Determine if a given vector is in the null space of a given matrix.</p></li>
@@ -142,7 +144,7 @@
 </ul></section><section class="subsection" id="subsection-4-2-ALO"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.2.2</span> <span class="title">Advanced Learning Objectives</span>
 </h3>
-<p id="p-174">In addition to mastering the basic objectives, here are the tasks you should be able to perform <em class="emphasis">after class, with practice</em>:</p>
+<p id="p-183">In addition to mastering the basic objectives, here are the tasks you should be able to perform <em class="emphasis">after class, with practice</em>:</p>
 <ul class="disc">
 <li id="li-99"><p id="p-derived-li-99">Find an explicit description of the null space of a matrix.</p></li>
 <li id="li-100"><p id="p-derived-li-100">Determine if a given vector is in the column space of a matrix.</p></li>
@@ -150,13 +152,13 @@
 </ul></section><section class="subsection" id="subsection-4-2-Resources"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.2.3</span> <span class="title">Resources</span>
 </h3>
-<p id="p-175"><em class="emphasis">Reading</em>: Read Section 4.2 of the textbook. As you read, try to relate the content to material we have seen and learned before. As has been the case several times, the main "new" material in this section is just viewing stuff we have already done from a new perspective. The table at the top of page 206 is a great summary of the properties and procedures relating to the null space and column space.</p></section><section class="exercises" id="exercises-13"><h3 class="heading hide-type">
+<p id="p-184"><em class="emphasis">Reading</em>: Read Section 4.2 of the textbook. As you read, try to relate the content to material we have seen and learned before. As has been the case several times, the main "new" material in this section is just viewing stuff we have already done from a new perspective. The table at the top of page 206 is a great summary of the properties and procedures relating to the null space and column space.</p></section><section class="exercises" id="exercises-13"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber">4.2.4</span> <span class="title">Exercises</span>
 </h3>
-<p id="p-176">Complete the following exercises on paper and bring your solutions to class on the specified day.</p>
+<p id="p-185">Complete the following exercises on paper and bring your solutions to class on the specified day.</p>
 <article class="exercise exercise-like" id="exercise-43"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-177">Determine if \(\mathbf{w}=\begin{bmatrix} 5 \\ -3 \\ 2\end{bmatrix}\) is in Nul \(A\text{,}\) where \(A = \begin{bmatrix} 5 \amp 21 \amp 19 \\ 13 \amp 23 \amp 2 \\ 8 \amp 14 \amp 1 \end{bmatrix}.\)</p></article><article class="exercise exercise-like" id="exercise-44"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-178">Let \(B = \begin{bmatrix} 2 \amp -6 \\ -1 \amp 3 \\ -4 \amp 12 \\ 3 \amp -9 \end{bmatrix}.\) Explicitly describe the column space of \(B\text{.}\) For which value of \(k\) is Col \(B\) a subspace of \(\mathbb{R}^k\text{?}\)</p></article><article class="exercise exercise-like" id="exercise-45"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>What comments or questions do you have about the material?</article></section></section></div></main>
+<p id="p-186">Determine if \(\mathbf{w}=\begin{bmatrix} 5 \\ -3 \\ 2\end{bmatrix}\) is in Nul \(A\text{,}\) where \(A = \begin{bmatrix} 5 \amp 21 \amp 19 \\ 13 \amp 23 \amp 2 \\ 8 \amp 14 \amp 1 \end{bmatrix}.\)</p></article><article class="exercise exercise-like" id="exercise-44"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-187">Let \(B = \begin{bmatrix} 2 \amp -6 \\ -1 \amp 3 \\ -4 \amp 12 \\ 3 \amp -9 \end{bmatrix}.\) Explicitly describe the column space of \(B\text{.}\) For which value of \(k\) is Col \(B\) a subspace of \(\mathbb{R}^k\text{?}\)</p></article><article class="exercise exercise-like" id="exercise-45"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>What comments or questions do you have about the material?</article></section></section></div></main>
 </div>
 </body>
 </html>

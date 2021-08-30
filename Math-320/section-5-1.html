@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-24T10:07:21-04:00       *-->
+<!--*       on 2021-08-30T16:05:51-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -96,6 +96,8 @@
 <li><a href="section-1-7.html" data-scroll="section-1-7">Guided Practice 1.7: Linear Independence</a></li>
 <li><a href="section-1-8.html" data-scroll="section-1-8">Guided Practice 1.8: Introduction to Linear Transformations</a></li>
 <li><a href="section-1-9.html" data-scroll="section-1-9">Guided Practice 1.9: The Matrix of a Linear Transformation</a></li>
+<li><a href="section-sage-commands.html" data-scroll="section-sage-commands">Sage commands</a></li>
+<li><a href="section-sage-workzone.html" data-scroll="section-sage-workzone">Sage workzone</a></li>
 </ul>
 </li>
 <li class="link">
@@ -127,13 +129,13 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section-5-1"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.1</span> <span class="title">Guided Practice 5.1: Eigenvalues and Eigenvectors</span>
 </h2>
-<section class="introduction" id="introduction-18"><h6 class="heading">Overview.<span></span>
+<section class="introduction" id="introduction-20"><h6 class="heading">Overview.<span></span>
 </h6>
-<p id="p-205">In some sense, this chapter is the culmination of our studies in Linear Algebra so far. The study of eigenvalues and eigenvectors relies on knowledge of linear transformations, the determinant, solving for a null space, and bases. "Eigenstuff", as material related to eigenvalues and eigenvectors is often called, is one of the most widely applicable areas of Linear Algebra. They are used in economics, genetics ("eigengenes"), physics (eigenfunctions), dynamical systems, data science, statistics, and many more areas. We will merely touch the surface by building the mathematical foundation upon which all these applications rest.</p>
-<p id="p-206">The main goal of this section is to develop a basic understanding of what eigenvalues and eigenvectors are, both algebraically and geometrically. Particular emphasis is put on finding eigenvectors once we know what a particular eigenvalue is. The next section will discuss finding the eigenvalues in the first place, and the section after that will address a major use of eigenstuff: Diagonalization.</p></section><section class="subsection" id="subsection-5-1-BLO"><h3 class="heading hide-type">
+<p id="p-214">In some sense, this chapter is the culmination of our studies in Linear Algebra so far. The study of eigenvalues and eigenvectors relies on knowledge of linear transformations, the determinant, solving for a null space, and bases. "Eigenstuff", as material related to eigenvalues and eigenvectors is often called, is one of the most widely applicable areas of Linear Algebra. They are used in economics, genetics ("eigengenes"), physics (eigenfunctions), dynamical systems, data science, statistics, and many more areas. We will merely touch the surface by building the mathematical foundation upon which all these applications rest.</p>
+<p id="p-215">The main goal of this section is to develop a basic understanding of what eigenvalues and eigenvectors are, both algebraically and geometrically. Particular emphasis is put on finding eigenvectors once we know what a particular eigenvalue is. The next section will discuss finding the eigenvalues in the first place, and the section after that will address a major use of eigenstuff: Diagonalization.</p></section><section class="subsection" id="subsection-5-1-BLO"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.1.1</span> <span class="title">Basic Learning Objectives</span>
 </h3>
-<p id="p-207">You should be able to perform these tasks with reasonable fluency <em class="emphasis">when you arrive to class</em>.</p>
+<p id="p-216">You should be able to perform these tasks with reasonable fluency <em class="emphasis">when you arrive to class</em>.</p>
 <ul class="disc">
 <li id="li-125"><p id="p-derived-li-125">Describe what an <em class="emphasis">eigenvalue</em> of a matrix is without using the word eigenvector.</p></li>
 <li id="li-126"><p id="p-derived-li-126">Describe what an <em class="emphasis">eigenvector</em> of a matrix is without using the word eigenvalue.</p></li>
@@ -141,7 +143,7 @@
 </ul></section><section class="subsection" id="subsection-5-1-ALO"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.1.2</span> <span class="title">Advanced Learning Objectives</span>
 </h3>
-<p id="p-208">In addition to mastering the basic objectives, here are the tasks you should be able to perform <em class="emphasis">after class, with practice</em>:</p>
+<p id="p-217">In addition to mastering the basic objectives, here are the tasks you should be able to perform <em class="emphasis">after class, with practice</em>:</p>
 <ul class="disc">
 <li id="li-128"><p id="p-derived-li-128">Describe the geometric significance of eigenvalue and eigenvectors.</p></li>
 <li id="li-129"><p id="p-derived-li-129">Determine if a given scalar is an eigenvalue of a matrix.</p></li>
@@ -149,15 +151,15 @@
 </ul></section><section class="subsection" id="subsection-5-1-Resources"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.1.3</span> <span class="title">Resources</span>
 </h3>
-<p id="p-209"><em class="emphasis">Video</em>: First watch this 7 minute clip of a 3Blue1Brown video below about eigenvalues and eigenvectors. This will give you a good geometric and conceptual introduction to this topic before reading the textbook. The rest of this video will be featured in the Guided Practice resources for the next two sections. <div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-11" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/PFDu9oVAE-g?&amp;modestbranding=1&amp;rel=0&amp;end=434"></iframe></div></p>
-<p id="p-210"><em class="emphasis">Reading</em>: Read Section 5.1 of the textbook. Closely read through the worked out examples and try to fully understand each step. Theorem 1 presents a useful shortcut for finding eigenvalues, while Theorem 2 will be very important in Section 5.3.</p></section><section class="exercises" id="exercises-17"><h3 class="heading hide-type">
+<p id="p-218"><em class="emphasis">Video</em>: First watch this 7 minute clip of a 3Blue1Brown video below about eigenvalues and eigenvectors. This will give you a good geometric and conceptual introduction to this topic before reading the textbook. The rest of this video will be featured in the Guided Practice resources for the next two sections. <div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-11" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/PFDu9oVAE-g?&amp;modestbranding=1&amp;rel=0&amp;end=434"></iframe></div></p>
+<p id="p-219"><em class="emphasis">Reading</em>: Read Section 5.1 of the textbook. Closely read through the worked out examples and try to fully understand each step. Theorem 1 presents a useful shortcut for finding eigenvalues, while Theorem 2 will be very important in Section 5.3.</p></section><section class="exercises" id="exercises-17"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber">5.1.4</span> <span class="title">Exercises</span>
 </h3>
-<p id="p-211">Complete the following exercises on paper and bring your solutions to class on the specified day.</p>
+<p id="p-220">Complete the following exercises on paper and bring your solutions to class on the specified day.</p>
 <article class="exercise exercise-like" id="exercise-53"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-212">Describe what it would mean for \(5\) to be an eigenvalue of a \(3\times 3\) matrix \(A\text{,}\) without using the word "eigenvector."</p></article><article class="exercise exercise-like" id="exercise-54"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-213">Determine if \(\mathbf{x}=\begin{bmatrix} 1 \\ 4 \end{bmatrix}\) is an eigenvector of \(A=\begin{bmatrix} -3 \amp 1 \\ -3 \amp 8 \end{bmatrix}.\) If it is, report the corresponding eigenvalue.</p></article><article class="exercise exercise-like" id="exercise-55"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-214">Determine if \(\mathbf{x}=\begin{bmatrix} 4 \\ -3 \\ 1 \end{bmatrix}\) is an eigenvector of \(A=\begin{bmatrix} 3 \amp 7 \amp 9 \\ -4 \amp -5 \amp 1 \\ 2 \amp 4 \amp 4 \end{bmatrix}.\) If it is, report the corresponding eigenvalue.</p></article><article class="exercise exercise-like" id="exercise-56"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>What comments or questions do you have about the material?</article></section></section></div></main>
+<p id="p-221">Describe what it would mean for \(5\) to be an eigenvalue of a \(3\times 3\) matrix \(A\text{,}\) without using the word "eigenvector."</p></article><article class="exercise exercise-like" id="exercise-54"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-222">Determine if \(\mathbf{x}=\begin{bmatrix} 1 \\ 4 \end{bmatrix}\) is an eigenvector of \(A=\begin{bmatrix} -3 \amp 1 \\ -3 \amp 8 \end{bmatrix}.\) If it is, report the corresponding eigenvalue.</p></article><article class="exercise exercise-like" id="exercise-55"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-223">Determine if \(\mathbf{x}=\begin{bmatrix} 4 \\ -3 \\ 1 \end{bmatrix}\) is an eigenvector of \(A=\begin{bmatrix} 3 \amp 7 \amp 9 \\ -4 \amp -5 \amp 1 \\ 2 \amp 4 \amp 4 \end{bmatrix}.\) If it is, report the corresponding eigenvalue.</p></article><article class="exercise exercise-like" id="exercise-56"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>What comments or questions do you have about the material?</article></section></section></div></main>
 </div>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-23T23:12:43-04:00       *-->
+<!--*       on 2021-08-27T13:11:58-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -108,35 +108,129 @@
 <article class="exercise exercise-like" id="exercise-65"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
 <p id="p-150">\(\displaystyle \int (2x^3+x+12) \, dx\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-65" id="solution-65"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-65"><div class="solution solution-like"><p id="p-151">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-65" id="solution-65"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-65"><div class="solution solution-like"><div class="displaymath" id="p-151">
+\begin{align*}
+\int (2x^3+x+12) \, dx \amp = 2\cdot \frac{x^4}{4} + \frac{x^2}{2} + 12x + C\\
+\amp = \frac{1}{2}x^4 + \frac{1}{2} x^2 + 12x + C
+\end{align*}
+</div></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-66"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
 <p id="p-152">\(\displaystyle \int \frac{4x}{2x^2+3} \, dx\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-66" id="solution-66"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-66"><div class="solution solution-like"><p id="p-153">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-66" id="solution-66"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-66"><div class="solution solution-like">
+<p id="p-153">Use substitution with \(u=2x^2+3\) and \(du = 4x \, dx\text{.}\)</p>
+<div class="displaymath">
+\begin{align*}
+\int \frac{4x}{2x^2+3} \, dx \amp = \int \frac{1}{u} \, du\\
+\amp = \ln|u| + C\\
+\amp = \ln|2x^2+3|+C
+\end{align*}
+</div>
+</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-67"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
 <p id="p-154">\(\displaystyle \int 3e^{5z} \, dz\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-67" id="solution-67"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-67"><div class="solution solution-like"><p id="p-155">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-67" id="solution-67"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-67"><div class="solution solution-like">
+<p id="p-155">Use substitution with \(u=5z\) and \(du = 5\, dz\text{,}\) so \(dz = \dfrac{1}{5}\, du\text{.}\)</p>
+<div class="displaymath">
+\begin{align*}
+\int 3e^{5z} \, dz \amp = \int 3e^u\cdot \frac{1}{5} \, du\\
+\amp = \frac{3}{5} \int e^u \, du\\
+\amp = \frac{3}{5}e^u + C\\
+\amp = \frac{3}{5}e^{5z} + C
+\end{align*}
+</div>
+</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-68"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
 <p id="p-156">\(\displaystyle \int \frac{4}{x(x-2)}\, dx \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-68" id="solution-68"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-68"><div class="solution solution-like"><p id="p-157">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-68" id="solution-68"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-68"><div class="solution solution-like">
+<p id="p-157">First decompose the integrand into partial fractions:</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{4}{x(x-2)} = \frac{A}{x} + \frac{B}{x-2}
+\end{equation*}
+</div>
+<p class="continuation">This yields</p>
+<div class="displaymath">
+\begin{equation*}
+4 = A(x-2) + Bx
+\end{equation*}
+</div>
+<p class="continuation">Plug in \(x=2\) to solve for \(B\) and \(x=0\) to solve for \(A\text{:}\)</p>
+<div class="displaymath">
+\begin{equation*}
+4 = 0 + 2B \implies B=2
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+4=A(-2) + 0 \implies A=-2
+\end{equation*}
+</div>
+<p class="continuation">Now perform the integration</p>
+<div class="displaymath">
+\begin{align*}
+\int \frac{4}{x(x-2)}\, dx \amp = \int\left(\frac{-2}{x} + \frac{2}{x-2}\right) \, dx\\
+\amp = -2\ln|x| + 2\ln|x-2| + C
+\end{align*}
+</div>
+</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-69"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
 <p id="p-158">\(\displaystyle \int \left(3x^{-2} + \frac{1}{x}\right) \, dx\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-69" id="solution-69"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-69"><div class="solution solution-like"><p id="p-159">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-69" id="solution-69"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-69"><div class="solution solution-like"><div class="displaymath" id="p-159">
+\begin{align*}
+\int \left(3x^{-2} + \frac{1}{x}\right) \, dx \amp = 3\frac{x^{-1}}{-1} + \ln|x| +C\\
+\amp = -3 x^{-1} + \ln|x| + C
+\end{align*}
+</div></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-70"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
 <p id="p-160">\(\displaystyle \int 8t \cos(t) \, dt\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-70" id="solution-70"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-70"><div class="solution solution-like"><p id="p-161">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-70" id="solution-70"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-70"><div class="solution solution-like">
+<p id="p-161">Use integration by parts with</p>
+<div class="displaymath">
+\begin{align*}
+u \amp = 8t \amp dv \amp = \cos(t) \, dt\\
+du \amp = 8 \, dt \amp v \amp = \sin(t)
+\end{align*}
+</div>
+<p class="continuation">Then</p>
+<div class="displaymath">
+\begin{align*}
+\int 8t \cos(t) \amp = 8t\sin(t) - \int 8\sin(t) \, dt	  \\
+\amp = 8t\sin(t) + 8\cos(t)+C
+\end{align*}
+</div>
+</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-71"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
 <p id="p-162">\(\displaystyle \int 2x^3(x^4+5)^6 \, dx\)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-71" id="solution-71"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-71"><div class="solution solution-like"><p id="p-163">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-71" id="solution-71"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-71"><div class="solution solution-like">
+<p id="p-163">Use substitution with \(u=x^4+5\) and \(du = 4x^3 \, dx\text{,}\) so \(x^3 \, dx=\dfrac{1}{4} 
+\, du\text{.}\)</p>
+<div class="displaymath">
+\begin{align*}
+\int 2x^3(x^4+5)^6 \, dx \amp = 2\int u^6 \cdot \frac{1}{4} \, du\\
+\amp = \frac{1}{2} \frac{u^7}{7} + C\\
+\amp = \frac{(x^4+5)^7}{14} + C
+\end{align*}
+</div>
+</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-72"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
 <p id="p-164">\(\displaystyle \int \sqrt{4x+7} \, dx \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-72" id="solution-72"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-72"><div class="solution solution-like"><p id="p-165">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-72" id="solution-72"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-72"><div class="solution solution-like">
+<p id="p-165">Use substitution with \(u=4x+7\) and \(du = 4\, dx\text{,}\) so \(dx = \dfrac{1}{4} \, du\text{.}\)</p>
+<div class="displaymath">
+\begin{align*}
+\int \sqrt{4x+7} \, dx \amp = \int u^{1/2} \cdot \frac{1}{4} \, du\\
+\amp \frac{1}{4} \cdot \frac{u^{3/2}}{3/2} + C\\
+\amp = \frac{1}{4}\cdot \frac{2}{3} (4x+7)^{3/2} +C
+\end{align*}
+</div>
+</div></div>
 </div></article></section></section></div></main>
 </div>
 </body>

@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-24T10:07:21-04:00       *-->
+<!--*       on 2021-08-30T16:05:51-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -12,37 +12,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
-<script>$(function () {
-    // Make *any* div with class 'sagecell-sage' an executable Sage cell
-    // Their results will be linked, only within language type
-    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
-                           linked: true,
-                           languages: ['sage'],
-                           evalButtonText: 'Evaluate (Sage)'});
-});
-</script>
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>I encourage you to change the definition of A to see the effect of doing the transformations repeatedly or in a different order. To see the definition of A, scroll down in the Sage cell below. <div class="sagecell-sage" id="sage-26"><script type="text/x-sage">	d=matrix(QQ, 2, 9, [[0, 0.5, 0.5, 6, 6, 5.5, 5.5, 0, 0], [0, 0, 6.42, 0, 8, 8, 1.58, 8, 0]]); 
-N_0=list_plot(d.columns(), plotjoined=true, aspect_ratio=1, color='purple'); 
-
-# a horizontal shear matrix:
-S=matrix(RDF, [[1,0.25,],[0,1]]); 
-
-# a rotation matrix:
-R=matrix(RDF, [[cos(pi/4), -sin(pi/4)], [sin(pi/4), cos(pi/4)]]); 
-
-# a dilation matrix
-D=matrix(RDF, [[2, 0], [0,2]]); 
-
-# shear, followed by rotation, followed by dilation
-A=D*R*S; 
-d_1=A*d; #transformation applied
-
-N_1=list_plot(d_1.columns(), plotjoined=true, aspect_ratio=1, color='blue'); 
-N_0+N_1
-</script></div></p>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Video</em>: Begin by watching the 3Blue1Brown video below about matrix multiplication and its connection to composition of functions. This video has a great explanation and visualization of how we want to <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">conceptualize</em> matrix multiplication. This perspective is very useful when and will make thinking about matrix multiplication much easier. <div xmlns:svg="http://www.w3.org/2000/svg" class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-7" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/XkY2DOUCWMU?&amp;modestbranding=1&amp;rel=0&amp;start=121"></iframe></div></p>
 <span class="incontext"><a href="section-2-1.html#p-130">in-context</a></span>
 </body>
 </html>

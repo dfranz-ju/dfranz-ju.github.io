@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-24T10:07:20-04:00       *-->
+<!--*       on 2021-08-30T16:05:51-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -104,6 +104,8 @@
 <li><a href="section-1-7.html" data-scroll="section-1-7">Guided Practice 1.7: Linear Independence</a></li>
 <li><a href="section-1-8.html" data-scroll="section-1-8">Guided Practice 1.8: Introduction to Linear Transformations</a></li>
 <li><a href="section-1-9.html" data-scroll="section-1-9">Guided Practice 1.9: The Matrix of a Linear Transformation</a></li>
+<li><a href="section-sage-commands.html" data-scroll="section-sage-commands">Sage commands</a></li>
+<li><a href="section-sage-workzone.html" data-scroll="section-sage-workzone">Sage workzone</a></li>
 </ul>
 </li>
 <li class="link">
@@ -135,14 +137,14 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section-2-2"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2.2</span> <span class="title">Guided Practice 2.2: The Inverse of a Matrix</span>
 </h2>
-<section class="introduction" id="introduction-11"><h6 class="heading">Overview.<span></span>
+<section class="introduction" id="introduction-13"><h6 class="heading">Overview.<span></span>
 </h6>
-<p id="p-136">Now that we understand how to add and multiply matrices, we can think a little deeper about these operations. In particular, since we are interested in solving matrix equations of the form \(A\mathbf{x}=\mathbf{b}\text{,}\) we want to explore matrix multiplication a little more.</p>
-<p id="p-137">Remembering that matrix equations are generalizations of simple linear equations, we look to a simple linear equation as a motivating example. Consider the equation \(5x=3\text{.}\) To solve it, we multiply both sides by \(1/5\text{,}\) the multiplicative inverse of \(5\text{,}\) because \(\dfrac{1}{5}\cdot 5=1\text{.}\) This yields \(x=\dfrac{1}{5}\cdot 3.\)</p>
-<p id="p-138">To accomplish something similar for the matrix equation \(A\mathbf{x}=\mathbf{b}\text{,}\) we need a matrix \(C\) such that \(CA=I\text{,}\) where \(I\) is an appropriately sized identity matrix. We call such a matrix an \(inverse\) matrix. This section explores the properties of inverse matrices, how to determine if they exist, and how to find them if they do.</p></section><section class="subsection" id="subsection-2-2-BLO"><h3 class="heading hide-type">
+<p id="p-145">Now that we understand how to add and multiply matrices, we can think a little deeper about these operations. In particular, since we are interested in solving matrix equations of the form \(A\mathbf{x}=\mathbf{b}\text{,}\) we want to explore matrix multiplication a little more.</p>
+<p id="p-146">Remembering that matrix equations are generalizations of simple linear equations, we look to a simple linear equation as a motivating example. Consider the equation \(5x=3\text{.}\) To solve it, we multiply both sides by \(1/5\text{,}\) the multiplicative inverse of \(5\text{,}\) because \(\dfrac{1}{5}\cdot 5=1\text{.}\) This yields \(x=\dfrac{1}{5}\cdot 3.\)</p>
+<p id="p-147">To accomplish something similar for the matrix equation \(A\mathbf{x}=\mathbf{b}\text{,}\) we need a matrix \(C\) such that \(CA=I\text{,}\) where \(I\) is an appropriately sized identity matrix. We call such a matrix an \(inverse\) matrix. This section explores the properties of inverse matrices, how to determine if they exist, and how to find them if they do.</p></section><section class="subsection" id="subsection-2-2-BLO"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.2.1</span> <span class="title">Basic Learning Objectives</span>
 </h3>
-<p id="p-139">You should be able to perform these tasks with reasonable fluency <em class="emphasis">when you arrive to class</em>.</p>
+<p id="p-148">You should be able to perform these tasks with reasonable fluency <em class="emphasis">when you arrive to class</em>.</p>
 <ul class="disc">
 <li id="li-78"><p id="p-derived-li-78">State what it means for a square matrix to be invertible.</p></li>
 <li id="li-79"><p id="p-derived-li-79">Compute the determinant of a \(2\times 2\) matrix and use it to determine if the matrix is invertible.</p></li>
@@ -150,7 +152,7 @@
 </ul></section><section class="subsection" id="subsection-2-2-ALO"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.2.2</span> <span class="title">Advanced Learning Objectives</span>
 </h3>
-<p id="p-140">In addition to mastering the basic objectives, here are the tasks you should be able to perform <em class="emphasis">after class, with practice</em>:</p>
+<p id="p-149">In addition to mastering the basic objectives, here are the tasks you should be able to perform <em class="emphasis">after class, with practice</em>:</p>
 <ul class="disc">
 <li id="li-81"><p id="p-derived-li-81">Correctly use the properties of inverse matrices in Theorems 5 and 6.</p></li>
 <li id="li-82"><p id="p-derived-li-82">Use row reduction to determine if a square matrix is invertible.</p></li>
@@ -158,26 +160,26 @@
 </ul></section><section class="subsection" id="subsection-2-2-Resources"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.2.3</span> <span class="title">Resources</span>
 </h3>
-<p id="p-141"><em class="emphasis">Reading</em>: Read Section 2.2 of the textbook, keeping the learning objectives in mind. You can ignore the part about Elementary matrices. Theorems 5 and 7 are the main results of the section. After doing the reading, watch the video below to gain some geometric insight into inverse matrices.</p>
-<p id="p-142"><em class="emphasis">Video</em>: Watch the selected segment of the 3Blue1Brown video below about the geometric interpretation of matrix inverses, using the linear transformation perspective of matrix multiplication. The determinant is mentioned in this video, and is defined for \(2 \times 2\) matrices in the reading. We will explore the determinant in much more detail in Chapter 3. <div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-8" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/uQhTuRlWMxw?&amp;modestbranding=1&amp;rel=0&amp;start=130&amp;end=403"></iframe></div></p></section><section class="subsection" id="subsection-2-2-Sage"><h3 class="heading hide-type">
+<p id="p-150"><em class="emphasis">Reading</em>: Read Section 2.2 of the textbook, keeping the learning objectives in mind. You can ignore the part about Elementary matrices. Theorems 5 and 7 are the main results of the section. After doing the reading, watch the video below to gain some geometric insight into inverse matrices.</p>
+<p id="p-151"><em class="emphasis">Video</em>: Watch the selected segment of the 3Blue1Brown video below about the geometric interpretation of matrix inverses, using the linear transformation perspective of matrix multiplication. The determinant is mentioned in this video, and is defined for \(2 \times 2\) matrices in the reading. We will explore the determinant in much more detail in Chapter 3. <div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-8" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/uQhTuRlWMxw?&amp;modestbranding=1&amp;rel=0&amp;start=130&amp;end=403"></iframe></div></p></section><section class="subsection" id="subsection-2-2-Sage"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.2.4</span> <span class="title">Sage Commands</span>
 </h3>
-<p id="p-143">This section introduces matrix inverses. There are two main ways to directly compute the inverse of matrix using Sage: using an exponent of \(-1\) and using the <code class="code-inline tex2jax_ignore">.inverse()</code> method. These are both illustrated below. If a matrix is singular or not square, Sage will throw an error.</p>
-<p id="p-144"><div class="sagecell-sage" id="sage-27"><script type="text/x-sage">A=matrix([[1,-1], [4,2]]);
+<p id="p-152">This section introduces matrix inverses. There are two main ways to directly compute the inverse of matrix using Sage: using an exponent of \(-1\) and using the <code class="code-inline tex2jax_ignore">.inverse()</code> method. These are both illustrated below. If a matrix is singular or not square, Sage will throw an error.</p>
+<p id="p-153"><div class="sagecell-sage" id="sage-41"><script type="text/x-sage">A=matrix([[1,-1], [4,2]]);
 show(A^-1)
 show(A.inverse())
 show(A^-1*A)
 show(A*A.inverse())
-</script></div> <div class="sagecell-sage" id="sage-28"><script type="text/x-sage"># nonsquare matrix
+</script></div> <div class="sagecell-sage" id="sage-42"><script type="text/x-sage"># nonsquare matrix
 B=matrix([[1,3,5], [2,4,6]]);
 B^-1
-</script></div> <div class="sagecell-sage" id="sage-29"><script type="text/x-sage"># singular matrix
+</script></div> <div class="sagecell-sage" id="sage-43"><script type="text/x-sage"># singular matrix
 C=matrix([[5,6], [10,12]]);
 C.inverse()
 </script></div></p></section><section class="exercises" id="exercises-10"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber">2.2.5</span> <span class="title">Exercises</span>
 </h3>
-<p id="p-145">No exercises for this section.</p></section></section></div></main>
+<p id="p-154">No exercises for this section.</p></section></section></div></main>
 </div>
 </body>
 </html>

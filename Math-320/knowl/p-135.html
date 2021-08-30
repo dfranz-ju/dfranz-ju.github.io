@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-24T10:07:21-04:00       *-->
+<!--*       on 2021-08-30T16:05:51-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -12,10 +12,25 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
+<script>$(function () {
+    // Make *any* div with class 'sagecell-sage' an executable Sage cell
+    // Their results will be linked, only within language type
+    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
+                           linked: true,
+                           languages: ['sage'],
+                           evalButtonText: 'Evaluate (Sage)'});
+});
+</script>
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>\(AB, AC, BA, CA, BC, CB, A^2, B^2, C^2\)</p>
+<p>Matrix multiplication: <div class="sagecell-sage" id="sage-36"><script type="text/x-sage">show("B=", B, "C=", C)
+show("BC=", B*C)
+show("B=", B, "A=", A)
+show("BA=", B*A)
+</script></div> <div class="sagecell-sage" id="sage-37"><script type="text/x-sage">#A*B will raise an error because the dimensions do not match
+A*B
+</script></div></p>
 <span class="incontext"><a href="section-2-1.html#p-135">in-context</a></span>
 </body>
 </html>
