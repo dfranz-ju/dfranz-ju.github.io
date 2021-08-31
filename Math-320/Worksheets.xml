@@ -970,7 +970,7 @@
 		 </p>
 			
 		 <p>
-			 The section begins by examining <em>homogeneous</em> linear systems, lineasr systems whose matrix equations are of the form $A\mathbf{x}=\mathbf{0}$. These are easier to study and, surpisingly, an understanding of the solution sets of homogeneous systems is all we need to understand solution sets of <em>all</em> linear systems, as is made clear in Theorem 6.
+			 The section begins by examining <em>homogeneous</em> linear systems, lineasr systems whose matrix equations are of the form <m>A\mathbf{x}=\mathbf{0}</m>. These are easier to study and, surpisingly, an understanding of the solution sets of homogeneous systems is all we need to understand solution sets of <em>all</em> linear systems, as is made clear in Theorem 6.
 		 </p>
 
 		 
@@ -1805,7 +1805,7 @@
 		 <title>Sage workzone</title>
 		 
 		 <introduction>
-			 You may use this site to perform computations using SageMath. The first cell contains code to create a matrix and row reduce it as an example.
+			 You may use this site to perform computations using SageMath. The first cell contains code to create a matrix and row reduce it, as an example.
 		 </introduction>
 		 
 		 <sage>
