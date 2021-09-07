@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-27T13:11:59-04:00       *-->
+<!--*       on 2021-09-06T22:20:06-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -18,7 +18,36 @@
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
 <span class="type">Solution</span><span class="space"> </span><span class="codenumber">2.8.4.1</span><span class="period">.</span>
 </h6>
-<p>Blank sol</p>
+<p>First decompose the integrand into partial fractions:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\frac{x}{(x-2)(x-3)} = \frac{A}{x-2} + \frac{B}{x-3}
+\end{equation*}
+</div>
+<p class="continuation">This yields</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+x = A(x-3) + B(x-2)\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Plug in \(x=2\) to solve for \(A\) and \(x=3\) to solve for \(B\text{:}\)</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+2 = -A + 0 \implies A=-2
+\end{equation*}
+</div>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+3 = 0 + B \implies B=3
+\end{equation*}
+</div>
+<p class="continuation">Now perform the integration:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\int \frac{x}{(x-2)(x-3)} \, dx \amp = \int \left(\frac{-2}{x-2} + \frac{3}{x-3}\right)\, dx\\
+\amp = -2\ln|x-2| + 3\ln|x-3| + C
+\end{align*}
+</div>
 </div>
 <span class="incontext"><a href="GW8B.html#solution-124">in-context</a></span>
 </body>

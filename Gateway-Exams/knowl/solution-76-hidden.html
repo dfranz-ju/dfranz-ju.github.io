@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-27T13:11:59-04:00       *-->
+<!--*       on 2021-09-06T22:20:05-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -13,5 +13,36 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><div class="solution solution-like"><p>Blank sol</p></div></body>
+<body><div class="solution solution-like">
+<p>First decompose the integrand into partial fractions:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\frac{10}{(x-2)(x+5)} = \frac{A}{x-2} + \frac{B}{x+5}
+\end{equation*}
+</div>
+<p class="continuation">This yields</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+10 = A(x+5) + B(x-2)\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Plug in \(x=2\) to solve for \(A\) and \(x=-5\) to solve for \(B\text{:}\)</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+10 = 7A + 0 \implies A=\frac{10}{7}
+\end{equation*}
+</div>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+10= 0 -7B \implies B=-\frac{10}{7}
+\end{equation*}
+</div>
+<p class="continuation">Now perform the integration:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\int \frac{10}{(x-2)(x+5)} \, dx \amp = \int \left( \frac{10}{7}\frac{1}{x-2} - \frac{10}{7} \frac{1}{x+5} \right) \, dx\\
+\amp = \frac{10}{7}\ln|x-2| - \frac{10}{7} \ln|x+5| + C
+\end{align*}
+</div>
+</div></body>
 </html>

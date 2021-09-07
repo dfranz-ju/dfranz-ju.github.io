@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-27T13:11:58-04:00       *-->
+<!--*       on 2021-09-06T22:20:04-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -108,35 +108,153 @@
 <article class="exercise exercise-like" id="exercise-97"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
 <p id="p-222">\(\displaystyle \int \frac{(\ln(x))^3}{x} \, dx \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-97" id="solution-97"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-97"><div class="solution solution-like"><p id="p-223">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-97" id="solution-97"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-97"><div class="solution solution-like">
+<p id="p-223">Use substitution with \(u= \ln(x)\) and \(du = \dfrac{1}{x} \, dx\text{:}\)</p>
+<div class="displaymath">
+\begin{align*}
+\int \frac{(\ln(x))^3}{x} \, dx \amp = \int u^3 \, du\\
+\amp = \frac{u^4}{4} + C\\
+\amp = \frac{(\ln(x))^4}{4} + C 
+\end{align*}
+</div>
+</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-98"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
 <p id="p-224">\(\displaystyle \int t^2e^t \, dt \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-98" id="solution-98"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-98"><div class="solution solution-like"><p id="p-225">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-98" id="solution-98"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-98"><div class="solution solution-like">
+<p id="p-225">Use integration by parts with</p>
+<div class="displaymath">
+\begin{align*}
+u \amp = t^2 \amp dv \amp = e^{t} \, dt\\
+du \amp = 2t \, dt  \amp v \amp = e^{t}
+\end{align*}
+</div>
+<p class="continuation">Then</p>
+<div class="displaymath">
+\begin{align*}
+\int t^2e^{t} \, dt \amp = t^2\cdot e^{t} - \int e^{t} \cdot 2t \, dt\\
+\amp =t^2 e^{t} - \int 2te^{t} \, dt
+\end{align*}
+</div>
+<p class="continuation">We  now use integration by parts again on the new integral.</p>
+<div class="displaymath">
+\begin{align*}
+u \amp = 2t \amp dv \amp = e^{t} \, dt\\
+du \amp = 2\, dt \amp v \amp =  e^{t}
+\end{align*}
+</div>
+<p class="continuation">So</p>
+<div class="displaymath">
+\begin{align*}
+\int t^2e^{t} \, dt \amp = t^2 e^{t} - \left( 2t e^{t} - \int  2e^{t} \, dt\right)\\
+\amp = t^2 e^{t} - 2te^{t} +2e^{t} + C
+\end{align*}
+</div>
+</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-99"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
 <p id="p-226">\(\displaystyle \int \frac{x^2+x}{x^2} \, dx \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-99" id="solution-99"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-99"><div class="solution solution-like"><p id="p-227">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-99" id="solution-99"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-99"><div class="solution solution-like"><div class="displaymath" id="p-227">
+\begin{align*}
+\int \frac{x^2+x}{x^2} \, dx \amp = \int (1 + x^{-1}) \, dx\\
+\amp = x + \ln|x| + C
+\end{align*}
+</div></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-100"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
 <p id="p-228">\(\displaystyle \int \frac{3}{(x+2)(x+3)} \, dx \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-100" id="solution-100"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-100"><div class="solution solution-like"><p id="p-229">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-100" id="solution-100"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-100"><div class="solution solution-like">
+<p id="p-229">First decompose the integrand into partial fractions:</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{3}{(x+2)(x+3)} = \frac{A}{x+2} + \frac{B}{x+3}
+\end{equation*}
+</div>
+<p class="continuation">This yields</p>
+<div class="displaymath">
+\begin{equation*}
+3 = A(x+3) + B(x+2)\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Plug in \(x=-2\) to solve for \(A\) and \(x=-3\) to solve for \(B\text{:}\)</p>
+<div class="displaymath">
+\begin{equation*}
+3 = A + 0 \implies A=3
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+3 = 0 - B \implies B=-3
+\end{equation*}
+</div>
+<p class="continuation">Now perform the integration:</p>
+<div class="displaymath">
+\begin{align*}
+\int \frac{3}{(x+2)(x+3)} \amp = \int\left(\frac{3}{x+2} - \frac{3}{x+3}\right) \, dx\\
+\amp = 3\ln|x+2| - 3 \ln | x+3| + C
+\end{align*}
+</div>
+</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-101"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
 <p id="p-230">\(\displaystyle \int \sin^3(\theta)\cos(\theta) \, d\theta \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-101" id="solution-101"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-101"><div class="solution solution-like"><p id="p-231">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-101" id="solution-101"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-101"><div class="solution solution-like">
+<p id="p-231">Use substitution with \(u= \sin(\theta)\) and \(du = \cos(\theta) \, d\theta\text{:}\)</p>
+<div class="displaymath">
+\begin{align*}
+\int \sin^3(\theta)\cos(\theta) \, d\theta \amp = \int u^3 \, du\\
+\amp = \frac{u^4}{4} + C\\
+\amp = \frac{\sin^4(\theta)}{4} + C
+\end{align*}
+</div>
+</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-102"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
 <p id="p-232">\(\displaystyle \int x\sin(4x) \, dx \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-102" id="solution-102"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-102"><div class="solution solution-like"><p id="p-233">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-102" id="solution-102"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-102"><div class="solution solution-like">
+<p id="p-233">Use integration by parts with</p>
+<div class="displaymath">
+\begin{align*}
+u \amp = x \amp dv \amp = \sin(4x) \, dx\\
+du \amp = 1 \, dx  \amp v \amp = -\frac{1}{4}\cos(4x)
+\end{align*}
+</div>
+<p class="continuation">Then</p>
+<div class="displaymath">
+\begin{align*}
+\int x\sin(4x) \, dx \amp = x\cdot -\frac{1}{4}\cos(4x) - \int - \frac{1}{4} \cos(4x) \, dx\\
+\amp = -\frac{1}{4}x\cos(4x) + \frac{1}{4} \int \cos(4x) \, dx\\
+\amp = -\frac{1}{4}x\cos(4x) + \frac{1}{4} \cdot \frac{1}{4}\sin(4x) + C
+\end{align*}
+</div>
+</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-103"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
-<p id="p-234">\(\displaystyle \int x\sqrt{16+x^2} \, dx \)</p>
+<p id="p-234">\(\displaystyle \int \frac{x}{\sqrt{16+x^2}} \, dx \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-103" id="solution-103"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-103"><div class="solution solution-like"><p id="p-235">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-103" id="solution-103"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-103"><div class="solution solution-like">
+<p id="p-235">Use substitution with \(u= 16+x^2\) and \(du = 2x \, dx\text{,}\) so \(\dfrac{1}{2} \, du = x \, dx\text{:}\)</p>
+<div class="displaymath">
+\begin{align*}
+\int \frac{x}{\sqrt{16+x^2}} \, dx \amp = \int \frac{1}{2} \cdot \frac{1}{\sqrt{u}} \, du\\
+\amp = \frac{1}{2} \int u^{-1/2} \, du\\
+\amp = \frac{1}{2} \cdot \frac{u^{1/2}}{1/2} + C\\
+\amp = \sqrt{16+x^2} + C
+\end{align*}
+</div>
+</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-104"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
 <p id="p-236">\(\displaystyle \int \frac{e^z}{e^z-7} \, dz \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-104" id="solution-104"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-104"><div class="solution solution-like"><p id="p-237">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-104" id="solution-104"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-104"><div class="solution solution-like">
+<p id="p-237">Use substitution with \(u=e^z-7\) and \(du = e^z \, dz\text{:}\)</p>
+<div class="displaymath">
+\begin{align*}
+\int \frac{e^z}{e^z-7} \, dz \amp = \int \frac{1}{u} \, du\\
+\amp = \ln|u| + C\\
+\amp = \ln|e^z - 7| + C
+\end{align*}
+</div>
+</div></div>
 </div></article></section></section></div></main>
 </div>
 </body>

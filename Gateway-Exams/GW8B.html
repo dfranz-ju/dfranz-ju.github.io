@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-27T13:11:58-04:00       *-->
+<!--*       on 2021-09-06T22:20:05-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -108,35 +108,153 @@
 <article class="exercise exercise-like" id="exercise-121"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
 <p id="p-276">\(\displaystyle \int \left( 3x^4 + \frac{1}{\sqrt{x}} + 2^{3x}\right) \, dx \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-121" id="solution-121"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-121"><div class="solution solution-like"><p id="p-277">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-121" id="solution-121"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-121"><div class="solution solution-like"><div class="displaymath" id="p-277">
+\begin{align*}
+\int \left( 3x^4 + \frac{1}{\sqrt{x}} + 2^{3x}\right) \, dx \amp = \int (3x^4 + x^{-1/2} + 2^{3x}) \, dx\\
+\amp = 3\cdot \frac{x^5}{5} + \frac{x^{1/2}}{1/2} + \frac{1}{3} \cdot \frac{1}{\ln(2)}2^{3x} + C\\
+\amp = \frac{3}{5} x^5 + 2\sqrt{x} + \frac{2^{3x}}{3\ln(2)} + C
+\end{align*}
+</div></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-122"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-278">\(\displaystyle \int t^2e^{2t} \, dx \)</p>
+<p id="p-278">\(\displaystyle \int t^2e^{2t} \, dt \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-122" id="solution-122"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-122"><div class="solution solution-like"><p id="p-279">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-122" id="solution-122"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-122"><div class="solution solution-like">
+<p id="p-279">Use integration by parts with</p>
+<div class="displaymath">
+\begin{align*}
+u \amp = t^2 \amp dv \amp = e^{2t} \, dt\\
+du \amp = 2t \, dt  \amp v \amp = \frac{1}{2} e^{2t}
+\end{align*}
+</div>
+<p class="continuation">Then</p>
+<div class="displaymath">
+\begin{align*}
+\int t^2e^{2t} \, dt \amp = t^2\cdot \frac{1}{2}e^{2t} - \int \frac{1}{2}e^{2t} \cdot 2t \, dt\\
+\amp =\frac{1}{2}t^2 e^{2t} - \int te^{2t} \, dt
+\end{align*}
+</div>
+<p class="continuation">We  now use integration by parts again on the new integral.</p>
+<div class="displaymath">
+\begin{align*}
+u \amp = t \amp dv \amp = e^{2t} \, dt\\
+du \amp = 1\, dt \amp v \amp =  \frac{1}{2}e^{2t}
+\end{align*}
+</div>
+<p class="continuation">So</p>
+<div class="displaymath">
+\begin{align*}
+\int t^2e^{2t} \, dt \amp = \frac{1}{2}t^2 e^{2t} - \left(t\cdot \frac{1}{2}e^{2t} - \int \frac{1}{2} e^{2t} \, dt\right)\\
+\amp = \frac{1}{2}t^2 e^{2t} -\frac{1}{2}te^{2t} + \frac{1}{2} \cdot \frac{1}{2} e^{2t} + C
+\end{align*}
+</div>
+</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-123"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-280">\(\displaystyle \int x(x^2+4)^{12} \, dx \)</p>
+<p id="p-280">\(\displaystyle \int 5x^2(x^3+4)^{12} \, dx \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-123" id="solution-123"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-123"><div class="solution solution-like"><p id="p-281">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-123" id="solution-123"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-123"><div class="solution solution-like">
+<p id="p-281">Use substitution with \(u=x^3 + 4\) and \(du = 3x^2 \, dx\text{,}\) so \(\dfrac{1}{3} \, du = x^2 \, dx\)</p>
+<div class="displaymath">
+\begin{align*}
+\int 5x^2(x^3+4)^{12} \, dx \amp = \int 5 \cdot \frac{1}{3} u^{12} \, du\\
+\amp = \frac{5}{3} \cdot \frac{u^{13}}{13} + C\\
+\amp = \frac{5}{39} (x^3+4)^{13} + C
+\end{align*}
+</div>
+</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-124"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-282">\(\displaystyle \int \frac{x}{(x-2)(x+3)} \, dx \)</p>
+<p id="p-282">\(\displaystyle \int \frac{x}{(x-2)(x-3)} \, dx \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-124" id="solution-124"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-124"><div class="solution solution-like"><p id="p-283">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-124" id="solution-124"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-124"><div class="solution solution-like">
+<p id="p-283">First decompose the integrand into partial fractions:</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{x}{(x-2)(x-3)} = \frac{A}{x-2} + \frac{B}{x-3}
+\end{equation*}
+</div>
+<p class="continuation">This yields</p>
+<div class="displaymath">
+\begin{equation*}
+x = A(x-3) + B(x-2)\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Plug in \(x=2\) to solve for \(A\) and \(x=3\) to solve for \(B\text{:}\)</p>
+<div class="displaymath">
+\begin{equation*}
+2 = -A + 0 \implies A=-2
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+3 = 0 + B \implies B=3
+\end{equation*}
+</div>
+<p class="continuation">Now perform the integration:</p>
+<div class="displaymath">
+\begin{align*}
+\int \frac{x}{(x-2)(x-3)} \, dx \amp = \int \left(\frac{-2}{x-2} + \frac{3}{x-3}\right)\, dx\\
+\amp = -2\ln|x-2| + 3\ln|x-3| + C
+\end{align*}
+</div>
+</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-125"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
 <p id="p-284">\(\displaystyle \int \frac{\sin(\theta)}{\cos(\theta)} \, d\theta \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-125" id="solution-125"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-125"><div class="solution solution-like"><p id="p-285">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-125" id="solution-125"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-125"><div class="solution solution-like">
+<p id="p-285">Use substitution with \(u=\cos(\theta)\) and \(du = -\sin(\theta) \, d\theta\text{,}\) so \(-du = \sin(\theta) \, d\theta\text{:}\)</p>
+<div class="displaymath">
+\begin{align*}
+\int \frac{\sin(\theta)}{\cos(\theta)} \, d\theta \amp = \int - \frac{1}{u} \, du\\
+\amp = -\ln|u| + C\\
+\amp = -\ln|\cos(\theta)| + C
+\end{align*}
+</div>
+</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-126"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
 <p id="p-286">\(\displaystyle \int x^8 \ln(x) \, dx \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-126" id="solution-126"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-126"><div class="solution solution-like"><p id="p-287">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-126" id="solution-126"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-126"><div class="solution solution-like">
+<p id="p-287">Use integration by parts with</p>
+<div class="displaymath">
+\begin{align*}
+u \amp = \ln(x) \amp dv \amp = x^8 \, dx\\
+du \amp = \dfrac{1}{x} \, dx  \amp v \amp = \dfrac{x^9}{9}
+\end{align*}
+</div>
+<p class="continuation">Then</p>
+<div class="displaymath">
+\begin{align*}
+\int x^8 \ln(x) \, dx \amp = \ln(x) \cdot \frac{x^9}{9} - \int \frac{x^9}{9} \cdot \frac{1}{x} \, dx\\
+\amp = \frac{1}{9}x^9 \ln(x) - \int \frac{1}{9} x^8 \, dx\\
+\amp = \frac{1}{9} x^9 \ln(x) - \frac{1}{9}\cdot \frac{1}{9} x^9 + C
+\end{align*}
+</div>
+</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-127"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
 <p id="p-288">\(\displaystyle \int \frac{3x+2}{6x^2+8x+5} \, dx \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-127" id="solution-127"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-127"><div class="solution solution-like"><p id="p-289">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-127" id="solution-127"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-127"><div class="solution solution-like">
+<p id="p-289">Use substitution with \(u=6x^2+8x+5\) and \(du = (12x + 8) \, dx\text{,}\) so \(\dfrac{1}{4} \, du = (3x+2)\, dx\text{:}\)</p>
+<div class="displaymath">
+\begin{align*}
+\int \frac{3x+2}{6x^2+8x+5} \, dx \amp = \int \frac{1}{4}\cdot \frac{1}{u} \, du\\
+\amp = \frac{1}{4}\ln|u| + C\\
+\amp = \frac{1}{4}\ln|6x^2 + 8x + 5| + C
+\end{align*}
+</div>
+</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-128"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
-<p id="p-290">\(\displaystyle \int x\cos(x^2+1) \, dx \)</p>
+<p id="p-290">\(\displaystyle \int 7t\cos(t^2+5) \, dt \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-128" id="solution-128"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-128"><div class="solution solution-like"><p id="p-291">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-128" id="solution-128"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-128"><div class="solution solution-like">
+<p id="p-291">Use substitution with \(u = t^2 + 5\) and \(du = 2t \, dt\text{,}\) so \(\dfrac{1}{2} \, du = t \, dt\text{:}\)</p>
+<div class="displaymath">
+\begin{align*}
+\int 7t\cos(t^2+5) \, dt \amp = \int 7 \cdot \frac{1}{2} \cos(u) \, du\\
+\amp = \frac{7}{2} \sin(u) + C\\
+\amp = \frac{7}{2} \sin(t^2+5) + C
+\end{align*}
+</div>
+</div></div>
 </div></article></section></section></div></main>
 </div>
 </body>

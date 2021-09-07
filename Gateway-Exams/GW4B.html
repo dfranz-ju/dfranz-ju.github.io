@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-27T13:11:58-04:00       *-->
+<!--*       on 2021-09-06T22:20:04-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -108,35 +108,144 @@
 <article class="exercise exercise-like" id="exercise-89"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
 <p id="p-204">\(\displaystyle \int (r+1)^3 \, dr \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-89" id="solution-89"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-89"><div class="solution solution-like"><p id="p-205">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-89" id="solution-89"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-89"><div class="solution solution-like">
+<p id="p-205">Use substitution with \(u=r+1\) and \(du=dr\text{:}\)</p>
+<div class="displaymath">
+\begin{align*}
+\int (r+1)^3 \, dr \amp = \int u^3 \, du\\
+\amp = \frac{u^4}{4}+C\\
+\amp = \frac{(r+1)^4}{4}+C
+\end{align*}
+</div>
+</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-90"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
 <p id="p-206">\(\displaystyle \int x^2e^{2x} \, dx \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-90" id="solution-90"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-90"><div class="solution solution-like"><p id="p-207">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-90" id="solution-90"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-90"><div class="solution solution-like">
+<p id="p-207">Use integration by parts with</p>
+<div class="displaymath">
+\begin{align*}
+u \amp = x^2 \amp dv \amp = e^{2x} \, dx\\
+du \amp = 2x \, dx  \amp v \amp = \frac{1}{2} e^{2x}
+\end{align*}
+</div>
+<p class="continuation">Then</p>
+<div class="displaymath">
+\begin{align*}
+\int x^2e^{2x} \, dx \amp = x^2\cdot \frac{1}{2}e^{2x} - \int \frac{1}{2}e^{2x} \cdot 2x \, dx\\
+\amp = \frac{1}{2}x^2 e^{2x} - \int xe^{2x} \, dx
+\end{align*}
+</div>
+<p class="continuation">We  now use integration by parts again on the new integral.</p>
+<div class="displaymath">
+\begin{align*}
+u \amp = x \amp dv \amp = e^{2x} \, dx\\
+du \amp = dx \amp v \amp = \frac{1}{2} e^{2x}
+\end{align*}
+</div>
+<p class="continuation">So</p>
+<div class="displaymath">
+\begin{align*}
+\int x^2e^{2x} \, dx \amp = \frac{1}{2}x^2 e^{2x} - \left( x\cdot \frac{1}{2} e^{2x} - \int \frac{1}{2} e^{2x} \, dx\right)\\
+\amp = \frac{1}{2}x^2 e^{2x} - \frac{1}{2}xe^{2x} +\frac{1}{4}e^{2x} + C
+\end{align*}
+</div>
+</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-91"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
 <p id="p-208">\(\displaystyle \int \frac{\cos(\sqrt{x})}{\sqrt{x}} \, dx \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-91" id="solution-91"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-91"><div class="solution solution-like"><p id="p-209">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-91" id="solution-91"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-91"><div class="solution solution-like">
+<p id="p-209">Use substitution with \(u=\sqrt{x}=x^{1/2}\) and \(du = \dfrac{1}{2\sqrt{x}} \, dx\text{,}\) so \(2 \, du = \dfrac{1}{\sqrt{x}} \, dx\text{:}\)</p>
+<div class="displaymath">
+\begin{align*}
+\int \frac{\cos(\sqrt{x})}{\sqrt{x}} \, dx \amp = \int 2 \cos(u) \, du\\
+\amp = 2\sin(u) + C\\
+\amp = 2\sin(\sqrt{x}) + C
+\end{align*}
+</div>
+</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-92"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
 <p id="p-210">\(\displaystyle \int \frac{7x}{(x-2)(x+3)} \, dx \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-92" id="solution-92"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-92"><div class="solution solution-like"><p id="p-211">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-92" id="solution-92"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-92"><div class="solution solution-like">
+<p id="p-211">First decompose the integrand into partial fractions:</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{7x}{(x-2)(x+3)} = \frac{A}{x-2} + \frac{B}{x+3}
+\end{equation*}
+</div>
+<p class="continuation">This yields</p>
+<div class="displaymath">
+\begin{equation*}
+7x = A(x+3) + B(x-2)\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Plug in \(x=2\) to solve for \(A\) and \(x=-3\) to solve for \(B\text{:}\)</p>
+<div class="displaymath">
+\begin{equation*}
+14 = 5A + 0 \implies A=\frac{14}{5}
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+-21 = 0 - 5B \implies B=\frac{21}{5}
+\end{equation*}
+</div>
+<p class="continuation">Now perform the integration:</p>
+<div class="displaymath">
+\begin{align*}
+\int \frac{7x}{(x-2)(x+3)} \, dx \amp = \int \left( \frac{14}{5} \cdot \frac{1}{x-2} + \frac{21}{5} \cdot \frac{1}{x+3}\right) \, dx\\
+\amp = \frac{14}{5}\ln|x-2| + \frac{21}{5} \ln|x+3| + C
+\end{align*}
+</div>
+</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-93"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
 <p id="p-212">\(\displaystyle \int (e^x+3^x) \, dx \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-93" id="solution-93"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-93"><div class="solution solution-like"><p id="p-213">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-93" id="solution-93"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-93"><div class="solution solution-like"><div class="displaymath" id="p-213">
+\begin{align*}
+\int (e^x+3^x) \, dx \amp = e^x + \frac{1}{\ln(3)}\cdot 3^x +C
+\end{align*}
+</div></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-94"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
 <p id="p-214">\(\displaystyle \int \frac{1}{x\ln(x)} \, dx \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-94" id="solution-94"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-94"><div class="solution solution-like"><p id="p-215">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-94" id="solution-94"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-94"><div class="solution solution-like">
+<p id="p-215">Use substitution with \(u=\ln(x)\) and \(du=\dfrac{1}{x} \, dx\text{:}\)</p>
+<div class="displaymath">
+\begin{align*}
+\int \frac{1}{x\ln(x)} \, dx \amp = \int \frac{1}{u} \, du\\
+\amp = \ln|u| + C\\
+\amp = \ln|\ln(x)|+C
+\end{align*}
+</div>
+</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-95"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
 <p id="p-216">\(\displaystyle \int \sin^5(2\theta)\cos(2\theta) \, d\theta \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-95" id="solution-95"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-95"><div class="solution solution-like"><p id="p-217">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-95" id="solution-95"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-95"><div class="solution solution-like">
+<p id="p-217">Use substitution with \(u=\sin(2\theta)\) and \(du = 2\cos(2\theta) \, d\theta\text{,}\) so \(\dfrac{1}{2} \, du = \cos(2\theta) \, d\theta\text{:}\)</p>
+<div class="displaymath">
+\begin{align*}
+\int \sin^5(2\theta)\cos(2\theta) \, d\theta \amp = \int \frac{1}{2} u^5 \, du\\
+\amp = \frac{1}{2} \frac{u^6}{6} + C\\
+\amp = \frac{\sin^6(2\theta)}{12} + C
+\end{align*}
+</div>
+</div></div>
 </div></article><article class="exercise exercise-like" id="exercise-96"><h6 class="heading"><span class="codenumber">8<span class="period">.</span></span></h6>
-<p id="p-218">\(\displaystyle \int \frac{1}{9+x^2} \, dx \)</p>
+<p id="p-218">\(\displaystyle \int \frac{2x^2}{(9+x^3)^2} \, dx \)</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-96" id="solution-96"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-96"><div class="solution solution-like"><p id="p-219">Blank sol</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-96" id="solution-96"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-96"><div class="solution solution-like">
+<p id="p-219">Use substitution with \(u=9+x^3\) and \(du = 3x^2 \, dx\text{,}\) so \(\dfrac{1}{3} \, du = x^2 \, dx\text{:}\)</p>
+<div class="displaymath">
+\begin{align*}
+\int \frac{2x^2}{(9+x^3)^2} \, dx \amp = \int \frac{2}{3} u^{-2} \, du\\
+\amp = \frac{2}{3}\frac{u^{-1}}{-1} + C\\
+\amp = -\frac{2}{3}\cdot \frac{1}{9+x^3} + C
+\end{align*}
+</div>
+</div></div>
 </div></article></section></section></div></main>
 </div>
 </body>

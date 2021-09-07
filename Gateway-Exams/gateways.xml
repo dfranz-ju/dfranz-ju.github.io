@@ -1993,7 +1993,7 @@
 			  
 				  <solution>
 					  <p>
-						  Use substitution with <m>u=5z</m> and <m>du = 5\, dz</m>, so <m>dz = \dfrac{1}{5}\, du</m>.
+						  Use substitution with <m>u=5z</m> and <m>du = 5\, dz</m>, so <m>\dfrac{1}{5}\, du = dz</m>.
 						  <md>
 							  <mrow>
 								  \int 3e^{5z} \, dz \amp = \int 3e^u\cdot \frac{1}{5} \, du
@@ -2121,8 +2121,7 @@
 			  
 				  <solution>
 					  <p>
-						  Use substitution with <m>u=x^4+5</m> and <m>du = 4x^3 \, dx</m>, so <m>x^3 \, dx=\dfrac{1}{4} 
-						  \, du</m>.
+						  Use substitution with <m>u=x^4+5</m> and <m>du = 4x^3 \, dx</m>, so <m>\dfrac{1}{4} \, du = x^3 \, dx</m>.
 						  <md>
 							  <mrow>
 								  \int 2x^3(x^4+5)^6 \, dx \amp = 2\int u^6 \cdot \frac{1}{4} \, du
@@ -2151,7 +2150,7 @@
 			  
 				  <solution>
 					  <p>
-						  Use substitution with <m>u=4x+7</m> and <m>du = 4\, dx</m>, so <m>dx = \dfrac{1}{4} \, du</m>.
+						  Use substitution with <m>u=4x+7</m> and <m>du = 4\, dx</m>, so <m>\dfrac{1}{4} \, du = dx</m>.
 						  <md>
 							  <mrow>
 								  \int \sqrt{4x+7} \, dx \amp = \int u^{1/2} \cdot \frac{1}{4} \, du
@@ -2203,10 +2202,10 @@
 					  <p>
 						  <md>
 							  <mrow>
-								  
+								  \int \left(3x^5 + \frac{1}{x^3} + 5\right) \, dx \amp = \int ( 3x^5 + x^{-3} + 5) \, dx
 							  </mrow>
 							  <mrow>
-							  	
+								  \amp = 3 \frac{x^6}{6} + \frac{x^{-2}}{2} + 5x + C
 							  </mrow>
 						  </md>
 					  </p>
@@ -2227,7 +2226,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u=3x^2+4</m> and <m>du=6x \, dx</m>, so <m>\dfrac{1}{6} du = x \, dx</m>:
+						  <md>
+							  <mrow>
+								  \int \frac{2x}{3x^2+4} \, dx \amp = \int 2 \frac{1}{6} \frac{1}{u} \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{3} \ln|u| + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{3}\ln|3x^2+4| + C
+							  </mrow>
+						  </md>
 					  </p>
 
 				  </solution>
@@ -2245,9 +2255,19 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use subsitution with <m>u=2x^3</m> and <m>du = 6x^2 \, dx</m>, so <m>\dfrac{1}{6} \, du = x^2 \, dx</m>:
+						  <md>
+							  <mrow>
+								  \int x^2e^{2x^3} \, dx \amp = \int \frac{1}{6} e^u \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{6} e^u + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{6}e^{2x^3}+C
+							  </mrow>
+						  </md>
 					  </p>
-				  
 				  </solution>
 			  </exercise>
 			  
@@ -2263,7 +2283,26 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  First decompose the integrand into partial fractions:
+						  <me>
+							  \frac{10}{(x-2)(x+5)} = \frac{A}{x-2} + \frac{B}{x+5}
+						  </me>
+						  This yields
+						  <me>
+							  10 = A(x+5) + B(x-2)
+						  </me>.
+						  Plug in <m>x=2</m> to solve for <m>A</m> and <m>x=-5</m> to solve for <m>B</m>:
+						  <me>10 = 7A + 0 \implies A=\frac{10}{7}</me>
+						  <me>10= 0 -7B \implies B=-\frac{10}{7}</me>
+						  Now perform the integration:
+						  <md>
+							  <mrow>
+								   \int \frac{10}{(x-2)(x+5)} \, dx \amp = \int \left( \frac{10}{7}\frac{1}{x-2} - \frac{10}{7} \frac{1}{x+5} \right) \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{10}{7}\ln|x-2| - \frac{10}{7} \ln|x+5| + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2280,7 +2319,17 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  \int \frac{x^3+x+2}{x^2} \, dx \amp = \int (x + x^{-1} + 2x^{-2}) \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{x^2}{2} + \ln|x| + 2\frac{x^{-1}}{-1} + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{x^2}{2} + \ln|x| -\frac{2}{x} + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2297,7 +2346,27 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use integration by parts with 
+						  <md>
+							  <mrow>
+								  u \amp = t \amp dv \amp = \sin(t) \, dt
+							  </mrow>
+							  <mrow>
+								  du \amp = dt \amp v \amp = -\cos(t)
+							  </mrow>
+						  </md>
+						  Then
+						  <md>
+							  <mrow>
+								  \int t\sin(t) \, dt \amp = t\cdot (-\cos(t)) - \int -\cos(t) \, dt
+							  </mrow>
+							  <mrow>
+								  \amp = -t\cos(t)+ \int \cos(t) \, dt
+							  </mrow>
+							  <mrow>
+								  \amp = -t\cos(t) + \sin(t) + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2316,7 +2385,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u=2x^3</m> and <m>du = 6x^2 \, dx</m>, so <m>\dfrac{1}{6} \, du = x^2 \, dx</m>:
+						  <md>
+							  <mrow>
+								  \int 5x^2\cos(2x^3) \, dx \amp = \int 5 \frac{1}{6} \cos(u) \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{5}{6} \sin(u) + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{5}{6} \sin(2x^3) + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2334,7 +2414,21 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u=z+8</m> and <m>du=dz</m>:
+						  <md>
+							  <mrow>
+								  \int \frac{1}{\sqrt{z+8}} \, dz \amp = \int \frac{1}{u} \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \int u^{-1/2} \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{u^{1/2}}{1/2} + C
+							  </mrow>
+							  <mrow>
+								  \amp = 2(z+8)^{1/2} + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2373,7 +2467,17 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  \int \left(\frac{1}{2}x^2 - 2\sqrt{x} +3\right) \, dx \amp = \int \left( \frac{1}{2} x^2 - 2x^{1}{2} + 3\right) \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{2} \cdot \frac{x^3}{3} - 2\frac{x^{3/2}}{3/2} + 3x + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{x^3}{6} - \frac{4}{3} x^{3/2} + 3x + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 
@@ -2392,7 +2496,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u=t^2+25</m> and <m>du = 2t \, dt</m>, so <m>\dfrac{1}{2} \, du = t \, dt</m>:
+						  <md>
+							  <mrow>
+								  \int \frac{5t}{t^2+5} \, dt \amp = \int 5 \cdot \frac{1}{2} \frac{1}{u} \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{5}{2} \ln|u| + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{5}{2} \ln|t^2+25| + C
+							  </mrow>
+						  </md>
 					  </p>
 
 				  </solution>
@@ -2410,7 +2525,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u=2x^2-3</m> and <m>du=4x \, dx</m>, so <m>\dfrac{1}{4} \, du = x \, dx</m>:
+						  <md>
+							  <mrow>
+								  \int xe^{2x^2-3} \, dx \amp = \int \frac{1}{4} e^u \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{4} e^u + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{4} e^{2x^2-3} + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2428,7 +2554,26 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  First decompose the integrand into partial fractions:
+						  <me>
+							  \frac{7}{(x-3)(x+7)} = \frac{A}{x-3} + \frac{B}{x+7}
+						  </me>
+						  This yields
+						  <me>
+							  7 = A(x+7) + B(x-3)
+						  </me>.
+						  Plug in <m>x=3</m> to solve for <m>A</m> and <m>x=-7</m> to solve for <m>B</m>:
+						  <me>7 = 10A + 0 \implies A=\frac{7}{10}</me>
+						  <me>7 = 0 - 10B \implies B=-\frac{7}{10}</me>
+						  Now perform the integration:
+						  <md>
+							  <mrow>
+								  \int \frac{7}{(x-3)(x+7)} \, dx \amp = \int \left( \frac{7}{10}\cdot \frac{1}{x-3} - \frac{7}{10} \cdot\frac{1}{x+7} \right) \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{7}{10} \ln|x-3| - \frac{7}{10} \ln|x+7| + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2445,7 +2590,17 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  \int \frac{2x^3+3x}{x^2} \, dx \amp = \int (2x + 3x^{-1}) \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = 2\cdot \frac{x^2}{2} + 3\ln|x| + C
+							  </mrow>
+							  <mrow>
+								  \amp = x^2 + 3 \ln|x| + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2462,7 +2617,24 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use integration by parts with 
+						  <md>
+							  <mrow>
+								  u \amp = 2x \amp dv \amp = e^{3x} \, dx
+							  </mrow>
+							  <mrow>
+								  du \amp = 2 \, dx \amp v \amp = \frac{1}{3}e^x
+							  </mrow>
+						  </md>
+						  Then
+						  <md>
+							  <mrow>
+								  \int 2xe^{3x} \, dx \amp = 2x \cdot \frac{1}{3}e^{3x} - \int \frac{1}{3} e^{3x} \cdot 2 \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{2}{3} x e^{3x} - \frac{2}{9} e^{3x} + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2481,7 +2653,27 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use integration by parts with 
+						  <md>
+							  <mrow>
+								  u \amp = \ln(x) \amp dv \amp = 2x^3 \, dx
+							  </mrow>
+							  <mrow>
+								  du \amp = \frac{1}{x} \, dx \amp v \amp = \frac{1}{2}x^4
+							  </mrow>
+						  </md>
+						  Then
+						  <md>
+							  <mrow>
+								  \int 2x^3 \ln(x) \, dx \amp = \ln(x) \cdot \frac{1}{2} x^4 - \int \frac{1}{2} x^4 \cdot \frac{1}{x} \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{2} x^4 \ln(x) - \frac{1}{2} \int x^3 \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{2} x^4 \ln(x) -\frac{1}{2} \cdot \frac{x^4}{4} + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2499,7 +2691,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u=5x^3-8</m> and <m>du=15x^2 \, dx</m>, so <m> \dfrac{1}{15} \, du = x^2 \, dx</m>:
+						  <md>
+							  <mrow>
+								  \int x^2(5x^3-8)^4 \, dx \amp = \int \frac{1}{15} \cdot u^4 \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{15} \cdot \frac{u^5}{5} + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{(5x^3-8)^5}{75} + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2537,7 +2740,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u=r+1</m> and <m>du=dr</m>:
+						  <md>
+							  <mrow>
+								  \int (r+1)^3 \, dr \amp = \int u^3 \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{u^4}{4}+C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{(r+1)^4}{4}+C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 
@@ -2556,7 +2770,42 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use integration by parts with 
+						  <md>
+							  <mrow>
+								  u \amp = x^2 \amp dv \amp = e^{2x} \, dx
+							  </mrow>
+							  <mrow>
+								  du \amp = 2x \, dx  \amp v \amp = \frac{1}{2} e^{2x}
+							  </mrow>
+						  </md>
+						  Then
+						  <md>
+							  <mrow>
+								  \int x^2e^{2x} \, dx \amp = x^2\cdot \frac{1}{2}e^{2x} - \int \frac{1}{2}e^{2x} \cdot 2x \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{2}x^2 e^{2x} - \int xe^{2x} \, dx
+							  </mrow>
+						  </md>
+						  We  now use integration by parts again on the new integral.
+						  <md>
+							  <mrow>
+								  u \amp = x \amp dv \amp = e^{2x} \, dx
+							  </mrow>
+							  <mrow>
+								  du \amp = dx \amp v \amp = \frac{1}{2} e^{2x}
+							  </mrow>
+						  </md>
+						  So
+						  <md>
+							  <mrow>
+							  	\int x^2e^{2x} \, dx \amp = \frac{1}{2}x^2 e^{2x} - \left( x\cdot \frac{1}{2} e^{2x} - \int \frac{1}{2} e^{2x} \, dx\right)
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{2}x^2 e^{2x} - \frac{1}{2}xe^{2x} +\frac{1}{4}e^{2x} + C
+							  </mrow>
+						  </md>
 					  </p>
 
 				  </solution>
@@ -2574,7 +2823,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u=\sqrt{x}=x^{1/2}</m> and <m>du = \dfrac{1}{2\sqrt{x}} \, dx</m>, so <m>2 \, du = \dfrac{1}{\sqrt{x}} \, dx</m>:
+						  <md>
+							  <mrow>
+								  \int \frac{\cos(\sqrt{x})}{\sqrt{x}} \, dx \amp = \int 2 \cos(u) \, du
+							  </mrow>
+							  <mrow>
+								  \amp = 2\sin(u) + C
+							  </mrow>
+							  <mrow>
+								  \amp = 2\sin(\sqrt{x}) + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2592,7 +2852,26 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  First decompose the integrand into partial fractions:
+						  <me>
+							  \frac{7x}{(x-2)(x+3)} = \frac{A}{x-2} + \frac{B}{x+3}
+						  </me>
+						  This yields
+						  <me>
+							  7x = A(x+3) + B(x-2)
+						  </me>.
+						  Plug in <m>x=2</m> to solve for <m>A</m> and <m>x=-3</m> to solve for <m>B</m>:
+						  <me>14 = 5A + 0 \implies A=\frac{14}{5}</me>
+						  <me>-21 = 0 - 5B \implies B=\frac{21}{5}</me>
+						  Now perform the integration:
+						  <md>
+							  <mrow>
+								  \int \frac{7x}{(x-2)(x+3)} \, dx \amp = \int \left( \frac{14}{5} \cdot \frac{1}{x-2} + \frac{21}{5} \cdot \frac{1}{x+3}\right) \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{14}{5}\ln|x-2| + \frac{21}{5} \ln|x+3| + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2609,7 +2888,11 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  \int (e^x+3^x) \, dx \amp = e^x + \frac{1}{\ln(3)}\cdot 3^x +C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2626,7 +2909,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u=\ln(x)</m> and <m>du=\dfrac{1}{x} \, dx</m>:
+						  <md>
+							  <mrow>
+								  \int \frac{1}{x\ln(x)} \, dx \amp = \int \frac{1}{u} \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \ln|u| + C
+							  </mrow>
+							  <mrow>
+								  \amp = \ln|\ln(x)|+C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2645,7 +2939,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u=\sin(2\theta)</m> and <m>du = 2\cos(2\theta) \, d\theta</m>, so <m>\dfrac{1}{2} \, du = \cos(2\theta) \, d\theta</m>:
+						  <md>
+							  <mrow>
+								  \int \sin^5(2\theta)\cos(2\theta) \, d\theta \amp = \int \frac{1}{2} u^5 \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{2} \frac{u^6}{6} + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{\sin^6(2\theta)}{12} + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2655,7 +2960,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>\displaystyle \int \frac{1}{9+x^2} \, dx </m>
+						  <m>\displaystyle \int \frac{2x^2}{(9+x^3)^2} \, dx </m>
 					  </p>
 			  	
 				  </statement>
@@ -2663,7 +2968,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u=9+x^3</m> and <m>du = 3x^2 \, dx</m>, so <m>\dfrac{1}{3} \, du = x^2 \, dx</m>:
+						  <md>
+							  <mrow>
+								  \int \frac{2x^2}{(9+x^3)^2} \, dx \amp = \int \frac{2}{3} u^{-2} \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{2}{3}\frac{u^{-1}}{-1} + C
+							  </mrow>
+							  <mrow>
+								  \amp = -\frac{2}{3}\cdot \frac{1}{9+x^3} + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2701,7 +3017,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u= \ln(x)</m> and <m>du = \dfrac{1}{x} \, dx</m>:
+						  <md>
+							  <mrow>
+								  \int \frac{(\ln(x))^3}{x} \, dx \amp = \int u^3 \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{u^4}{4} + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{(\ln(x))^4}{4} + C 
+							  </mrow>
+						  </md>
 					  </p>
 				  
 
@@ -2720,7 +3047,42 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use integration by parts with 
+						  <md>
+							  <mrow>
+								  u \amp = t^2 \amp dv \amp = e^{t} \, dt
+							  </mrow>
+							  <mrow>
+								  du \amp = 2t \, dt  \amp v \amp = e^{t}
+							  </mrow>
+						  </md>
+						  Then
+						  <md>
+							  <mrow>
+								  \int t^2e^{t} \, dt \amp = t^2\cdot e^{t} - \int e^{t} \cdot 2t \, dt
+							  </mrow>
+							  <mrow>
+								  \amp =t^2 e^{t} - \int 2te^{t} \, dt
+							  </mrow>
+						  </md>
+						  We  now use integration by parts again on the new integral.
+						  <md>
+							  <mrow>
+								  u \amp = 2t \amp dv \amp = e^{t} \, dt
+							  </mrow>
+							  <mrow>
+								  du \amp = 2\, dt \amp v \amp =  e^{t}
+							  </mrow>
+						  </md>
+						  So
+						  <md>
+							  <mrow>
+							  	\int t^2e^{t} \, dt \amp = t^2 e^{t} - \left( 2t e^{t} - \int  2e^{t} \, dt\right)
+							  </mrow>
+							  <mrow>
+								  \amp = t^2 e^{t} - 2te^{t} +2e^{t} + C
+							  </mrow>
+						  </md>
 					  </p>
 
 				  </solution>
@@ -2738,7 +3100,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  \int \frac{x^2+x}{x^2} \, dx \amp = \int (1 + x^{-1}) \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = x + \ln|x| + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2756,7 +3125,26 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  First decompose the integrand into partial fractions:
+						  <me>
+							  \frac{3}{(x+2)(x+3)} = \frac{A}{x+2} + \frac{B}{x+3}
+						  </me>
+						  This yields
+						  <me>
+							  3 = A(x+3) + B(x+2)
+						  </me>.
+						  Plug in <m>x=-2</m> to solve for <m>A</m> and <m>x=-3</m> to solve for <m>B</m>:
+						  <me>3 = A + 0 \implies A=3</me>
+						  <me>3 = 0 - B \implies B=-3</me>
+						  Now perform the integration:
+						  <md>
+							  <mrow>
+								  \int \frac{3}{(x+2)(x+3)} \amp = \int\left(\frac{3}{x+2} - \frac{3}{x+3}\right) \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = 3\ln|x+2| - 3 \ln | x+3| + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2773,7 +3161,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u= \sin(\theta)</m> and <m>du = \cos(\theta) \, d\theta</m>:
+						  <md>
+							  <mrow>
+								  \int \sin^3(\theta)\cos(\theta) \, d\theta \amp = \int u^3 \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{u^4}{4} + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{\sin^4(\theta)}{4} + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2790,7 +3189,27 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use integration by parts with 
+						  <md>
+							  <mrow>
+								  u \amp = x \amp dv \amp = \sin(4x) \, dx
+							  </mrow>
+							  <mrow>
+								  du \amp = 1 \, dx  \amp v \amp = -\frac{1}{4}\cos(4x)
+							  </mrow>
+						  </md>
+						  Then
+						  <md>
+							  <mrow>
+								  \int x\sin(4x) \, dx \amp = x\cdot -\frac{1}{4}\cos(4x) - \int - \frac{1}{4} \cos(4x) \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = -\frac{1}{4}x\cos(4x) + \frac{1}{4} \int \cos(4x) \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = -\frac{1}{4}x\cos(4x) + \frac{1}{4} \cdot \frac{1}{4}\sin(4x) + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2801,7 +3220,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>\displaystyle \int x\sqrt{16+x^2} \, dx </m>
+						  <m>\displaystyle \int \frac{x}{\sqrt{16+x^2}} \, dx </m>
 					  </p>
 
 				  </statement>
@@ -2809,7 +3228,21 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u= 16+x^2</m> and <m>du = 2x \, dx</m>, so <m>\dfrac{1}{2} \, du = x \, dx</m>:
+						  <md>
+							  <mrow>
+								  \int \frac{x}{\sqrt{16+x^2}} \, dx \amp = \int \frac{1}{2} \cdot \frac{1}{\sqrt{u}} \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{2} \int u^{-1/2} \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{2} \cdot \frac{u^{1/2}}{1/2} + C
+							  </mrow>
+							  <mrow>
+								  \amp = \sqrt{16+x^2} + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2827,7 +3260,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u=e^z-7</m> and <m>du = e^z \, dz</m>:
+						  <md>
+							  <mrow>
+								  \int \frac{e^z}{e^z-7} \, dz \amp = \int \frac{1}{u} \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \ln|u| + C
+							  </mrow>
+							  <mrow>
+								  \amp = \ln|e^z - 7| + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2858,7 +3302,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>\displaystyle \int (x^{-3} + 6) \, dx </m>
+						  <m>\displaystyle \int (y^{-3} + 8e) \, dy </m>
 					  </p>
 
 				  </statement>
@@ -2866,7 +3310,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  \int (y^{-3} + 8e) \, dy \amp = \frac{y^{-2}}{-2} + 8ey + C
+							  </mrow>
+							  <mrow>
+							  	
+							  </mrow>
+						  </md>
 					  </p>
 				  
 
@@ -2885,7 +3336,24 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use integration by parts with 
+						  <md>
+							  <mrow>
+								  u \amp = x \amp dv \amp = e^{2x} \, dx
+							  </mrow>
+							  <mrow>
+								  du \amp = 1 \, dx  \amp v \amp = \dfrac{1}{2}e^{2x}
+							  </mrow>
+						  </md>
+						  Then
+						  <md>
+							  <mrow>
+								  \int xe^{2x} \, dx \amp = x \cdot \frac{1}{2}e^{2x} - \int \frac{1}{2}e^{2x} \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{2}xe^{2x} - \frac{1}{2} \cdot \frac{1}{2}e^{2x} + C
+							  </mrow>
+						  </md>
 					  </p>
 
 				  </solution>
@@ -2903,7 +3371,21 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u= x^2+6x-11</m> and <m>du = (2x+6) \, dx</m>, so <m>\dfrac{1}{2} \, du = (x+3) \, dx</m>:
+						  <md>
+							  <mrow>
+								  \int \frac{x+3}{\sqrt{x^2+6x-11}} \, dx \amp = \int \frac{1}{2} \frac{1}{\sqrt{u}} \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{2} \int u^{-1/2} \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{2} \cdot \frac{u^{1/2}}{1/2} + C
+							  </mrow>
+							  <mrow>
+								  \amp = \sqrt{x^2+6x-11} + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2921,7 +3403,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u= \pi z^2</m> and <m>du = 2\pi z \, dz</m>, so <m>\dfrac{1}{2\pi} \, du = z \, dz</m>:
+						  <md>
+							  <mrow>
+								  \int z\cos(\pi z^2) \, dz \amp = \int \frac{1}{2\pi} \cos(u) \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{2\pi} \sin(u) + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{2\pi} \sin(\pi z^2) + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2938,7 +3431,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u = \sin(5\theta)</m> and <m>du = 5\cos(5\theta) \, d\theta</m>, so <m>\dfrac{1}{5} \, du = \cos(5\theta) \, d\theta</m>:
+						  <md>
+							  <mrow>
+								  \int \sin(5\theta)\cos(5\theta) \, d\theta \amp = \int \frac{1}{5} u \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{5} \frac{u^2}{2} + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{\sin^2(5\theta)}{10} + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2955,7 +3459,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u = 1+9x^2</m> and <m>du = 18x \, dx</m>, so <m>\dfrac{1}{18} \, du = x \, dx</m>:
+						  <md>
+							  <mrow>
+								  \int \frac{x}{1+9x^2} \, dx \amp = \int \frac{1}{18} \frac{1}{u} \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{18} \ln|u| + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{18} \ln|1+9x^2| + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2974,7 +3489,27 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use integration by parts with 
+						  <md>
+							  <mrow>
+								  u \amp = \ln(t) \amp dv \amp = t^2 \, dt
+							  </mrow>
+							  <mrow>
+								  du \amp = \frac{1}{t} \, dt  \amp v \amp = \frac{t^3}{3}
+							  </mrow>
+						  </md>
+						  Then
+						  <md>
+							  <mrow>
+								  \int t^2 \ln(t) \, dt \amp = \ln(t) \cdot \frac{t^3}{3} - \int \frac{t^3}{3} \cdot \frac{1}{t} \, dt
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{3} t^3 \ln(t) - \int \frac{1}{3} t^2 \, dt
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{3} t^3 \ln(t) - \frac{1}{3} \cdot \frac{t^3}{3} + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -2992,7 +3527,26 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  First decompose the integrand into partial fractions:
+						  <me>
+							  \frac{1}{(x+2)(x-3)} = \frac{A}{x+2} + \frac{B}{x-3}
+						  </me>
+						  This yields
+						  <me>
+							  1 = A(x-3) + B(x+2)
+						  </me>.
+						  Plug in <m>x=-2</m> to solve for <m>A</m> and <m>x=3</m> to solve for <m>B</m>:
+						  <me>1 = -5A + 0 \implies A=-\frac{1}{5}</me>
+						  <me>1 = 0 + 5B \implies B=\frac{1}{5}</me>
+						  Now perform the integration:
+						  <md>
+							  <mrow>
+								  \int \frac{1}{(x+2)(x-3)} \, dx \amp = \int \left(-\frac{1}{5}\cdot \frac{1}{x+2} + \frac{1}{5} \cdot \frac{1}{x-3}\right) \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = -\frac{1}{5} \ln|x+2| +\frac{1}{5} \ln|x-3| + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -3031,7 +3585,14 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  \int \left(x^3+ \frac{1}{x} + e^{3x}\right) \, dx \amp = \frac{x^4}{4} + \ln|x| + \frac{1}{3} e^{3x} + C
+							  </mrow>
+							  <mrow>
+							  	
+							  </mrow>
+						  </md>
 					  </p>
 				  
 
@@ -3050,7 +3611,27 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use integration by parts with 
+						  <md>
+							  <mrow>
+								  u \amp = 2x \amp dv \amp = \cos(3x)\, dx
+							  </mrow>
+							  <mrow>
+								  du \amp = 2 \, dx  \amp v \amp = \dfrac{1}{3}\sin(3x)
+							  </mrow>
+						  </md>
+						  Then
+						  <md>
+							  <mrow>
+								  \int 2x\cos(3x) \, dx \amp = 2x\cdot \frac{1}{3} \sin(3x) - \int 2 \cdot \frac{1}{3} \sin(3x) \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{2}{3}x\sin(3x) - \frac{2}{3} \cdot \frac{1}{3}\cdot -\cos(3x) + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{2}{3}x\sin(3x) +\frac{2}{9} \cos(3x) + C
+							  </mrow>
+						  </md>
 					  </p>
 
 				  </solution>
@@ -3068,7 +3649,17 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  \int \frac{2x^5+7x}{x^3} \, dx \amp = \int (2x^2 + 7x^{-2}) \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = 2\cdot \frac{x^3}{3} + 7 \cdot \frac{x^{-1}}{-1} + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{2}{3}x^3 -7x^{-1} + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -3086,7 +3677,26 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  First decompose the integrand into partial fractions:
+						  <me>
+							  \frac{8}{(x-2)(x+3)} = \frac{A}{x-2} + \frac{B}{x+3}
+						  </me>
+						  This yields
+						  <me>
+							  8 = A(x+3) + B(x-2)
+						  </me>.
+						  Plug in <m>x=2</m> to solve for <m>A</m> and <m>x=-3</m> to solve for <m>B</m>:
+						  <me>8 = 5A + 0 \implies A=\frac{8}{5}</me>
+						  <me>8 = 0 - 5B \implies B=-\frac{8}{5}</me>
+						  Now perform the integration:
+						  <md>
+							  <mrow>
+								  \int \frac{8}{(x-2)(x+3)} \, dx \amp = \int \left(\frac{8}{5} \cdot \frac{1}{x-2} - \frac{8}{5} \cdot \frac{1}{x+3}\right)
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{8}{5}\ln|x-2| - \frac{8}{5} \ln|x+3| + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -3103,7 +3713,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u=\cos(t)</m> and <m>du = -\sin(t) \, dt</m>, so <m>-du = \sin(t) \, dt</m>:
+						  <md>
+							  <mrow>
+								  \int \sin(t)\cos^4(t) \, dt \amp = \int -u^4 \, du
+							  </mrow>
+							  <mrow>
+								  \amp = -\frac{u^5}{5} + C
+							  </mrow>
+							  <mrow>
+								  \amp = -\frac{1}{5} \cos^5(t) + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -3120,7 +3741,27 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use integration by parts with 
+						  <md>
+							  <mrow>
+								  u \amp = \ln(4x) \amp dv \amp = x \, dx
+							  </mrow>
+							  <mrow>
+								  du \amp = \dfrac{1}{x} \, dx  \amp v \amp = \dfrac{x^2}{2}
+							  </mrow>
+						  </md>
+						  Then
+						  <md>
+							  <mrow>
+								  \int x\ln(4x) \, dx \amp = \ln(4x) \cdot \frac{x^2}{2} - \int \frac{x^2}{2} \cdot \frac{1}{x} \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{2} x^2\ln(4x) - \int \frac{1}{2}x \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{2} x^2 \ln(4x) - \frac{1}{2} \cdot \frac{x^2}{2} + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -3139,7 +3780,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u=121+x^2</m> and <m>du=2x \, dx</m>, so <m>\dfrac{1}{2} \, du = x \, dx</m>:
+						  <md>
+							  <mrow>
+								  \int \frac{x}{(121+x^2)^2} \, dx \amp = \int \frac{1}{2} u^{-2} \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{2} \frac{u^{-1}}{-1} + C
+							  </mrow>
+							  <mrow>
+								  \amp = -\frac{1}{2} \cdot (121+x^2)^{-1} + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -3149,7 +3801,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>\displaystyle \int w\sin(w^2+1) \, dw </m>
+						  <m>\displaystyle \int 3w\sin(5w^2+1) \, dw </m>
 					  </p>
 			  	
 				  </statement>
@@ -3157,7 +3809,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u=5w^2 + 1</m> and <m>du=10w \, dw</m>, so <m>\dfrac{1}{10} \, du = w \, dw</m>:
+						  <md>
+							  <mrow>
+								  \int 3w\sin(w^2+1) \, dw \amp = \int 3 \cdot \frac{1}{10} \sin(u) \, du
+							  </mrow>
+							  <mrow>
+								  \amp = -\frac{3}{10} \cos(u) + C
+							  </mrow>
+							  <mrow>
+								  \amp = -\frac{3}{10} \cos(5w^2 + 1) + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -3197,7 +3860,17 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  <md>
+							  <mrow>
+								  \int \left( 3x^4 + \frac{1}{\sqrt{x}} + 2^{3x}\right) \, dx \amp = \int (3x^4 + x^{-1/2} + 2^{3x}) \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = 3\cdot \frac{x^5}{5} + \frac{x^{1/2}}{1/2} + \frac{1}{3} \cdot \frac{1}{\ln(2)}2^{3x} + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{3}{5} x^5 + 2\sqrt{x} + \frac{2^{3x}}{3\ln(2)} + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 
@@ -3208,7 +3881,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>\displaystyle \int t^2e^{2t} \, dx </m>
+						  <m>\displaystyle \int t^2e^{2t} \, dt </m>
 					  </p>
 			  	
 				  </statement>
@@ -3216,7 +3889,42 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use integration by parts with 
+						  <md>
+							  <mrow>
+								  u \amp = t^2 \amp dv \amp = e^{2t} \, dt
+							  </mrow>
+							  <mrow>
+								  du \amp = 2t \, dt  \amp v \amp = \frac{1}{2} e^{2t}
+							  </mrow>
+						  </md>
+						  Then
+						  <md>
+							  <mrow>
+								  \int t^2e^{2t} \, dt \amp = t^2\cdot \frac{1}{2}e^{2t} - \int \frac{1}{2}e^{2t} \cdot 2t \, dt
+							  </mrow>
+							  <mrow>
+								  \amp =\frac{1}{2}t^2 e^{2t} - \int te^{2t} \, dt
+							  </mrow>
+						  </md>
+						  We  now use integration by parts again on the new integral.
+						  <md>
+							  <mrow>
+								  u \amp = t \amp dv \amp = e^{2t} \, dt
+							  </mrow>
+							  <mrow>
+								  du \amp = 1\, dt \amp v \amp =  \frac{1}{2}e^{2t}
+							  </mrow>
+						  </md>
+						  So
+						  <md>
+							  <mrow>
+								  \int t^2e^{2t} \, dt \amp = \frac{1}{2}t^2 e^{2t} - \left(t\cdot \frac{1}{2}e^{2t} - \int \frac{1}{2} e^{2t} \, dt\right)
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{2}t^2 e^{2t} -\frac{1}{2}te^{2t} + \frac{1}{2} \cdot \frac{1}{2} e^{2t} + C
+							  </mrow>
+						  </md>
 					  </p>
 
 				  </solution>
@@ -3226,7 +3934,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						 <m>\displaystyle \int x(x^2+4)^{12} \, dx </m>
+						 <m>\displaystyle \int 5x^2(x^3+4)^{12} \, dx </m>
 					  </p>
 
 				  </statement>
@@ -3234,7 +3942,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u=x^3 + 4</m> and <m>du = 3x^2 \, dx</m>, so <m>\dfrac{1}{3} \, du = x^2 \, dx</m>
+						  <md>
+							  <mrow>
+								  \int 5x^2(x^3+4)^{12} \, dx \amp = \int 5 \cdot \frac{1}{3} u^{12} \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{5}{3} \cdot \frac{u^{13}}{13} + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{5}{39} (x^3+4)^{13} + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -3244,7 +3963,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						 <m>\displaystyle \int \frac{x}{(x-2)(x+3)} \, dx </m>
+						 <m>\displaystyle \int \frac{x}{(x-2)(x-3)} \, dx </m>
 					  </p>
 
 				  </statement>
@@ -3252,7 +3971,26 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  First decompose the integrand into partial fractions:
+						  <me>
+							  \frac{x}{(x-2)(x-3)} = \frac{A}{x-2} + \frac{B}{x-3}
+						  </me>
+						  This yields
+						  <me>
+							  x = A(x-3) + B(x-2)
+						  </me>.
+						  Plug in <m>x=2</m> to solve for <m>A</m> and <m>x=3</m> to solve for <m>B</m>:
+						  <me>2 = -A + 0 \implies A=-2</me>
+						  <me>3 = 0 + B \implies B=3</me>
+						  Now perform the integration:
+						  <md>
+							  <mrow>
+								  \int \frac{x}{(x-2)(x-3)} \, dx \amp = \int \left(\frac{-2}{x-2} + \frac{3}{x-3}\right)\, dx
+							  </mrow>
+							  <mrow>
+								  \amp = -2\ln|x-2| + 3\ln|x-3| + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -3269,7 +4007,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u=\cos(\theta)</m> and <m>du = -\sin(\theta) \, d\theta</m>, so <m>-du = \sin(\theta) \, d\theta</m>:
+						  <md>
+							  <mrow>
+								  \int \frac{\sin(\theta)}{\cos(\theta)} \, d\theta \amp = \int - \frac{1}{u} \, du
+							  </mrow>
+							  <mrow>
+								  \amp = -\ln|u| + C
+							  </mrow>
+							  <mrow>
+								  \amp = -\ln|\cos(\theta)| + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -3286,7 +4035,27 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use integration by parts with 
+						  <md>
+							  <mrow>
+								  u \amp = \ln(x) \amp dv \amp = x^8 \, dx
+							  </mrow>
+							  <mrow>
+								  du \amp = \dfrac{1}{x} \, dx  \amp v \amp = \dfrac{x^9}{9}
+							  </mrow>
+						  </md>
+						  Then
+						  <md>
+							  <mrow>
+								  \int x^8 \ln(x) \, dx \amp = \ln(x) \cdot \frac{x^9}{9} - \int \frac{x^9}{9} \cdot \frac{1}{x} \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{9}x^9 \ln(x) - \int \frac{1}{9} x^8 \, dx
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{9} x^9 \ln(x) - \frac{1}{9}\cdot \frac{1}{9} x^9 + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -3305,7 +4074,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u=6x^2+8x+5</m> and <m>du = (12x + 8) \, dx</m>, so <m>\dfrac{1}{4} \, du = (3x+2)\, dx</m>:
+						  <md>
+							  <mrow>
+								  \int \frac{3x+2}{6x^2+8x+5} \, dx \amp = \int \frac{1}{4}\cdot \frac{1}{u} \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{4}\ln|u| + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{1}{4}\ln|6x^2 + 8x + 5| + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
@@ -3315,7 +4095,7 @@
 			  <exercise>
 				  <statement>
 					  <p>
-						  <m>\displaystyle \int x\cos(x^2+1) \, dx </m>
+						  <m>\displaystyle \int 7t\cos(t^2+5) \, dt </m>
 					  </p>
 			  	
 				  </statement>
@@ -3323,7 +4103,18 @@
 			  
 				  <solution>
 					  <p>
-					  	Blank sol
+						  Use substitution with <m>u = t^2 + 5</m> and <m>du = 2t \, dt</m>, so <m>\dfrac{1}{2} \, du = t \, dt</m>:
+						  <md>
+							  <mrow>
+								  \int 7t\cos(t^2+5) \, dt \amp = \int 7 \cdot \frac{1}{2} \cos(u) \, du
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{7}{2} \sin(u) + C
+							  </mrow>
+							  <mrow>
+								  \amp = \frac{7}{2} \sin(t^2+5) + C
+							  </mrow>
+						  </md>
 					  </p>
 				  
 				  </solution>
