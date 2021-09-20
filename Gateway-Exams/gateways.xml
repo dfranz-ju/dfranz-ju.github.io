@@ -2501,7 +2501,7 @@
 			  
 				  <solution>
 					  <p>
-						  Use substitution with <m>u=t^2+25</m> and <m>du = 2t \, dt</m>, so <m>\dfrac{1}{2} \, du = t \, dt</m>:
+						  Use substitution with <m>u=t^2+5</m> and <m>du = 2t \, dt</m>, so <m>\dfrac{1}{2} \, du = t \, dt</m>:
 						  <md>
 							  <mrow>
 								  \int \frac{5t}{t^2+5} \, dt \amp = \int 5 \cdot \frac{1}{2} \frac{1}{u} \, du
@@ -2510,7 +2510,7 @@
 								  \amp = \frac{5}{2} \ln|u| + C
 							  </mrow>
 							  <mrow>
-								  \amp = \frac{5}{2} \ln|t^2+25| + C
+								  \amp = \frac{5}{2} \ln|t^2+5| + C
 							  </mrow>
 						  </md>
 					  </p>
