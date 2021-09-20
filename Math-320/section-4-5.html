@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-31T10:19:35-04:00       *-->
+<!--*       on 2021-09-20T13:22:11-04:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -131,11 +131,11 @@
 </h2>
 <section class="introduction" id="introduction-19"><h6 class="heading">Overview.<span></span>
 </h6>
-<p id="p-206">In Section 4.4, we saw that once given a basis of a vector space with \(\text{}\), we can use the coordinate mapping for that basis to treat that vector space as a copy of \(\mathbb{R}^n\text{.}\) Since a vector space cannot simultaneously be a copy of \(\mathbb{R}^n\) and \(\mathbb{R}^m\) for \(n\neq m\text{,}\) it follows that every basis of a given vector space should be the same size. The beginning of Section 4.5 formally proves this, leading to the definition of the <em class="emphasis">dimension</em> of a vector space. The rest of the section discusses the dimension of general and specific subspaces of vector spaces.</p>
-<p id="p-207">Previously we have investigated the <em class="emphasis">column space</em> and <em class="emphasis">null space</em> of a matrix, and Section 4.6 introduces a third matrix-related subspace: the <em class="emphasis">row space</em> of a matrix. This is defined similarly to the column space, and its basis is also found by using row reduction. To help relate the dimensions of these three subspaces, the <em class="emphasis">rank</em> of a matrix is defined and the Rank Theorem is given. Finally, additional statements are added to the Invertible Matrix Theorem.</p></section><section class="subsection" id="subsection-4-5-BLO"><h3 class="heading hide-type">
+<p id="p-208">In Section 4.4, we saw that once given a basis of a vector space with \(\text{}\), we can use the coordinate mapping for that basis to treat that vector space as a copy of \(\mathbb{R}^n\text{.}\) Since a vector space cannot simultaneously be a copy of \(\mathbb{R}^n\) and \(\mathbb{R}^m\) for \(n\neq m\text{,}\) it follows that every basis of a given vector space should be the same size. The beginning of Section 4.5 formally proves this, leading to the definition of the <em class="emphasis">dimension</em> of a vector space. The rest of the section discusses the dimension of general and specific subspaces of vector spaces.</p>
+<p id="p-209">Previously we have investigated the <em class="emphasis">column space</em> and <em class="emphasis">null space</em> of a matrix, and Section 4.6 introduces a third matrix-related subspace: the <em class="emphasis">row space</em> of a matrix. This is defined similarly to the column space, and its basis is also found by using row reduction. To help relate the dimensions of these three subspaces, the <em class="emphasis">rank</em> of a matrix is defined and the Rank Theorem is given. Finally, additional statements are added to the Invertible Matrix Theorem.</p></section><section class="subsection" id="subsection-4-5-BLO"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.5.1</span> <span class="title">Basic Learning Objectives</span>
 </h3>
-<p id="p-208">You should be able to perform these tasks with reasonable fluency <em class="emphasis">when you arrive to class</em>.</p>
+<p id="p-210">You should be able to perform these tasks with reasonable fluency <em class="emphasis">when you arrive to class</em>.</p>
 <ul class="disc">
 <li id="li-118"><p id="p-derived-li-118">Define the dimension of a vector space.</p></li>
 <li id="li-119"><p id="p-derived-li-119">Compute the dimension of a vector space.</p></li>
@@ -144,7 +144,7 @@
 </ul></section><section class="subsection" id="subsection-4-5-ALO"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.5.2</span> <span class="title">Advanced Learning Objectives</span>
 </h3>
-<p id="p-209">In addition to mastering the basic objectives, here are the tasks you should be able to perform <em class="emphasis">after class, with practice</em>:</p>
+<p id="p-211">In addition to mastering the basic objectives, here are the tasks you should be able to perform <em class="emphasis">after class, with practice</em>:</p>
 <ul class="disc">
 <li id="li-122"><p id="p-derived-li-122">Find a basis for the row space of a given matrix.</p></li>
 <li id="li-123"><p id="p-derived-li-123">Use the Rank Theorem to relate the rank and nullity of a matrix.</p></li>
@@ -152,13 +152,13 @@
 </ul></section><section class="subsection" id="subsection-4-5-Resources"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.5.3</span> <span class="title">Resources</span>
 </h3>
-<p id="p-210"><em class="emphasis">Reading</em>: Read Sections 4.5 and 4.6 of the textbook. Theorem 10 sets up the definition of dimension, and Theorem 12 is useful for determining if a given set of vectors is a basis. Theorem 13 in Section 4.6 shows how to find a basis of the row space of a matrix, and Theorem 14 is the Rank Theorem, which relates the rank, dimension of null space, and number of columns of a matrix.</p></section><section class="exercises" id="exercises-16"><h3 class="heading hide-type">
+<p id="p-212"><em class="emphasis">Reading</em>: Read Sections 4.5 and 4.6 of the textbook. Theorem 10 sets up the definition of dimension, and Theorem 12 is useful for determining if a given set of vectors is a basis. Theorem 13 in Section 4.6 shows how to find a basis of the row space of a matrix, and Theorem 14 is the Rank Theorem, which relates the rank, dimension of null space, and number of columns of a matrix.</p></section><section class="exercises" id="exercises-16"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber">4.5.4</span> <span class="title">Exercises</span>
 </h3>
-<p id="p-211">Complete the following exercises on paper and bring your solutions to class on the specified day.</p>
-<article class="exercise exercise-like" id="exercise-49"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>You are told that \(V\) is a vector space and that the dimension of \(V\) is 8. If \(S\) is a set of 9 vectors in \(V\text{,}\) is it possible for \(S\) to be a basis of \(V\text{?}\) Why or why not?</article><article class="exercise exercise-like" id="exercise-50"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-212">What is the dimension of the polynomial vector space \(\mathbb{P}_4\text{?}\) Why?</p></article><article class="exercise exercise-like" id="exercise-51"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-213">Let \(A=\begin{bmatrix} 1 \amp -4 \amp 9 \amp -7 \\ -1 \amp 2 \amp -4 \amp 1 \\ 5 \amp -6 \amp 10 \amp 7 \end{bmatrix}.\) What are the dimensions of Col \(A\) and Nul \(A\text{?}\) What is the rank of \(A\text{?}\) (Note: some computation is required)</p></article><article class="exercise exercise-like" id="exercise-52"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>What comments or questions do you have about the material?</article></section></section></div></main>
+<p id="p-213">Complete the following exercises on paper and bring your solutions to class on the specified day.</p>
+<article class="exercise exercise-like" id="exercise-53"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>You are told that \(V\) is a vector space and that the dimension of \(V\) is 8. If \(S\) is a set of 9 vectors in \(V\text{,}\) is it possible for \(S\) to be a basis of \(V\text{?}\) Why or why not?</article><article class="exercise exercise-like" id="exercise-54"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-214">What is the dimension of the polynomial vector space \(\mathbb{P}_4\text{?}\) Why?</p></article><article class="exercise exercise-like" id="exercise-55"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-215">Let \(A=\begin{bmatrix} 1 \amp -4 \amp 9 \amp -7 \\ -1 \amp 2 \amp -4 \amp 1 \\ 5 \amp -6 \amp 10 \amp 7 \end{bmatrix}.\) What are the dimensions of Col \(A\) and Nul \(A\text{?}\) What is the rank of \(A\text{?}\) (Note: some computation is required)</p></article><article class="exercise exercise-like" id="exercise-56"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>What comments or questions do you have about the material?</article></section></section></div></main>
 </div>
 </body>
 </html>
