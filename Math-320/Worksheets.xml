@@ -2293,7 +2293,7 @@
 		<exercise>
 			<statement>
 				<p>
-					By hand, find the inverse of the matrix <m>A=\begin{bmatrix} 6 \amp 6 \\ 5 \amp 4 \end{bmatrix}</m>.
+					By hand, find the inverse of the matrix <m>A=\begin{bmatrix} 8 \amp 6 \\ 5 \amp 4 \end{bmatrix}</m>.
 	
 				</p>
 				
@@ -2307,14 +2307,14 @@
 			<statement>
 				<p>
 					Use the inverse you found in the previous problem to solve the system
-					<me>
+					<md>
 						<mrow>
 							8x_1 + 6x_2 \amp = 2
 						</mrow>
 						<mrow>
 							5x_1 + 4x_2 \amp = -1
 						</mrow>
-					</me>
+					</md>
 				</p>
 				
 			
