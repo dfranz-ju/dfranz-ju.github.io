@@ -170,10 +170,10 @@
 					  <p>
 						  <md>
 							  <mrow>
-								  \frac{dy}{dt} \amp = \frac{1}{\sqrt{1-(3t+1)^2}}\cdot \frac{d}{dt}[3t^2+1]
+								  \frac{dy}{dt} \amp = \frac{1}{\sqrt{1-(3t^2+1)^2}}\cdot \frac{d}{dt}[3t^2+1]
 							  </mrow>
 							  <mrow>
-								  \amp = \frac{6t}{\sqrt{1-(3t+1)^2}}
+								  \amp = \frac{6t}{\sqrt{1-(3t^2+1)^2}}
 							  </mrow>
 						  </md>
 					  </p>
