@@ -3579,6 +3579,78 @@
 
 </chapter>
  
+ 
+<chapter xml:id="chapter-Sage-CG">
+	<title>Sage and Computer Graphics</title>
+	
+	<section xml:id="section-CG4">
+		<title>CG Part 4 code  </title>
+		
+		<p>
+			Example code for creating a GIF for CG Part 4 is given below (same code as in the handout).
+		</p>
+		
+		<p>
+		Reminder: All names are up to you. You should probably not follow the exact naming convention given in this example. Anything to the left of an equals sign is a name that you get to choose. Just remember to be consistent with naming.
+		</p>
+		
+		<p>
+			Scroll down in the cell to see all the code.
+		</p>
+		
+		<sage>
+			<input>
+			  #initial image
+			  d=matrix([[0, 0.5, 0.5, 6, 6, 5.5, 5.5, 0, 0], [0, 0, 6.42, 0, 8, 8, 1.58, 8, 0], 
+			  [1,1,1,1,1,1,1,1,1]]);
+			  ds=d.submatrix(0,0,2)
+			  N0=list_plot(ds.columns(), plotjoined=true, color='purple');
+
+			  #some transformation matrices
+
+			  R=matrix([[0,-1,0],[1,0,0],[0,0,1]]); # rotation matrix by 90 degrees CCW
+			  S=matrix([[3/4, 0,0], [0, 4/3,0],[0,0,1]]); # scale matrix to change size
+			  T=matrix([[1,0,6],[0,1,0],[0,0,1]]);  # translation matrix 
+			  T2=matrix([[1,0,2], [0,1,3], [0,0,1]]) # different translation matrix
+
+			  #create the transformed data matrices after each transformation
+			  d1=R*d; d1s=d1.submatrix(0,0,2); #rotates 90 deg CCW around origin
+
+			  d2=S*d1; d2s=d2.submatrix(0,0,2)#scales by 3/4 horizontally and 4/3 vertically
+
+			  d3=T*d2; d3s=d3.submatrix(0,0,2); #translates 6 units right
+
+			  d4=T2*R*T2^-1*d3; d4s=d4.submatrix(0,0,2) #rotates 90 deg CCW around (2,3)
+
+			  #create the plot corresponding to each step
+			  N1=list_plot(d1s.columns(), plotjoined=true)                 #after rotation
+			  N2=list_plot(d2s.columns(), plotjoined=true, color='red')    #after scaling
+			  N3=list_plot(d3s.columns(), plotjoined=true, color='green')  #after translation
+			  N4=list_plot(d4s.columns(), plotjoined=true, color='black')  #after rotation
+
+			  #gather the plots together by creating a named list of the plots
+			  Nlist=[N0, N1, N2, N3, N4]
+
+			  #creates a plot containing all the frames together (for window purposes)
+			  Nsum=sum(Nlist) 
+
+			  #create the gif using the animate command
+			  #the xmin, xmax, etc are defined so that all the images fit onto the same window.
+
+			  gif=animate(Nlist, xmin=Nsum.xmin(), xmax=Nsum.xmax(), ymin=Nsum.ymin(),
+			   ymax=Nsum.ymax(), aspect_ratio=1)
+
+			  #display the gif; delay is time between frames. Iterations=0 makes the gif play
+			  #forever; setting iterations to n will make the gif play n times.
+
+			  gif.show(iterations=0, delay=50)
+				
+			</input>
+		</sage>
+		
+	</section>
+	
+</chapter>
 
  </book>
 </pretext>
