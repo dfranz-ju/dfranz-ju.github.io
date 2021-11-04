@@ -3546,7 +3546,7 @@
  		<exercise>
  			<statement>
  				<p>
- 					Suppose that a matrix <m>B</m> has characteristic polynomial <m>p(\lambda)=(\lambda-3)^2(2\lambda-1)(\lambda+5)^3</m>. List the eigenvalues of <m>B</m>, with multiplicity. What are the dimensions of <m>B</m>?
+ 					Suppose that a matrix <m>B</m> has characteristic polynomial <m>p(\lambda)=(\lambda-3)^2(\lambda-0.5)(\lambda+5)^3</m>. List the eigenvalues of <m>B</m>, with multiplicity. What are the dimensions of <m>B</m>?
 				
 					
 				
