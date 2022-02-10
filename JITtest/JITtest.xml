@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+Copyright 2015 Robert A. Beezer
+
+This file is part of MathBook XML.
+
+MathBook XML is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 or version 3 of the
+License (at your option).
+
+MathBook XML is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
+*********************************************************************-->
+
+<!-- To process this file do                                                                      -->
+<!-- cd ~/"OneDrive - Jacksonville University"/Website/"dmosele.github.io"/JITtest                                                                                             -->
+<!-- ~/mathbook/pretext/pretext -c webwork -s https://webwork-ptx.aimath.org -d webwork-representations JITtest.xml -->
+<!-- xsltproc -stringparam publisher publication.ptx ~/mathbook/xsl/pretext-html.xsl JITtest.xml                                     -->
+
+<pretext>
+
+    <docinfo>
+        <brandlogo source="images/junewseal.png" />
+        <macros>
+        \newcommand{\doubler}[1]{2#1}
+        </macros>
+    </docinfo>
+
+    <book xml:id="JITtest">
+        <title>Interactive Math Instruction</title>
+
+        <frontmatter>
+
+            <titlepage>
+                <author>
+                    <personname><a href="https://dmosele.github.io">JU Math</a></personname>
+                    <institution>Jacksonville University</institution>
+                </author>
+                <date><today /></date>
+            </titlepage>
+
+            <abstract>
+
+                <p>This is a collection of materials designed to help you strengthen your math skills. Most of these skills have courses connected to them with applications in that course.</p>
+            </abstract>
+
+        </frontmatter>
+
+        <introduction>
+            <p>his is a collection of materials designed to help you strengthen your math skills. Most of these skills have courses connected to them with applications in that course.</p>
+        </introduction>
+
+    <chapter xml:id="webworktest">
+        <title>Math Topics</title>
+            <section xml:id="addfrac">
+                <title>Adding Fractions</title>
+                
+                <video youtube="VMXaSzA8JdM"/>
+
+                <exercise>
+                <webwork>
+                    <pg-code>
+                      Context("LimitedNumeric");
+                      $a = Compute(random(1, 9, 1));
+                      $b = Compute(random(1, 9, 1));
+                      $c = $a + $b;
+                    </pg-code>
+
+                  <statement>
+                    <p>Compute <m><var name="$a"/> + <var name="$b"/></m>.</p>
+                    <instruction>Type your answer without using the <c>+</c> sign.</instruction>
+                    <p>The sum is <var name="$c" width="2"/>.</p>
+                  </statement>
+
+                  <solution>
+                    <p><m><var name="$a"/> + <var name="$b"/> = <var name="$c"/></m>.</p>
+                  </solution>
+                </webwork>
+                </exercise>
+                
+                <exercise>
+                    <webwork source="Library/ma122DB/set12/s5_4_26.pg" />
+                </exercise>
+                
+                <exercise xml:id="ez-1-5-WW4" permid="vTB">
+                  <title>Displacement and velocity</title>
+                  <webwork source="Library/UVA-Stew5e/setUVA-Stew5e-C02S07-TansVelsRates/2-7-20.pg" />
+                </exercise>
+                    
+            </section>
+            <section xml:id="percentages">
+                <title>Percentages</title>
+            </section>
+    </chapter>
+    <chapter xml:id="diagnostics">
+        <title>Diagnostics</title>
+        <section>
+            <title>Test</title>
+        </section>
+    </chapter>
+    <chapter xml:id="course_connect">
+        <title>Course Connections</title>
+        <section xml:id="CHEM204">
+            <title>CHEM 204</title>
+            <p> If you are in CHEM 204, we recommend checking out the skills: <xref ref="addfrac" /></p>
+        </section>
+        <section xml:id="MPP">
+            <title>MPP</title>
+            <p> If you are in the MPP program, we recommend checking out the skills: <xref ref="percentages" /></p>
+        </section>
+    </chapter>
+    </book>
+
+</pretext>
