@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-02-17T23:45:26-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Lines and Slope</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Interactive Math Instruction">
+<meta property="book:author" content="JU Math">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://pretextbook.org/js/0.13/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="_static/runtime.44deab00544cc8fc.bundle.js"></script><script type="text/javascript" src="_static/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="_static/runestone.a1a8707963a337ef.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="_static/runestone.d062db89aaf1dddd.css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\doubler}[1]{2#1}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="" target="_blank"><img src="external/images/junewseal.png" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="JIT.html"><span class="title">Interactive Math Instruction</span></a></h1>
+<p class="byline">JU Math</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<button id="calculator-toggle" class="toolbar-item button toggle" title="Show calculator" aria-expanded="false" aria-controls="calculator-container">Calc</button><div id="calculator-container" class="calculator-container" style="display: none; z-index:100;"><div id="geogebra-calculator"></div></div>
+<script>
+var ggbApp = new GGBApplet({"appName": "graphing",
+    "width": 330,
+    "height": 600,
+    "showToolBar": true,
+    "showAlgebraInput": true,
+    "perspective": "G/A",
+    "algebraInputPosition": "bottom",
+    "scaleContainerClass": "calculator-container",
+    "allowUpscale": true,
+    "autoHeight": true,
+    "disableAutoScale": false},
+true);
+</script><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="Math-110-140.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Math-110-140.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="exponents.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="Math-110-140.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Math-110-140.html" title="Up">Up</a><a class="next-button button toolbar-item" href="exponents.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1" class="internal"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="Math-110-140.html" data-scroll="Math-110-140" class="internal"><span class="codenumber">1</span> <span class="title">MATH 110/140 Topics</span></a><ul>
+<li><a href="slopes.html" data-scroll="slopes" class="active">Lines and Slope</a></li>
+<li><a href="exponents.html" data-scroll="exponents" class="internal">Exponent Rules</a></li>
+<li><a href="solving.html" data-scroll="solving" class="internal">Solving Equations</a></li>
+<li><a href="algebra.html" data-scroll="algebra" class="internal">Algebra Review</a></li>
+<li><a href="function-eval.html" data-scroll="function-eval" class="internal">Function Evaluation</a></li>
+<li><a href="functions-graphs.html" data-scroll="functions-graphs" class="internal">Functions and Graphs</a></li>
+<li><a href="inverse.html" data-scroll="inverse" class="internal">Inverse Functions</a></li>
+<li><a href="trig.html" data-scroll="trig" class="internal">Trigonometry Review</a></li>
+<li><a href="intervals.html" data-scroll="intervals" class="internal">Interval Notation</a></li>
+<li><a href="domain-range.html" data-scroll="domain-range" class="internal">Domain and Range</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="psyc-311-411.html" data-scroll="psyc-311-411" class="internal"><span class="codenumber">2</span> <span class="title">PSYC 311, 411 Topics</span></a><ul>
+<li><a href="mean.html" data-scroll="mean" class="internal">Measures of Central Tendency</a></li>
+<li><a href="variance.html" data-scroll="variance" class="internal">Measures of Variability</a></li>
+<li><a href="freq.html" data-scroll="freq" class="internal">Frequency Distributions</a></li>
+<li><a href="prob.html" data-scroll="prob" class="internal">Probability</a></li>
+<li><a href="significance.html" data-scroll="significance" class="internal">Interpreting Significance</a></li>
+<li><a href="std-dev.html" data-scroll="std-dev" class="internal">Standard Deviation on a Normal Curve</a></li>
+<li><a href="CI.html" data-scroll="CI" class="internal">Confidence Intervals</a></li>
+<li><a href="correlation.html" data-scroll="correlation" class="internal">Correlation Coefficients</a></li>
+<li><a href="point-estimate.html" data-scroll="point-estimate" class="internal">Point Estimate Computation</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="course_connect.html" data-scroll="course_connect" class="internal"><span class="codenumber">3</span> <span class="title">Course Connections</span></a><ul>
+<li><a href="CHEM204.html" data-scroll="CHEM204" class="internal">CHEM 204</a></li>
+<li><a href="MPP.html" data-scroll="MPP" class="internal">MPP</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="slopes"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.1</span> <span class="title">Lines and Slope</span>
+</h2>
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-1" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/yEcGToImtqY?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<article class="exercise exercise-like" id="exercise-1"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="period">.</span>
+</h3>
+<div id="webwork-1" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="1" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKICAgICAgICAgICAgICAgQ29udGV4dCgiTnVtZXJpYyIpOwogICAgICAgICAgICAgICAkYSA9IHJhbmRvbSgyLCA5LCAxKTsKICAgICAgICAgICAgICAgJGIgPSByYW5kb20oMiwgOSwgMSk7CiAgICAgICAgICAgICAgICRhMSA9IG5vbl96ZXJvX3JhbmRvbSgtNSw1KTsKJGIxID0gbm9uX3plcm9fcmFuZG9tKC01LDUpOwokYyA9ICRhICsgJGExOwokZCA9ICRiICsgJGIxOwoKJGRiID0gJGQgLSAkYjsKJGNhID0gJGMgLSAkYTsKCiRzID0gQ29tcHV0ZSgoJGQtJGIpLygkYy0kYSkpOwoKQkVHSU5fUEdNTApGaW5kIHRoZSBzbG9wZSBvZiB0aGUgbGluZSBiZXR3ZWVuIHRoZSBwb2ludHMgW2AoWyRhXSwgWyRiXSlgXSBhbmQgW2AoWyRjXSwgWyRkXSlgXQoKVGhlIHNsb3BlIGlzIFtfXXskc317OH0uCgoKRU5EX1BHTUwKCkJFR0lOX1BHTUxfU09MVVRJT04KVGhlIHNsb3BlIGlzIFtgXGRmcmFje1skZF0gLSBbJGJdfXtbJGNdLVskYV19ID0gXGRmcmFje1skZGJdfXtbJGNhXX0gPSBbJHNdYF0KCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-3">Find the slope of the line between the points <span class="process-math">\((2, 8)\)</span> and <span class="process-math">\((-2, 12)\)</span></p>
+<p id="p-4">The slope is <span class="fillin" role="img" aria-label="8-character blank" style="width: 3.636363636363636em;"></span>.</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-1" id="answer-1"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1"><div class="answer solution-like"><p id="p-5"><span class="process-math">\(-1\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-1" id="solution-1"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-1"><div class="solution solution-like"><p id="p-6">The slope is <span class="process-math">\(\dfrac{12 - 8}{-2-2} = \dfrac{4}{-4} = {-1}\)</span></p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-1')">Make Interactive</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-2"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.2</span><span class="period">.</span>
+</h3>
+<div id="webwork-2" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="2" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKICAgICAgICAgICAgICAgQ29udGV4dCgiTnVtZXJpYyIpOwogICAgICAgICAgICAgICAkYSA9IHJhbmRvbSgxMSwgMTksIDEpOwogICAgICAgICAgICAgICAkYiA9IHJhbmRvbSgyLCA5LCAxKTsKICAgICAgICAgICAgICAgJGExID0gbm9uX3plcm9fcmFuZG9tKC01LDUpOwokYjEgPSAwOwokYyA9ICRhICsgJGExOwokZCA9ICRiICsgJGIxOwoKJGRiID0gJGQgLSAkYjsKJGNhID0gJGMgLSAkYTsKCiRzID0gQ29tcHV0ZSgoJGQtJGIpLygkYy0kYSkpOwoKQkVHSU5fUEdNTApGaW5kIHRoZSBzbG9wZSBvZiB0aGUgbGluZSBiZXR3ZWVuIHRoZSBwb2ludHMgW2AoWyRhXSwgWyRiXSlgXSBhbmQgW2AoWyRjXSwgWyRkXSlgXQoKVGhlIHNsb3BlIGlzIFtfXXskc317OH0uCgoKRU5EX1BHTUwKCkJFR0lOX1BHTUxfU09MVVRJT04KVGhlIHNsb3BlIGlzIFtgXGRmcmFje1skZF0gLSBbJGJdfXtbJGNdLVskYV19ID0gXGRmcmFje1skZGJdfXtbJGNhXX0gPSBbJHNdYF0KCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-7">Find the slope of the line between the points <span class="process-math">\((12, 5)\)</span> and <span class="process-math">\((13, 5)\)</span></p>
+<p id="p-8">The slope is <span class="fillin" role="img" aria-label="8-character blank" style="width: 3.636363636363636em;"></span>.</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-2" id="answer-2"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-2"><div class="answer solution-like"><p id="p-9"><span class="process-math">\(0\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-2" id="solution-2"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-2"><div class="solution solution-like"><p id="p-10">The slope is <span class="process-math">\(\dfrac{5 - 5}{13-12} = \dfrac{0}{1} = {0}\)</span></p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-2')">Make Interactive</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-3"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.1.3</span><span class="period">.</span>
+</h3>
+<div id="webwork-3" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="3" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKICAgICAgICAgICAgICAgQ29udGV4dCgiTnVtZXJpYyIpOwoKJGdyID0gaW5pdF9ncmFwaCgtNSwgLTUsIDUsIDUsIGF4ZXM9PlswLDBdLCBncmlkPT5bMTAsMTBdLCBzaXplPT5bMzAwLDMwMF0pOwoKCiRtID0gQ29tcHV0ZShsaXN0X3JhbmRvbSgtMywtMiwgLTEsIDEsIDIsIDMsIC0xLzIsIDEvMikpOwokYiA9IG5vbl96ZXJvX3JhbmRvbSgtMywzKTsKCgoKYWRkX2Z1bmN0aW9ucygkZ3IsICIkbSp4ICsgJGIgZm9yIHggaW4gIDwtNSw1PiB1c2luZyBjb2xvcjpibHVlIGFuZCB3ZWlnaHQ6MSIpOwoKQkVHSU5fUEdNTApGaW5kIHRoZSBzbG9wZSBvZiB0aGUgbGluZSBncmFwaGVkIGJlbG93LgoKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3IpLCB3aWR0aD0+MzAwLCBhbHQ9PnFxImEgcGxvdCBvZiBhIGxpbmUiKUBdKiAgPDwKClRoZSBzbG9wZSBpcyBbX117JG19ezh9LgoKCkVORF9QR01MCgpFTkRET0NVTUVOVCgpOw==" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-11">Find the slope of the line graphed below.</p>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/webwork/images/webwork-3-image-1.png" class="contained" alt="a plot of a line"></div>
+<p id="p-12">The slope is <span class="fillin" role="img" aria-label="8-character blank" style="width: 3.636363636363636em;"></span>.</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-3" id="answer-3"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-3"><div class="answer solution-like"><p id="p-13"><span class="process-math">\(-1\)</span></p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-3')">Make Interactive</button></div>
+</div></article></section></div></main>
+</div>
+</body>
+</html>
