@@ -30,6 +30,13 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!-- ~/mathbook/pretext/pretext -c all -f html -p pub/publication.ptx -d output source/JIT-main.xml      --> 
 
 
+<!--    to update git repository, do                        -->
+<!--       git add -x-all  (double hyphen,no x)                                   -->
+<!--       git commit -m "<short descriptive comment>"       -->
+<!--       git push -u origin master                         -->       
+<!-- 														-->
+<!--   website is https://dfranz-ju.github.io/JIT/output/frontmatter-1.html. -->  
+
 <pretext>
 
     <docinfo>
@@ -76,6 +83,9 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
 		<chapter xml:id="Math-110-140">
 			<title> MATH 110/140 Topics</title>
+			<introduction>
+				These topics relate to MATH 110 and MATH 140.
+			</introduction>
 			
 			<section xml:id="slopes">
 				<title>Lines and Slope</title>
