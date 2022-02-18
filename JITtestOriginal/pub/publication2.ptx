@@ -1,0 +1,11 @@
+<publication>
+	<source>
+		<directories external="../ext" generated="../gen"/>
+	</source>
+    <html>
+    <css colors="blue_grey" />
+    <knowl example="no" exercise-divisional="no" exercise-inline="no" />
+    <calculator model="geogebra-graphing"/>
+  </html>
+  
+</publication>

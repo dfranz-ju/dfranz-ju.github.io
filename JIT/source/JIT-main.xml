@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+Copyright 2015 Robert A. Beezer
+
+This file is part of MathBook XML.
+
+MathBook XML is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 or version 3 of the
+License (at your option).
+
+MathBook XML is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
+*********************************************************************-->
+
+<!-- To process this file do                                                                      -->
+<!-- cd ~/dfranz-ju.github.io/JIT                                                                                           -->
+<!-- ~/mathbook/pretext/pretext -c webwork -s https://webwork-ptx.aimath.org -d webwork-representations JIT.xml -->
+<!-- xsltproc -stringparam publisher publication.ptx ~/mathbook/xsl/pretext-html.xsl JITtest.xml                                     -->
+
+
+<!-- ~/mathbook/pretext/pretext -c webwork -p pub/publication.ptx -s https://webwork-ptx.aimath.org source/JIT-main.xml   -->
+
+<!-- ~/mathbook/pretext/pretext -c all -f html -p pub/publication.ptx -d output source/JIT-main.xml      --> 
+
+
+<pretext>
+
+    <docinfo>
+        <brandlogo source="images/junewseal.png" />
+        <macros>
+        \newcommand{\doubler}[1]{2#1}
+        </macros>
+		
+		<latex-image-preamble>
+			\usepackage{tikz}
+		</latex-image-preamble>
+		
+		<latex-image-preamble syntax="PGtikz">
+			\usepackage{pgfplots}
+		</latex-image-preamble>
+		
+
+    </docinfo>
+
+    <book xml:id="JIT">
+        <title>Interactive Math Instruction</title>
+
+        <frontmatter>
+
+            <titlepage>
+                <author>
+                    <personname><a>JU Math</a></personname>
+                    <institution>Jacksonville University</institution>
+                </author>
+                <date><today /></date>
+            </titlepage>
+
+            <abstract>
+
+                <p> This is a collection of materials designed to help you strengthen your math skills. Most of these skills have courses connected to them with applications in that course.</p>
+            </abstract>
+
+        </frontmatter>
+
+        <introduction>
+            <p> This is a collection of materials designed to help you strengthen your math skills. Most of these skills have courses connected to them with applications in that course.</p>
+        </introduction>
+
+
+		<chapter xml:id="Math-110-140">
+			<title> MATH 110/140 Topics</title>
+			
+			<section xml:id="slopes">
+				<title>Lines and Slope</title>
+				
+                <video youtube="yEcGToImtqY"/>
+				
+				
+                <exercise>
+                <webwork>
+                    <pg-code>
+                      Context("Numeric");
+                      $a = random(2, 9, 1);
+                      $b = random(2, 9, 1);
+                      $a1 = non_zero_random(-5,5);
+					  $b1 = non_zero_random(-5,5);
+					  $c = $a + $a1;
+					  $d = $b + $b1;
+					  
+					  $db = $d - $b;
+					  $ca = $c - $a;
+					  
+					  $s = Compute(($d-$b)/($c-$a));
+                    </pg-code>
+
+                  <statement>
+					  <p>
+						  Find the slope of the line between the points <m>(<var name="$a"/>, <var name="$b"/>)</m> and <m>(<var name="$c"/>, <var name="$d"/>)</m>
+					  </p>
+					  <p>
+						  The slope is <var name="$s" width="8"/>.
+					  </p>
+					  
+				  </statement>
+					  
+				  <solution>
+					  <p>
+						  The slope is <m>\dfrac{<var name="$d"/> - <var name="$b"/>}{<var name="$c"/>-<var name="$a"/>} = \dfrac{<var name="$db"/>}{<var name="$ca"/>} = <var name="$s"/></m>
+					  </p>
+				  </solution>
+					  
+					  
+                   
+                </webwork>
+                </exercise>
+				
+				
+                <exercise>
+                <webwork>
+                    <pg-code>
+                      Context("Numeric");
+                      $a = random(11, 19, 1);
+                      $b = random(2, 9, 1);
+                      $a1 = non_zero_random(-5,5);
+					  $b1 = 0;
+					  $c = $a + $a1;
+					  $d = $b + $b1;
+					  
+					  $db = $d - $b;
+					  $ca = $c - $a;
+					  
+					  $s = Compute(($d-$b)/($c-$a));
+                    </pg-code>
+
+                  <statement>
+					  <p>
+						  Find the slope of the line between the points <m>(<var name="$a"/>, <var name="$b"/>)</m> and <m>(<var name="$c"/>, <var name="$d"/>)</m>
+					  </p>
+					  <p>
+						  The slope is <var name="$s" width="8"/>.
+					  </p>
+					  
+				  </statement>
+					  
+				  <solution>
+					  <p>
+						  The slope is <m>\dfrac{<var name="$d"/> - <var name="$b"/>}{<var name="$c"/>-<var name="$a"/>} = \dfrac{<var name="$db"/>}{<var name="$ca"/>} = <var name="$s"/></m>
+					  </p>
+				  </solution>
+					  
+					  
+                   
+                </webwork>
+                </exercise>
+				
+				
+				
+				
+                <exercise>
+                <webwork>
+                    <pg-code>
+                      Context("Numeric");
+					  
+					  $gr = init_graph(-5, -5, 5, 5, axes=>[0,0], grid=>[10,10], size=>[300,300]);
+					  
+					  
+					  $m = Compute(list_random(-3,-2, -1, 1, 2, 3, -1/2, 1/2));
+					  $b = non_zero_random(-3,3);
+					  
+					  
+					  
+					  add_functions($gr, "$m*x + $b for x in  &lt;-5,5&gt; using color:blue and weight:1");
+					  
+                    </pg-code>
+
+                  <statement>
+					  <p>
+						  Find the slope of the line graphed below.
+					  </p>
+					  <image pg-name="$gr" width="50%">
+						  <description>
+							  a plot of a line
+						  </description>
+					  </image>
+					  <p>
+						  The slope is <var name="$m" width="8"/>.
+					  </p>
+					  
+				  </statement>
+					  	  
+                   
+                </webwork>
+                </exercise>
+				
+				
+
+				
+				
+				
+			</section>
+			
+			
+			
+			<section xml:id="exponents">
+				<title>Exponent Rules</title>
+				
+				
+				
+			</section>
+			
+			
+			<section xml:id="solving">
+				<title>Solving Equations</title>
+				
+				
+				
+			</section>
+			
+			
+			<section xml:id="algebra">
+				<title>Algebra Review</title>
+				
+				
+				
+			</section>
+			
+			
+			
+			<section xml:id="function-eval">
+				<title>Function Evaluation</title>
+				
+				
+				
+			</section>
+			
+			
+			<section xml:id="functions-graphs">
+				<title>Functions and Graphs</title>
+				
+				
+				
+			</section>
+			
+			
+			
+			<section xml:id="inverse">
+				<title>Inverse Functions</title>
+				
+				
+				
+			</section>
+			
+			
+			
+			<section xml:id="trig">
+				<title>Trigonometry Review</title>
+				
+				
+				
+			</section>
+			
+			
+			<section xml:id="intervals">
+				<title>Interval Notation</title>
+				
+				
+				
+			</section>
+			
+			
+			<section xml:id="domain-range">
+				<title>Domain and Range</title>
+				
+				
+				
+			</section>
+			
+			
+		</chapter>
+
+
+
+
+
+		<chapter xml:id="psyc-311-411">
+			<title>PSYC 311, 411 Topics</title>
+			
+			
+			<section xml:id="mean">
+				<title>Measures of Central Tendency</title>
+				
+				
+				
+			</section>
+			
+			
+			<section xml:id="variance">
+				<title>Measures of Variability</title>
+				
+				
+				
+			</section>
+			
+			
+			<section xml:id="freq">
+				<title>Frequency Distributions</title>
+				
+				
+				
+			</section>
+			
+			
+			<section xml:id="prob">
+				<title>Probability</title>
+				
+				
+				
+			</section>
+			
+			
+			
+			<section xml:id="significance">
+				<title>Interpreting Significance</title>
+				
+				
+				
+			</section>
+			
+			
+			<section xml:id="std-dev">
+				<title>Standard Deviation on a Normal Curve</title>
+				
+				
+				
+			</section>
+			
+			
+			<section xml:id="CI">
+				<title>Confidence Intervals</title>
+				
+				
+				
+			</section>
+			
+			
+			<section xml:id="correlation">
+				<title>Correlation Coefficients</title>
+				
+				
+				
+			</section>
+			
+			
+			<section xml:id="point-estimate">
+				<title>Point Estimate Computation</title>
+				
+				
+				
+			</section>
+			
+		</chapter>
+
+
+
+
+
+
+
+    <chapter xml:id="course_connect">
+        <title>Course Connections</title>
+        <section xml:id="CHEM204">
+            <title>CHEM 204</title>
+            <p> If you are in CHEM 204, we recommend checking out the skills in <xref ref="Math-110-140" />.</p>
+        </section>
+        <section xml:id="MPP">
+            <title>MPP</title>
+            <p> If you are in the MPP program, we recommend checking out the skills in <xref ref="Math-110-140" />.</p>
+        </section>
+    </chapter>
+    </book>
+
+</pretext>

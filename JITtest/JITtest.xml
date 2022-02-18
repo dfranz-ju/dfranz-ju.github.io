@@ -19,10 +19,21 @@ You should have received a copy of the GNU General Public License
 along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 *********************************************************************-->
 
-<!-- To process this file do                                                                      -->
-<!-- cd ~/"OneDrive - Jacksonville University"/Website/"dmosele.github.io"/JITtest                                                                                             -->
+<!-- To process this file do                                                                      --> 
+<!-- cd ~/dfranz-ju.github.io/JITtest                                                                                           -->
 <!-- ~/mathbook/pretext/pretext -c webwork -s https://webwork-ptx.aimath.org -d webwork-representations JITtest.xml -->
 <!-- xsltproc -stringparam publisher publication.ptx ~/mathbook/xsl/pretext-html.xsl JITtest.xml                                     -->
+
+<!-- ~/mathbook/pretext/pretext -c webwork -p publication.ptx -s https://webwork-ptx.aimath.org JITtest.xml   -->
+
+<!-- ~/mathbook/pretext/pretext -c all -f html -p publication.ptx JITtest.xml      --> 
+
+
+<!--    to update git repository, do                        -->
+<!--       git add -x-all  (double hyphen,no x)                                   -->
+<!--       git commit -m "<short descriptive comment>"       -->
+<!--       git push -u origin master                         --> 
+
 
 <pretext>
 
@@ -54,7 +65,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
         </frontmatter>
 
         <introduction>
-            <p>his is a collection of materials designed to help you strengthen your math skills. Most of these skills have courses connected to them with applications in that course.</p>
+            <p>This is a collection of materials designed to help you strengthen your math skills. Most of these skills have courses connected to them with applications in that course.</p>
         </introduction>
 
     <chapter xml:id="webworktest">

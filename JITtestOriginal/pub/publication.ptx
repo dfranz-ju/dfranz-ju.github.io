@@ -1,0 +1,8 @@
+<publication>
+  <source webwork-problems="webwork-representations/webwork-representations.ptx"/>
+    <html>
+    <css colors="blue_grey" />
+    <knowl example="no" exercise-divisional="no" exercise-inline="no" />
+    <calculator model="geogebra-graphing"/>
+  </html>
+</publication>
