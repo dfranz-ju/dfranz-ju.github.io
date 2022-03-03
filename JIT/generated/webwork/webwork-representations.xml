@@ -17,7 +17,7 @@
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-02-17T23:41:00-05:00       
+###       on 2022-03-03T16:13:46-05:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -117,7 +117,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-02-17T23:41:00-05:00       
+###       on 2022-03-03T16:13:46-05:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -217,7 +217,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-02-17T23:41:00-05:00       
+###       on 2022-03-03T16:13:46-05:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -282,6 +282,387 @@ Find the slope of the line graphed below.
 The slope is [_]{$m}{8}.
 
 END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-4" ww-id="webwork-4">
+    <static seed="4">
+      <statement><p>Simplify the following expression. Write your answer using positive exponents only.</p>
+<p><m>\dfrac{x^{8}}{x^{3}}</m> = <fillin name="AnSwEr0001" characters="8"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>x^{5}</m>
+        </p>
+      </answer>
+      <solution><p><m>\dfrac{x^{8}}{x^{3}} = x^{8 - 3} = x^5</m></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0SW50ZWdlcnMucGwiLCJjb250ZXh0TGltaXRlZFBvd2Vycy5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCdOdW1lcmljJyk7TGltaXRlZFBvd2Vyczo6T25seVBvc2l0aXZlSW50ZWdlcnMoKTsKJGE9IHJhbmRvbSgyLCA1LCAxKTsKJGIgPSByYW5kb20oMiwgNiwgMSk7CiRjID0gJGEgKyAkYjsKICAgJGFucyA9IENvbXB1dGUoInheJGIiKTsKCkJFR0lOX1BHTUwKU2ltcGxpZnkgdGhlIGZvbGxvd2luZyBleHByZXNzaW9uLiBXcml0ZSB5b3VyIGFuc3dlciB1c2luZyBwb3NpdGl2ZSBleHBvbmVudHMgb25seS4KCltgXGRmcmFje3hee1skY119fXt4XntbJGFdfX1gXSA9IFtfXXskYW5zfXs4fS4KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpbYFxkZnJhY3t4XntbJGNdfX17eF57WyRhXX19ID0geF57WyRjXSAtIFskYV19ID0geF5bJGJdIGBdCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2022-03-03T16:13:46-05:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.2.1)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegers.pl",
+  "contextLimitedPowers.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+LimitedPowers::OnlyPositiveIntegers();
+$a= random(2, 5, 1);
+$b = random(2, 6, 1);
+$c = $a + $b;
+   $ans = Compute("x^$b");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Simplify the following expression. Write your answer using positive exponents only.
+
+[`\dfrac{x^{[$c]}}{x^{[$a]}}`] = [_]{$ans}{8}.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`\dfrac{x^{[$c]}}{x^{[$a]}} = x^{[$c] - [$a]} = x^[$b] `]
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-5" ww-id="webwork-5">
+    <static seed="5">
+      <statement><p>Simplify the following expression. Write your answer using positive exponents only.</p>
+<p><m>c^{10} \cdot c^{12}</m> = <fillin name="AnSwEr0001" characters="8"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>c^{22}</m>
+        </p>
+      </answer>
+      <solution><p><m>c^{10} \cdot c^{12} = c^{10 + 12} = {c^{22}}</m></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0SW50ZWdlcnMucGwiLCJjb250ZXh0TGltaXRlZFBvd2Vycy5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCktPnZhcmlhYmxlcy0+YWRkKCJjIj0+UmVhbCk7CkxpbWl0ZWRQb3dlcnM6Ok9ubHlQb3NpdGl2ZUludGVnZXJzKCk7CiRhPSByYW5kb20oOCwgMTIsIDEpOwokYiA9IHJhbmRvbSgxLCA0LCAxKTsKJGMgPSAkYSArICRiOwokbSA9ICRhICsgJGM7CiAgICRhbnMgPSBDb21wdXRlKCJjXiRtIik7CgpCRUdJTl9QR01MClNpbXBsaWZ5IHRoZSBmb2xsb3dpbmcgZXhwcmVzc2lvbi4gV3JpdGUgeW91ciBhbnN3ZXIgdXNpbmcgcG9zaXRpdmUgZXhwb25lbnRzIG9ubHkuCgpbYGNee1skYSRdfSBcY2RvdCBjXntbJGMkXX1gXSA9IFtfXXskYW5zfXs4fS4KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpbYGNee1skYSRdfSBcY2RvdCBjXntbJGMkXX0gPSBjXntbJGEkXSArIFskY119ID0gWyRhbnNdYF0KRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2022-03-03T16:13:46-05:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.2.2)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegers.pl",
+  "contextLimitedPowers.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->variables->add("c"=>Real);
+LimitedPowers::OnlyPositiveIntegers();
+$a= random(8, 12, 1);
+$b = random(1, 4, 1);
+$c = $a + $b;
+$m = $a + $c;
+   $ans = Compute("c^$m");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Simplify the following expression. Write your answer using positive exponents only.
+
+[`c^{[$a$]} \cdot c^{[$c$]}`] = [_]{$ans}{8}.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`c^{[$a$]} \cdot c^{[$c$]} = c^{[$a$] + [$c]} = [$ans]`]
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-6" ww-id="webwork-6">
+    <static seed="6">
+      <statement><p>Simplify the following expression. Write your answer using positive exponents only.</p>
+<p><m>(z^{4})^{2}</m> = <fillin name="AnSwEr0001" characters="8"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>z^{8}</m>
+        </p>
+      </answer>
+      <solution><p><m>(z^{4})^{2} = z^{4 \cdot 2} = {z^{8}}</m></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0SW50ZWdlcnMucGwiLCJjb250ZXh0TGltaXRlZFBvd2Vycy5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCktPnZhcmlhYmxlcy0+YWRkKCJ6Ij0+UmVhbCk7CkxpbWl0ZWRQb3dlcnM6Ok9ubHlQb3NpdGl2ZUludGVnZXJzKCk7CiRhPSByYW5kb20oMywgNSwgMSk7CiRiID0gcmFuZG9tKDIsIDYsIDEpOwokbSA9ICRhICogJGI7CiAgICRhbnMgPSBDb21wdXRlKCJ6XiRtIik7CgpCRUdJTl9QR01MClNpbXBsaWZ5IHRoZSBmb2xsb3dpbmcgZXhwcmVzc2lvbi4gV3JpdGUgeW91ciBhbnN3ZXIgdXNpbmcgcG9zaXRpdmUgZXhwb25lbnRzIG9ubHkuCgpbYCh6XntbJGEkXX0pXntbJGIkXX1gXSA9IFtfXXskYW5zfXs4fS4KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpbYCh6XntbJGEkXX0pXntbJGIkXX0gPSB6XntbJGEkXSBcY2RvdCBbJGJdfSA9IFskYW5zXWBdCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2022-03-03T16:13:46-05:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.2.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegers.pl",
+  "contextLimitedPowers.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->variables->add("z"=>Real);
+LimitedPowers::OnlyPositiveIntegers();
+$a= random(3, 5, 1);
+$b = random(2, 6, 1);
+$m = $a * $b;
+   $ans = Compute("z^$m");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Simplify the following expression. Write your answer using positive exponents only.
+
+[`(z^{[$a$]})^{[$b$]}`] = [_]{$ans}{8}.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`(z^{[$a$]})^{[$b$]} = z^{[$a$] \cdot [$b]} = [$ans]`]
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-7" ww-id="webwork-7">
+    <static seed="7">
+      <statement><p>Simplify the following expression. Write your answer using positive exponents only.</p>
+<p><m>\dfrac{y^{5}}{y^{10}}</m> = <fillin name="AnSwEr0001" characters="8"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>\frac{1}{y^{5}}</m>
+        </p>
+      </answer>
+      <solution><p><m>\dfrac{y^{5}}{y^{10}} = y^{5 - 10} = y^{-5} = \dfrac{1}{y^{5}}</m></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0SW50ZWdlcnMucGwiLCJjb250ZXh0TGltaXRlZFBvd2Vycy5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCktPnZhcmlhYmxlcy0+YWRkKCJ5Ij0+UmVhbCk7CkxpbWl0ZWRQb3dlcnM6Ok9ubHlQb3NpdGl2ZUludGVnZXJzKCk7CiRhPSByYW5kb20oMiwgNSwgMSk7CiRiID0gcmFuZG9tKDIsIDYsIDEpOwokYyA9ICRhICsgJGI7CiAgICRhbnMgPSBDb21wdXRlKCIxL3leJGIiKTsKCkJFR0lOX1BHTUwKU2ltcGxpZnkgdGhlIGZvbGxvd2luZyBleHByZXNzaW9uLiBXcml0ZSB5b3VyIGFuc3dlciB1c2luZyBwb3NpdGl2ZSBleHBvbmVudHMgb25seS4KCltgXGRmcmFje3lee1skYV19fXt5XntbJGNdfX1gXSA9IFtfXXskYW5zfXs4fS4KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpbYFxkZnJhY3t5XntbJGFdfX17eV57WyRjXX19ID0geV57WyRhXSAtIFskY119ID0geV57LVskYl19ID0gXGRmcmFjezF9e3lee1skYl19fSBgXQpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2022-03-03T16:13:46-05:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.2.4)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "contextIntegers.pl",
+  "contextLimitedPowers.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->variables->add("y"=>Real);
+LimitedPowers::OnlyPositiveIntegers();
+$a= random(2, 5, 1);
+$b = random(2, 6, 1);
+$c = $a + $b;
+   $ans = Compute("1/y^$b");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Simplify the following expression. Write your answer using positive exponents only.
+
+[`\dfrac{y^{[$a]}}{y^{[$c]}}`] = [_]{$ans}{8}.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`\dfrac{y^{[$a]}}{y^{[$c]}} = y^{[$a] - [$c]} = y^{-[$b]} = \dfrac{1}{y^{[$b]}} `]
+END_PGML_SOLUTION
 
 ############################################################
 # End Problem

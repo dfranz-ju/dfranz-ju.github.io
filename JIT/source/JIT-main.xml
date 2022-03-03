@@ -2,19 +2,15 @@
 
 <!--********************************************************************
 Copyright 2015 Robert A. Beezer
-
 This file is part of MathBook XML.
-
 MathBook XML is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 2 or version 3 of the
 License (at your option).
-
 MathBook XML is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
-
 You should have received a copy of the GNU General Public License
 along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 *********************************************************************-->
@@ -27,7 +23,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 
 <!-- ~/mathbook/pretext/pretext -c webwork -p pub/publication.ptx -s https://webwork-ptx.aimath.org source/JIT-main.xml   -->
 
-<!-- ~/mathbook/pretext/pretext -c all -f html -p pub/publication.ptx -d output source/JIT-main.xml      --> 
+<!-- ~/mathbook/pretext/pretext -c all -f html -p pub/publication.ptx source/JIT-main.xml      --> 
 
 
 <!--    to update git repository, do                        -->
@@ -221,7 +217,121 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			<section xml:id="exponents">
 				<title>Exponent Rules</title>
 				
+				<video youtube="eHIp8Ay3AsA"/>
 				
+				
+				<exercise>
+					<webwork>
+						<pg-code>
+							LimitedPowers::OnlyPositiveIntegers();
+							$a= random(2, 5, 1);
+							$b = random(2, 6, 1);
+							$c = $a + $b;
+						    $ans = Compute("x^$b");
+						</pg-code>
+						
+						<statement>
+							<p>
+								Simplify the following expression. Write your answer using positive exponents only.
+							</p>
+							<p>
+								<m>\dfrac{x^{<var name="$c"/>}}{x^{<var name="$a"/>}}</m> = <var name="$ans" width="8"/>.
+							</p>
+							
+						</statement>
+						
+						<solution>
+							<m>\dfrac{x^{<var name="$c"/>}}{x^{<var name="$a"/>}} = x^{<var name="$c"/> - <var name="$a"/>} = x^<var name="$b"/> </m>
+						</solution>
+					</webwork>
+				</exercise>
+				
+				<exercise>
+					<webwork>
+						<pg-code>
+							Context()->variables->add("c"=>Real);
+							LimitedPowers::OnlyPositiveIntegers();
+							$a= random(8, 12, 1);
+							$b = random(1, 4, 1);
+							$c = $a + $b;
+							$m = $a + $c;
+						    $ans = Compute("c^$m");
+						</pg-code>
+						
+						<statement>
+							<p>
+								Simplify the following expression. Write your answer using positive exponents only.
+							</p>
+							<p>
+								<m>c^{<var name="$a$"/>} \cdot c^{<var name="$c$"/>}</m> = <var name="$ans" width="8"/>.
+							</p>
+							
+						</statement>
+						
+						<solution>
+							<m>c^{<var name="$a$"/>} \cdot c^{<var name="$c$"/>} = c^{<var name="$a$"/> + <var name="$c"/>} = <var name="$ans"/></m> 
+						</solution>
+					</webwork>
+				</exercise>
+				
+				
+				<exercise>
+					<webwork>
+						<pg-code>
+							Context()->variables->add("z"=>Real);
+							LimitedPowers::OnlyPositiveIntegers();
+							$a= random(3, 5, 1);
+							$b = random(2, 6, 1);
+							$m = $a * $b;
+						    $ans = Compute("z^$m");
+						</pg-code>
+						
+						<statement>
+							<p>
+								Simplify the following expression. Write your answer using positive exponents only.
+							</p>
+							<p>
+								<m>(z^{<var name="$a$"/>})^{<var name="$b$"/>}</m> = <var name="$ans" width="8"/>.
+							</p>
+							
+						</statement>
+						
+						<solution>
+							<m>(z^{<var name="$a$"/>})^{<var name="$b$"/>} = z^{<var name="$a$"/> \cdot <var name="$b"/>} = <var name="$ans"/></m> 
+						</solution>
+					</webwork>
+				</exercise>
+				
+				
+				<exercise>
+					<webwork>
+						<pg-code>
+							Context()->variables->add("y"=>Real);
+							LimitedPowers::OnlyPositiveIntegers();
+							$a= random(2, 5, 1);
+							$b = random(2, 6, 1);
+							$c = $a + $b;
+						    $ans = Compute("1/y^$b");
+						</pg-code>
+						
+						<statement>
+							<p>
+								Simplify the following expression. Write your answer using positive exponents only.
+							</p>
+							<p>
+								<m>\dfrac{y^{<var name="$a"/>}}{y^{<var name="$c"/>}}</m> = <var name="$ans" width="8"/>.
+							</p>
+							
+						</statement>
+						
+						<solution>
+							<m>\dfrac{y^{<var name="$a"/>}}{y^{<var name="$c"/>}} = y^{<var name="$a"/> - <var name="$c"/>} = y^{-<var name="$b"/>} = \dfrac{1}{y^{<var name="$b"/>}} </m>
+						</solution>
+					</webwork>
+				</exercise>
+				
+
+
 				
 			</section>
 			

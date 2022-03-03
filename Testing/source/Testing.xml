@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+Copyright 2015 Robert A. Beezer
+
+This file is part of MathBook XML.
+
+MathBook XML is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 or version 3 of the
+License (at your option).
+
+MathBook XML is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
+*********************************************************************-->
+
+<!-- To process this file do                                                                      -->
+<!-- cd ~/dfranz-ju.github.io/Testing                                                                                           -->
+
+
+<!-- ~/mathbook/pretext/pretext -c webwork -p pub/publication.ptx -s https://webwork-ptx.aimath.org source/Testing.xml   -->
+
+<!-- ~/mathbook/pretext/pretext -c all -f html -p pub/publication.ptx source/Testing.xml      --> 
+
+
+
+<pretext>
+
+    <docinfo>
+       
+        <macros>
+        \newcommand{\doubler}[1]{2#1}
+        </macros>
+		
+		<latex-image-preamble>
+			\usepackage{tikz}
+		</latex-image-preamble>
+		
+		<latex-image-preamble syntax="PGtikz">
+			\usepackage{pgfplots}
+			\pgfplotsset{every axis/.append style={
+			axis lines = middle,
+			}
+			}
+		</latex-image-preamble>
+		
+
+    </docinfo>
+
+    <book xml:id="Testing">
+        <title>Testing Book</title>
+
+        <frontmatter>
+
+            <titlepage>
+                <author>
+                    <personname><a>Daniel Franz</a></personname>
+                    <institution>Jacksonville University</institution>
+                </author>
+                <date><today /></date>
+            </titlepage>
+
+            <abstract>
+
+                <p> This is a place for met to try stuff out.</p>
+            </abstract>
+
+        </frontmatter>
+
+        <introduction>
+            <p> This is a place for met to try stuff out.</p>
+        </introduction>
+
+
+		<chapter xml:id="tikz">
+			<title> Using TikZ Images</title>
+			
+			
+			<section>
+				<title>latex-image</title>
+				
+				
+			</section>
+			
+
+                
+			
+			
+		</chapter>
+
+
+
+
+    </book>
+
+</pretext>
