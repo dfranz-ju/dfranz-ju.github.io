@@ -17,7 +17,7 @@
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-03-03T16:13:46-05:00       
+###       on 2022-03-20T20:57:53-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -100,6 +100,120 @@ END_PGML_SOLUTION
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-10" ww-id="webwork-10">
+    <static seed="10">
+      <statement><p>Determine if the functions below are inverses of each other.</p>
+<p><me>f(x) = \frac{1}{2} x - 5</me></p>
+<p><me>g(x) = {2x+10}</me></p>
+<p>Answer: <var form="popup" name="AnSwEr0001">
+<li>
+<p>yes</p>
+</li>
+<li>
+<p>no</p>
+</li>
+</var></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{yes}</m>
+        </p>
+      </answer>
+      <solution><p>We evaluate <m>f(g(x))</m> and check if the result is <m>x\text{:}</m></p>
+<p><me>f(g(x)) = f({2x+10}) = \frac{1}{2}({2x+10}) - 5 = x + 5 -5 = x \text{.}</me></p>
+<p>Since <m>f(g(x))=x\text{,}</m> we can say that yes, <m>f(x)</m> and <m>g(x)</m> are inverses of each other.</p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJQb3BVcC5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCktPnZhcmlhYmxlcy0+YWRkKHk9PidSZWFsJyk7CiRhPXJhbmRvbSgyLDUsMSk7CiRiPXJhbmRvbSgyLDcsMSk7CiRjPUNvbXB1dGUoIiRhKiRiIik7CiRnPUNvbXB1dGUoIiRhKnggKyAkYyIpOwokYW5zPVBvcFVwKFsieWVzIiwgIm5vIixdLCJ5ZXMiLCk7CgpCRUdJTl9QR01MCkRldGVybWluZSBpZiB0aGUgZnVuY3Rpb25zIGJlbG93IGFyZSBpbnZlcnNlcyBvZiBlYWNoIG90aGVyLgoKW2BgYGYoeCkgPSBcZnJhY3sxfXtbJGFdfSB4IC0gWyRiXWBgYF0KCgoKW2BgYGcoeCkgPSBbJGddYGBgXQoKCgpBbnN3ZXI6IFtfXXskYW5zfXs1fQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCldlIGV2YWx1YXRlIFtgZihnKHgpKWBdIGFuZCBjaGVjayBpZiB0aGUgcmVzdWx0IGlzIFtgeFx0ZXh0ezp9YF0KCltgYGBmKGcoeCkpID0gZihbJGckXSkgPSBcZnJhY3sxfXtbJGFdfShbJGddKSAtIFskYl0gPSB4ICsgWyRiXSAtWyRiXSA9IHggXHRleHR7Ln1gYGBdCgoKClNpbmNlIFtgZihnKHgpKT14XHRleHR7LH1gXSB3ZSBjYW4gc2F5IHRoYXQgeWVzLCBbYGYoeClgXSBhbmQgW2BnKHgpYF0gYXJlIGludmVyc2VzIG9mIGVhY2ggb3RoZXIuCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2022-03-20T20:57:53-04:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.7.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserPopUp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->variables->add(y=>'Real');
+$a=random(2,5,1);
+$b=random(2,7,1);
+$c=Compute("$a*$b");
+$g=Compute("$a*x + $c");
+$ans=PopUp(["yes", "no",],"yes",);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Determine if the functions below are inverses of each other.
+
+[```f(x) = \frac{1}{[$a]} x - [$b]```]
+
+[```g(x) = [$g]```]
+
+Answer: [_]{$ans}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+We evaluate [`f(g(x))`] and check if the result is [`x\text{:}`]
+
+[```f(g(x)) = f([$g$]) = \frac{1}{[$a]}([$g]) - [$b] = x + [$b] -[$b] = x \text{.}```]
+
+Since [`f(g(x))=x\text{,}`] we can say that yes, [`f(x)`] and [`g(x)`] are inverses of each other.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-2" ww-id="webwork-2">
     <static seed="2">
       <statement><p>Find the slope of the line between the points <m>(12, 5)</m> and <m>(13, 5)</m></p>
@@ -117,7 +231,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-03-03T16:13:46-05:00       
+###       on 2022-03-20T20:57:53-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -217,7 +331,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-03-03T16:13:46-05:00       
+###       on 2022-03-20T20:57:53-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -307,7 +421,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-03-03T16:13:46-05:00       
+###       on 2022-03-20T20:57:53-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -402,7 +516,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-03-03T16:13:46-05:00       
+###       on 2022-03-20T20:57:53-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -498,7 +612,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-03-03T16:13:46-05:00       
+###       on 2022-03-20T20:57:53-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -593,7 +707,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-03-03T16:13:46-05:00       
+###       on 2022-03-20T20:57:53-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -662,6 +776,217 @@ END_PGML
 
 BEGIN_PGML_SOLUTION
 [`\dfrac{y^{[$a]}}{y^{[$c]}} = y^{[$a] - [$c]} = y^{-[$b]} = \dfrac{1}{y^{[$b]}} `]
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-8" ww-id="webwork-8">
+    <static seed="8">
+      <statement><p>Given that <m>g(8)=-4</m> and <m>g(-8)=8\text{,}</m> compute the following:</p>
+<p>(a) <m>g^{-1}(-4) =</m> <fillin name="AnSwEr0001" characters="8"/></p>
+<p>(b) <m>g^{-1}(8) =</m> <fillin name="AnSwEr0002" characters="8"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>8</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-8</m>
+        </p>
+      </answer>
+      <solution><p>(a) Since <m>g(8)=-4\text{,}</m> <m>g^{-1}(-4) = 8\text{.}</m></p>
+<p>(b) Since <m>g(-8)=8\text{,}</m> <m>g^{-1}(8) = -8\text{.}</m></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhPSByYW5kb20oLTEwLCAxMCwgMSk7CmRvIHsgJGIgPSByYW5kb20oLTEwLCAxMCwgMSk7fSB1bnRpbCB7JGIgIT0gJGF9OwokYyA9IHJhbmRvbSgtMTAsIDEwLCAxKTsKd2hpbGUoJGM9PSRhIHx8ICRjPT0kYil7JGM9cmFuZG9tKC0xMCwxMCwxKTt9CiAgICRhbnMxID0gJGE7CiRhbnMyID0gJGM7CgpCRUdJTl9QR01MCkdpdmVuIHRoYXQgW2BnKFskYV0pPVskYl1gXSBhbmQgW2BnKFskY10pPVskYV1cdGV4dHssfWBdIGNvbXB1dGUgdGhlIGZvbGxvd2luZzoKCihhKSBbYGdeey0xfShbJGJdKSA9YF0gW19deyRhbnMxfXs4fQoKKGIpIFtgZ157LTF9KFskYV0pID0gYF0gW19deyRhbnMyfXs4fQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCihhKSBTaW5jZSBbYGcoWyRhXSk9WyRiXVx0ZXh0eyx9YF0gW2BnXnstMX0oWyRiXSkgPSBbJGFuczFdXHRleHR7Ln1gXQoKKGIpIFNpbmNlIFtgZyhbJGNdKT1bJGFdXHRleHR7LH1gXSBbYGdeey0xfShbJGFdKSA9IFskYW5zMl1cdGV4dHsufWBdCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2022-03-20T20:57:53-04:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.7.1)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$a= random(-10, 10, 1);
+do { $b = random(-10, 10, 1);} until {$b != $a};
+$c = random(-10, 10, 1);
+while($c==$a || $c==$b){$c=random(-10,10,1);}
+   $ans1 = $a;
+$ans2 = $c;
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Given that [`g([$a])=[$b]`] and [`g([$c])=[$a]\text{,}`] compute the following:
+
+(a) [`g^{-1}([$b]) =`] [_]{$ans1}{8}
+
+(b) [`g^{-1}([$a]) = `] [_]{$ans2}{8}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+(a) Since [`g([$a])=[$b]\text{,}`] [`g^{-1}([$b]) = [$ans1]\text{.}`]
+
+(b) Since [`g([$c])=[$a]\text{,}`] [`g^{-1}([$a]) = [$ans2]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-9" ww-id="webwork-9">
+    <static seed="9">
+      <statement><p>Find the inverse of the function <m>y=g(t)= \dfrac{1}{7} t - 9\text{.}</m></p>
+<p><m>g^{-1}(y) =</m> <fillin name="AnSwEr0001" characters="12"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>7y+63</m>
+        </p>
+      </answer>
+      <solution><p>We solve <m>y=\dfrac{1}{7} t - 9</m> for <m>t\text{:}</m></p>
+<p><me>y  = \frac{1}{7} t - 9</me></p>
+<p><me>y+9  = \frac{1}{7} t</me></p>
+<p><me>7 y + {63}  = t</me></p>
+<p>So <m>g^{-1}(y) = {7y+63}\text{.}</m></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgpLT52YXJpYWJsZXMtPmFkZCh5PT4nUmVhbCcpOwokYT1yYW5kb20oMiw3LDEpOwokYj1yYW5kb20oMSw5LDEpOwokYz1Db21wdXRlKCIkYSokYiIpOwokYW5zPUNvbXB1dGUoIiRhKnkgKyAkYyIpOwoKQkVHSU5fUEdNTApGaW5kIHRoZSBpbnZlcnNlIG9mIHRoZSBmdW5jdGlvbiBbYHk9Zyh0KT0gXGRmcmFjezF9e1skYV19IHQgLSBbJGJdXHRleHR7Ln1gXQoKW2BnXnstMX0oeSkgPWBdIFtfXXskYW5zfXsxMn0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpXZSBzb2x2ZSBbYHk9XGRmcmFjezF9e1skYV19IHQgLSBbJGJdYF0gZm9yIFtgdFx0ZXh0ezp9YF0KCltgYGAgeSAgPSBcZnJhY3sxfXtbJGFdfSB0IC0gWyRiXWBgYF0KCgoKW2BgYHkrWyRiXSAgPSBcZnJhY3sxfXtbJGFdfSB0IGBgYF0KCgoKW2BgYFskYV0geSArIFskY10gID0gdCBgYGBdCgpTbyBbYGdeey0xfSh5KSA9IFskYW5zXVx0ZXh0ey59YF0KCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2022-03-20T20:57:53-04:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.7.2)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->variables->add(y=>'Real');
+$a=random(2,7,1);
+$b=random(1,9,1);
+$c=Compute("$a*$b");
+$ans=Compute("$a*y + $c");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the inverse of the function [`y=g(t)= \dfrac{1}{[$a]} t - [$b]\text{.}`]
+
+[`g^{-1}(y) =`] [_]{$ans}{12}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+We solve [`y=\dfrac{1}{[$a]} t - [$b]`] for [`t\text{:}`]
+
+[``` y  = \frac{1}{[$a]} t - [$b]```]
+
+[```y+[$b]  = \frac{1}{[$a]} t ```]
+
+[```[$a] y + [$c]  = t ```]
+
+So [`g^{-1}(y) = [$ans]\text{.}`]
+
 END_PGML_SOLUTION
 
 ############################################################

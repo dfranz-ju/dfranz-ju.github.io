@@ -31,7 +31,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 <!--       git commit -m "<short descriptive comment>"       -->
 <!--       git push -u origin master                         -->       
 <!-- 														-->
-<!--   website is https://dfranz-ju.github.io/JIT/output/frontmatter-1.html. -->  
+<!--   website is https://dfranz-ju.github.io/JIT/frontmatter-1.html -->  
 
 <pretext>
 
@@ -374,6 +374,124 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 				<title>Inverse Functions</title>
 				
 				
+				<video youtube="NH6qtoYmHcc"/>
+				
+				
+				<exercise>
+					<webwork>
+						<pg-code>
+							$a= random(-10, 10, 1);
+							do { $b = random(-10, 10, 1);} until {$b != $a};
+							$c = random(-10, 10, 1);
+							while($c==$a || $c==$b){$c=random(-10,10,1);}
+						    $ans1 = $a;
+							$ans2 = $c;
+						</pg-code>
+						
+						<statement>
+							<p>
+								Given that <m>g(<var name="$a"/>)=<var name="$b"/></m> and <m>g(<var name="$c"/>)=<var name="$a"/></m>, compute the following:
+							</p>
+							<p>
+								(a) <m>g^{-1}(<var name="$b"/>) =</m> <var name="$ans1" width="8"/>
+							</p>
+							<p>
+								(b) <m>g^{-1}(<var name="$a"/>) = </m> <var name="$ans2" width="8"/>
+							</p>
+
+							
+						</statement>
+						
+						<solution>
+							<p>
+								(a) Since <m>g(<var name="$a"/>)=<var name="$b"/></m>, <m>g^{-1}(<var name="$b"/>) = <var name="$ans1"/></m>.
+							</p>
+							<p>
+								(b) Since <m>g(<var name="$c"/>)=<var name="$a"/></m>, <m>g^{-1}(<var name="$a"/>) = <var name="$ans2"/></m>.
+							</p>
+						</solution>
+					</webwork>
+				</exercise>
+				
+				
+				
+				<exercise>
+					<webwork>
+						<pg-code>
+							Context()->variables->add(y=>'Real');
+							$a=random(2,7,1);
+							$b=random(1,9,1);
+							$c=Compute("$a*$b");
+							$ans=Compute("$a*y + $c");
+						</pg-code>
+						
+						<statement>
+							<p>
+								Find the inverse of the function <m>y=g(t)= \dfrac{1}{<var name="$a"/>} t - <var name="$b"/></m>.
+							</p>
+							<p>
+								<m>g^{-1}(y) =</m> <var name="$ans" width="12"/>
+							</p>
+
+							
+						</statement>
+						
+						<solution>
+							<p>
+								We solve <m>y=\dfrac{1}{<var name="$a"/>} t - <var name="$b"/></m> for <m>t</m>:
+								
+										<me> y  = \frac{1}{<var name="$a"/>} t - <var name="$b"/></me>
+		
+										<me>y+<var name="$b"/>  = \frac{1}{<var name="$a"/>} t </me>
+									
+									<me><var name="$a"/> y + <var name="$c"/>  = t </me>	
+							
+								So <m>g^{-1}(y) = <var name="$ans"/></m>.
+								
+							</p>
+						</solution>
+					</webwork>
+				</exercise>
+				
+				
+				
+				<exercise>
+					<webwork>
+						<pg-code>
+							Context()->variables->add(y=>'Real');
+							$a=random(2,5,1);
+							$b=random(2,7,1);
+							$c=Compute("$a*$b");
+							$g=Compute("$a*x + $c");
+							$ans=PopUp(["yes", "no",],"yes",);
+						</pg-code>
+						
+						<statement>
+							<p>
+								Determine if the functions below are inverses of each other.
+								
+								<me>f(x) = \frac{1}{<var name="$a"/>} x - <var name="$b"/></me>
+								
+								<me>g(x) = <var name="$g"/></me>
+							</p>
+							<p>
+								Answer: <var name="$ans" form="popup"/>
+							</p>
+
+							
+						</statement>
+						
+						<solution>
+							<p>
+								We evaluate <m>f(g(x))</m> and check if the result is <m>x</m>:
+								<me>f(g(x)) = f(<var name="$g$"/>) = \frac{1}{<var name="$a"/>}(<var name="$g"/>) - <var name="$b"/> = x + <var name="$b"/> -<var name="$b"/> = x </me>.
+							</p>
+							<p>
+								Since <m>f(g(x))=x</m>, we can say that yes, <m>f(x)</m> and <m>g(x)</m> are inverses of each other.
+							</p>
+						</solution>
+					</webwork>
+				</exercise>
 				
 			</section>
 			
