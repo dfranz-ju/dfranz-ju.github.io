@@ -497,12 +497,226 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 			
 			
 			
+			
 			<section xml:id="trig">
 				<title>Trigonometry Review</title>
 				
 				
 				
 			</section>
+			
+			
+			
+			
+			
+			<section xml:id="models">
+				<title>Linear and Exponential Models</title>
+				
+				<video youtube="F7LVLnfrL-0"/>
+				
+				
+				
+				<exercise>
+					<webwork>
+						<pg-code>
+							$a=list_random(5,10,15,20);
+							$b=list_random(1.2,1.4,1.6,1.8);
+							$ans1=PopUp(["Linear", "Exponential",],"Exponential",);
+							$ans2=Compute("$a*$b^x");
+							$f1=Compute("$a*$b");
+							$f2=Compute("$a*$b^2");
+							$f3=Compute("$a*$b^3");
+						</pg-code>
+						
+						<statement>
+							<p>
+								Determine if the table below could represent a linear or exponential function. Then find a formula for the function the table describes.
+							</p>
+							<p>
+								
+								<tabular>
+									<row>
+										<cell right="minor" bottom="minor"><m>x</m></cell> <cell right="minor" bottom="minor">0</cell> <cell right="minor" bottom="minor">1</cell> <cell right="minor" bottom="minor">2</cell> <cell bottom="minor">3</cell>
+									</row>
+									<row>
+										<cell right="minor"><m>f(x)</m></cell> <cell right="minor"><var name="$a"/></cell> <cell right="minor"><var name="$f1"/></cell> <cell right="minor"><var name="$f2"/></cell> <cell><var name="$f3"/></cell>
+									</row>
+								</tabular>
+							</p>
+							<p>
+								The table describes a(n) <var name="$ans1" form="popup"/> function with formula
+							</p>
+							<p>
+								<m>f(x) =</m> <var name="$ans2" width="12"/>
+							</p>
+
+							
+						</statement>
+						
+						<solution>
+							<p>
+								There is not a constant difference between function values, so we try multplication instead. After computing <m><var name="$f1"/>/<var name="$a"/>=<var name="$b$"/></m>, we check that it is the consistent multiple between function values:
+								<me><var name="$f1"/> * <var name="$b"/> = <var name="$f2"/></me>
+								<me><var name="$f2"/> * <var name="$b"/> = <var name="$f3"/></me>
+								
+								So we conclude that this table could represent an exponential function. The initial value is <m>f(0)=<var name="$a"/></m> and we found <m>b=<var name="$b"/></m>, so <m>f(x)=<var name="$ans2"/></m>.
+							</p>
+						</solution>
+					</webwork>
+				</exercise>
+				
+				
+				<exercise>
+					<webwork>
+						<pg-code>
+							$a=random(3,20,1);
+							$b=list_random(-5, -4, -3, -2, 2, 3, 4, 5);
+							$ans1=PopUp(["Linear", "Exponential",],"Linear",);
+							$ans2=Compute("$a+$b*x");
+							$f1=Compute("$a+$b");
+							$f2=Compute("$a+2*$b");
+							$f3=Compute("$a+3*$b");
+						</pg-code>
+						
+						<statement>
+							<p>
+								Determine if the table below could represent a linear or exponential function. Then find a formula for the function the table describes.
+							</p>
+							<p>
+								
+								<tabular>
+									<row>
+										<cell right="minor" bottom="minor"><m>x</m></cell> <cell right="minor" bottom="minor">0</cell> <cell right="minor" bottom="minor">1</cell> <cell right="minor" bottom="minor">2</cell> <cell bottom="minor">3</cell>
+									</row>
+									<row>
+										<cell right="minor"><m>f(x)</m></cell> <cell right="minor"><var name="$a"/></cell> <cell right="minor"><var name="$f1"/></cell> <cell right="minor"><var name="$f2"/></cell> <cell><var name="$f3"/></cell>
+									</row>
+								</tabular>
+							</p>
+							<p>
+								The table describes a(n) <var name="$ans1" form="popup"/> function with formula
+							</p>
+							<p>
+								<m>f(x) =</m> <var name="$ans2" width="12"/>
+							</p>
+
+							
+						</statement>
+						
+						<solution>
+							<p>
+								We observe that there is a constant difference between the function values of <m><var name="$b"/></m>:
+								<me><var name="$f1"/> - <var name="$a"/> = <var name="$b"/> </me>
+								<me><var name="$f2"/> - <var name="$f1"/> = <var name="$b"/> </me>
+								<me><var name="$f3"/> - <var name="$f2"/> = <var name="$b"/> </me>
+
+								That means this table could represent a linear function. To find the formula, we note that the slope is <m><var name="$b$"/></m> and the vertical intercept is <m>f(0)=<var name="$a"/></m>, so the formula is <m>f(x)=<var name="$ans2"/></m>.
+								
+							</p>
+						</solution>
+					</webwork>
+				</exercise>
+				
+				
+				
+				<exercise>
+					<webwork>
+						<pg-code>
+							$m=list_random(-4,-3, 2, -2, 3,4);
+							$b=random(-9, 9, 2);
+							$ans=Formula("$b+ $m*x");
+							$a=random(-4,-1,1);
+							$c=random(1,4,1);
+							$fa=Compute("$m*$a + $b");
+							$fc=Compute("$m*$c + $b");
+							$fca=Compute("$fc-$fa");
+							$ca=Compute("$c-$a");
+						</pg-code>
+						
+						<statement>
+							<p>
+								Find the formula of a linear function whose graph passes through the points <m>(<var name="$a"/>, <var name="$fa"/>)</m> and <m>(<var name="$c"/>, <var name="$fc"/>)</m>.
+							</p>
+							<p>
+								<m>f(x) =</m> <var name="$ans" width="12"/>
+							</p>
+
+							
+						</statement>
+						
+						<solution>
+							<p>
+								We first find the slope <m>m</m>:
+								<me>m = \frac{<var name="$fc"/> - <var name="$fa"/>}{<var name="$c"/> - <var name="$a"/>} = \frac{<var name="$fca"/>}{<var name="$ca"/>}=<var name="$m"/></me>
+							Now that we have the slope, we know the linear function has formula <m>f(x) = b + <var name="$m"/> x,</m> where <m>b</m> is the vertical intercept. To find the value of <m>b</m>, we can plug in either point. We'll plug in the first point:
+							<me><var name="$fa"/> = b + <var name="$m"/> ( <var name="$a"/>)</me>
+							<me><var name="$fa"/> -  <var name="$m"/> (<var name="$a"/>) = b</me>
+							<me><var name="$b"/> = b</me>
+							So the formula is <m>f(x)=<var name="$ans"/></m>.
+							</p>
+						</solution>
+					</webwork>
+				</exercise>
+				
+				
+				
+				<exercise>
+					<webwork>
+						<pg-code>
+							$a=random(2,20,2);
+							$b=list_random(0.5, 0.6, 0.7, 1.3, 1.4, 1.5);
+							$ans=Compute("$a($b)^x");
+							$c=random(3,4,1);
+							$c1=Compute("$c-1");
+							$f1=Compute("$a*$b");
+							$fc=Compute("$a*$b^$c");
+						</pg-code>
+						
+						<statement>
+							<p>
+								Find the formula of an exponential function whose graph passes through the points <m>(1, <var name="$f1"/>)</m> and <m>(<var name="$c"/>, <var name="$fc"/>)</m>.
+							</p>
+							<p>
+								<m>f(x) =</m> <var name="$ans" width="12"/>
+							</p>
+
+							
+						</statement>
+						
+						<solution>
+							<p>
+								Since we are trying to find an exponential function, we start with the formula <m>f(x)=a(b)^x.</m> We find <m>b</m> using the ratio <m>\dfrac{f(<var name="$c"/>)}{f(1)}</m>:
+								<me>\frac{f(<var name="$c"/>)}{f(1)} = \frac{a (b)^{<var name="$c"/>}}{a(b)^1}= \frac{<var name="$fc"/>}{<var name="$f1"/>}</me>
+								<me>b^{<var name="$c1"/>} = \frac{<var name="$fc"/>}{<var name="$f1"/>}</me>
+								
+								<me>b = \sqrt[<var name="$c1"/>]{\frac{<var name="$fc"/>}{<var name="$f1"/>}} </me>
+								<me> b = <var name="$b"/></me>
+								
+							</p>
+							<p>
+								Now we know that <m>f(x) = a (<var name="$b"/>)^{x}</m>. To find the value of <m>a</m>, we plug the first point into the formula and solve for <m>a</m>:
+								
+								<me><var name="$f1"/> = a(<var name="$b"/>)^1</me>
+								<me>\frac{<var name="$f1"/>}{<var name="$b"/>} = a</me>
+								<me><var name="$a"/> = a</me>
+							</p>
+							So the exponential function is <m>f(x)=<var name="$ans"/></m>.
+						</solution>
+					</webwork>
+				</exercise>
+				
+				
+				
+				
+			</section>
+			
+			
+			
+			
+			
+			
+			
+			
 			
 			
 			<section xml:id="intervals">

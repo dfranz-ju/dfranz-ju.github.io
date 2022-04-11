@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-04-11T12:52:49-04:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Linear and Exponential Models</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Interactive Math Instruction">
+<meta property="book:author" content="JU Math">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://pretextbook.org/js/0.13/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\doubler}[1]{2#1}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="" target="_blank"><img src="external/images/junewseal.png" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="JIT.html"><span class="title">Interactive Math Instruction</span></a></h1>
+<p class="byline">JU Math</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<button id="calculator-toggle" class="toolbar-item button toggle" title="Show calculator" aria-expanded="false" aria-controls="calculator-container">Calc</button><div id="calculator-container" class="calculator-container" style="display: none; z-index:100;"><div id="geogebra-calculator"></div></div>
+<script>
+var ggbApp = new GGBApplet({"appName": "graphing",
+    "width": 330,
+    "height": 600,
+    "showToolBar": true,
+    "showAlgebraInput": true,
+    "perspective": "G/A",
+    "algebraInputPosition": "bottom",
+    "scaleContainerClass": "calculator-container",
+    "allowUpscale": true,
+    "autoHeight": true,
+    "disableAutoScale": false},
+true);
+</script><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="trig.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="Math-110-140.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="intervals.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="trig.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="Math-110-140.html" title="Up">Up</a><a class="next-button button toolbar-item" href="intervals.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1" class="internal"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="Math-110-140.html" data-scroll="Math-110-140" class="internal"><span class="codenumber">1</span> <span class="title">MATH 110/140 Topics</span></a><ul>
+<li><a href="slopes.html" data-scroll="slopes" class="internal">Lines and Slope</a></li>
+<li><a href="exponents.html" data-scroll="exponents" class="internal">Exponent Rules</a></li>
+<li><a href="solving.html" data-scroll="solving" class="internal">Solving Equations</a></li>
+<li><a href="algebra.html" data-scroll="algebra" class="internal">Algebra Review</a></li>
+<li><a href="function-eval.html" data-scroll="function-eval" class="internal">Function Evaluation</a></li>
+<li><a href="functions-graphs.html" data-scroll="functions-graphs" class="internal">Functions and Graphs</a></li>
+<li><a href="inverse.html" data-scroll="inverse" class="internal">Inverse Functions</a></li>
+<li><a href="trig.html" data-scroll="trig" class="internal">Trigonometry Review</a></li>
+<li><a href="models.html" data-scroll="models" class="active">Linear and Exponential Models</a></li>
+<li><a href="intervals.html" data-scroll="intervals" class="internal">Interval Notation</a></li>
+<li><a href="domain-range.html" data-scroll="domain-range" class="internal">Domain and Range</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="psyc-311-411.html" data-scroll="psyc-311-411" class="internal"><span class="codenumber">2</span> <span class="title">PSYC 311, 411 Topics</span></a><ul>
+<li><a href="mean.html" data-scroll="mean" class="internal">Measures of Central Tendency</a></li>
+<li><a href="variance.html" data-scroll="variance" class="internal">Measures of Variability</a></li>
+<li><a href="freq.html" data-scroll="freq" class="internal">Frequency Distributions</a></li>
+<li><a href="prob.html" data-scroll="prob" class="internal">Probability</a></li>
+<li><a href="significance.html" data-scroll="significance" class="internal">Interpreting Significance</a></li>
+<li><a href="std-dev.html" data-scroll="std-dev" class="internal">Standard Deviation on a Normal Curve</a></li>
+<li><a href="CI.html" data-scroll="CI" class="internal">Confidence Intervals</a></li>
+<li><a href="correlation.html" data-scroll="correlation" class="internal">Correlation Coefficients</a></li>
+<li><a href="point-estimate.html" data-scroll="point-estimate" class="internal">Point Estimate Computation</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="course_connect.html" data-scroll="course_connect" class="internal"><span class="codenumber">3</span> <span class="title">Course Connections</span></a><ul>
+<li><a href="CHEM204.html" data-scroll="CHEM204" class="internal">CHEM 204</a></li>
+<li><a href="MPP.html" data-scroll="MPP" class="internal">MPP</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="models"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.9</span> <span class="title">Linear and Exponential Models</span>
+</h2>
+<div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-4" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/F7LVLnfrL-0?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<article class="exercise exercise-like" id="exercise-11"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.9.1</span><span class="period">.</span>
+</h3>
+<div id="webwork-11" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="11" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIm5pY2VUYWJsZXMucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwicGFyc2VyUG9wVXAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhPWxpc3RfcmFuZG9tKDUsMTAsMTUsMjApOwokYj1saXN0X3JhbmRvbSgxLjIsMS40LDEuNiwxLjgpOwokYW5zMT1Qb3BVcChbIkxpbmVhciIsICJFeHBvbmVudGlhbCIsXSwiRXhwb25lbnRpYWwiLCk7CiRhbnMyPUNvbXB1dGUoIiRhKiRiXngiKTsKJGYxPUNvbXB1dGUoIiRhKiRiIik7CiRmMj1Db21wdXRlKCIkYSokYl4yIik7CiRmMz1Db21wdXRlKCIkYSokYl4zIik7CgpCRUdJTl9QR01MCkRldGVybWluZSBpZiB0aGUgdGFibGUgYmVsb3cgY291bGQgcmVwcmVzZW50IGEgbGluZWFyIG9yIGV4cG9uZW50aWFsIGZ1bmN0aW9uLiBUaGVuIGZpbmQgYSBmb3JtdWxhIGZvciB0aGUgZnVuY3Rpb24gdGhlIHRhYmxlIGRlc2NyaWJlcy4KCj4+IFtARGF0YVRhYmxlKFtbW1BHTUwoJ1tgeGBdJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItYm90dG9tOjFweCBzb2xpZDtib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnMCcpLGhhbGlnbj0+J2x8JyxjZWxsY3NzPT4nYm9yZGVyLWJvdHRvbToxcHggc29saWQ7Ym9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJzEnKSxoYWxpZ249PidsfCcsY2VsbGNzcz0+J2JvcmRlci1ib3R0b206MXB4IHNvbGlkO2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFtQR01MKCcyJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItYm90dG9tOjFweCBzb2xpZDtib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnMycpLGNlbGxjc3M9Pidib3JkZXItYm90dG9tOjFweCBzb2xpZDsnLF0sXSxbW1BHTUwoJ1tgZih4KWBdJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnWyRhXScpLGhhbGlnbj0+J2x8JyxjZWxsY3NzPT4nYm9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJ1skZjFdJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnWyRmMl0nKSxoYWxpZ249PidsfCcsY2VsbGNzcz0+J2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFBHTUwoJ1skZjNdJyksXSxdLGFsaWduPT4nbGxsbGwnLGNlbnRlcj0+MCwpO0BdKiA8PAoKCgpUaGUgdGFibGUgZGVzY3JpYmVzIGEobikgW19deyRhbnMxfXs1fSBmdW5jdGlvbiB3aXRoIGZvcm11bGEKCltgZih4KSA9YF0gW19deyRhbnMyfXsxMn0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpUaGVyZSBpcyBub3QgYSBjb25zdGFudCBkaWZmZXJlbmNlIGJldHdlZW4gZnVuY3Rpb24gdmFsdWVzLCBzbyB3ZSB0cnkgbXVsdHBsaWNhdGlvbiBpbnN0ZWFkLiBBZnRlciBjb21wdXRpbmcgW2BbJGYxXS9bJGFdPVskYiRdXHRleHR7LH1gXSB3ZSBjaGVjayB0aGF0IGl0IGlzIHRoZSBjb25zaXN0ZW50IG11bHRpcGxlIGJldHdlZW4gZnVuY3Rpb24gdmFsdWVzOgoKW2BgYFskZjFdICogWyRiXSA9IFskZjJdYGBgXQoKCgpbYGBgWyRmMl0gKiBbJGJdID0gWyRmM11gYGBdCgpTbyB3ZSBjb25jbHVkZSB0aGF0IHRoaXMgdGFibGUgY291bGQgcmVwcmVzZW50IGFuIGV4cG9uZW50aWFsIGZ1bmN0aW9uLiBUaGUgaW5pdGlhbCB2YWx1ZSBpcyBbYGYoMCk9WyRhXWBdIGFuZCB3ZSBmb3VuZCBbYGI9WyRiXVx0ZXh0eyx9YF0gc28gW2BmKHgpPVskYW5zMl1cdGV4dHsufWBdCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-55">Determine if the table below could represent a linear or exponential function. Then find a formula for the function the table describes.</p>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">0</td>
+<td class="l m b0 r0 l0 t0 lines">1</td>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(f(x)\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">5</td>
+<td class="l m b0 r0 l0 t0 lines">7</td>
+<td class="l m b0 r0 l0 t0 lines">9.8</td>
+<td class="l m b0 r0 l0 t0 lines">13.72</td>
+</tr>
+</table></div>
+<p id="p-56">The table describes a(n) <ul style="list-style:circle;">
+<li id="li-3"><p id="p-57">Linear</p></li>
+<li id="li-4"><p id="p-58">Exponential</p></li>
+</ul> function with formula</p>
+<p id="p-59"><span class="process-math">\(f(x) =\)</span> <span class="fillin" role="img" aria-label="12-character blank" style="width: 5.454545454545454em;"></span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-12" id="answer-12"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-12"><div class="answer solution-like"><p id="p-60"><span class="process-math">\(\text{Exponential}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-13" id="answer-13"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-13"><div class="answer solution-like"><p id="p-61"><span class="process-math">\(5\cdot 1.4^{x}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-10" id="solution-10"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-10"><div class="solution solution-like">
+<p id="p-62">There is not a constant difference between function values, so we try multplication instead. After computing <span class="process-math">\({7}/5=1.4\text{,}\)</span> we check that it is the consistent multiple between function values:</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-63">
+\begin{equation*}
+{7} * 1.4 = {9.8}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-64">
+\begin{equation*}
+{9.8} * 1.4 = {13.72}
+\end{equation*}
+</div>
+<p id="p-65">So we conclude that this table could represent an exponential function. The initial value is <span class="process-math">\(f(0)=5\)</span> and we found <span class="process-math">\(b=1.4\text{,}\)</span> so <span class="process-math">\(f(x)={5\cdot 1.4^{x}}\text{.}\)</span></p>
+</div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-11')">Make Interactive</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-12"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.9.2</span><span class="period">.</span>
+</h3>
+<div id="webwork-12" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="12" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIm5pY2VUYWJsZXMucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwicGFyc2VyUG9wVXAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhPXJhbmRvbSgzLDIwLDEpOwokYj1saXN0X3JhbmRvbSgtNSwgLTQsIC0zLCAtMiwgMiwgMywgNCwgNSk7CiRhbnMxPVBvcFVwKFsiTGluZWFyIiwgIkV4cG9uZW50aWFsIixdLCJMaW5lYXIiLCk7CiRhbnMyPUNvbXB1dGUoIiRhKyRiKngiKTsKJGYxPUNvbXB1dGUoIiRhKyRiIik7CiRmMj1Db21wdXRlKCIkYSsyKiRiIik7CiRmMz1Db21wdXRlKCIkYSszKiRiIik7CgpCRUdJTl9QR01MCkRldGVybWluZSBpZiB0aGUgdGFibGUgYmVsb3cgY291bGQgcmVwcmVzZW50IGEgbGluZWFyIG9yIGV4cG9uZW50aWFsIGZ1bmN0aW9uLiBUaGVuIGZpbmQgYSBmb3JtdWxhIGZvciB0aGUgZnVuY3Rpb24gdGhlIHRhYmxlIGRlc2NyaWJlcy4KCj4+IFtARGF0YVRhYmxlKFtbW1BHTUwoJ1tgeGBdJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItYm90dG9tOjFweCBzb2xpZDtib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnMCcpLGhhbGlnbj0+J2x8JyxjZWxsY3NzPT4nYm9yZGVyLWJvdHRvbToxcHggc29saWQ7Ym9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJzEnKSxoYWxpZ249PidsfCcsY2VsbGNzcz0+J2JvcmRlci1ib3R0b206MXB4IHNvbGlkO2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFtQR01MKCcyJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItYm90dG9tOjFweCBzb2xpZDtib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnMycpLGNlbGxjc3M9Pidib3JkZXItYm90dG9tOjFweCBzb2xpZDsnLF0sXSxbW1BHTUwoJ1tgZih4KWBdJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnWyRhXScpLGhhbGlnbj0+J2x8JyxjZWxsY3NzPT4nYm9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJ1skZjFdJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnWyRmMl0nKSxoYWxpZ249PidsfCcsY2VsbGNzcz0+J2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFBHTUwoJ1skZjNdJyksXSxdLGFsaWduPT4nbGxsbGwnLGNlbnRlcj0+MCwpO0BdKiA8PAoKCgpUaGUgdGFibGUgZGVzY3JpYmVzIGEobikgW19deyRhbnMxfXs1fSBmdW5jdGlvbiB3aXRoIGZvcm11bGEKCltgZih4KSA9YF0gW19deyRhbnMyfXsxMn0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpXZSBvYnNlcnZlIHRoYXQgdGhlcmUgaXMgYSBjb25zdGFudCBkaWZmZXJlbmNlIGJldHdlZW4gdGhlIGZ1bmN0aW9uIHZhbHVlcyBvZiBbYFskYl1cdGV4dHs6fWBdCgpbYGBgWyRmMV0gLSBbJGFdID0gWyRiXSBgYGBdCgoKCltgYGBbJGYyXSAtIFskZjFdID0gWyRiXSBgYGBdCgoKCltgYGBbJGYzXSAtIFskZjJdID0gWyRiXSBgYGBdCgpUaGF0IG1lYW5zIHRoaXMgdGFibGUgY291bGQgcmVwcmVzZW50IGEgbGluZWFyIGZ1bmN0aW9uLiBUbyBmaW5kIHRoZSBmb3JtdWxhLCB3ZSBub3RlIHRoYXQgdGhlIHNsb3BlIGlzIFtgWyRiJF1gXSBhbmQgdGhlIHZlcnRpY2FsIGludGVyY2VwdCBpcyBbYGYoMCk9WyRhXVx0ZXh0eyx9YF0gc28gdGhlIGZvcm11bGEgaXMgW2BmKHgpPVskYW5zMl1cdGV4dHsufWBdCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-66">Determine if the table below could represent a linear or exponential function. Then find a formula for the function the table describes.</p>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">0</td>
+<td class="l m b0 r0 l0 t0 lines">1</td>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(f(x)\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">8</td>
+<td class="l m b0 r0 l0 t0 lines">13</td>
+<td class="l m b0 r0 l0 t0 lines">18</td>
+<td class="l m b0 r0 l0 t0 lines">23</td>
+</tr>
+</table></div>
+<p id="p-67">The table describes a(n) <ul style="list-style:circle;">
+<li id="li-5"><p id="p-68">Linear</p></li>
+<li id="li-6"><p id="p-69">Exponential</p></li>
+</ul> function with formula</p>
+<p id="p-70"><span class="process-math">\(f(x) =\)</span> <span class="fillin" role="img" aria-label="12-character blank" style="width: 5.454545454545454em;"></span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-14" id="answer-14"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-14"><div class="answer solution-like"><p id="p-71"><span class="process-math">\(\text{Linear}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-15" id="answer-15"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-15"><div class="answer solution-like"><p id="p-72"><span class="process-math">\(8+5x\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-11" id="solution-11"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-11"><div class="solution solution-like">
+<p id="p-73">We observe that there is a constant difference between the function values of <span class="process-math">\(5\text{:}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-74">
+\begin{equation*}
+{13} - 8 = 5
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-75">
+\begin{equation*}
+{18} - {13} = 5
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-76">
+\begin{equation*}
+{23} - {18} = 5
+\end{equation*}
+</div>
+<p id="p-77">That means this table could represent a linear function. To find the formula, we note that the slope is <span class="process-math">\(5\)</span> and the vertical intercept is <span class="process-math">\(f(0)=8\text{,}\)</span> so the formula is <span class="process-math">\(f(x)={8+5x}\text{.}\)</span></p>
+</div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-12')">Make Interactive</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-13"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.9.3</span><span class="period">.</span>
+</h3>
+<div id="webwork-13" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="13" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRtPWxpc3RfcmFuZG9tKC00LC0zLCAyLCAtMiwgMyw0KTsKJGI9cmFuZG9tKC05LCA5LCAyKTsKJGFucz1Gb3JtdWxhKCIkYisgJG0qeCIpOwokYT1yYW5kb20oLTQsLTEsMSk7CiRjPXJhbmRvbSgxLDQsMSk7CiRmYT1Db21wdXRlKCIkbSokYSArICRiIik7CiRmYz1Db21wdXRlKCIkbSokYyArICRiIik7CiRmY2E9Q29tcHV0ZSgiJGZjLSRmYSIpOwokY2E9Q29tcHV0ZSgiJGMtJGEiKTsKCkJFR0lOX1BHTUwKRmluZCB0aGUgZm9ybXVsYSBvZiBhIGxpbmVhciBmdW5jdGlvbiB3aG9zZSBncmFwaCBwYXNzZXMgdGhyb3VnaCB0aGUgcG9pbnRzIFtgKFskYV0sIFskZmFdKWBdIGFuZCBbYChbJGNdLCBbJGZjXSlcdGV4dHsufWBdCgpbYGYoeCkgPWBdIFtfXXskYW5zfXsxMn0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpXZSBmaXJzdCBmaW5kIHRoZSBzbG9wZSBbYG1cdGV4dHs6fWBdCgpbYGBgbSA9IFxmcmFje1skZmNdIC0gWyRmYV19e1skY10gLSBbJGFdfSA9IFxmcmFje1skZmNhXX17WyRjYV19PVskbV1gYGBdCgpOb3cgdGhhdCB3ZSBoYXZlIHRoZSBzbG9wZSwgd2Uga25vdyB0aGUgbGluZWFyIGZ1bmN0aW9uIGhhcyBmb3JtdWxhIFtgZih4KSA9IGIgKyBbJG1dIHgsYF0gd2hlcmUgW2BiYF0gaXMgdGhlIHZlcnRpY2FsIGludGVyY2VwdC4gVG8gZmluZCB0aGUgdmFsdWUgb2YgW2BiXHRleHR7LH1gXSB3ZSBjYW4gcGx1ZyBpbiBlaXRoZXIgcG9pbnQuIFdlJ2xsIHBsdWcgaW4gdGhlIGZpcnN0IHBvaW50OgoKW2BgYFskZmFdID0gYiArIFskbV0gKCBbJGFdKWBgYF0KCgoKW2BgYFskZmFdIC0gIFskbV0gKFskYV0pID0gYmBgYF0KCgoKW2BgYFskYl0gPSBiYGBgXQoKU28gdGhlIGZvcm11bGEgaXMgW2BmKHgpPVskYW5zXVx0ZXh0ey59YF0KCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-78">Find the formula of a linear function whose graph passes through the points <span class="process-math">\((-4, {-7})\)</span> and <span class="process-math">\((3, {7})\text{.}\)</span></p>
+<p id="p-79"><span class="process-math">\(f(x) =\)</span> <span class="fillin" role="img" aria-label="12-character blank" style="width: 5.454545454545454em;"></span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-16" id="answer-16"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-16"><div class="answer solution-like"><p id="p-80"><span class="process-math">\(1+2x\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-12" id="solution-12"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-12"><div class="solution solution-like">
+<p id="p-81">We first find the slope <span class="process-math">\(m\text{:}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-82">
+\begin{equation*}
+m = \frac{{7} - {-7}}{3  + 4} = \frac{{14}}{{7}}=2
+\end{equation*}
+</div>
+<p id="p-83">Now that we have the slope, we know the linear function has formula <span class="process-math">\(f(x) = b + 2 x,\)</span> where <span class="process-math">\(b\)</span> is the vertical intercept. To find the value of <span class="process-math">\(b\text{,}\)</span> we can plug in either point. We’ll plug in the first point:</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-84">
+\begin{equation*}
+{-7} = b + 2 ( -4)
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-85">
+\begin{equation*}
+{-7} -  2 (-4) = b
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-86">
+\begin{equation*}
+1 = b
+\end{equation*}
+</div>
+<p id="p-87">So the formula is <span class="process-math">\(f(x)={1+2x}\text{.}\)</span></p>
+</div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-13')">Make Interactive</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-14"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">1.9.4</span><span class="period">.</span>
+</h3>
+<div id="webwork-14" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="14" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhPXJhbmRvbSgyLDIwLDIpOwokYj1saXN0X3JhbmRvbSgwLjUsIDAuNiwgMC43LCAxLjMsIDEuNCwgMS41KTsKJGFucz1Db21wdXRlKCIkYSgkYileeCIpOwokYz1yYW5kb20oMyw0LDEpOwokYzE9Q29tcHV0ZSgiJGMtMSIpOwokZjE9Q29tcHV0ZSgiJGEqJGIiKTsKJGZjPUNvbXB1dGUoIiRhKiRiXiRjIik7CgpCRUdJTl9QR01MCkZpbmQgdGhlIGZvcm11bGEgb2YgYW4gZXhwb25lbnRpYWwgZnVuY3Rpb24gd2hvc2UgZ3JhcGggcGFzc2VzIHRocm91Z2ggdGhlIHBvaW50cyBbYCgxLCBbJGYxXSlgXSBhbmQgW2AoWyRjXSwgWyRmY10pXHRleHR7Ln1gXQoKW2BmKHgpID1gXSBbX117JGFuc317MTJ9CgoKRU5EX1BHTUwKCkJFR0lOX1BHTUxfU09MVVRJT04KU2luY2Ugd2UgYXJlIHRyeWluZyB0byBmaW5kIGFuIGV4cG9uZW50aWFsIGZ1bmN0aW9uLCB3ZSBzdGFydCB3aXRoIHRoZSBmb3JtdWxhIFtgZih4KT1hKGIpXnguYF0gV2UgZmluZCBbYGJgXSB1c2luZyB0aGUgcmF0aW8gW2BcZGZyYWN7ZihbJGNdKX17ZigxKX1cdGV4dHs6fWBdCgpbYGBgXGZyYWN7ZihbJGNdKX17ZigxKX0gPSBcZnJhY3thIChiKV57WyRjXX19e2EoYileMX09IFxmcmFje1skZmNdfXtbJGYxXX1gYGBdCgoKCltgYGBiXntbJGMxXX0gPSBcZnJhY3tbJGZjXX17WyRmMV19YGBgXQoKCgpbYGBgYiA9IFxzcXJ0W1skYzFdXXtcZnJhY3tbJGZjXX17WyRmMV19fSBgYGBdCgoKCltgYGAgYiA9IFskYl1gYGBdCgoKCk5vdyB3ZSBrbm93IHRoYXQgW2BmKHgpID0gYSAoWyRiXSlee3h9XHRleHR7Ln1gXSBUbyBmaW5kIHRoZSB2YWx1ZSBvZiBbYGFcdGV4dHssfWBdIHdlIHBsdWcgdGhlIGZpcnN0IHBvaW50IGludG8gdGhlIGZvcm11bGEgYW5kIHNvbHZlIGZvciBbYGFcdGV4dHs6fWBdCgpbYGBgWyRmMV0gPSBhKFskYl0pXjFgYGBdCgoKCltgYGBcZnJhY3tbJGYxXX17WyRiXX0gPSBhYGBgXQoKCgpbYGBgWyRhXSA9IGFgYGBdCgoKCiBTbyB0aGUgZXhwb25lbnRpYWwgZnVuY3Rpb24gaXMgW2BmKHgpPVskYW5zXVx0ZXh0ey59YF0KRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-88">Find the formula of an exponential function whose graph passes through the points <span class="process-math">\((1, {7.2})\)</span> and <span class="process-math">\((4, {1.5552})\text{.}\)</span></p>
+<p id="p-89"><span class="process-math">\(f(x) =\)</span> <span class="fillin" role="img" aria-label="12-character blank" style="width: 5.454545454545454em;"></span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-17" id="answer-17"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-17"><div class="answer solution-like"><p id="p-90"><span class="process-math">\(12\cdot 0.6^{x}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-13" id="solution-13"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-13"><div class="solution solution-like">
+<p id="p-91">Since we are trying to find an exponential function, we start with the formula <span class="process-math">\(f(x)=a(b)^x.\)</span> We find <span class="process-math">\(b\)</span> using the ratio <span class="process-math">\(\dfrac{f(4)}{f(1)}\text{:}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-92">
+\begin{equation*}
+\frac{f(4)}{f(1)} = \frac{a (b)^{4}}{a(b)^1}= \frac{{1.5552}}{{7.2}}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-93">
+\begin{equation*}
+b^{{3}} = \frac{{1.5552}}{{7.2}}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-94">
+\begin{equation*}
+b = \sqrt[{3}]{\frac{{1.5552}}{{7.2}}}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-95">
+\begin{equation*}
+b = 0.6
+\end{equation*}
+</div>
+<p id="p-96">Now we know that <span class="process-math">\(f(x) = a (0.6)^{x}\text{.}\)</span> To find the value of <span class="process-math">\(a\text{,}\)</span> we plug the first point into the formula and solve for <span class="process-math">\(a\text{:}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-97">
+\begin{equation*}
+{7.2} = a(0.6)^1
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-98">
+\begin{equation*}
+\frac{{7.2}}{0.6} = a
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-99">
+\begin{equation*}
+12 = a
+\end{equation*}
+</div>
+<p id="p-100">So the exponential function is <span class="process-math">\(f(x)={12\cdot 0.6^{x}}\text{.}\)</span></p>
+</div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-14')">Make Interactive</button></div>
+</div></article></section></div></main>
+</div>
+</body>
+</html>

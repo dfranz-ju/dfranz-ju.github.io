@@ -17,7 +17,7 @@
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-03-20T20:57:53-04:00       
+###       on 2022-04-11T12:52:35-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -128,7 +128,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-03-20T20:57:53-04:00       
+###       on 2022-04-11T12:52:36-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -214,6 +214,605 @@ END_PGML_SOLUTION
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-11" ww-id="webwork-11">
+    <static seed="11">
+      <statement><p>Determine if the table below could represent a linear or exponential function. Then find a formula for the function the table describes.</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<tabular>
+<row>
+<cell><m>x</m></cell>
+<cell>0</cell>
+<cell>1</cell>
+<cell>2</cell>
+<cell>3</cell>
+</row>
+<row>
+<cell><m>f(x)</m></cell>
+<cell>5</cell>
+<cell>7</cell>
+<cell>9.8</cell>
+<cell>13.72</cell>
+</row>
+</tabular>
+<p>The table describes a(n) <var form="popup" name="AnSwEr0001">
+<li>
+<p>Linear</p>
+</li>
+<li>
+<p>Exponential</p>
+</li>
+</var> function with formula</p>
+<p><m>f(x) =</m> <fillin name="AnSwEr0002" characters="12"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{Exponential}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>5\cdot 1.4^{x}</m>
+        </p>
+      </answer>
+      <solution><p>There is not a constant difference between function values, so we try multplication instead. After computing <m>{7}/5=1.4\text{,}</m> we check that it is the consistent multiple between function values:</p>
+<p><me>{7} * 1.4 = {9.8}</me></p>
+<p><me>{9.8} * 1.4 = {13.72}</me></p>
+<p>So we conclude that this table could represent an exponential function. The initial value is <m>f(0)=5</m> and we found <m>b=1.4\text{,}</m> so <m>f(x)={5\cdot 1.4^{x}}\text{.}</m></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIm5pY2VUYWJsZXMucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwicGFyc2VyUG9wVXAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhPWxpc3RfcmFuZG9tKDUsMTAsMTUsMjApOwokYj1saXN0X3JhbmRvbSgxLjIsMS40LDEuNiwxLjgpOwokYW5zMT1Qb3BVcChbIkxpbmVhciIsICJFeHBvbmVudGlhbCIsXSwiRXhwb25lbnRpYWwiLCk7CiRhbnMyPUNvbXB1dGUoIiRhKiRiXngiKTsKJGYxPUNvbXB1dGUoIiRhKiRiIik7CiRmMj1Db21wdXRlKCIkYSokYl4yIik7CiRmMz1Db21wdXRlKCIkYSokYl4zIik7CgpCRUdJTl9QR01MCkRldGVybWluZSBpZiB0aGUgdGFibGUgYmVsb3cgY291bGQgcmVwcmVzZW50IGEgbGluZWFyIG9yIGV4cG9uZW50aWFsIGZ1bmN0aW9uLiBUaGVuIGZpbmQgYSBmb3JtdWxhIGZvciB0aGUgZnVuY3Rpb24gdGhlIHRhYmxlIGRlc2NyaWJlcy4KCj4+IFtARGF0YVRhYmxlKFtbW1BHTUwoJ1tgeGBdJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItYm90dG9tOjFweCBzb2xpZDtib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnMCcpLGhhbGlnbj0+J2x8JyxjZWxsY3NzPT4nYm9yZGVyLWJvdHRvbToxcHggc29saWQ7Ym9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJzEnKSxoYWxpZ249PidsfCcsY2VsbGNzcz0+J2JvcmRlci1ib3R0b206MXB4IHNvbGlkO2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFtQR01MKCcyJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItYm90dG9tOjFweCBzb2xpZDtib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnMycpLGNlbGxjc3M9Pidib3JkZXItYm90dG9tOjFweCBzb2xpZDsnLF0sXSxbW1BHTUwoJ1tgZih4KWBdJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnWyRhXScpLGhhbGlnbj0+J2x8JyxjZWxsY3NzPT4nYm9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJ1skZjFdJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnWyRmMl0nKSxoYWxpZ249PidsfCcsY2VsbGNzcz0+J2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFBHTUwoJ1skZjNdJyksXSxdLGFsaWduPT4nbGxsbGwnLGNlbnRlcj0+MCwpO0BdKiA8PAoKCgpUaGUgdGFibGUgZGVzY3JpYmVzIGEobikgW19deyRhbnMxfXs1fSBmdW5jdGlvbiB3aXRoIGZvcm11bGEKCltgZih4KSA9YF0gW19deyRhbnMyfXsxMn0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpUaGVyZSBpcyBub3QgYSBjb25zdGFudCBkaWZmZXJlbmNlIGJldHdlZW4gZnVuY3Rpb24gdmFsdWVzLCBzbyB3ZSB0cnkgbXVsdHBsaWNhdGlvbiBpbnN0ZWFkLiBBZnRlciBjb21wdXRpbmcgW2BbJGYxXS9bJGFdPVskYiRdXHRleHR7LH1gXSB3ZSBjaGVjayB0aGF0IGl0IGlzIHRoZSBjb25zaXN0ZW50IG11bHRpcGxlIGJldHdlZW4gZnVuY3Rpb24gdmFsdWVzOgoKW2BgYFskZjFdICogWyRiXSA9IFskZjJdYGBgXQoKCgpbYGBgWyRmMl0gKiBbJGJdID0gWyRmM11gYGBdCgpTbyB3ZSBjb25jbHVkZSB0aGF0IHRoaXMgdGFibGUgY291bGQgcmVwcmVzZW50IGFuIGV4cG9uZW50aWFsIGZ1bmN0aW9uLiBUaGUgaW5pdGlhbCB2YWx1ZSBpcyBbYGYoMCk9WyRhXWBdIGFuZCB3ZSBmb3VuZCBbYGI9WyRiXVx0ZXh0eyx9YF0gc28gW2BmKHgpPVskYW5zMl1cdGV4dHsufWBdCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2022-04-11T12:52:36-04:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.9.1)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "niceTables.pl",
+  "AnswerFormatHelp.pl",
+  "parserPopUp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$a=list_random(5,10,15,20);
+$b=list_random(1.2,1.4,1.6,1.8);
+$ans1=PopUp(["Linear", "Exponential",],"Exponential",);
+$ans2=Compute("$a*$b^x");
+$f1=Compute("$a*$b");
+$f2=Compute("$a*$b^2");
+$f3=Compute("$a*$b^3");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Determine if the table below could represent a linear or exponential function. Then find a formula for the function the table describes.
+
+>> [@DataTable(
+  [
+    [[PGML('[`x`]'),
+      halign  => 'l|',
+      cellcss => 'border-bottom: 1px solid; 
+                  border-right: 1px solid; ',],
+     [PGML('0'),
+      halign  => 'l|',
+      cellcss => 'border-bottom: 1px solid; 
+                  border-right: 1px solid; ',],
+     [PGML('1'),
+      halign  => 'l|',
+      cellcss => 'border-bottom: 1px solid; 
+                  border-right: 1px solid; ',],
+     [PGML('2'),
+      halign  => 'l|',
+      cellcss => 'border-bottom: 1px solid; 
+                  border-right: 1px solid; ',],
+     [PGML('3'),
+      cellcss => 'border-bottom: 1px solid; ',],
+    ],
+    [[PGML('[`f(x)`]'),
+      halign  => 'l|',
+      cellcss => 'border-right: 1px solid; ',],
+     [PGML('[$a]'),
+      halign  => 'l|',
+      cellcss => 'border-right: 1px solid; ',],
+     [PGML('[$f1]'),
+      halign  => 'l|',
+      cellcss => 'border-right: 1px solid; ',],
+     [PGML('[$f2]'),
+      halign  => 'l|',
+      cellcss => 'border-right: 1px solid; ',],
+     PGML('[$f3]'),
+    ],
+  ],
+  align => 'lllll',
+  center => 0,
+);@]* <<
+
+The table describes a(n) [_]{$ans1}{5} function with formula
+
+[`f(x) =`] [_]{$ans2}{12}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+There is not a constant difference between function values, so we try multplication instead. After computing [`[$f1]/[$a]=[$b$]\text{,}`] we check that it is the consistent multiple between function values:
+
+[```[$f1] * [$b] = [$f2]```]
+
+[```[$f2] * [$b] = [$f3]```]
+
+So we conclude that this table could represent an exponential function. The initial value is [`f(0)=[$a]`] and we found [`b=[$b]\text{,}`] so [`f(x)=[$ans2]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-12" ww-id="webwork-12">
+    <static seed="12">
+      <statement><p>Determine if the table below could represent a linear or exponential function. Then find a formula for the function the table describes.</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<tabular>
+<row>
+<cell><m>x</m></cell>
+<cell>0</cell>
+<cell>1</cell>
+<cell>2</cell>
+<cell>3</cell>
+</row>
+<row>
+<cell><m>f(x)</m></cell>
+<cell>8</cell>
+<cell>13</cell>
+<cell>18</cell>
+<cell>23</cell>
+</row>
+</tabular>
+<p>The table describes a(n) <var form="popup" name="AnSwEr0001">
+<li>
+<p>Linear</p>
+</li>
+<li>
+<p>Exponential</p>
+</li>
+</var> function with formula</p>
+<p><m>f(x) =</m> <fillin name="AnSwEr0002" characters="12"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{Linear}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>8+5x</m>
+        </p>
+      </answer>
+      <solution><p>We observe that there is a constant difference between the function values of <m>5\text{:}</m></p>
+<p><me>{13} - 8 = 5</me></p>
+<p><me>{18} - {13} = 5</me></p>
+<p><me>{23} - {18} = 5</me></p>
+<p>That means this table could represent a linear function. To find the formula, we note that the slope is <m>5</m> and the vertical intercept is <m>f(0)=8\text{,}</m> so the formula is <m>f(x)={8+5x}\text{.}</m></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIm5pY2VUYWJsZXMucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwicGFyc2VyUG9wVXAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhPXJhbmRvbSgzLDIwLDEpOwokYj1saXN0X3JhbmRvbSgtNSwgLTQsIC0zLCAtMiwgMiwgMywgNCwgNSk7CiRhbnMxPVBvcFVwKFsiTGluZWFyIiwgIkV4cG9uZW50aWFsIixdLCJMaW5lYXIiLCk7CiRhbnMyPUNvbXB1dGUoIiRhKyRiKngiKTsKJGYxPUNvbXB1dGUoIiRhKyRiIik7CiRmMj1Db21wdXRlKCIkYSsyKiRiIik7CiRmMz1Db21wdXRlKCIkYSszKiRiIik7CgpCRUdJTl9QR01MCkRldGVybWluZSBpZiB0aGUgdGFibGUgYmVsb3cgY291bGQgcmVwcmVzZW50IGEgbGluZWFyIG9yIGV4cG9uZW50aWFsIGZ1bmN0aW9uLiBUaGVuIGZpbmQgYSBmb3JtdWxhIGZvciB0aGUgZnVuY3Rpb24gdGhlIHRhYmxlIGRlc2NyaWJlcy4KCj4+IFtARGF0YVRhYmxlKFtbW1BHTUwoJ1tgeGBdJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItYm90dG9tOjFweCBzb2xpZDtib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnMCcpLGhhbGlnbj0+J2x8JyxjZWxsY3NzPT4nYm9yZGVyLWJvdHRvbToxcHggc29saWQ7Ym9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJzEnKSxoYWxpZ249PidsfCcsY2VsbGNzcz0+J2JvcmRlci1ib3R0b206MXB4IHNvbGlkO2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFtQR01MKCcyJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItYm90dG9tOjFweCBzb2xpZDtib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnMycpLGNlbGxjc3M9Pidib3JkZXItYm90dG9tOjFweCBzb2xpZDsnLF0sXSxbW1BHTUwoJ1tgZih4KWBdJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnWyRhXScpLGhhbGlnbj0+J2x8JyxjZWxsY3NzPT4nYm9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJ1skZjFdJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnWyRmMl0nKSxoYWxpZ249PidsfCcsY2VsbGNzcz0+J2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFBHTUwoJ1skZjNdJyksXSxdLGFsaWduPT4nbGxsbGwnLGNlbnRlcj0+MCwpO0BdKiA8PAoKCgpUaGUgdGFibGUgZGVzY3JpYmVzIGEobikgW19deyRhbnMxfXs1fSBmdW5jdGlvbiB3aXRoIGZvcm11bGEKCltgZih4KSA9YF0gW19deyRhbnMyfXsxMn0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpXZSBvYnNlcnZlIHRoYXQgdGhlcmUgaXMgYSBjb25zdGFudCBkaWZmZXJlbmNlIGJldHdlZW4gdGhlIGZ1bmN0aW9uIHZhbHVlcyBvZiBbYFskYl1cdGV4dHs6fWBdCgpbYGBgWyRmMV0gLSBbJGFdID0gWyRiXSBgYGBdCgoKCltgYGBbJGYyXSAtIFskZjFdID0gWyRiXSBgYGBdCgoKCltgYGBbJGYzXSAtIFskZjJdID0gWyRiXSBgYGBdCgpUaGF0IG1lYW5zIHRoaXMgdGFibGUgY291bGQgcmVwcmVzZW50IGEgbGluZWFyIGZ1bmN0aW9uLiBUbyBmaW5kIHRoZSBmb3JtdWxhLCB3ZSBub3RlIHRoYXQgdGhlIHNsb3BlIGlzIFtgWyRiJF1gXSBhbmQgdGhlIHZlcnRpY2FsIGludGVyY2VwdCBpcyBbYGYoMCk9WyRhXVx0ZXh0eyx9YF0gc28gdGhlIGZvcm11bGEgaXMgW2BmKHgpPVskYW5zMl1cdGV4dHsufWBdCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2022-04-11T12:52:36-04:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.9.2)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "niceTables.pl",
+  "AnswerFormatHelp.pl",
+  "parserPopUp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$a=random(3,20,1);
+$b=list_random(-5, -4, -3, -2, 2, 3, 4, 5);
+$ans1=PopUp(["Linear", "Exponential",],"Linear",);
+$ans2=Compute("$a+$b*x");
+$f1=Compute("$a+$b");
+$f2=Compute("$a+2*$b");
+$f3=Compute("$a+3*$b");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Determine if the table below could represent a linear or exponential function. Then find a formula for the function the table describes.
+
+>> [@DataTable(
+  [
+    [[PGML('[`x`]'),
+      halign  => 'l|',
+      cellcss => 'border-bottom: 1px solid; 
+                  border-right: 1px solid; ',],
+     [PGML('0'),
+      halign  => 'l|',
+      cellcss => 'border-bottom: 1px solid; 
+                  border-right: 1px solid; ',],
+     [PGML('1'),
+      halign  => 'l|',
+      cellcss => 'border-bottom: 1px solid; 
+                  border-right: 1px solid; ',],
+     [PGML('2'),
+      halign  => 'l|',
+      cellcss => 'border-bottom: 1px solid; 
+                  border-right: 1px solid; ',],
+     [PGML('3'),
+      cellcss => 'border-bottom: 1px solid; ',],
+    ],
+    [[PGML('[`f(x)`]'),
+      halign  => 'l|',
+      cellcss => 'border-right: 1px solid; ',],
+     [PGML('[$a]'),
+      halign  => 'l|',
+      cellcss => 'border-right: 1px solid; ',],
+     [PGML('[$f1]'),
+      halign  => 'l|',
+      cellcss => 'border-right: 1px solid; ',],
+     [PGML('[$f2]'),
+      halign  => 'l|',
+      cellcss => 'border-right: 1px solid; ',],
+     PGML('[$f3]'),
+    ],
+  ],
+  align => 'lllll',
+  center => 0,
+);@]* <<
+
+The table describes a(n) [_]{$ans1}{5} function with formula
+
+[`f(x) =`] [_]{$ans2}{12}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+We observe that there is a constant difference between the function values of [`[$b]\text{:}`]
+
+[```[$f1] - [$a] = [$b] ```]
+
+[```[$f2] - [$f1] = [$b] ```]
+
+[```[$f3] - [$f2] = [$b] ```]
+
+That means this table could represent a linear function. To find the formula, we note that the slope is [`[$b$]`] and the vertical intercept is [`f(0)=[$a]\text{,}`] so the formula is [`f(x)=[$ans2]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-13" ww-id="webwork-13">
+    <static seed="13">
+      <statement><p>Find the formula of a linear function whose graph passes through the points <m>(-4, {-7})</m> and <m>(3, {7})\text{.}</m></p>
+<p><m>f(x) =</m> <fillin name="AnSwEr0001" characters="12"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>1+2x</m>
+        </p>
+      </answer>
+      <solution><p>We first find the slope <m>m\text{:}</m></p>
+<p><me>m = \frac{{7} - {-7}}{3  + 4} = \frac{{14}}{{7}}=2</me></p>
+<p>Now that we have the slope, we know the linear function has formula <m>f(x) = b + 2 x,</m> where <m>b</m> is the vertical intercept. To find the value of <m>b\text{,}</m> we can plug in either point. We<rsq/>ll plug in the first point:</p>
+<p><me>{-7} = b + 2 ( -4)</me></p>
+<p><me>{-7} -  2 (-4) = b</me></p>
+<p><me>1 = b</me></p>
+<p>So the formula is <m>f(x)={1+2x}\text{.}</m></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRtPWxpc3RfcmFuZG9tKC00LC0zLCAyLCAtMiwgMyw0KTsKJGI9cmFuZG9tKC05LCA5LCAyKTsKJGFucz1Gb3JtdWxhKCIkYisgJG0qeCIpOwokYT1yYW5kb20oLTQsLTEsMSk7CiRjPXJhbmRvbSgxLDQsMSk7CiRmYT1Db21wdXRlKCIkbSokYSArICRiIik7CiRmYz1Db21wdXRlKCIkbSokYyArICRiIik7CiRmY2E9Q29tcHV0ZSgiJGZjLSRmYSIpOwokY2E9Q29tcHV0ZSgiJGMtJGEiKTsKCkJFR0lOX1BHTUwKRmluZCB0aGUgZm9ybXVsYSBvZiBhIGxpbmVhciBmdW5jdGlvbiB3aG9zZSBncmFwaCBwYXNzZXMgdGhyb3VnaCB0aGUgcG9pbnRzIFtgKFskYV0sIFskZmFdKWBdIGFuZCBbYChbJGNdLCBbJGZjXSlcdGV4dHsufWBdCgpbYGYoeCkgPWBdIFtfXXskYW5zfXsxMn0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpXZSBmaXJzdCBmaW5kIHRoZSBzbG9wZSBbYG1cdGV4dHs6fWBdCgpbYGBgbSA9IFxmcmFje1skZmNdIC0gWyRmYV19e1skY10gLSBbJGFdfSA9IFxmcmFje1skZmNhXX17WyRjYV19PVskbV1gYGBdCgpOb3cgdGhhdCB3ZSBoYXZlIHRoZSBzbG9wZSwgd2Uga25vdyB0aGUgbGluZWFyIGZ1bmN0aW9uIGhhcyBmb3JtdWxhIFtgZih4KSA9IGIgKyBbJG1dIHgsYF0gd2hlcmUgW2BiYF0gaXMgdGhlIHZlcnRpY2FsIGludGVyY2VwdC4gVG8gZmluZCB0aGUgdmFsdWUgb2YgW2BiXHRleHR7LH1gXSB3ZSBjYW4gcGx1ZyBpbiBlaXRoZXIgcG9pbnQuIFdlJ2xsIHBsdWcgaW4gdGhlIGZpcnN0IHBvaW50OgoKW2BgYFskZmFdID0gYiArIFskbV0gKCBbJGFdKWBgYF0KCgoKW2BgYFskZmFdIC0gIFskbV0gKFskYV0pID0gYmBgYF0KCgoKW2BgYFskYl0gPSBiYGBgXQoKU28gdGhlIGZvcm11bGEgaXMgW2BmKHgpPVskYW5zXVx0ZXh0ey59YF0KCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2022-04-11T12:52:36-04:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.9.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$m=list_random(-4,-3, 2, -2, 3,4);
+$b=random(-9, 9, 2);
+$ans=Formula("$b+ $m*x");
+$a=random(-4,-1,1);
+$c=random(1,4,1);
+$fa=Compute("$m*$a + $b");
+$fc=Compute("$m*$c + $b");
+$fca=Compute("$fc-$fa");
+$ca=Compute("$c-$a");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the formula of a linear function whose graph passes through the points [`([$a], [$fa])`] and [`([$c], [$fc])\text{.}`]
+
+[`f(x) =`] [_]{$ans}{12}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+We first find the slope [`m\text{:}`]
+
+[```m = \frac{[$fc] - [$fa]}{[$c] - [$a]} = \frac{[$fca]}{[$ca]}=[$m]```]
+
+Now that we have the slope, we know the linear function has formula [`f(x) = b + [$m] x,`] where [`b`] is the vertical intercept. To find the value of [`b\text{,}`] we can plug in either point. We'll plug in the first point:
+
+[```[$fa] = b + [$m] ( [$a])```]
+
+[```[$fa] -  [$m] ([$a]) = b```]
+
+[```[$b] = b```]
+
+So the formula is [`f(x)=[$ans]\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-14" ww-id="webwork-14">
+    <static seed="14">
+      <statement><p>Find the formula of an exponential function whose graph passes through the points <m>(1, {7.2})</m> and <m>(4, {1.5552})\text{.}</m></p>
+<p><m>f(x) =</m> <fillin name="AnSwEr0001" characters="12"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>12\cdot 0.6^{x}</m>
+        </p>
+      </answer>
+      <solution><p>Since we are trying to find an exponential function, we start with the formula <m>f(x)=a(b)^x.</m> We find <m>b</m> using the ratio <m>\dfrac{f(4)}{f(1)}\text{:}</m></p>
+<p><me>\frac{f(4)}{f(1)} = \frac{a (b)^{4}}{a(b)^1}= \frac{{1.5552}}{{7.2}}</me></p>
+<p><me>b^{{3}} = \frac{{1.5552}}{{7.2}}</me></p>
+<p><me>b = \sqrt[{3}]{\frac{{1.5552}}{{7.2}}}</me></p>
+<p><me>b = 0.6</me></p>
+<p>Now we know that <m>f(x) = a (0.6)^{x}\text{.}</m> To find the value of <m>a\text{,}</m> we plug the first point into the formula and solve for <m>a\text{:}</m></p>
+<p><me>{7.2} = a(0.6)^1</me></p>
+<p><me>\frac{{7.2}}{0.6} = a</me></p>
+<p><me>12 = a</me></p>
+<p>So the exponential function is <m>f(x)={12\cdot 0.6^{x}}\text{.}</m></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhPXJhbmRvbSgyLDIwLDIpOwokYj1saXN0X3JhbmRvbSgwLjUsIDAuNiwgMC43LCAxLjMsIDEuNCwgMS41KTsKJGFucz1Db21wdXRlKCIkYSgkYileeCIpOwokYz1yYW5kb20oMyw0LDEpOwokYzE9Q29tcHV0ZSgiJGMtMSIpOwokZjE9Q29tcHV0ZSgiJGEqJGIiKTsKJGZjPUNvbXB1dGUoIiRhKiRiXiRjIik7CgpCRUdJTl9QR01MCkZpbmQgdGhlIGZvcm11bGEgb2YgYW4gZXhwb25lbnRpYWwgZnVuY3Rpb24gd2hvc2UgZ3JhcGggcGFzc2VzIHRocm91Z2ggdGhlIHBvaW50cyBbYCgxLCBbJGYxXSlgXSBhbmQgW2AoWyRjXSwgWyRmY10pXHRleHR7Ln1gXQoKW2BmKHgpID1gXSBbX117JGFuc317MTJ9CgoKRU5EX1BHTUwKCkJFR0lOX1BHTUxfU09MVVRJT04KU2luY2Ugd2UgYXJlIHRyeWluZyB0byBmaW5kIGFuIGV4cG9uZW50aWFsIGZ1bmN0aW9uLCB3ZSBzdGFydCB3aXRoIHRoZSBmb3JtdWxhIFtgZih4KT1hKGIpXnguYF0gV2UgZmluZCBbYGJgXSB1c2luZyB0aGUgcmF0aW8gW2BcZGZyYWN7ZihbJGNdKX17ZigxKX1cdGV4dHs6fWBdCgpbYGBgXGZyYWN7ZihbJGNdKX17ZigxKX0gPSBcZnJhY3thIChiKV57WyRjXX19e2EoYileMX09IFxmcmFje1skZmNdfXtbJGYxXX1gYGBdCgoKCltgYGBiXntbJGMxXX0gPSBcZnJhY3tbJGZjXX17WyRmMV19YGBgXQoKCgpbYGBgYiA9IFxzcXJ0W1skYzFdXXtcZnJhY3tbJGZjXX17WyRmMV19fSBgYGBdCgoKCltgYGAgYiA9IFskYl1gYGBdCgoKCk5vdyB3ZSBrbm93IHRoYXQgW2BmKHgpID0gYSAoWyRiXSlee3h9XHRleHR7Ln1gXSBUbyBmaW5kIHRoZSB2YWx1ZSBvZiBbYGFcdGV4dHssfWBdIHdlIHBsdWcgdGhlIGZpcnN0IHBvaW50IGludG8gdGhlIGZvcm11bGEgYW5kIHNvbHZlIGZvciBbYGFcdGV4dHs6fWBdCgpbYGBgWyRmMV0gPSBhKFskYl0pXjFgYGBdCgoKCltgYGBcZnJhY3tbJGYxXX17WyRiXX0gPSBhYGBgXQoKCgpbYGBgWyRhXSA9IGFgYGBdCgoKCiBTbyB0aGUgZXhwb25lbnRpYWwgZnVuY3Rpb24gaXMgW2BmKHgpPVskYW5zXVx0ZXh0ey59YF0KRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2022-04-11T12:52:36-04:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(1.9.4)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$a=random(2,20,2);
+$b=list_random(0.5, 0.6, 0.7, 1.3, 1.4, 1.5);
+$ans=Compute("$a($b)^x");
+$c=random(3,4,1);
+$c1=Compute("$c-1");
+$f1=Compute("$a*$b");
+$fc=Compute("$a*$b^$c");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Find the formula of an exponential function whose graph passes through the points [`(1, [$f1])`] and [`([$c], [$fc])\text{.}`]
+
+[`f(x) =`] [_]{$ans}{12}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Since we are trying to find an exponential function, we start with the formula [`f(x)=a(b)^x.`] We find [`b`] using the ratio [`\dfrac{f([$c])}{f(1)}\text{:}`]
+
+[```\frac{f([$c])}{f(1)} = \frac{a (b)^{[$c]}}{a(b)^1}= \frac{[$fc]}{[$f1]}```]
+
+[```b^{[$c1]} = \frac{[$fc]}{[$f1]}```]
+
+[```b = \sqrt[[$c1]]{\frac{[$fc]}{[$f1]}} ```]
+
+[``` b = [$b]```]
+
+Now we know that [`f(x) = a ([$b])^{x}\text{.}`] To find the value of [`a\text{,}`] we plug the first point into the formula and solve for [`a\text{:}`]
+
+[```[$f1] = a([$b])^1```]
+
+[```\frac{[$f1]}{[$b]} = a```]
+
+[```[$a] = a```]
+
+ So the exponential function is [`f(x)=[$ans]\text{.}`]
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-2" ww-id="webwork-2">
     <static seed="2">
       <statement><p>Find the slope of the line between the points <m>(12, 5)</m> and <m>(13, 5)</m></p>
@@ -231,7 +830,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-03-20T20:57:53-04:00       
+###       on 2022-04-11T12:52:35-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -331,7 +930,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-03-20T20:57:53-04:00       
+###       on 2022-04-11T12:52:35-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -421,7 +1020,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-03-20T20:57:53-04:00       
+###       on 2022-04-11T12:52:35-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -516,7 +1115,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-03-20T20:57:53-04:00       
+###       on 2022-04-11T12:52:36-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -612,7 +1211,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-03-20T20:57:53-04:00       
+###       on 2022-04-11T12:52:36-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -707,7 +1306,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-03-20T20:57:53-04:00       
+###       on 2022-04-11T12:52:36-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -809,7 +1408,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-03-20T20:57:53-04:00       
+###       on 2022-04-11T12:52:36-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -912,7 +1511,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-03-20T20:57:53-04:00       
+###       on 2022-04-11T12:52:36-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
