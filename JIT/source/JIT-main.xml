@@ -521,7 +521,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 						<pg-code>
 							$a=list_random(5,10,15,20);
 							$b=list_random(1.2,1.4,1.6,1.8);
-							$ans1=PopUp(["Linear", "Exponential",],"Exponential",);
+							$ans1=PopUp(["?", "Linear", "Exponential",],"Exponential",);
 							$ans2=Compute("$a*$b^x");
 							$f1=Compute("$a*$b");
 							$f2=Compute("$a*$b^2");
@@ -571,7 +571,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 						<pg-code>
 							$a=random(3,20,1);
 							$b=list_random(-5, -4, -3, -2, 2, 3, 4, 5);
-							$ans1=PopUp(["Linear", "Exponential",],"Linear",);
+							$ans1=PopUp(["?", "Linear", "Exponential",],"Linear",);
 							$ans2=Compute("$a+$b*x");
 							$f1=Compute("$a+$b");
 							$f2=Compute("$a+2*$b");
@@ -814,6 +814,114 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
 				<title>Point Estimate Computation</title>
 				
 				
+				
+			</section>
+			
+			<section xml:id="t-tests">
+				<title>T-tests</title>
+				
+				<p>
+					This module contains 4 videos. They review one-way ANOVA, 1-sample T-tests, 2-sample T-tests, and Paired T-tests. Following the videos are multiple choice questions asking you which test is most appropriate to use in a given scenario.
+					
+					<video youtube="0g2oB2F5Kqc"/>
+					
+					<video youtube="5Bjg1Q16gNo"/>
+					
+					<video youtube="RqonDwSXFyM"/>
+					
+					<video youtube="xPfX1L1gT50"/>
+				</p>
+				
+				<exercise>
+					<webwork>
+						<pg-code>
+							$mc=RadioButtons(["1-Sample T-Test", "2-Sample T-Test", "Paired T-Test", "One-Way ANOVA"], "2-Sample T-Test");
+						</pg-code>
+						
+						<statement>
+							<p>
+								Suppose we want to examine the effects of a new drug on anxiety.  We run an experiment using two groups: a placebo group, and an experimental group.  Choose the appropriate test.
+							</p>
+							<p>
+								<var name="$mc" form="buttons"/>
+							</p>
+							
+							
+						</statement>
+						
+						<solution>
+							The study involves two independent samples, so the 2-Sample T-Test is the appropriate test.
+						</solution>
+					</webwork>
+				</exercise>
+				
+				
+				<exercise>
+					<webwork>
+						<pg-code>
+							$mc=RadioButtons(["1-Sample T-Test", "2-Sample T-Test", "Paired T-Test", "One-Way ANOVA"], "Paired T-Test");
+						</pg-code>
+						
+						<statement>
+							<p>
+								Suppose we want to see if an exam prep program will affect students’ performance on the Calculus I gateway exam (a test that students can take multiple times until they pass it).  We obtain a random sample of Calculus I students and record their scores on the gateway exam before and after they participate in the exam prep program.  Choose the appropriate test. 
+							</p>
+							<p>
+								<var name="$mc" form="buttons"/>
+							</p>
+							
+						</statement>
+						
+						<solution>
+							The study involves two dependent samples with matched data - before and after results for individuals were recorded. This means the Paired T-Test is the appropriate test to use.
+						</solution>
+					</webwork>
+				</exercise>
+				
+				
+				<exercise>
+					<webwork>
+						<pg-code>
+							$mc=RadioButtons(["1-Sample T-Test", "2-Sample T-Test", "Paired T-Test", "One-Way ANOVA"], "One-Way ANOVA");
+						</pg-code>
+						
+						<statement>
+							<p>
+								Suppose we want to examine the effects of three different techniques of reducing anxiety about getting vaccinations on toddlers.  We run an experiment using three groups.  Each group is randomly assigned to one of the three different techniques.  Choose the appropriate test.
+							</p>
+							<p>
+								<var name="$mc" form="buttons"/>
+							</p>
+							
+						</statement>
+						
+						<solution>
+							The study compares three or more means and all samples are independent of each other, so One-Way ANOVA is the appropriate test.
+						</solution>
+					</webwork>
+				</exercise>
+				
+				<exercise>
+					<webwork>
+						<pg-code>
+							$mc=RadioButtons(["1-Sample T-Test", "2-Sample T-Test", "Paired T-Test", "One-Way ANOVA"], "Paired T-Test");
+						</pg-code>
+						
+						<statement>
+							<p>
+								A study was conducted to investigate the effectiveness of hypnotism in reducing pain.  A randomly selected group of subjects are measured for pain before and after hypnosis.  Choose the appropriate test.
+							</p>
+							<p>
+								<var name="$mc" form="buttons"/>
+							</p>
+							
+						</statement>
+						
+						<solution>
+							The study involves two dependent samples with matched data. Before and after results for individuals were recorded.  This means the Paired T-Test is the appropriate test to use.
+						</solution>
+					</webwork>
+				</exercise>
 				
 			</section>
 			

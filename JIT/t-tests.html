@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-04-11T21:13:50-04:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>T-tests</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Interactive Math Instruction">
+<meta property="book:author" content="JU Math">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://pretextbook.org/js/0.13/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\doubler}[1]{2#1}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="" target="_blank"><img src="external/images/junewseal.png" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="JIT.html"><span class="title">Interactive Math Instruction</span></a></h1>
+<p class="byline">JU Math</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<button id="calculator-toggle" class="toolbar-item button toggle" title="Show calculator" aria-expanded="false" aria-controls="calculator-container">Calc</button><div id="calculator-container" class="calculator-container" style="display: none; z-index:100;"><div id="geogebra-calculator"></div></div>
+<script>
+var ggbApp = new GGBApplet({"appName": "graphing",
+    "width": 330,
+    "height": 600,
+    "showToolBar": true,
+    "showAlgebraInput": true,
+    "perspective": "G/A",
+    "algebraInputPosition": "bottom",
+    "scaleContainerClass": "calculator-container",
+    "allowUpscale": true,
+    "autoHeight": true,
+    "disableAutoScale": false},
+true);
+</script><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="point-estimate.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="psyc-311-411.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="course_connect.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="point-estimate.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="psyc-311-411.html" title="Up">Up</a><a class="next-button button toolbar-item" href="course_connect.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1" class="internal"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="Math-110-140.html" data-scroll="Math-110-140" class="internal"><span class="codenumber">1</span> <span class="title">MATH 110/140 Topics</span></a><ul>
+<li><a href="slopes.html" data-scroll="slopes" class="internal">Lines and Slope</a></li>
+<li><a href="exponents.html" data-scroll="exponents" class="internal">Exponent Rules</a></li>
+<li><a href="solving.html" data-scroll="solving" class="internal">Solving Equations</a></li>
+<li><a href="algebra.html" data-scroll="algebra" class="internal">Algebra Review</a></li>
+<li><a href="function-eval.html" data-scroll="function-eval" class="internal">Function Evaluation</a></li>
+<li><a href="functions-graphs.html" data-scroll="functions-graphs" class="internal">Functions and Graphs</a></li>
+<li><a href="inverse.html" data-scroll="inverse" class="internal">Inverse Functions</a></li>
+<li><a href="trig.html" data-scroll="trig" class="internal">Trigonometry Review</a></li>
+<li><a href="models.html" data-scroll="models" class="internal">Linear and Exponential Models</a></li>
+<li><a href="intervals.html" data-scroll="intervals" class="internal">Interval Notation</a></li>
+<li><a href="domain-range.html" data-scroll="domain-range" class="internal">Domain and Range</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="psyc-311-411.html" data-scroll="psyc-311-411" class="internal"><span class="codenumber">2</span> <span class="title">PSYC 311, 411 Topics</span></a><ul>
+<li><a href="mean.html" data-scroll="mean" class="internal">Measures of Central Tendency</a></li>
+<li><a href="variance.html" data-scroll="variance" class="internal">Measures of Variability</a></li>
+<li><a href="freq.html" data-scroll="freq" class="internal">Frequency Distributions</a></li>
+<li><a href="prob.html" data-scroll="prob" class="internal">Probability</a></li>
+<li><a href="significance.html" data-scroll="significance" class="internal">Interpreting Significance</a></li>
+<li><a href="std-dev.html" data-scroll="std-dev" class="internal">Standard Deviation on a Normal Curve</a></li>
+<li><a href="CI.html" data-scroll="CI" class="internal">Confidence Intervals</a></li>
+<li><a href="correlation.html" data-scroll="correlation" class="internal">Correlation Coefficients</a></li>
+<li><a href="point-estimate.html" data-scroll="point-estimate" class="internal">Point Estimate Computation</a></li>
+<li><a href="t-tests.html" data-scroll="t-tests" class="active">T-tests</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="course_connect.html" data-scroll="course_connect" class="internal"><span class="codenumber">3</span> <span class="title">Course Connections</span></a><ul>
+<li><a href="CHEM204.html" data-scroll="CHEM204" class="internal">CHEM 204</a></li>
+<li><a href="MPP.html" data-scroll="MPP" class="internal">MPP</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="t-tests"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.10</span> <span class="title">T-tests</span>
+</h2>
+<p id="p-103">This module contains 4 videos. They review one-way ANOVA, 1-sample T-tests, 2-sample T-tests, and Paired T-tests. Following the videos are multiple choice questions asking you which test is most appropriate to use in a given scenario. <div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-5" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/0g2oB2F5Kqc?&amp;modestbranding=1&amp;rel=0"></iframe></div> <div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-6" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/5Bjg1Q16gNo?&amp;modestbranding=1&amp;rel=0"></iframe></div> <div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-7" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/RqonDwSXFyM?&amp;modestbranding=1&amp;rel=0"></iframe></div> <div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-8" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/xPfX1L1gT50?&amp;modestbranding=1&amp;rel=0"></iframe></div></p>
+<article class="exercise exercise-like" id="exercise-15"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.10.1</span><span class="period">.</span>
+</h3>
+<div id="webwork-15" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="15" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRtYz1SYWRpb0J1dHRvbnMoWyIxLVNhbXBsZSBULVRlc3QiLCAiMi1TYW1wbGUgVC1UZXN0IiwgIlBhaXJlZCBULVRlc3QiLCAiT25lLVdheSBBTk9WQSJdLCAiMi1TYW1wbGUgVC1UZXN0Iik7CgpCRUdJTl9QR01MClN1cHBvc2Ugd2Ugd2FudCB0byBleGFtaW5lIHRoZSBlZmZlY3RzIG9mIGEgbmV3IGRydWcgb24gYW54aWV0eS4gIFdlIHJ1biBhbiBleHBlcmltZW50IHVzaW5nIHR3byBncm91cHM6IGEgcGxhY2VibyBncm91cCwgYW5kIGFuIGV4cGVyaW1lbnRhbCBncm91cC4gIENob29zZSB0aGUgYXBwcm9wcmlhdGUgdGVzdC4KCltfXXskbWN9ezV9CgoKRU5EX1BHTUwKCkJFR0lOX1BHTUxfU09MVVRJT04KVGhlIHN0dWR5IGludm9sdmVzIHR3byBpbmRlcGVuZGVudCBzYW1wbGVzLCBzbyB0aGUgMi1TYW1wbGUgVC1UZXN0IGlzIHRoZSBhcHByb3ByaWF0ZSB0ZXN0LgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-104">Suppose we want to examine the effects of a new drug on anxiety.  We run an experiment using two groups: a placebo group, and an experimental group.  Choose the appropriate test.</p>
+<p id="p-105"><ul style="list-style:circle;">
+<li id="li-9"><p id="p-106">1-Sample T-Test</p></li>
+<li id="li-10"><p id="p-107">2-Sample T-Test</p></li>
+<li id="li-11"><p id="p-108">Paired T-Test</p></li>
+<li id="li-12"><p id="p-109">One-Way ANOVA</p></li>
+</ul></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-18" id="answer-18"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-18"><div class="answer solution-like"><p id="p-110"><span class="process-math">\(\text{2-Sample T-Test}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-14" id="solution-14"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-14"><div class="solution solution-like"><p id="p-111">The study involves two independent samples, so the 2-Sample T-Test is the appropriate test.</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-15')">Make Interactive</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-16"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.10.2</span><span class="period">.</span>
+</h3>
+<div id="webwork-16" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="16" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRtYz1SYWRpb0J1dHRvbnMoWyIxLVNhbXBsZSBULVRlc3QiLCAiMi1TYW1wbGUgVC1UZXN0IiwgIlBhaXJlZCBULVRlc3QiLCAiT25lLVdheSBBTk9WQSJdLCAiUGFpcmVkIFQtVGVzdCIpOwoKQkVHSU5fUEdNTApTdXBwb3NlIHdlIHdhbnQgdG8gc2VlIGlmIGFuIGV4YW0gcHJlcCBwcm9ncmFtIHdpbGwgYWZmZWN0IHN0dWRlbnRz4oCZIHBlcmZvcm1hbmNlIG9uIHRoZSBDYWxjdWx1cyBJIGdhdGV3YXkgZXhhbSAoYSB0ZXN0IHRoYXQgc3R1ZGVudHMgY2FuIHRha2UgbXVsdGlwbGUgdGltZXMgdW50aWwgdGhleSBwYXNzIGl0KS4gIFdlIG9idGFpbiBhIHJhbmRvbSBzYW1wbGUgb2YgQ2FsY3VsdXMgSSBzdHVkZW50cyBhbmQgcmVjb3JkIHRoZWlyIHNjb3JlcyBvbiB0aGUgZ2F0ZXdheSBleGFtIGJlZm9yZSBhbmQgYWZ0ZXIgdGhleSBwYXJ0aWNpcGF0ZSBpbiB0aGUgZXhhbSBwcmVwIHByb2dyYW0uICBDaG9vc2UgdGhlIGFwcHJvcHJpYXRlIHRlc3QuCgpbX117JG1jfXs1fQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OClRoZSBzdHVkeSBpbnZvbHZlcyB0d28gZGVwZW5kZW50IHNhbXBsZXMgd2l0aCBtYXRjaGVkIGRhdGEgXC0gYmVmb3JlIGFuZCBhZnRlciByZXN1bHRzIGZvciBpbmRpdmlkdWFscyB3ZXJlIHJlY29yZGVkLiBUaGlzIG1lYW5zIHRoZSBQYWlyZWQgVC1UZXN0IGlzIHRoZSBhcHByb3ByaWF0ZSB0ZXN0IHRvIHVzZS4KRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-112">Suppose we want to see if an exam prep program will affect students’ performance on the Calculus I gateway exam (a test that students can take multiple times until they pass it).  We obtain a random sample of Calculus I students and record their scores on the gateway exam before and after they participate in the exam prep program.  Choose the appropriate test.</p>
+<p id="p-113"><ul style="list-style:circle;">
+<li id="li-13"><p id="p-114">1-Sample T-Test</p></li>
+<li id="li-14"><p id="p-115">2-Sample T-Test</p></li>
+<li id="li-15"><p id="p-116">Paired T-Test</p></li>
+<li id="li-16"><p id="p-117">One-Way ANOVA</p></li>
+</ul></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-19" id="answer-19"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-19"><div class="answer solution-like"><p id="p-118"><span class="process-math">\(\text{Paired T-Test}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-15" id="solution-15"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-15"><div class="solution solution-like"><p id="p-119">The study involves two dependent samples with matched data - before and after results for individuals were recorded. This means the Paired T-Test is the appropriate test to use.</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-16')">Make Interactive</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-17"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.10.3</span><span class="period">.</span>
+</h3>
+<div id="webwork-17" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="17" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRtYz1SYWRpb0J1dHRvbnMoWyIxLVNhbXBsZSBULVRlc3QiLCAiMi1TYW1wbGUgVC1UZXN0IiwgIlBhaXJlZCBULVRlc3QiLCAiT25lLVdheSBBTk9WQSJdLCAiT25lLVdheSBBTk9WQSIpOwoKQkVHSU5fUEdNTApTdXBwb3NlIHdlIHdhbnQgdG8gZXhhbWluZSB0aGUgZWZmZWN0cyBvZiB0aHJlZSBkaWZmZXJlbnQgdGVjaG5pcXVlcyBvZiByZWR1Y2luZyBhbnhpZXR5IGFib3V0IGdldHRpbmcgdmFjY2luYXRpb25zIG9uIHRvZGRsZXJzLiAgV2UgcnVuIGFuIGV4cGVyaW1lbnQgdXNpbmcgdGhyZWUgZ3JvdXBzLiAgRWFjaCBncm91cCBpcyByYW5kb21seSBhc3NpZ25lZCB0byBvbmUgb2YgdGhlIHRocmVlIGRpZmZlcmVudCB0ZWNobmlxdWVzLiAgQ2hvb3NlIHRoZSBhcHByb3ByaWF0ZSB0ZXN0LgoKW19deyRtY317NX0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpUaGUgc3R1ZHkgY29tcGFyZXMgdGhyZWUgb3IgbW9yZSBtZWFucyBhbmQgYWxsIHNhbXBsZXMgYXJlIGluZGVwZW5kZW50IG9mIGVhY2ggb3RoZXIsIHNvIE9uZS1XYXkgQU5PVkEgaXMgdGhlIGFwcHJvcHJpYXRlIHRlc3QuCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-120">Suppose we want to examine the effects of three different techniques of reducing anxiety about getting vaccinations on toddlers.  We run an experiment using three groups.  Each group is randomly assigned to one of the three different techniques.  Choose the appropriate test.</p>
+<p id="p-121"><ul style="list-style:circle;">
+<li id="li-17"><p id="p-122">1-Sample T-Test</p></li>
+<li id="li-18"><p id="p-123">2-Sample T-Test</p></li>
+<li id="li-19"><p id="p-124">Paired T-Test</p></li>
+<li id="li-20"><p id="p-125">One-Way ANOVA</p></li>
+</ul></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-20" id="answer-20"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-20"><div class="answer solution-like"><p id="p-126"><span class="process-math">\(\text{One-Way ANOVA}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-16" id="solution-16"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-16"><div class="solution solution-like"><p id="p-127">The study compares three or more means and all samples are independent of each other, so One-Way ANOVA is the appropriate test.</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-17')">Make Interactive</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-18"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.10.4</span><span class="period">.</span>
+</h3>
+<div id="webwork-18" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="18" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRtYz1SYWRpb0J1dHRvbnMoWyIxLVNhbXBsZSBULVRlc3QiLCAiMi1TYW1wbGUgVC1UZXN0IiwgIlBhaXJlZCBULVRlc3QiLCAiT25lLVdheSBBTk9WQSJdLCAiUGFpcmVkIFQtVGVzdCIpOwoKQkVHSU5fUEdNTApBIHN0dWR5IHdhcyBjb25kdWN0ZWQgdG8gaW52ZXN0aWdhdGUgdGhlIGVmZmVjdGl2ZW5lc3Mgb2YgaHlwbm90aXNtIGluIHJlZHVjaW5nIHBhaW4uICBBIHJhbmRvbWx5IHNlbGVjdGVkIGdyb3VwIG9mIHN1YmplY3RzIGFyZSBtZWFzdXJlZCBmb3IgcGFpbiBiZWZvcmUgYW5kIGFmdGVyIGh5cG5vc2lzLiAgQ2hvb3NlIHRoZSBhcHByb3ByaWF0ZSB0ZXN0LgoKW19deyRtY317NX0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpUaGUgc3R1ZHkgaW52b2x2ZXMgdHdvIGRlcGVuZGVudCBzYW1wbGVzIHdpdGggbWF0Y2hlZCBkYXRhLiBCZWZvcmUgYW5kIGFmdGVyIHJlc3VsdHMgZm9yIGluZGl2aWR1YWxzIHdlcmUgcmVjb3JkZWQuICBUaGlzIG1lYW5zIHRoZSBQYWlyZWQgVC1UZXN0IGlzIHRoZSBhcHByb3ByaWF0ZSB0ZXN0IHRvIHVzZS4KRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-128">A study was conducted to investigate the effectiveness of hypnotism in reducing pain.  A randomly selected group of subjects are measured for pain before and after hypnosis.  Choose the appropriate test.</p>
+<p id="p-129"><ul style="list-style:circle;">
+<li id="li-21"><p id="p-130">1-Sample T-Test</p></li>
+<li id="li-22"><p id="p-131">2-Sample T-Test</p></li>
+<li id="li-23"><p id="p-132">Paired T-Test</p></li>
+<li id="li-24"><p id="p-133">One-Way ANOVA</p></li>
+</ul></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-21" id="answer-21"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-21"><div class="answer solution-like"><p id="p-134"><span class="process-math">\(\text{Paired T-Test}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-17" id="solution-17"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-17"><div class="solution solution-like"><p id="p-135">The study involves two dependent samples with matched data. Before and after results for individuals were recorded.  This means the Paired T-Test is the appropriate test to use.</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-18')">Make Interactive</button></div>
+</div></article></section></div></main>
+</div>
+</body>
+</html>

@@ -17,7 +17,7 @@
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-04-11T12:52:35-04:00       
+###       on 2022-04-11T21:13:36-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -128,7 +128,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-04-11T12:52:36-04:00       
+###       on 2022-04-11T21:13:36-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -236,6 +236,9 @@ ENDDOCUMENT();
 </tabular>
 <p>The table describes a(n) <var form="popup" name="AnSwEr0001">
 <li>
+<p>?</p>
+</li>
+<li>
 <p>Linear</p>
 </li>
 <li>
@@ -260,11 +263,11 @@ ENDDOCUMENT();
 <p>So we conclude that this table could represent an exponential function. The initial value is <m>f(0)=5</m> and we found <m>b=1.4\text{,}</m> so <m>f(x)={5\cdot 1.4^{x}}\text{.}</m></p>
 </solution>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIm5pY2VUYWJsZXMucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwicGFyc2VyUG9wVXAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhPWxpc3RfcmFuZG9tKDUsMTAsMTUsMjApOwokYj1saXN0X3JhbmRvbSgxLjIsMS40LDEuNiwxLjgpOwokYW5zMT1Qb3BVcChbIkxpbmVhciIsICJFeHBvbmVudGlhbCIsXSwiRXhwb25lbnRpYWwiLCk7CiRhbnMyPUNvbXB1dGUoIiRhKiRiXngiKTsKJGYxPUNvbXB1dGUoIiRhKiRiIik7CiRmMj1Db21wdXRlKCIkYSokYl4yIik7CiRmMz1Db21wdXRlKCIkYSokYl4zIik7CgpCRUdJTl9QR01MCkRldGVybWluZSBpZiB0aGUgdGFibGUgYmVsb3cgY291bGQgcmVwcmVzZW50IGEgbGluZWFyIG9yIGV4cG9uZW50aWFsIGZ1bmN0aW9uLiBUaGVuIGZpbmQgYSBmb3JtdWxhIGZvciB0aGUgZnVuY3Rpb24gdGhlIHRhYmxlIGRlc2NyaWJlcy4KCj4+IFtARGF0YVRhYmxlKFtbW1BHTUwoJ1tgeGBdJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItYm90dG9tOjFweCBzb2xpZDtib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnMCcpLGhhbGlnbj0+J2x8JyxjZWxsY3NzPT4nYm9yZGVyLWJvdHRvbToxcHggc29saWQ7Ym9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJzEnKSxoYWxpZ249PidsfCcsY2VsbGNzcz0+J2JvcmRlci1ib3R0b206MXB4IHNvbGlkO2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFtQR01MKCcyJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItYm90dG9tOjFweCBzb2xpZDtib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnMycpLGNlbGxjc3M9Pidib3JkZXItYm90dG9tOjFweCBzb2xpZDsnLF0sXSxbW1BHTUwoJ1tgZih4KWBdJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnWyRhXScpLGhhbGlnbj0+J2x8JyxjZWxsY3NzPT4nYm9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJ1skZjFdJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnWyRmMl0nKSxoYWxpZ249PidsfCcsY2VsbGNzcz0+J2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFBHTUwoJ1skZjNdJyksXSxdLGFsaWduPT4nbGxsbGwnLGNlbnRlcj0+MCwpO0BdKiA8PAoKCgpUaGUgdGFibGUgZGVzY3JpYmVzIGEobikgW19deyRhbnMxfXs1fSBmdW5jdGlvbiB3aXRoIGZvcm11bGEKCltgZih4KSA9YF0gW19deyRhbnMyfXsxMn0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpUaGVyZSBpcyBub3QgYSBjb25zdGFudCBkaWZmZXJlbmNlIGJldHdlZW4gZnVuY3Rpb24gdmFsdWVzLCBzbyB3ZSB0cnkgbXVsdHBsaWNhdGlvbiBpbnN0ZWFkLiBBZnRlciBjb21wdXRpbmcgW2BbJGYxXS9bJGFdPVskYiRdXHRleHR7LH1gXSB3ZSBjaGVjayB0aGF0IGl0IGlzIHRoZSBjb25zaXN0ZW50IG11bHRpcGxlIGJldHdlZW4gZnVuY3Rpb24gdmFsdWVzOgoKW2BgYFskZjFdICogWyRiXSA9IFskZjJdYGBgXQoKCgpbYGBgWyRmMl0gKiBbJGJdID0gWyRmM11gYGBdCgpTbyB3ZSBjb25jbHVkZSB0aGF0IHRoaXMgdGFibGUgY291bGQgcmVwcmVzZW50IGFuIGV4cG9uZW50aWFsIGZ1bmN0aW9uLiBUaGUgaW5pdGlhbCB2YWx1ZSBpcyBbYGYoMCk9WyRhXWBdIGFuZCB3ZSBmb3VuZCBbYGI9WyRiXVx0ZXh0eyx9YF0gc28gW2BmKHgpPVskYW5zMl1cdGV4dHsufWBdCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIm5pY2VUYWJsZXMucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwicGFyc2VyUG9wVXAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhPWxpc3RfcmFuZG9tKDUsMTAsMTUsMjApOwokYj1saXN0X3JhbmRvbSgxLjIsMS40LDEuNiwxLjgpOwokYW5zMT1Qb3BVcChbIj8iLCAiTGluZWFyIiwgIkV4cG9uZW50aWFsIixdLCJFeHBvbmVudGlhbCIsKTsKJGFuczI9Q29tcHV0ZSgiJGEqJGJeeCIpOwokZjE9Q29tcHV0ZSgiJGEqJGIiKTsKJGYyPUNvbXB1dGUoIiRhKiRiXjIiKTsKJGYzPUNvbXB1dGUoIiRhKiRiXjMiKTsKCkJFR0lOX1BHTUwKRGV0ZXJtaW5lIGlmIHRoZSB0YWJsZSBiZWxvdyBjb3VsZCByZXByZXNlbnQgYSBsaW5lYXIgb3IgZXhwb25lbnRpYWwgZnVuY3Rpb24uIFRoZW4gZmluZCBhIGZvcm11bGEgZm9yIHRoZSBmdW5jdGlvbiB0aGUgdGFibGUgZGVzY3JpYmVzLgoKPj4gW0BEYXRhVGFibGUoW1tbUEdNTCgnW2B4YF0nKSxoYWxpZ249PidsfCcsY2VsbGNzcz0+J2JvcmRlci1ib3R0b206MXB4IHNvbGlkO2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFtQR01MKCcwJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItYm90dG9tOjFweCBzb2xpZDtib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnMScpLGhhbGlnbj0+J2x8JyxjZWxsY3NzPT4nYm9yZGVyLWJvdHRvbToxcHggc29saWQ7Ym9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJzInKSxoYWxpZ249PidsfCcsY2VsbGNzcz0+J2JvcmRlci1ib3R0b206MXB4IHNvbGlkO2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFtQR01MKCczJyksY2VsbGNzcz0+J2JvcmRlci1ib3R0b206MXB4IHNvbGlkOycsXSxdLFtbUEdNTCgnW2BmKHgpYF0nKSxoYWxpZ249PidsfCcsY2VsbGNzcz0+J2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFtQR01MKCdbJGFdJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnWyRmMV0nKSxoYWxpZ249PidsfCcsY2VsbGNzcz0+J2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFtQR01MKCdbJGYyXScpLGhhbGlnbj0+J2x8JyxjZWxsY3NzPT4nYm9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sUEdNTCgnWyRmM10nKSxdLF0sYWxpZ249PidsbGxsbCcsY2VudGVyPT4wLCk7QF0qIDw8CgoKClRoZSB0YWJsZSBkZXNjcmliZXMgYShuKSBbX117JGFuczF9ezV9IGZ1bmN0aW9uIHdpdGggZm9ybXVsYQoKW2BmKHgpID1gXSBbX117JGFuczJ9ezEyfQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OClRoZXJlIGlzIG5vdCBhIGNvbnN0YW50IGRpZmZlcmVuY2UgYmV0d2VlbiBmdW5jdGlvbiB2YWx1ZXMsIHNvIHdlIHRyeSBtdWx0cGxpY2F0aW9uIGluc3RlYWQuIEFmdGVyIGNvbXB1dGluZyBbYFskZjFdL1skYV09WyRiJF1cdGV4dHssfWBdIHdlIGNoZWNrIHRoYXQgaXQgaXMgdGhlIGNvbnNpc3RlbnQgbXVsdGlwbGUgYmV0d2VlbiBmdW5jdGlvbiB2YWx1ZXM6CgpbYGBgWyRmMV0gKiBbJGJdID0gWyRmMl1gYGBdCgoKCltgYGBbJGYyXSAqIFskYl0gPSBbJGYzXWBgYF0KClNvIHdlIGNvbmNsdWRlIHRoYXQgdGhpcyB0YWJsZSBjb3VsZCByZXByZXNlbnQgYW4gZXhwb25lbnRpYWwgZnVuY3Rpb24uIFRoZSBpbml0aWFsIHZhbHVlIGlzIFtgZigwKT1bJGFdYF0gYW5kIHdlIGZvdW5kIFtgYj1bJGJdXHRleHR7LH1gXSBzbyBbYGYoeCk9WyRhbnMyXVx0ZXh0ey59YF0KCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-04-11T12:52:36-04:00       
+###       on 2022-04-11T21:13:36-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -312,7 +315,7 @@ TEXT(beginproblem());
 Context('Numeric');
 $a=list_random(5,10,15,20);
 $b=list_random(1.2,1.4,1.6,1.8);
-$ans1=PopUp(["Linear", "Exponential",],"Exponential",);
+$ans1=PopUp(["?", "Linear", "Exponential",],"Exponential",);
 $ans2=Compute("$a*$b^x");
 $f1=Compute("$a*$b");
 $f2=Compute("$a*$b^2");
@@ -415,6 +418,9 @@ ENDDOCUMENT();
 </tabular>
 <p>The table describes a(n) <var form="popup" name="AnSwEr0001">
 <li>
+<p>?</p>
+</li>
+<li>
 <p>Linear</p>
 </li>
 <li>
@@ -440,11 +446,11 @@ ENDDOCUMENT();
 <p>That means this table could represent a linear function. To find the formula, we note that the slope is <m>5</m> and the vertical intercept is <m>f(0)=8\text{,}</m> so the formula is <m>f(x)={8+5x}\text{.}</m></p>
 </solution>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIm5pY2VUYWJsZXMucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwicGFyc2VyUG9wVXAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhPXJhbmRvbSgzLDIwLDEpOwokYj1saXN0X3JhbmRvbSgtNSwgLTQsIC0zLCAtMiwgMiwgMywgNCwgNSk7CiRhbnMxPVBvcFVwKFsiTGluZWFyIiwgIkV4cG9uZW50aWFsIixdLCJMaW5lYXIiLCk7CiRhbnMyPUNvbXB1dGUoIiRhKyRiKngiKTsKJGYxPUNvbXB1dGUoIiRhKyRiIik7CiRmMj1Db21wdXRlKCIkYSsyKiRiIik7CiRmMz1Db21wdXRlKCIkYSszKiRiIik7CgpCRUdJTl9QR01MCkRldGVybWluZSBpZiB0aGUgdGFibGUgYmVsb3cgY291bGQgcmVwcmVzZW50IGEgbGluZWFyIG9yIGV4cG9uZW50aWFsIGZ1bmN0aW9uLiBUaGVuIGZpbmQgYSBmb3JtdWxhIGZvciB0aGUgZnVuY3Rpb24gdGhlIHRhYmxlIGRlc2NyaWJlcy4KCj4+IFtARGF0YVRhYmxlKFtbW1BHTUwoJ1tgeGBdJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItYm90dG9tOjFweCBzb2xpZDtib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnMCcpLGhhbGlnbj0+J2x8JyxjZWxsY3NzPT4nYm9yZGVyLWJvdHRvbToxcHggc29saWQ7Ym9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJzEnKSxoYWxpZ249PidsfCcsY2VsbGNzcz0+J2JvcmRlci1ib3R0b206MXB4IHNvbGlkO2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFtQR01MKCcyJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItYm90dG9tOjFweCBzb2xpZDtib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnMycpLGNlbGxjc3M9Pidib3JkZXItYm90dG9tOjFweCBzb2xpZDsnLF0sXSxbW1BHTUwoJ1tgZih4KWBdJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnWyRhXScpLGhhbGlnbj0+J2x8JyxjZWxsY3NzPT4nYm9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJ1skZjFdJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnWyRmMl0nKSxoYWxpZ249PidsfCcsY2VsbGNzcz0+J2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFBHTUwoJ1skZjNdJyksXSxdLGFsaWduPT4nbGxsbGwnLGNlbnRlcj0+MCwpO0BdKiA8PAoKCgpUaGUgdGFibGUgZGVzY3JpYmVzIGEobikgW19deyRhbnMxfXs1fSBmdW5jdGlvbiB3aXRoIGZvcm11bGEKCltgZih4KSA9YF0gW19deyRhbnMyfXsxMn0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpXZSBvYnNlcnZlIHRoYXQgdGhlcmUgaXMgYSBjb25zdGFudCBkaWZmZXJlbmNlIGJldHdlZW4gdGhlIGZ1bmN0aW9uIHZhbHVlcyBvZiBbYFskYl1cdGV4dHs6fWBdCgpbYGBgWyRmMV0gLSBbJGFdID0gWyRiXSBgYGBdCgoKCltgYGBbJGYyXSAtIFskZjFdID0gWyRiXSBgYGBdCgoKCltgYGBbJGYzXSAtIFskZjJdID0gWyRiXSBgYGBdCgpUaGF0IG1lYW5zIHRoaXMgdGFibGUgY291bGQgcmVwcmVzZW50IGEgbGluZWFyIGZ1bmN0aW9uLiBUbyBmaW5kIHRoZSBmb3JtdWxhLCB3ZSBub3RlIHRoYXQgdGhlIHNsb3BlIGlzIFtgWyRiJF1gXSBhbmQgdGhlIHZlcnRpY2FsIGludGVyY2VwdCBpcyBbYGYoMCk9WyRhXVx0ZXh0eyx9YF0gc28gdGhlIGZvcm11bGEgaXMgW2BmKHgpPVskYW5zMl1cdGV4dHsufWBdCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIm5pY2VUYWJsZXMucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwicGFyc2VyUG9wVXAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhPXJhbmRvbSgzLDIwLDEpOwokYj1saXN0X3JhbmRvbSgtNSwgLTQsIC0zLCAtMiwgMiwgMywgNCwgNSk7CiRhbnMxPVBvcFVwKFsiPyIsICJMaW5lYXIiLCAiRXhwb25lbnRpYWwiLF0sIkxpbmVhciIsKTsKJGFuczI9Q29tcHV0ZSgiJGErJGIqeCIpOwokZjE9Q29tcHV0ZSgiJGErJGIiKTsKJGYyPUNvbXB1dGUoIiRhKzIqJGIiKTsKJGYzPUNvbXB1dGUoIiRhKzMqJGIiKTsKCkJFR0lOX1BHTUwKRGV0ZXJtaW5lIGlmIHRoZSB0YWJsZSBiZWxvdyBjb3VsZCByZXByZXNlbnQgYSBsaW5lYXIgb3IgZXhwb25lbnRpYWwgZnVuY3Rpb24uIFRoZW4gZmluZCBhIGZvcm11bGEgZm9yIHRoZSBmdW5jdGlvbiB0aGUgdGFibGUgZGVzY3JpYmVzLgoKPj4gW0BEYXRhVGFibGUoW1tbUEdNTCgnW2B4YF0nKSxoYWxpZ249PidsfCcsY2VsbGNzcz0+J2JvcmRlci1ib3R0b206MXB4IHNvbGlkO2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFtQR01MKCcwJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItYm90dG9tOjFweCBzb2xpZDtib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnMScpLGhhbGlnbj0+J2x8JyxjZWxsY3NzPT4nYm9yZGVyLWJvdHRvbToxcHggc29saWQ7Ym9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJzInKSxoYWxpZ249PidsfCcsY2VsbGNzcz0+J2JvcmRlci1ib3R0b206MXB4IHNvbGlkO2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFtQR01MKCczJyksY2VsbGNzcz0+J2JvcmRlci1ib3R0b206MXB4IHNvbGlkOycsXSxdLFtbUEdNTCgnW2BmKHgpYF0nKSxoYWxpZ249PidsfCcsY2VsbGNzcz0+J2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFtQR01MKCdbJGFdJyksaGFsaWduPT4nbHwnLGNlbGxjc3M9Pidib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnWyRmMV0nKSxoYWxpZ249PidsfCcsY2VsbGNzcz0+J2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFtQR01MKCdbJGYyXScpLGhhbGlnbj0+J2x8JyxjZWxsY3NzPT4nYm9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sUEdNTCgnWyRmM10nKSxdLF0sYWxpZ249PidsbGxsbCcsY2VudGVyPT4wLCk7QF0qIDw8CgoKClRoZSB0YWJsZSBkZXNjcmliZXMgYShuKSBbX117JGFuczF9ezV9IGZ1bmN0aW9uIHdpdGggZm9ybXVsYQoKW2BmKHgpID1gXSBbX117JGFuczJ9ezEyfQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCldlIG9ic2VydmUgdGhhdCB0aGVyZSBpcyBhIGNvbnN0YW50IGRpZmZlcmVuY2UgYmV0d2VlbiB0aGUgZnVuY3Rpb24gdmFsdWVzIG9mIFtgWyRiXVx0ZXh0ezp9YF0KCltgYGBbJGYxXSAtIFskYV0gPSBbJGJdIGBgYF0KCgoKW2BgYFskZjJdIC0gWyRmMV0gPSBbJGJdIGBgYF0KCgoKW2BgYFskZjNdIC0gWyRmMl0gPSBbJGJdIGBgYF0KClRoYXQgbWVhbnMgdGhpcyB0YWJsZSBjb3VsZCByZXByZXNlbnQgYSBsaW5lYXIgZnVuY3Rpb24uIFRvIGZpbmQgdGhlIGZvcm11bGEsIHdlIG5vdGUgdGhhdCB0aGUgc2xvcGUgaXMgW2BbJGIkXWBdIGFuZCB0aGUgdmVydGljYWwgaW50ZXJjZXB0IGlzIFtgZigwKT1bJGFdXHRleHR7LH1gXSBzbyB0aGUgZm9ybXVsYSBpcyBbYGYoeCk9WyRhbnMyXVx0ZXh0ey59YF0KCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-04-11T12:52:36-04:00       
+###       on 2022-04-11T21:13:36-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -492,7 +498,7 @@ TEXT(beginproblem());
 Context('Numeric');
 $a=random(3,20,1);
 $b=list_random(-5, -4, -3, -2, 2, 3, 4, 5);
-$ans1=PopUp(["Linear", "Exponential",],"Linear",);
+$ans1=PopUp(["?", "Linear", "Exponential",],"Linear",);
 $ans2=Compute("$a+$b*x");
 $f1=Compute("$a+$b");
 $f2=Compute("$a+2*$b");
@@ -598,7 +604,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-04-11T12:52:36-04:00       
+###       on 2022-04-11T21:13:36-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -717,7 +723,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-04-11T12:52:36-04:00       
+###       on 2022-04-11T21:13:36-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -813,6 +819,418 @@ END_PGML_SOLUTION
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-15" ww-id="webwork-15">
+    <static seed="15">
+      <statement><p>Suppose we want to examine the effects of a new drug on anxiety.  We run an experiment using two groups: a placebo group, and an experimental group.  Choose the appropriate test.</p>
+<p><var form="buttons" name="AnSwEr0001">
+<li>
+<p>1-Sample T-Test</p>
+</li>
+<li>
+<p>2-Sample T-Test</p>
+</li>
+<li>
+<p>Paired T-Test</p>
+</li>
+<li>
+<p>One-Way ANOVA</p>
+</li>
+</var></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{2-Sample T-Test}</m>
+        </p>
+      </answer>
+      <solution><p>The study involves two independent samples, so the 2-Sample T-Test is the appropriate test.</p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRtYz1SYWRpb0J1dHRvbnMoWyIxLVNhbXBsZSBULVRlc3QiLCAiMi1TYW1wbGUgVC1UZXN0IiwgIlBhaXJlZCBULVRlc3QiLCAiT25lLVdheSBBTk9WQSJdLCAiMi1TYW1wbGUgVC1UZXN0Iik7CgpCRUdJTl9QR01MClN1cHBvc2Ugd2Ugd2FudCB0byBleGFtaW5lIHRoZSBlZmZlY3RzIG9mIGEgbmV3IGRydWcgb24gYW54aWV0eS4gIFdlIHJ1biBhbiBleHBlcmltZW50IHVzaW5nIHR3byBncm91cHM6IGEgcGxhY2VibyBncm91cCwgYW5kIGFuIGV4cGVyaW1lbnRhbCBncm91cC4gIENob29zZSB0aGUgYXBwcm9wcmlhdGUgdGVzdC4KCltfXXskbWN9ezV9CgoKRU5EX1BHTUwKCkJFR0lOX1BHTUxfU09MVVRJT04KVGhlIHN0dWR5IGludm9sdmVzIHR3byBpbmRlcGVuZGVudCBzYW1wbGVzLCBzbyB0aGUgMi1TYW1wbGUgVC1UZXN0IGlzIHRoZSBhcHByb3ByaWF0ZSB0ZXN0LgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2022-04-11T21:13:36-04:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.10.1)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserRadioButtons.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$mc=RadioButtons(["1-Sample T-Test", "2-Sample T-Test", "Paired T-Test", "One-Way ANOVA"], "2-Sample T-Test");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Suppose we want to examine the effects of a new drug on anxiety.  We run an experiment using two groups: a placebo group, and an experimental group.  Choose the appropriate test.
+
+[_]{$mc}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The study involves two independent samples, so the 2-Sample T-Test is the appropriate test.
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-16" ww-id="webwork-16">
+    <static seed="16">
+      <statement><p>Suppose we want to see if an exam prep program will affect students’ performance on the Calculus I gateway exam (a test that students can take multiple times until they pass it).  We obtain a random sample of Calculus I students and record their scores on the gateway exam before and after they participate in the exam prep program.  Choose the appropriate test.</p>
+<p><var form="buttons" name="AnSwEr0001">
+<li>
+<p>1-Sample T-Test</p>
+</li>
+<li>
+<p>2-Sample T-Test</p>
+</li>
+<li>
+<p>Paired T-Test</p>
+</li>
+<li>
+<p>One-Way ANOVA</p>
+</li>
+</var></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{Paired T-Test}</m>
+        </p>
+      </answer>
+      <solution><p>The study involves two dependent samples with matched data - before and after results for individuals were recorded. This means the Paired T-Test is the appropriate test to use.</p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRtYz1SYWRpb0J1dHRvbnMoWyIxLVNhbXBsZSBULVRlc3QiLCAiMi1TYW1wbGUgVC1UZXN0IiwgIlBhaXJlZCBULVRlc3QiLCAiT25lLVdheSBBTk9WQSJdLCAiUGFpcmVkIFQtVGVzdCIpOwoKQkVHSU5fUEdNTApTdXBwb3NlIHdlIHdhbnQgdG8gc2VlIGlmIGFuIGV4YW0gcHJlcCBwcm9ncmFtIHdpbGwgYWZmZWN0IHN0dWRlbnRz4oCZIHBlcmZvcm1hbmNlIG9uIHRoZSBDYWxjdWx1cyBJIGdhdGV3YXkgZXhhbSAoYSB0ZXN0IHRoYXQgc3R1ZGVudHMgY2FuIHRha2UgbXVsdGlwbGUgdGltZXMgdW50aWwgdGhleSBwYXNzIGl0KS4gIFdlIG9idGFpbiBhIHJhbmRvbSBzYW1wbGUgb2YgQ2FsY3VsdXMgSSBzdHVkZW50cyBhbmQgcmVjb3JkIHRoZWlyIHNjb3JlcyBvbiB0aGUgZ2F0ZXdheSBleGFtIGJlZm9yZSBhbmQgYWZ0ZXIgdGhleSBwYXJ0aWNpcGF0ZSBpbiB0aGUgZXhhbSBwcmVwIHByb2dyYW0uICBDaG9vc2UgdGhlIGFwcHJvcHJpYXRlIHRlc3QuCgpbX117JG1jfXs1fQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OClRoZSBzdHVkeSBpbnZvbHZlcyB0d28gZGVwZW5kZW50IHNhbXBsZXMgd2l0aCBtYXRjaGVkIGRhdGEgXC0gYmVmb3JlIGFuZCBhZnRlciByZXN1bHRzIGZvciBpbmRpdmlkdWFscyB3ZXJlIHJlY29yZGVkLiBUaGlzIG1lYW5zIHRoZSBQYWlyZWQgVC1UZXN0IGlzIHRoZSBhcHByb3ByaWF0ZSB0ZXN0IHRvIHVzZS4KRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2022-04-11T21:13:36-04:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.10.2)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserRadioButtons.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$mc=RadioButtons(["1-Sample T-Test", "2-Sample T-Test", "Paired T-Test", "One-Way ANOVA"], "Paired T-Test");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Suppose we want to see if an exam prep program will affect students’ performance on the Calculus I gateway exam (a test that students can take multiple times until they pass it).  We obtain a random sample of Calculus I students and record their scores on the gateway exam before and after they participate in the exam prep program.  Choose the appropriate test.
+
+[_]{$mc}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The study involves two dependent samples with matched data \- before and after results for individuals were recorded. This means the Paired T-Test is the appropriate test to use.
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-17" ww-id="webwork-17">
+    <static seed="17">
+      <statement><p>Suppose we want to examine the effects of three different techniques of reducing anxiety about getting vaccinations on toddlers.  We run an experiment using three groups.  Each group is randomly assigned to one of the three different techniques.  Choose the appropriate test.</p>
+<p><var form="buttons" name="AnSwEr0001">
+<li>
+<p>1-Sample T-Test</p>
+</li>
+<li>
+<p>2-Sample T-Test</p>
+</li>
+<li>
+<p>Paired T-Test</p>
+</li>
+<li>
+<p>One-Way ANOVA</p>
+</li>
+</var></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{One-Way ANOVA}</m>
+        </p>
+      </answer>
+      <solution><p>The study compares three or more means and all samples are independent of each other, so One-Way ANOVA is the appropriate test.</p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRtYz1SYWRpb0J1dHRvbnMoWyIxLVNhbXBsZSBULVRlc3QiLCAiMi1TYW1wbGUgVC1UZXN0IiwgIlBhaXJlZCBULVRlc3QiLCAiT25lLVdheSBBTk9WQSJdLCAiT25lLVdheSBBTk9WQSIpOwoKQkVHSU5fUEdNTApTdXBwb3NlIHdlIHdhbnQgdG8gZXhhbWluZSB0aGUgZWZmZWN0cyBvZiB0aHJlZSBkaWZmZXJlbnQgdGVjaG5pcXVlcyBvZiByZWR1Y2luZyBhbnhpZXR5IGFib3V0IGdldHRpbmcgdmFjY2luYXRpb25zIG9uIHRvZGRsZXJzLiAgV2UgcnVuIGFuIGV4cGVyaW1lbnQgdXNpbmcgdGhyZWUgZ3JvdXBzLiAgRWFjaCBncm91cCBpcyByYW5kb21seSBhc3NpZ25lZCB0byBvbmUgb2YgdGhlIHRocmVlIGRpZmZlcmVudCB0ZWNobmlxdWVzLiAgQ2hvb3NlIHRoZSBhcHByb3ByaWF0ZSB0ZXN0LgoKW19deyRtY317NX0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpUaGUgc3R1ZHkgY29tcGFyZXMgdGhyZWUgb3IgbW9yZSBtZWFucyBhbmQgYWxsIHNhbXBsZXMgYXJlIGluZGVwZW5kZW50IG9mIGVhY2ggb3RoZXIsIHNvIE9uZS1XYXkgQU5PVkEgaXMgdGhlIGFwcHJvcHJpYXRlIHRlc3QuCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2022-04-11T21:13:36-04:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.10.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserRadioButtons.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$mc=RadioButtons(["1-Sample T-Test", "2-Sample T-Test", "Paired T-Test", "One-Way ANOVA"], "One-Way ANOVA");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Suppose we want to examine the effects of three different techniques of reducing anxiety about getting vaccinations on toddlers.  We run an experiment using three groups.  Each group is randomly assigned to one of the three different techniques.  Choose the appropriate test.
+
+[_]{$mc}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The study compares three or more means and all samples are independent of each other, so One-Way ANOVA is the appropriate test.
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" xml:id="extracted-webwork-18" ww-id="webwork-18">
+    <static seed="18">
+      <statement><p>A study was conducted to investigate the effectiveness of hypnotism in reducing pain.  A randomly selected group of subjects are measured for pain before and after hypnosis.  Choose the appropriate test.</p>
+<p><var form="buttons" name="AnSwEr0001">
+<li>
+<p>1-Sample T-Test</p>
+</li>
+<li>
+<p>2-Sample T-Test</p>
+</li>
+<li>
+<p>Paired T-Test</p>
+</li>
+<li>
+<p>One-Way ANOVA</p>
+</li>
+</var></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{Paired T-Test}</m>
+        </p>
+      </answer>
+      <solution><p>The study involves two dependent samples with matched data. Before and after results for individuals were recorded.  This means the Paired T-Test is the appropriate test to use.</p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRtYz1SYWRpb0J1dHRvbnMoWyIxLVNhbXBsZSBULVRlc3QiLCAiMi1TYW1wbGUgVC1UZXN0IiwgIlBhaXJlZCBULVRlc3QiLCAiT25lLVdheSBBTk9WQSJdLCAiUGFpcmVkIFQtVGVzdCIpOwoKQkVHSU5fUEdNTApBIHN0dWR5IHdhcyBjb25kdWN0ZWQgdG8gaW52ZXN0aWdhdGUgdGhlIGVmZmVjdGl2ZW5lc3Mgb2YgaHlwbm90aXNtIGluIHJlZHVjaW5nIHBhaW4uICBBIHJhbmRvbWx5IHNlbGVjdGVkIGdyb3VwIG9mIHN1YmplY3RzIGFyZSBtZWFzdXJlZCBmb3IgcGFpbiBiZWZvcmUgYW5kIGFmdGVyIGh5cG5vc2lzLiAgQ2hvb3NlIHRoZSBhcHByb3ByaWF0ZSB0ZXN0LgoKW19deyRtY317NX0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpUaGUgc3R1ZHkgaW52b2x2ZXMgdHdvIGRlcGVuZGVudCBzYW1wbGVzIHdpdGggbWF0Y2hlZCBkYXRhLiBCZWZvcmUgYW5kIGFmdGVyIHJlc3VsdHMgZm9yIGluZGl2aWR1YWxzIHdlcmUgcmVjb3JkZWQuICBUaGlzIG1lYW5zIHRoZSBQYWlyZWQgVC1UZXN0IGlzIHRoZSBhcHByb3ByaWF0ZSB0ZXN0IHRvIHVzZS4KRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2022-04-11T21:13:36-04:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(2.10.4)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserRadioButtons.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$mc=RadioButtons(["1-Sample T-Test", "2-Sample T-Test", "Paired T-Test", "One-Way ANOVA"], "Paired T-Test");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+A study was conducted to investigate the effectiveness of hypnotism in reducing pain.  A randomly selected group of subjects are measured for pain before and after hypnosis.  Choose the appropriate test.
+
+[_]{$mc}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+The study involves two dependent samples with matched data. Before and after results for individuals were recorded.  This means the Paired T-Test is the appropriate test to use.
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
   <webwork-reps version="2" xml:id="extracted-webwork-2" ww-id="webwork-2">
     <static seed="2">
       <statement><p>Find the slope of the line between the points <m>(12, 5)</m> and <m>(13, 5)</m></p>
@@ -830,7 +1248,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-04-11T12:52:35-04:00       
+###       on 2022-04-11T21:13:36-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -930,7 +1348,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-04-11T12:52:35-04:00       
+###       on 2022-04-11T21:13:36-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1020,7 +1438,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-04-11T12:52:35-04:00       
+###       on 2022-04-11T21:13:36-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1115,7 +1533,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-04-11T12:52:36-04:00       
+###       on 2022-04-11T21:13:36-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1211,7 +1629,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-04-11T12:52:36-04:00       
+###       on 2022-04-11T21:13:36-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1306,7 +1724,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-04-11T12:52:36-04:00       
+###       on 2022-04-11T21:13:36-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1408,7 +1826,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-04-11T12:52:36-04:00       
+###       on 2022-04-11T21:13:36-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
@@ -1511,7 +1929,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2022-04-11T12:52:36-04:00       
+###       on 2022-04-11T21:13:36-04:00       
 ###   A recent stable commit (2020-08-09):   
 ### 98f21740783f166a773df4dc83cab5293ab63a4a 
 ###                                          
